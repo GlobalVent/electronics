@@ -1,6 +1,8 @@
-NOTES: "*k" refers to quantity available; if no distributor listed, number is total available at all combined authorized distributors
+NOTES:
+"*k" refers to quantity available; if no distributor listed, number is total available at all combined authorized distributors
+All options are pin-compatible drop-in replacements unless otherwise noted
 
-Power, 24V-to-5V step-down module (only differences with suffixes are number-on-reel options):
+Power, 24V-to-5V step-down module (only differences with suffixes are number-on-reel options; different part numbers though are not pin-compatible):
 TI LMZ14203HTZX/NOPB, 38k
 TI LMZ14203TZX-ADJ/NOPB, 22k
 TI LMZ14203EXTTZ/NOPB, 21k
@@ -14,12 +16,29 @@ TI LMZ23603TZ/NOPB, 25k
 TI LMZ23603TZX/NOPB, 5k
 TI PTN78060WAD/WAH/HAH, 20k total?
 
-Power, +3.3V and +1.8V LDOs for CPLD:
-TI LP5907MFX-3.3/NOPB, Digikey 316k
-TI LP5907MFX-1.8/NOPB, Digikey 213k
+Power, LDOs for CPLD:
+TI LP5907MFX-3.3/NOPB, 3.3V, Digikey 316k
+TI LP5907MFX-1.8/NOPB, 1.8V, Digikey 213k
 
 Alarm audio amps:
 TI LM4871MX/NOPB, 220k
+
+Alarm battery holder - not physically compatible:
+* 3x AA (maybe 4x AA too?)
+MPD BH34AAW, 4x flying leads, 29k
+Keystone 2478, 4x flying leads, 14k
+MPD BK-1280-PC6, 3x PCB-mount, 13k
+MPD BC4AAW, 4x flying leads, 12k
+MPD BA3AAPC, 3x PCB-mount, 8k
+MPD BC3AAPC, 3x PCB-mount, 8k
+Keystone 2477, 4x PCB-mount, 7k
+
+Analog, ADCs:
+* >= 10 bits
+* >= 4 channels preferred
+* Internal voltage reference preferred
+* Serial interface preferred
+TI ADC128D818, 76k
 
 Analog, op-amps for pressure sensors (6 mV max offset):
 * Rail-to-rail output
@@ -77,6 +96,8 @@ Diodes Inc SMAJ26A-13-F, Digikey 184k
 Diodes Inc SMAJ28A-13-F, Digikey 105k
 
 Output safety logic gates:
+* LVC series, can operate with 3.3V and 5V
+* SOT-23-5 package
 TI SN74LVC1G08DBVR (AND), 327k
 Nexperia 74LVC1G08GV,125 (AND), >1M
 Nexperia 74LVC1G32GV,125 (OR), 258k
@@ -88,6 +109,11 @@ General power diode:
 (ES2B-ES2G of any kind)
 Vishay ES2G-E3/52T, 185k
 Diodes Inc ES2B-13-F, 44k
+
+General zener diodes - selection:
+3.3V low-current, ON Semi MMSZ4684T1G, 423k
+5.1V, ON Semi MMSZ5231BT1G, >1M
+20V low-current, ON Semi MMSZ4707T1G, 64k
 
 General AlPoly caps for +24V:
 * Vrated >= 35V
@@ -110,7 +136,7 @@ General ceramic caps:
 10nF 50V NP0 0805, Samsung CL21C103JBFNNNG, 288k
 1nF 50V NP0 0805, Kemet C0805C102J5GACTU, 750k
 
-General PTC fuses:
+General PTC fuses - selection:
 1.5A 33V https://www.digikey.com/product-detail/en/bel-fuse-inc/0ZCF0150FF2C/507-1746-1-ND/4156178, 120k
 1.1A 33V https://www.digikey.com/product-detail/en/bel-fuse-inc/0ZCF0110FF2C/507-1744-1-ND/4156318, 138k
 500mA 30V https://www.digikey.com/product-detail/en/bel-fuse-inc/0ZCG0050AF2C/507-1762-1-ND/4156148, 196k
@@ -119,7 +145,7 @@ General PTC fuses:
 50mA 15V https://www.digikey.com/product-detail/en/bel-fuse-inc/0ZCM0005FF2G/507-1816-1-ND/4156260, 328k
 50mA 60V 0ZCJ0005FF2E, Digikey 123k
 
-General spring terminal connectors:
+General spring terminal connectors - selection:
 2x 3.5mm staggered TE 1-2834011-2, 80k
 2x 5mm dual Eaton EM278502, 36k
 2x 3.5mm staggered Phoenix 1985195, 97k
@@ -129,11 +155,11 @@ General spring terminal connectors:
 4x 2.5mm staggered Phoenix 1990025, 26k
 6x 2.5mm staggered TE 1-2834021-6, 5.4k
 
-General oscillators:
+General oscillators - not pin-compatible:
 TI TLC555CDR and IDR, 2.1 Mhz max, Digikey 179k
 Microchip MIC1557YM5-TR, 5 Mhz max, 136k
 
-Power supply:
+Power supplies - selection:
 TDK-Lambda
 	LS100-24 ~4.5k
 	LS150-24 ~3k

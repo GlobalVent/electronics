@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 9 12
 Title "Audible Alarm"
 Date ""
-Rev "1.0"
+Rev "1.1"
 Comp "Partners COVID Innovation Group"
 Comment1 "Don Straney"
 Comment2 ""
@@ -403,7 +403,7 @@ AR Path="/5F16700F" Ref="C?"  Part="1"
 AR Path="/5E8AFE9D/5F16700F" Ref="C?"  Part="1" 
 AR Path="/5E8A4ABF/5F16700F" Ref="C?"  Part="1" 
 AR Path="/5E8E1F08/5F16700F" Ref="C68"  Part="1" 
-F 0 "C68" V 8050 1900 50  0000 C CNN
+F 0 "C68" V 7850 1900 50  0000 C CNN
 F 1 "1uF 16V X7R" V 7950 1950 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 8138 1650 50  0001 C CNN
 F 3 "~" H 8100 1800 50  0001 C CNN
@@ -786,7 +786,7 @@ Wire Wire Line
 Connection ~ 4350 5500
 Wire Wire Line
 	6450 5100 7050 5100
-Text HLabel 7050 5100 2    50   Output ~ 0
+Text HLabel 7650 5100 2    50   Output ~ 0
 Low_Bat
 Wire Wire Line
 	2950 6800 2950 7000
@@ -1747,4 +1747,55 @@ F 3 "" H 6150 4800 50  0001 C CNN
 $EndComp
 Text Notes 6700 4900 0    50   ~ 0
 Use +3.3V pull-up if "low battery" only\nsignals CPLD; use +BATT pull-up and\nemitter-follower if "low battery" only\nlights external LED
+$Comp
+L Device:R R?
+U 1 1 5E98635F
+P 7200 5100
+AR Path="/5E98635F" Ref="R?"  Part="1" 
+AR Path="/5E8AFE9D/5E98635F" Ref="R?"  Part="1" 
+AR Path="/5E8A4ABF/5E98635F" Ref="R?"  Part="1" 
+AR Path="/5E8E1F08/5E98635F" Ref="R177"  Part="1" 
+F 0 "R177" V 7100 5100 50  0000 C CNN
+F 1 "0" V 7300 5100 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 7130 5100 50  0001 C CNN
+F 3 "~" H 7200 5100 50  0001 C CNN
+	1    7200 5100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7350 5100 7650 5100
+$Comp
+L Device:R R?
+U 1 1 5E9EE857
+P 7900 1950
+AR Path="/5E9EE857" Ref="R?"  Part="1" 
+AR Path="/5E8AFE9D/5E9EE857" Ref="R?"  Part="1" 
+AR Path="/5E8A4ABF/5E9EE857" Ref="R?"  Part="1" 
+AR Path="/5E8E1F08/5E9EE857" Ref="R178"  Part="1" 
+F 0 "R178" H 7750 1950 50  0000 C CNN
+F 1 "0" H 7750 1850 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 7830 1950 50  0001 C CNN
+F 3 "~" H 7900 1950 50  0001 C CNN
+	1    7900 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E9EFF41
+P 7900 2100
+AR Path="/5E9EFF41" Ref="#PWR?"  Part="1" 
+AR Path="/5E8AFE9D/5E9EFF41" Ref="#PWR?"  Part="1" 
+AR Path="/5E8A4ABF/5E9EFF41" Ref="#PWR?"  Part="1" 
+AR Path="/5E8E1F08/5E9EFF41" Ref="#PWR0319"  Part="1" 
+F 0 "#PWR0319" H 7900 1850 50  0001 C CNN
+F 1 "GND" H 7905 1927 50  0000 C CNN
+F 2 "" H 7900 2100 50  0001 C CNN
+F 3 "" H 7900 2100 50  0001 C CNN
+	1    7900 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 1800 7900 1550
+Wire Wire Line
+	7900 1550 8650 1550
 $EndSCHEMATC

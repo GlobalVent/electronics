@@ -1,0 +1,5 @@
+1.0 to 1.1:
+	* Added R177 to allow low-battery alarm to drive both a CPLD input and an external LED
+	* Moved one Raspberry Pi PWM analog output to GPIO18 to take advantage of hardware PWM
+	* Fixed floating shutdown pin on audio amp U28
+	* Added bulk capacitor C112 on +5V input
