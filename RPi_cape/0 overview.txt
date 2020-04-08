@@ -1,0 +1,41 @@
+Power:
+	+24V and GNDPWR are noisy 24V for solenoid valves
+	+24VA and GND are quiet 24V for sensors - this is derived from filtered +24V/GNDPWR
+	+5VD is digital Raspberry Pi power, kept separate from CPLD and analog power for reliability
+	+5V is digital CPLD power
+	+5VA is analog (sensor conditioning, limit comparator) power - derived from filtered +5V
+	+3.3V is digital CPLD I/O power, output combining-logic power - regulated by LDO from +5V
+	+1.8V is digital CPLD internal power - regulated by LDO from +5V
+	+BATT is the diode-OR'ed alarm power, from either +5V or the 4.5V (3x AA) alarm backup battery
+	
+Options:
+	* +24V power redundancy:
+		Redundant: Populate both diodes (D1-2) and use all 4 pins of J1
+		Non-redundant: Only populate D1 and use pins 1, 2 of J1
+	* Power sources:
+		Internal: Use "internal" (open-frame / closed-frame / DIN rail) AC-DC power supplies, 1x 24V + 2x 5V, and feed to spring terminals J?, onboard 5V power supplies U? are DNP - less EMI risk, more FDA voltage safety risk
+		External: Use "external" (wall- / desktop) AC-DC 24V power supply, and feed to spring terminals J?, onboard 5V power supplies U? are populated and 5V input spring terminals J? are unused - more EMI risk, less FDA voltage safety risk
+	* +24V power fusing:
+		No global fusing: populate R4, remove F1
+		Global fusing: populate F1, remove R4 - likely unnecessary as +24VA and each individual solenoid driver has its own fusing
+	* RPi/CPLD output combining for valve drivers:
+		AND (both outputs required to turn on valve): Populate U8 etc. as 74LVC1G08
+		OR (either output can turn on valve): Populate U8 etc. as 74LVC1G32
+	* Analog input clamping:
+		Absolute voltage (Zener): populate D11 etc., remove D10 etc.
+		Clamp to rail (rectifier): populate D10 etc., remove D11 etc.
+	* Analog input op-amps:
+		2x single op-amps per input: populate U6, U7, etc.; remove U4 etc.
+		1x dual op-amp per input: populate U4 etc., remove U6, U7, etc.
+	* CPLD footprint:
+		5M40ZT64: Populate U31
+		5M80ZT100 or 5M240ZT100: Populate U33
+	* Power output driver fusing:
+		PTC resettable fuse: Populate F6, etc. - possibility of going back to normal from temporary fault (although still likely too slow to protect MOSFET)
+		Normal one-time fuse: Populate F10, etc. - faster response time, more likely to protect
+	* Power output default Raspberry Pi input state:
+		Default low Raspberry Pi input in case of power loss: populate R53 etc., remove R55 etc.
+		Default high: populate R55 etc., remove R53 etc.
+	* Low-battery output for alarm backup battery
+		CPLD handles low-battery notification (and/or passes it on to the Raspberry Pi to display/report): populate R146; remove R145, Q8, R147, J13
+		LED lit on front panel: populate R145, Q8, R147, J13; remove R146

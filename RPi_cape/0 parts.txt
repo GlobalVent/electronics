@@ -1,0 +1,196 @@
+NOTES: "*k" refers to quantity available; if no distributor listed, number is total available at all combined authorized distributors
+
+Power, 24V-to-5V step-down module (only differences with suffixes are number-on-reel options):
+TI LMZ14203HTZX/NOPB, 38k
+TI LMZ14203TZX-ADJ/NOPB, 22k
+TI LMZ14203EXTTZ/NOPB, 21k
+TI LMZ14203TZE-ADJ/NOPB, 20k
+TI LMZ14203HTZ/NOPB, 17k
+TI LMZ14203HTZE/NOPB, 16k
+TI LMZ14203EXTTZE/NOPB, 15k
+TI LMZ14203TZ-ADJ/NOPB, 12k
+TI LMZ23603TZE/NOPB, 17k
+TI LMZ23603TZ/NOPB, 25k
+TI LMZ23603TZX/NOPB, 5k
+TI PTN78060WAD/WAH/HAH, 20k total?
+
+Power, +3.3V and +1.8V LDOs for CPLD:
+TI LP5907MFX-3.3/NOPB, Digikey 316k
+TI LP5907MFX-1.8/NOPB, Digikey 213k
+
+Alarm audio amps:
+TI LM4871MX/NOPB, 220k
+
+Analog, op-amps for pressure sensors (6 mV max offset):
+* Rail-to-rail output
+* Input CM range includes gnd
+* Input offset <= 10 mV max. (0.5% full-scale)
+TI LMC7101BIM5/NOPB, 400k
+TI OPA171AIDBVR, 132k
+ST LMV321ILT, Digikey 79k
+TI LM6211MF/NOPB, Digikey 70k
+ST TSV321RILT, Digikey 42k
+TI LM7301IM5/NOPB, Digikey 50k
+...TLV2370
+...LMV358 dual
+
+Analog, op-amps for O2 sensor:
+* Rail-to-rail output
+* Input CM range includes gnd
+* Input offset <= 300uV max.
+ADI LTC6241HS8#TRPBF dual, Digikey 78k
+TI LMP7701MF/NOPB, 69k
+ADI AD8603AUJZ-REEL7, 121k
+
+Analog, comparators:
+* Input CM range includes gnd
+* Open-collector output
+* Dual, in VSSOP/TSSOP-8 package (3x3 mm body, 0.65mm lead pitch)
+TI LM2903DGKR, Digikey 331k
+TI LM393DGKR, Digikey 129k
+TI TLV1702AIDGKR, Digikey 58k
+
+Analog, voltage reference:
+Nexperia TL431AQDBZR,215, >1M
+
+Output driver MOSFET:
+* Vds >= 60V
+* Rds-on <= 100 mOhms (for max. fault dissipation of 0.1W)
+* D-Pak (TO-252) package
+ON Semiconductor NTD5865NLT4G
+Alpha & Omega aod482
+ST STD35NF06T4
+
+Output driver optocoupler:
+* CTR >=50% @ 5 mA LED
+* Vce >= 60V
+* SOIC-4 / SOP-4 package
+Everlight EL3H7(TA)-VG, 210k
+Vishay TCMT1107 (1.15 typ - ~1.4 max Vf @ 5 mA), 150k
+Broadcom ACPL-217-500E, 266k
+
+Output driver TVS:
+* Max. clamping voltage < 60V
+* SMA package
+Vishay SMAJ30A-E3/61, Digikey 663k
+Diodes Inc SMAJ26A-13-F, Digikey 184k
+Diodes Inc SMAJ28A-13-F, Digikey 105k
+
+Output safety logic gates:
+TI SN74LVC1G08DBVR (AND), 327k
+Nexperia 74LVC1G08GV,125 (AND), >1M
+Nexperia 74LVC1G32GV,125 (OR), 258k
+TI SN74LVC1G08DBVR (OR), 307k
+
+General power diode:
+* Vreverse >= 100V
+* Iforward >= 2A continuous
+(ES2B-ES2G of any kind)
+Vishay ES2G-E3/52T, 185k
+Diodes Inc ES2B-13-F, 44k
+
+General AlPoly caps for +24V:
+* Vrated >= 35V
+* 10 mm diameter SMT
+Panasonic EEH-ZC1H101P, 119k
+Panasonic EEH-ZA1H101P, 99k
+Nichicon PCV1V181MCL2GS (100uF->180uF), 19k
+Panasonic EEH-ZA1V271V (100uF->270uF), 20k
+Nichicon UWT1V221MNL1GS (non-poly, 220uF, 8mm), Digikey 496k
+
+General Raspberry Pi connector:
+Sullins PPPC202LFBN-RC, 17k
+Sullins SFH11-PBPC-D20-ST-BK, 7k
+
+General ceramic caps:
+10uF 50V X7S 1210, Murata GCM32EC71H106KA03, 126k
+1uF 16V X7R 0805, Kemet C0805C105K4RACTU, >1M
+100nF 50V X7R 0805, AVX 08055C104KAT2A, >32M
+22nF 50V NP0 0805, Murata GCM21B5C1H223JA16L, 250k
+10nF 50V NP0 0805, Samsung CL21C103JBFNNNG, 288k
+1nF 50V NP0 0805, Kemet C0805C102J5GACTU, 750k
+
+General PTC fuses:
+1.5A 33V https://www.digikey.com/product-detail/en/bel-fuse-inc/0ZCF0150FF2C/507-1746-1-ND/4156178, 120k
+1.1A 33V https://www.digikey.com/product-detail/en/bel-fuse-inc/0ZCF0110FF2C/507-1744-1-ND/4156318, 138k
+500mA 30V https://www.digikey.com/product-detail/en/bel-fuse-inc/0ZCG0050AF2C/507-1762-1-ND/4156148, 196k
+500mA 16V https://www.digikey.com/product-detail/en/bel-fuse-inc/0ZCG0050FF2C/507-1761-1-ND/4156204, 247k
+140mA 60V https://www.digikey.com/product-detail/en/bel-fuse-inc/0ZCG0014FF2C/507-1755-1-ND/4156193, 312k
+50mA 15V https://www.digikey.com/product-detail/en/bel-fuse-inc/0ZCM0005FF2G/507-1816-1-ND/4156260, 328k
+50mA 60V 0ZCJ0005FF2E, Digikey 123k
+
+General spring terminal connectors:
+2x 3.5mm staggered TE 1-2834011-2, 80k
+2x 5mm dual Eaton EM278502, 36k
+2x 3.5mm staggered Phoenix 1985195, 97k
+3x 3.5mm staggered Phoenix 1985205, 75k
+4x 3.5mm staggered Phoenix 1985218, 43k
+4x 3.5mm staggered Phoenix 1984989, 42k
+4x 2.5mm staggered Phoenix 1990025, 26k
+6x 2.5mm staggered TE 1-2834021-6, 5.4k
+
+General oscillators:
+TI TLC555CDR and IDR, 2.1 Mhz max, Digikey 179k
+Microchip MIC1557YM5-TR, 5 Mhz max, 136k
+
+Power supply:
+TDK-Lambda
+	LS100-24 ~4.5k
+	LS150-24 ~3k
+	LS25-5 ~2.5k
+	LS25-24 ~2.5k
+	LS35-24 ~1.2k
+	LS50-24 ~2.5k
+	DPP50-24 ~2k
+	DSP10-24 ~4k
+	DSP100-24 ~3k
+	DSP60-24 ~2.5k
+	ZWD-PAF series 5, 24 but 10s/100s avail
+Mean Well
+	* = option 1, all internal
+	** = option 2, all internal DIN rail
+	*** = option 3, external
+	indented = can supply ASCO 8262-series power-hungry valves
+		RS-100-24 ~2.5k
+	RS-15-24 ~5k
+	RS-25-48 ~1k
+	RS-75-24 ~1.5k
+		RS-150-24 ~4k
+	RS-50-24 ~4k
+	RS-35-24 ~1k
+	*RS-25-24 ~6.5k (int enc)
+	RS-25-5 ~1.5k
+	*RS-15-5 ~10k (int enc)
+	LRS-35-24 ~3k
+	LRS-50-24 ~5k
+	*LRS-75-24 ~6.5k (int enc)
+		*LRS-100-24 ~7k (int enc)
+		LRS-150-24 ~3k
+		LRS-150F-5 ~1k
+	HDR-15-24 ~1.5k
+	**HDR-15-5 ~5.5k (int DIN)
+	HDR-30-24 ~2.5k
+	**HDR-60-24 ~5k (int DIN)
+		HDR-100-24N ~1k
+	?MDR-20-24 ~8k
+	MDR-20-5 ~1.5k
+	MDR-40-24 ~4k
+	**MDR-60-24 ~6k (int DIN)
+	MDR-60-5 ~1k
+		MDR-100-24 ~1.5k
+	*EPS-15-5 ~12k (int)
+	EPS-65-24 ~4k
+	PD-45B has right power dual outputs but 500 avail, PD-65B 1.5k
+	RPS-60-24 ~4k medical
+	RPS-75-24 ~1k medical
+	GST40A24-P1J ~1k ext
+	***GST60A24-P1J ~8.5k ext
+	GST90A24-P1M ~2k ext
+	***GSM60B24-P1J ~1k ext medical
+		GST120A24-P1M ~2k ext
+		GST160A24-R7B ~2.5k ext
+		GST220A24-R7B ~2.5k ext
+	OWA-60U-24 ~3.5k ext
+	IRM-20-5 ~10.5k PCB
+Delta (nothing)
+XP Power (nothing external or internal-with-IEC-jack)

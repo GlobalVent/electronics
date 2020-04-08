@@ -1,0 +1,31 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP +2.5V_BAT
+D Power symbol creates a global label with name "+2.5V_BAT"
+K power-flag
+$ENDCMP
+#
+$CMP +24VA
+D Power symbol creates a global label with name "+24VA"
+K power-flag
+$ENDCMP
+#
+$CMP 5M40ZE64C5N
+D Intel/Altera 5M40ZE64 CPLD
+K cpld intel altera
+F Altera
+$ENDCMP
+#
+$CMP 5M80ZT100C5N
+D Intel/Altera 5M80ZT100 CPLD
+K cpld intel altera
+F Altera
+$ENDCMP
+#
+$CMP LMZ14203
+D 3A Adjustable Step-Down DC/DC Power Module
+K Step-Down DC/DC Module
+F http://www.ti.com/lit/ds/symlink/lmz14203.pdf
+$ENDCMP
+#
+#End Doc Library

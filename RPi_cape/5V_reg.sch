@@ -1,0 +1,528 @@
+EESchema Schematic File Version 4
+LIBS:RPi_cape-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 11 12
+Title "5V Buck Regulator"
+Date ""
+Rev "1.0"
+Comp "Partners COVID Innovation Center"
+Comment1 "Don Straney"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Ventilator:LMZ14203 U34
+U 1 1 5EE088D9
+P 5000 2950
+AR Path="/5EE065CD/5EE088D9" Ref="U34"  Part="1" 
+AR Path="/5EEB3F52/5EE088D9" Ref="U35"  Part="1" 
+F 0 "U35" H 5000 3417 50  0000 C CNN
+F 1 "LMZ14203" H 5000 3326 50  0000 C CNN
+F 2 "Ventilator:TI_TO-PMOD-7" H 5000 2100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lmz14203.pdf" H 5000 2200 50  0001 C CNN
+F 4 "Texas Instruments" H 5000 2950 50  0001 C CNN "Manufacturer"
+F 5 "LMZ14203TZX-ADJ/NOPB" H 5000 2950 50  0001 C CNN "Part Number"
+	1    5000 2950
+	1    0    0    -1  
+$EndComp
+Text HLabel 1650 2750 0    50   Input ~ 0
+In
+Text HLabel 8700 2750 2    50   Output ~ 0
+Out
+$Comp
+L Device:R R?
+U 1 1 5EE14EEB
+P 6300 3050
+AR Path="/5EE14EEB" Ref="R?"  Part="1" 
+AR Path="/5E8AFE9D/5EE14EEB" Ref="R?"  Part="1" 
+AR Path="/5EE065CD/5EE14EEB" Ref="R169"  Part="1" 
+AR Path="/5EEB3F52/5EE14EEB" Ref="R174"  Part="1" 
+F 0 "R174" H 6400 3100 50  0000 C CNN
+F 1 "5.62K" H 6500 3000 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 6230 3050 50  0001 C CNN
+F 3 "~" H 6300 3050 50  0001 C CNN
+	1    6300 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EE14EF1
+P 3400 3250
+AR Path="/5EE14EF1" Ref="C?"  Part="1" 
+AR Path="/5E8AFE9D/5EE14EF1" Ref="C?"  Part="1" 
+AR Path="/5EE065CD/5EE14EF1" Ref="C97"  Part="1" 
+AR Path="/5EEB3F52/5EE14EF1" Ref="C105"  Part="1" 
+F 0 "C105" H 3600 3300 50  0000 C CNN
+F 1 "10uF 50V X7S" H 3750 3200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 3438 3100 50  0001 C CNN
+F 3 "~" H 3400 3250 50  0001 C CNN
+F 4 "Murata" H 3400 3250 50  0001 C CNN "Manufacturer"
+F 5 "GCM32EC71H106KA03" H 3400 3250 50  0001 C CNN "Part Number"
+	1    3400 3250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 2950 5650 2950
+Wire Wire Line
+	5650 2950 5650 3200
+Wire Wire Line
+	5650 3200 5900 3200
+$Comp
+L Device:R R?
+U 1 1 5EE16CD0
+P 6300 3350
+AR Path="/5EE16CD0" Ref="R?"  Part="1" 
+AR Path="/5E8AFE9D/5EE16CD0" Ref="R?"  Part="1" 
+AR Path="/5EE065CD/5EE16CD0" Ref="R170"  Part="1" 
+AR Path="/5EEB3F52/5EE16CD0" Ref="R175"  Part="1" 
+F 0 "R175" H 6400 3400 50  0000 C CNN
+F 1 "1.07K" H 6500 3300 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 6230 3350 50  0001 C CNN
+F 3 "~" H 6300 3350 50  0001 C CNN
+	1    6300 3350
+	1    0    0    -1  
+$EndComp
+Connection ~ 6300 3200
+$Comp
+L Device:R R?
+U 1 1 5EE170F2
+P 3950 2900
+AR Path="/5EE170F2" Ref="R?"  Part="1" 
+AR Path="/5E8AFE9D/5EE170F2" Ref="R?"  Part="1" 
+AR Path="/5EE065CD/5EE170F2" Ref="R168"  Part="1" 
+AR Path="/5EEB3F52/5EE170F2" Ref="R173"  Part="1" 
+F 0 "R173" H 4050 2950 50  0000 C CNN
+F 1 "100K" H 4150 2850 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3880 2900 50  0001 C CNN
+F 3 "~" H 3950 2900 50  0001 C CNN
+	1    3950 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 3050 4350 3050
+Wire Wire Line
+	4350 3050 4350 2950
+Wire Wire Line
+	4350 2950 4500 2950
+Wire Wire Line
+	4500 2750 3950 2750
+Connection ~ 3950 2750
+Wire Wire Line
+	3950 2750 3700 2750
+Wire Wire Line
+	5500 2750 5900 2750
+Wire Wire Line
+	6300 2900 6300 2750
+Connection ~ 6300 2750
+Wire Wire Line
+	3400 3100 3400 2750
+Connection ~ 3400 2750
+$Comp
+L power:GND #PWR0301
+U 1 1 5EE1CE10
+P 3400 3400
+AR Path="/5EE065CD/5EE1CE10" Ref="#PWR0301"  Part="1" 
+AR Path="/5EEB3F52/5EE1CE10" Ref="#PWR0310"  Part="1" 
+F 0 "#PWR0310" H 3400 3150 50  0001 C CNN
+F 1 "GND" H 3405 3227 50  0000 C CNN
+F 2 "" H 3400 3400 50  0001 C CNN
+F 3 "" H 3400 3400 50  0001 C CNN
+	1    3400 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0304
+U 1 1 5EE1D159
+P 5100 3350
+AR Path="/5EE065CD/5EE1D159" Ref="#PWR0304"  Part="1" 
+AR Path="/5EEB3F52/5EE1D159" Ref="#PWR0313"  Part="1" 
+F 0 "#PWR0313" H 5100 3100 50  0001 C CNN
+F 1 "GND" H 5105 3177 50  0000 C CNN
+F 2 "" H 5100 3350 50  0001 C CNN
+F 3 "" H 5100 3350 50  0001 C CNN
+	1    5100 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3350 5250 3350
+Connection ~ 5100 3350
+$Comp
+L power:GND #PWR0305
+U 1 1 5EE1E75C
+P 6300 3500
+AR Path="/5EE065CD/5EE1E75C" Ref="#PWR0305"  Part="1" 
+AR Path="/5EEB3F52/5EE1E75C" Ref="#PWR0314"  Part="1" 
+F 0 "#PWR0314" H 6300 3250 50  0001 C CNN
+F 1 "GND" H 6305 3327 50  0000 C CNN
+F 2 "" H 6300 3500 50  0001 C CNN
+F 3 "" H 6300 3500 50  0001 C CNN
+	1    6300 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EE2670E
+P 4850 3600
+AR Path="/5EE2670E" Ref="C?"  Part="1" 
+AR Path="/5E8AFE9D/5EE2670E" Ref="C?"  Part="1" 
+AR Path="/5EE065CD/5EE2670E" Ref="C99"  Part="1" 
+AR Path="/5EEB3F52/5EE2670E" Ref="C107"  Part="1" 
+F 0 "C107" H 4600 3950 50  0000 C CNN
+F 1 "22nF 50V NP0" H 4850 4050 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4888 3450 50  0001 C CNN
+F 3 "~" H 4850 3600 50  0001 C CNN
+F 4 "Murata" H 4850 3600 50  0001 C CNN "Manufacturer"
+F 5 "GCM21B5C1H223JA16L" H 4850 3600 50  0001 C CNN "Part Number"
+	1    4850 3600
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EE26714
+P 4850 3750
+AR Path="/5EE26714" Ref="#PWR?"  Part="1" 
+AR Path="/5E8AFE9D/5EE26714" Ref="#PWR?"  Part="1" 
+AR Path="/5EE065CD/5EE26714" Ref="#PWR0303"  Part="1" 
+AR Path="/5EEB3F52/5EE26714" Ref="#PWR0312"  Part="1" 
+F 0 "#PWR0312" H 4850 3500 50  0001 C CNN
+F 1 "GND" H 4855 3577 50  0000 C CNN
+F 2 "" H 4850 3750 50  0001 C CNN
+F 3 "" H 4850 3750 50  0001 C CNN
+	1    4850 3750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3450 4850 3350
+$Comp
+L Device:C C?
+U 1 1 5EE27BE3
+P 5900 2950
+AR Path="/5EE27BE3" Ref="C?"  Part="1" 
+AR Path="/5E8AFE9D/5EE27BE3" Ref="C?"  Part="1" 
+AR Path="/5EE065CD/5EE27BE3" Ref="C100"  Part="1" 
+AR Path="/5EEB3F52/5EE27BE3" Ref="C108"  Part="1" 
+F 0 "C108" H 5650 3300 50  0000 C CNN
+F 1 "22nF 50V NP0" H 5900 3400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5938 2800 50  0001 C CNN
+F 3 "~" H 5900 2950 50  0001 C CNN
+F 4 "Murata" H 5900 2950 50  0001 C CNN "Manufacturer"
+F 5 "GCM21B5C1H223JA16L" H 5900 2950 50  0001 C CNN "Part Number"
+	1    5900 2950
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5900 2800 5900 2750
+Connection ~ 5900 2750
+Wire Wire Line
+	5900 2750 6300 2750
+Wire Wire Line
+	5900 3100 5900 3200
+Connection ~ 5900 3200
+Wire Wire Line
+	5900 3200 6300 3200
+$Comp
+L Device:C C?
+U 1 1 5EE2ABB7
+P 7150 3000
+AR Path="/5EE2ABB7" Ref="C?"  Part="1" 
+AR Path="/5E8AFE9D/5EE2ABB7" Ref="C?"  Part="1" 
+AR Path="/5EE065CD/5EE2ABB7" Ref="C102"  Part="1" 
+AR Path="/5EEB3F52/5EE2ABB7" Ref="C110"  Part="1" 
+F 0 "C110" H 7150 3400 50  0000 C CNN
+F 1 "10uF 50V X7S" H 7150 3500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 7188 2850 50  0001 C CNN
+F 3 "~" H 7150 3000 50  0001 C CNN
+F 4 "Murata" H 7150 3000 50  0001 C CNN "Manufacturer"
+F 5 "GCM32EC71H106KA03" H 7150 3000 50  0001 C CNN "Part Number"
+	1    7150 3000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0307
+U 1 1 5EE2ABBD
+P 7150 3150
+AR Path="/5EE065CD/5EE2ABBD" Ref="#PWR0307"  Part="1" 
+AR Path="/5EEB3F52/5EE2ABBD" Ref="#PWR0316"  Part="1" 
+F 0 "#PWR0316" H 7150 2900 50  0001 C CNN
+F 1 "GND" H 7155 2977 50  0000 C CNN
+F 2 "" H 7150 3150 50  0001 C CNN
+F 3 "" H 7150 3150 50  0001 C CNN
+	1    7150 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 2750 6850 2750
+Text HLabel 4400 3150 0    50   Input ~ 0
+En
+Wire Wire Line
+	4400 3150 4500 3150
+$Comp
+L Device:CP1 C?
+U 1 1 5EE35666
+P 2650 2900
+AR Path="/5EE35666" Ref="C?"  Part="1" 
+AR Path="/5EE065CD/5EE35666" Ref="C96"  Part="1" 
+AR Path="/5EEB3F52/5EE35666" Ref="C104"  Part="1" 
+F 0 "C104" H 2400 2900 50  0000 L CNN
+F 1 "100uF 50V AlPoly" H 1900 2800 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_10x10.5" H 2650 2900 50  0001 C CNN
+F 3 "~" H 2650 2900 50  0001 C CNN
+F 4 "Panasonic" H 2650 2900 50  0001 C CNN "Manufacturer"
+F 5 "EEH-ZC1H101P" H 2650 2900 50  0001 C CNN "Part Number"
+	1    2650 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EE3566C
+P 2650 3050
+AR Path="/5EE3566C" Ref="#PWR?"  Part="1" 
+AR Path="/5EE065CD/5EE3566C" Ref="#PWR0300"  Part="1" 
+AR Path="/5EEB3F52/5EE3566C" Ref="#PWR0309"  Part="1" 
+F 0 "#PWR0309" H 2650 2800 50  0001 C CNN
+F 1 "GND" H 2655 2877 50  0000 C CNN
+F 2 "" H 2650 3050 50  0001 C CNN
+F 3 "" H 2650 3050 50  0001 C CNN
+	1    2650 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 2750 2500 2750
+Connection ~ 2650 2750
+Wire Wire Line
+	2650 2750 3400 2750
+$Comp
+L Device:CP1 C?
+U 1 1 5EE38A1F
+P 7550 3000
+AR Path="/5EE38A1F" Ref="C?"  Part="1" 
+AR Path="/5EE065CD/5EE38A1F" Ref="C103"  Part="1" 
+AR Path="/5EEB3F52/5EE38A1F" Ref="C111"  Part="1" 
+F 0 "C111" H 7700 3000 50  0000 L CNN
+F 1 "100uF 50V AlPoly" H 7700 2900 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_10x10.5" H 7550 3000 50  0001 C CNN
+F 3 "~" H 7550 3000 50  0001 C CNN
+F 4 "Panasonic" H 7550 3000 50  0001 C CNN "Manufacturer"
+F 5 "EEH-ZC1H101P" H 7550 3000 50  0001 C CNN "Part Number"
+	1    7550 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EE38A25
+P 7550 3150
+AR Path="/5EE38A25" Ref="#PWR?"  Part="1" 
+AR Path="/5EE065CD/5EE38A25" Ref="#PWR0308"  Part="1" 
+AR Path="/5EEB3F52/5EE38A25" Ref="#PWR0317"  Part="1" 
+F 0 "#PWR0317" H 7550 2900 50  0001 C CNN
+F 1 "GND" H 7555 2977 50  0000 C CNN
+F 2 "" H 7550 3150 50  0001 C CNN
+F 3 "" H 7550 3150 50  0001 C CNN
+	1    7550 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EE41F5A
+P 6850 3150
+AR Path="/5EE41F5A" Ref="#PWR?"  Part="1" 
+AR Path="/5E8AFE9D/5EE41F5A" Ref="#PWR?"  Part="1" 
+AR Path="/5EE065CD/5EE41F5A" Ref="#PWR0306"  Part="1" 
+AR Path="/5EEB3F52/5EE41F5A" Ref="#PWR0315"  Part="1" 
+F 0 "#PWR0315" H 6850 2900 50  0001 C CNN
+F 1 "GND" H 6855 2977 50  0000 C CNN
+F 2 "" H 6850 3150 50  0001 C CNN
+F 3 "" H 6850 3150 50  0001 C CNN
+	1    6850 3150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EE41F60
+P 6850 3000
+AR Path="/5EE41F60" Ref="C?"  Part="1" 
+AR Path="/5E8AFE9D/5EE41F60" Ref="C?"  Part="1" 
+AR Path="/5EE065CD/5EE41F60" Ref="C101"  Part="1" 
+AR Path="/5EEB3F52/5EE41F60" Ref="C109"  Part="1" 
+F 0 "C109" H 6800 2600 50  0000 C CNN
+F 1 "1uF 16V X7R" H 6750 2700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6888 2850 50  0001 C CNN
+F 3 "~" H 6850 3000 50  0001 C CNN
+F 4 "Kemet" H 6850 3000 50  0001 C CNN "Manufacturer"
+F 5 "C0805C105K4RACTU" H 6850 3000 50  0001 C CNN "Part Number"
+	1    6850 3000
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6850 2850 6850 2750
+Connection ~ 6850 2750
+Wire Wire Line
+	6850 2750 7150 2750
+Wire Wire Line
+	7150 2850 7150 2750
+Connection ~ 7150 2750
+Wire Wire Line
+	7150 2750 7550 2750
+Wire Wire Line
+	7550 2850 7550 2750
+Connection ~ 7550 2750
+$Comp
+L Device:R R?
+U 1 1 5EE4C23D
+P 8200 2750
+AR Path="/5EE4C23D" Ref="R?"  Part="1" 
+AR Path="/5E8AFE9D/5EE4C23D" Ref="R?"  Part="1" 
+AR Path="/5EE065CD/5EE4C23D" Ref="R171"  Part="1" 
+AR Path="/5EEB3F52/5EE4C23D" Ref="R176"  Part="1" 
+F 0 "R176" V 8350 2800 50  0000 C CNN
+F 1 "0" V 8300 2700 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 8130 2750 50  0001 C CNN
+F 3 "~" H 8200 2750 50  0001 C CNN
+	1    8200 2750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8350 2750 8400 2750
+$Comp
+L Device:R R?
+U 1 1 5EE50890
+P 2300 2750
+AR Path="/5EE50890" Ref="R?"  Part="1" 
+AR Path="/5E8AFE9D/5EE50890" Ref="R?"  Part="1" 
+AR Path="/5EE065CD/5EE50890" Ref="R167"  Part="1" 
+AR Path="/5EEB3F52/5EE50890" Ref="R172"  Part="1" 
+F 0 "R172" V 2450 2800 50  0000 C CNN
+F 1 "0" V 2400 2700 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 2230 2750 50  0001 C CNN
+F 3 "~" H 2300 2750 50  0001 C CNN
+	1    2300 2750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2150 2750 2100 2750
+$Comp
+L Connector:TestPoint_Flag TP30
+U 1 1 5EEA6827
+P 2500 2650
+AR Path="/5EE065CD/5EEA6827" Ref="TP30"  Part="1" 
+AR Path="/5EEB3F52/5EEA6827" Ref="TP34"  Part="1" 
+F 0 "TP34" H 2550 2800 50  0000 L CNN
+F 1 "TestPoint_Flag" H 2760 2653 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 2700 2650 50  0001 C CNN
+F 3 "~" H 2700 2650 50  0001 C CNN
+F 4 "Keystone" H 2500 2650 50  0001 C CNN "Manufacturer"
+F 5 "5019" H 2500 2650 50  0001 C CNN "Part Number"
+	1    2500 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Flag TP29
+U 1 1 5EEA7A58
+P 2100 2650
+AR Path="/5EE065CD/5EEA7A58" Ref="TP29"  Part="1" 
+AR Path="/5EEB3F52/5EEA7A58" Ref="TP33"  Part="1" 
+F 0 "TP33" H 2150 2800 50  0000 L CNN
+F 1 "TestPoint_Flag" H 2360 2653 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 2300 2650 50  0001 C CNN
+F 3 "~" H 2300 2650 50  0001 C CNN
+F 4 "Keystone" H 2100 2650 50  0001 C CNN "Manufacturer"
+F 5 "5019" H 2100 2650 50  0001 C CNN "Part Number"
+	1    2100 2650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 2650 2100 2750
+Connection ~ 2100 2750
+Wire Wire Line
+	2100 2750 1650 2750
+Wire Wire Line
+	2500 2650 2500 2750
+Connection ~ 2500 2750
+Wire Wire Line
+	2500 2750 2650 2750
+$Comp
+L Connector:TestPoint_Flag TP31
+U 1 1 5EEA8BCB
+P 8000 2700
+AR Path="/5EE065CD/5EEA8BCB" Ref="TP31"  Part="1" 
+AR Path="/5EEB3F52/5EEA8BCB" Ref="TP35"  Part="1" 
+F 0 "TP35" H 8050 2850 50  0000 L CNN
+F 1 "TestPoint_Flag" H 8260 2703 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 8200 2700 50  0001 C CNN
+F 3 "~" H 8200 2700 50  0001 C CNN
+F 4 "Keystone" H 8000 2700 50  0001 C CNN "Manufacturer"
+F 5 "5019" H 8000 2700 50  0001 C CNN "Part Number"
+	1    8000 2700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 2750 8000 2750
+Wire Wire Line
+	8000 2700 8000 2750
+Connection ~ 8000 2750
+Wire Wire Line
+	8000 2750 8050 2750
+$Comp
+L Connector:TestPoint_Flag TP32
+U 1 1 5EEAED2A
+P 8400 2700
+AR Path="/5EE065CD/5EEAED2A" Ref="TP32"  Part="1" 
+AR Path="/5EEB3F52/5EEAED2A" Ref="TP36"  Part="1" 
+F 0 "TP36" H 8450 2850 50  0000 L CNN
+F 1 "TestPoint_Flag" H 8660 2703 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 8600 2700 50  0001 C CNN
+F 3 "~" H 8600 2700 50  0001 C CNN
+F 4 "Keystone" H 8400 2700 50  0001 C CNN "Manufacturer"
+F 5 "5019" H 8400 2700 50  0001 C CNN "Part Number"
+	1    8400 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 2700 8400 2750
+Connection ~ 8400 2750
+Wire Wire Line
+	8400 2750 8700 2750
+$Comp
+L Device:C C?
+U 1 1 5F025002
+P 3700 3250
+AR Path="/5F025002" Ref="C?"  Part="1" 
+AR Path="/5E8AFE9D/5F025002" Ref="C?"  Part="1" 
+AR Path="/5EE065CD/5F025002" Ref="C98"  Part="1" 
+AR Path="/5EEB3F52/5F025002" Ref="C106"  Part="1" 
+F 0 "C106" H 3700 3950 50  0000 C CNN
+F 1 "10uF 50V X7S" H 3700 3850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 3738 3100 50  0001 C CNN
+F 3 "~" H 3700 3250 50  0001 C CNN
+F 4 "Murata" H 3700 3250 50  0001 C CNN "Manufacturer"
+F 5 "GCM32EC71H106KA03" H 3700 3250 50  0001 C CNN "Part Number"
+	1    3700 3250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0302
+U 1 1 5F025009
+P 3700 3400
+AR Path="/5EE065CD/5F025009" Ref="#PWR0302"  Part="1" 
+AR Path="/5EEB3F52/5F025009" Ref="#PWR0311"  Part="1" 
+F 0 "#PWR0311" H 3700 3150 50  0001 C CNN
+F 1 "GND" H 3705 3227 50  0000 C CNN
+F 2 "" H 3700 3400 50  0001 C CNN
+F 3 "" H 3700 3400 50  0001 C CNN
+	1    3700 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3100 3700 2750
+Connection ~ 3700 2750
+Wire Wire Line
+	3700 2750 3400 2750
+Text Notes 5700 4100 0    50   ~ 0
+If using LMZ14203H instead,\nfeedback divider should be\n34K / 6.49K
+Text Notes 3200 3750 0    50   ~ 0
+5.6uF each @ 26V
+$EndSCHEMATC
