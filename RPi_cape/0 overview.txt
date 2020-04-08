@@ -13,8 +13,8 @@ Options:
 		Redundant: Populate both diodes (D1-2) and use all 4 pins of J1
 		Non-redundant: Only populate D1 and use pins 1, 2 of J1
 	* Power sources:
-		Internal: Use "internal" (open-frame / closed-frame / DIN rail) AC-DC power supplies, 1x 24V + 2x 5V, and feed to spring terminals J?, onboard 5V power supplies U? are DNP - less EMI risk, more FDA voltage safety risk
-		External: Use "external" (wall- / desktop) AC-DC 24V power supply, and feed to spring terminals J?, onboard 5V power supplies U? are populated and 5V input spring terminals J? are unused - more EMI risk, less FDA voltage safety risk
+		Internal: Use "internal" (open-frame / closed-frame / DIN rail) AC-DC power supplies, 1x 24V + 2x 5V, and feed to spring terminals J1 and J3-4, onboard 5V power supplies U34-35 are DNP - less EMI risk, more FDA voltage safety risk
+		External: Use "external" (wall- / desktop) AC-DC 24V power supply, and feed to spring terminals J1, onboard 5V power supplies U34-35 are populated and 5V input spring terminals J3-4 are unused - more EMI risk, less FDA voltage safety risk
 	* +24V power fusing:
 		No global fusing: populate R4, remove F1
 		Global fusing: populate F1, remove R4 - likely unnecessary as +24VA and each individual solenoid driver has its own fusing
@@ -37,5 +37,6 @@ Options:
 		Default low Raspberry Pi input in case of power loss: populate R53 etc., remove R55 etc.
 		Default high: populate R55 etc., remove R53 etc.
 	* Low-battery output for alarm backup battery
-		CPLD handles low-battery notification (and/or passes it on to the Raspberry Pi to display/report): populate R146; remove R145, Q8, R147, J13
-		LED lit on front panel: populate R145, Q8, R147, J13; remove R146
+		CPLD handles low-battery notification (and/or passes it on to the Raspberry Pi to display/report): populate R146, R177; remove R145, Q8, R147, J13
+		LED lit on front panel: populate R145, Q8, R147, J13; remove R146, R177
+		Both CPLD input and LED: populate R145, Q8, R147, J13, R177=10K-100K; remove R146
