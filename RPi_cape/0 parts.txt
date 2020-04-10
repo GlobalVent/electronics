@@ -57,6 +57,7 @@ Analog, op-amps for O2 sensor:
 * Rail-to-rail output
 * Input CM range includes gnd
 * Input offset <= 300uV max.
+ADI AD8552A dual, 35k (best specs by far) (AD8552AR/AR-REEL/AR-REEL7/ARZ/ARZ-REEL/ARZ-REEL7)
 ADI LTC6241HS8#TRPBF dual, Digikey 78k
 TI LMP7701MF/NOPB, 69k
 ADI AD8603AUJZ-REEL7, 121k
@@ -71,6 +72,11 @@ TI TLV1702AIDGKR, Digikey 58k
 
 Analog, voltage reference:
 Nexperia TL431AQDBZR,215, >1M
+
+Analog, low-leakage diodes:
+* <5 nA @ <1V
+* SOD-323 package
+ON Semi BAS21AHT1G, >1M
 
 Output driver MOSFET:
 * Vds >= 60V
@@ -111,6 +117,7 @@ Vishay ES2G-E3/52T, 185k
 Diodes Inc ES2B-13-F, 44k
 
 General zener diodes - selection:
+2.0V low-current, ON Semi MMSZ4679T1G, 145k
 3.3V low-current, ON Semi MMSZ4684T1G, 423k
 5.1V, ON Semi MMSZ5231BT1G, >1M
 20V low-current, ON Semi MMSZ4707T1G, 64k
@@ -135,6 +142,9 @@ General ceramic caps:
 22nF 50V NP0 0805, Murata GCM21B5C1H223JA16L, 250k
 10nF 50V NP0 0805, Samsung CL21C103JBFNNNG, 288k
 1nF 50V NP0 0805, Kemet C0805C102J5GACTU, 750k
+100nF 50V X7R 0603, AVX 06035C104JAT2A, Digikey >1.7M
+10nF 50V NP0 0603, Murata GRM1885C1H103JA01D, Digikey 352k
+1nF 50V NP0 0603, AVX 06035A102JAT2A, Digikey >1M
 
 General PTC fuses - selection:
 1.5A 33V https://www.digikey.com/product-detail/en/bel-fuse-inc/0ZCF0150FF2C/507-1746-1-ND/4156178, 120k

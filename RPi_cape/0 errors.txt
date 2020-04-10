@@ -1,0 +1,21 @@
+O2 sensor: Teledyne R-22MED
+	Full-scale (FS) range is 6 mV (7 mV @ 0% - 13 mV @ 100%)
+
+	(AD8603)
+	Op-amp bias current: AD8603 has max. 1 pA bias current * 50K Rin effective = 50 nV = 0.0008% FS (feedback resistance is even smaller)
+	Op-amp offset: AD8603 has max. 50uV offset (@ normal Vcm) = 0.8% FS [decreases with CM voltage, see Fig.8; keep CM <1V]
+	Op-amp offset drift: AD8603 has max. 4.5uV/K = 90uV over 20 K range = 1.5% FS [most have 3uV/K or less = 1% FS, see Fig.7]
+	
+	(AD8552A)
+	Op-amp bias current: Max. 50 pA bias current * 50K Rin effective = 2.5 uV = 0.04% FS (feedback resistance is even smaller)
+	Op-amp offset: Max. 5uV offset (@ half Vcm, unsure how it scales w/Vcm!) = 0.08% FS
+	Op-amp offset drift: Max. 0.04uV/K = 0.8uV over 20 K range = 0.01% FS
+	
+	(X) Clamp leakage (with 5.1V zener): ON Semi MMSZ5231BT1G has 5uA @ 2V * 20K Rin = 100 mV; plot shows ~0.2uA for 5.1V = 4 mV = 67% FS
+	(X) Clamp leakage (with 2x small-signal diode): Diodes Inc 1N4448W has typ. 20nA @ <10V * 20K Rin = 400uV = 6.7% FS
+	Clamp leakage (with low-leakage diode): ON Semi BAS21AHT1G has (max.?) 1.2nA @ 5V = 24uV = 0.4% FS
+	
+	Electronics total 0.04+0.08+0.01+0.4 = 0.53% FS
+	ADC: 0.45% FS
+	Sensor: 1% FS
+	Total 2.0% FS

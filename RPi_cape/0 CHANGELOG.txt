@@ -3,3 +3,18 @@
 	* Moved one Raspberry Pi PWM analog output to GPIO18 to take advantage of hardware PWM
 	* Fixed floating shutdown pin on audio amp U28
 	* Added bulk capacitor C112 on +5V input
+	
+1.1 to 1.2:
+	* Added R185, R186 to allow powering CPLD from alarm power for better power-down alarm sound flexibility
+	* Changed power-down alarm monitoring from +5VD to +3.3V, and put +5VA and +24VA monitoring as DNP by default, to match the CPLD's ability to run off backup battery and monitor +5VA/+24VA
+	* Moved from 3x AA (4.5V) to 4x AA (6V) alarm battery for better audio voltage, and added PNP diode-ORing circuit (Q12 etc.) to accomodate higher voltage, changed low-battery threshold to 5V
+	* Added pull-down resistors to sensor op-amp outputs to help extend low-end output range
+	* Changed 1nF, 10nF, 100nF caps to 0603-size for better fit of CPLD decoupling caps
+	* Added additional bulk cap C19 to audio amp's supply just in case of alarm-induced supply fluctuations
+	* Decreased CPLD's I2C pull-up values to deal with anticipated PCB capacitance etc.
+	* Removed additional dual-op-amp footprint option on analog inputs, due to high availability of single op-amps
+	* Adjusted O2 sensor input clamping to reduce errors from diode leakage current (changed from zener to low-leakage clamps to rails)
+	* Changed O2 sensor op-amp to different lower-offset part to reduce total error from +/- 4.2% FS to +/- 1.7% FS
+	* Fixed missing power section for U17
+	* Added rotary encoder input
+	* Consolidated +5VA fuse options
