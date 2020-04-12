@@ -6,3 +6,5 @@ RPi_cape/output_driver.sch-bak
 RPi_cape/RPi_cape.sch-bak
 RPi_cape/sensor_input.sch-bak
 RPi_cape/sensor_input_lowlevel.sch-bak
+*.log
+*.kicad_pcb-bak

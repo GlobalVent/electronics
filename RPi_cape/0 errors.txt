@@ -14,8 +14,12 @@ O2 sensor: Teledyne R-22MED
 	(X) Clamp leakage (with 5.1V zener): ON Semi MMSZ5231BT1G has 5uA @ 2V * 20K Rin = 100 mV; plot shows ~0.2uA for 5.1V = 4 mV = 67% FS
 	(X) Clamp leakage (with 2x small-signal diode): Diodes Inc 1N4448W has typ. 20nA @ <10V * 20K Rin = 400uV = 6.7% FS
 	Clamp leakage (with low-leakage diode): ON Semi BAS21AHT1G has (max.?) 1.2nA @ 5V = 24uV = 0.4% FS
-	
+
+	(AD8552A and low-leakage clamp diode)
 	Electronics total 0.04+0.08+0.01+0.4 = 0.53% FS
 	ADC: 0.45% FS
 	Sensor: 1% FS
 	Total 2.0% FS
+	
+Pressure sensor: 0-10V
+	(
