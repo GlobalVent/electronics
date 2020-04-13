@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 1 12
+Sheet 1 14
 Title "Raspberry Pi Hat for JamVent Adaptation"
 Date ""
 Rev "1.3"
@@ -15,15 +15,15 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 3750 5300 1150 500 
+S 3700 5800 1150 500 
 U 5E8AFE9D
 F0 "Pressure Sensor Input 1" 50
 F1 "sensor_input.sch" 50
-F2 "In" I L 3750 5500 50 
-F3 "Out1" O R 4900 5400 50 
-F4 "Out2" O R 4900 5500 50 
-F5 "Lim_H_Alarm" O R 4900 5650 50 
-F6 "Lim_L_Alarm" O R 4900 5750 50 
+F2 "In" I L 3700 6000 50 
+F3 "Out1" O R 4850 5900 50 
+F4 "Out2" O R 4850 6000 50 
+F5 "Lim_H_Alarm" O R 4850 6150 50 
+F6 "Lim_L_Alarm" O R 4850 6250 50 
 $EndSheet
 $Comp
 L Connector_Generic:Conn_02x20_Odd_Even J8
@@ -126,39 +126,6 @@ Wire Wire Line
 Connection ~ 10900 3550
 Wire Wire Line
 	11000 2450 9950 2450
-Wire Wire Line
-	8500 2550 9350 2550
-$Comp
-L Device:R R23
-U 1 1 5E8E395C
-P 9050 2300
-AR Path="/5E8E395C" Ref="R23"  Part="1" 
-AR Path="/5E8AFE9D/5E8E395C" Ref="R?"  Part="1" 
-F 0 "R23" H 9120 2346 50  0000 L CNN
-F 1 "DNP" H 9120 2255 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 8980 2300 50  0001 C CNN
-F 3 "~" H 9050 2300 50  0001 C CNN
-	1    9050 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R24
-U 1 1 5E8E3C59
-P 9350 2250
-AR Path="/5E8E3C59" Ref="R24"  Part="1" 
-AR Path="/5E8AFE9D/5E8E3C59" Ref="R?"  Part="1" 
-F 0 "R24" H 9500 2250 50  0000 C CNN
-F 1 "DNP" H 9500 2150 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 9280 2250 50  0001 C CNN
-F 3 "~" H 9350 2250 50  0001 C CNN
-	1    9350 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9350 2400 9350 2550
-Connection ~ 9350 2550
-Wire Wire Line
-	9350 2550 9700 2550
 $Comp
 L power:GND #PWR047
 U 1 1 5E8EB31F
@@ -310,39 +277,27 @@ F 3 "" H 12100 2350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	11950 2350 12100 2350
-Wire Wire Line
-	8750 2050 9050 2050
-Wire Wire Line
-	9350 2050 9350 2100
-Connection ~ 9050 2450
-Wire Wire Line
-	9050 2450 8500 2450
-Wire Wire Line
-	9050 2150 9050 2050
-Connection ~ 9050 2050
-Wire Wire Line
-	9050 2050 9350 2050
 $Sheet
-S 3750 6050 1150 500 
+S 3700 6550 1150 500 
 U 5E8A4ABF
 F0 "Pressure Sensor Input 2" 50
 F1 "sensor_input.sch" 50
-F2 "In" I L 3750 6250 50 
-F3 "Out1" O R 4900 6150 50 
-F4 "Out2" O R 4900 6250 50 
-F5 "Lim_H_Alarm" O R 4900 6400 50 
-F6 "Lim_L_Alarm" O R 4900 6500 50 
+F2 "In" I L 3700 6750 50 
+F3 "Out1" O R 4850 6650 50 
+F4 "Out2" O R 4850 6750 50 
+F5 "Lim_H_Alarm" O R 4850 6900 50 
+F6 "Lim_L_Alarm" O R 4850 7000 50 
 $EndSheet
 $Sheet
-S 3750 6900 1150 500 
+S 3700 7400 1150 500 
 U 5E8AA959
 F0 "Oxygen Sensor Input" 50
 F1 "sensor_input_lowlevel.sch" 50
-F2 "In" I L 3750 7100 50 
-F3 "Out1" O R 4900 7000 50 
-F4 "Out2" O R 4900 7100 50 
-F5 "Lim_H_Alarm" O R 4900 7250 50 
-F6 "Lim_L_Alarm" O R 4900 7350 50 
+F2 "In" I L 3700 7600 50 
+F3 "Out1" O R 4850 7500 50 
+F4 "Out2" O R 4850 7600 50 
+F5 "Lim_H_Alarm" O R 4850 7750 50 
+F6 "Lim_L_Alarm" O R 4850 7850 50 
 $EndSheet
 $Sheet
 S 13400 3950 850  500 
@@ -462,14 +417,14 @@ $EndComp
 $Comp
 L Device:Polyfuse F4
 U 1 1 5E908397
-P 3150 5400
-F 0 "F4" V 2925 5400 50  0000 C CNN
-F 1 "50mA 60V" V 3016 5400 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric" H 3200 5200 50  0001 L CNN
-F 3 "~" H 3150 5400 50  0001 C CNN
-F 4 "Bel Fuse" V 3150 5400 50  0001 C CNN "Manufacturer"
-F 5 "0ZCJ0005FF2E" V 3150 5400 50  0001 C CNN "Part Number"
-	1    3150 5400
+P 3100 5900
+F 0 "F4" V 2875 5900 50  0000 C CNN
+F 1 "50mA 60V" V 2966 5900 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 3150 5700 50  0001 L CNN
+F 3 "~" H 3100 5900 50  0001 C CNN
+F 4 "Bel Fuse" V 3100 5900 50  0001 C CNN "Manufacturer"
+F 5 "0ZCJ0005FF2E" V 3100 5900 50  0001 C CNN "Part Number"
+	1    3100 5900
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1034,277 +989,277 @@ Wire Wire Line
 $Comp
 L Device:R R6
 U 1 1 5E9D7F90
-P 3800 8100
+P 3800 8650
 AR Path="/5E9D7F90" Ref="R6"  Part="1" 
 AR Path="/5E8AFE9D/5E9D7F90" Ref="R?"  Part="1" 
-F 0 "R6" H 3900 8050 50  0000 C CNN
-F 1 "10K" H 3950 8150 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 3730 8100 50  0001 C CNN
-F 3 "~" H 3800 8100 50  0001 C CNN
-	1    3800 8100
+F 0 "R6" H 3900 8600 50  0000 C CNN
+F 1 "10K" H 3950 8700 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3730 8650 50  0001 C CNN
+F 3 "~" H 3800 8650 50  0001 C CNN
+	1    3800 8650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R7
 U 1 1 5E9DF1E8
-P 3800 8400
+P 3800 8950
 AR Path="/5E9DF1E8" Ref="R7"  Part="1" 
 AR Path="/5E8AFE9D/5E9DF1E8" Ref="R?"  Part="1" 
-F 0 "R7" H 3900 8350 50  0000 C CNN
-F 1 "10K" H 3950 8450 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 3730 8400 50  0001 C CNN
-F 3 "~" H 3800 8400 50  0001 C CNN
-	1    3800 8400
+F 0 "R7" H 3900 8900 50  0000 C CNN
+F 1 "10K" H 3950 9000 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3730 8950 50  0001 C CNN
+F 3 "~" H 3800 8950 50  0001 C CNN
+	1    3800 8950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R8
 U 1 1 5E9DF420
-P 3800 9450
+P 3800 9800
 AR Path="/5E9DF420" Ref="R8"  Part="1" 
 AR Path="/5E8AFE9D/5E9DF420" Ref="R?"  Part="1" 
-F 0 "R8" H 3900 9400 50  0000 C CNN
-F 1 "10K" H 3950 9500 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 3730 9450 50  0001 C CNN
-F 3 "~" H 3800 9450 50  0001 C CNN
-	1    3800 9450
+F 0 "R8" H 3900 9750 50  0000 C CNN
+F 1 "10K" H 3950 9850 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3730 9800 50  0001 C CNN
+F 3 "~" H 3800 9800 50  0001 C CNN
+	1    3800 9800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R9
 U 1 1 5E9DF8CA
-P 3800 9750
+P 3800 10100
 AR Path="/5E9DF8CA" Ref="R9"  Part="1" 
 AR Path="/5E8AFE9D/5E9DF8CA" Ref="R?"  Part="1" 
-F 0 "R9" H 3900 9700 50  0000 C CNN
-F 1 "1K" H 3900 9800 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 3730 9750 50  0001 C CNN
-F 3 "~" H 3800 9750 50  0001 C CNN
-	1    3800 9750
+F 0 "R9" H 3900 10050 50  0000 C CNN
+F 1 "1K" H 3900 10150 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3730 10100 50  0001 C CNN
+F 3 "~" H 3800 10100 50  0001 C CNN
+	1    3800 10100
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR022
 U 1 1 5E9E0200
-P 3800 8550
-F 0 "#PWR022" H 3800 8300 50  0001 C CNN
-F 1 "GND" H 3805 8377 50  0000 C CNN
-F 2 "" H 3800 8550 50  0001 C CNN
-F 3 "" H 3800 8550 50  0001 C CNN
-	1    3800 8550
+P 3800 9100
+F 0 "#PWR022" H 3800 8850 50  0001 C CNN
+F 1 "GND" H 3805 8927 50  0000 C CNN
+F 2 "" H 3800 9100 50  0001 C CNN
+F 3 "" H 3800 9100 50  0001 C CNN
+	1    3800 9100
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR024
 U 1 1 5E9E0C0F
-P 3800 9900
-F 0 "#PWR024" H 3800 9650 50  0001 C CNN
-F 1 "GND" H 3805 9727 50  0000 C CNN
-F 2 "" H 3800 9900 50  0001 C CNN
-F 3 "" H 3800 9900 50  0001 C CNN
-	1    3800 9900
+P 3800 10250
+F 0 "#PWR024" H 3800 10000 50  0001 C CNN
+F 1 "GND" H 3805 10077 50  0000 C CNN
+F 2 "" H 3800 10250 50  0001 C CNN
+F 3 "" H 3800 10250 50  0001 C CNN
+	1    3800 10250
 	1    0    0    -1  
 $EndComp
-Text Notes 4650 8250 0    50   ~ 0
+Text Notes 4650 8800 0    50   ~ 0
 (2:1) +5V in = +2.5V out
-Text Notes 4700 9600 0    50   ~ 0
+Text Notes 4700 9950 0    50   ~ 0
 (11:1) +24V in = 2.182V out
 $Comp
 L power:GND #PWR025
 U 1 1 5E9EDE76
-P 4250 8550
+P 4250 9100
 AR Path="/5E9EDE76" Ref="#PWR025"  Part="1" 
 AR Path="/5E8AFE9D/5E9EDE76" Ref="#PWR?"  Part="1" 
 AR Path="/5E8A4ABF/5E9EDE76" Ref="#PWR?"  Part="1" 
-F 0 "#PWR025" H 4250 8300 50  0001 C CNN
-F 1 "GND" H 4255 8377 50  0000 C CNN
-F 2 "" H 4250 8550 50  0001 C CNN
-F 3 "" H 4250 8550 50  0001 C CNN
-	1    4250 8550
+F 0 "#PWR025" H 4250 8850 50  0001 C CNN
+F 1 "GND" H 4255 8927 50  0000 C CNN
+F 2 "" H 4250 9100 50  0001 C CNN
+F 3 "" H 4250 9100 50  0001 C CNN
+	1    4250 9100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C4
 U 1 1 5E9EDE7C
-P 4250 8400
+P 4250 8950
 AR Path="/5E9EDE7C" Ref="C4"  Part="1" 
 AR Path="/5E8AFE9D/5E9EDE7C" Ref="C?"  Part="1" 
 AR Path="/5E8A4ABF/5E9EDE7C" Ref="C?"  Part="1" 
-F 0 "C4" H 4250 8900 50  0000 C CNN
-F 1 "10nF 50V NP0" H 4250 8800 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4288 8250 50  0001 C CNN
-F 3 "~" H 4250 8400 50  0001 C CNN
-F 4 "Murata" H 4250 8400 50  0001 C CNN "Manufacturer"
-F 5 "GRM1885C1H103JA01D" H 4250 8400 50  0001 C CNN "Part Number"
-	1    4250 8400
+F 0 "C4" H 4100 8900 50  0000 C CNN
+F 1 "10nF 50V NP0" H 3850 9000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4288 8800 50  0001 C CNN
+F 3 "~" H 4250 8950 50  0001 C CNN
+F 4 "Murata" H 4250 8950 50  0001 C CNN "Manufacturer"
+F 5 "GRM1885C1H103JA01D" H 4250 8950 50  0001 C CNN "Part Number"
+	1    4250 8950
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3800 8250 4250 8250
-Connection ~ 3800 8250
+	3800 8800 4250 8800
+Connection ~ 3800 8800
 $Comp
 L power:GND #PWR026
 U 1 1 5E9F2C10
-P 4250 9900
+P 4250 10250
 AR Path="/5E9F2C10" Ref="#PWR026"  Part="1" 
 AR Path="/5E8AFE9D/5E9F2C10" Ref="#PWR?"  Part="1" 
 AR Path="/5E8A4ABF/5E9F2C10" Ref="#PWR?"  Part="1" 
-F 0 "#PWR026" H 4250 9650 50  0001 C CNN
-F 1 "GND" H 4255 9727 50  0000 C CNN
-F 2 "" H 4250 9900 50  0001 C CNN
-F 3 "" H 4250 9900 50  0001 C CNN
-	1    4250 9900
+F 0 "#PWR026" H 4250 10000 50  0001 C CNN
+F 1 "GND" H 4255 10077 50  0000 C CNN
+F 2 "" H 4250 10250 50  0001 C CNN
+F 3 "" H 4250 10250 50  0001 C CNN
+	1    4250 10250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C5
 U 1 1 5E9F2C16
-P 4250 9750
+P 4250 10100
 AR Path="/5E9F2C16" Ref="C5"  Part="1" 
 AR Path="/5E8AFE9D/5E9F2C16" Ref="C?"  Part="1" 
 AR Path="/5E8A4ABF/5E9F2C16" Ref="C?"  Part="1" 
-F 0 "C5" H 4250 10250 50  0000 C CNN
-F 1 "10nF 50V NP0" H 4250 10150 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4288 9600 50  0001 C CNN
-F 3 "~" H 4250 9750 50  0001 C CNN
-F 4 "Murata" H 4250 9750 50  0001 C CNN "Manufacturer"
-F 5 "GRM1885C1H103JA01D" H 4250 9750 50  0001 C CNN "Part Number"
-	1    4250 9750
+F 0 "C5" H 4100 10050 50  0000 C CNN
+F 1 "10nF 50V NP0" H 3850 10150 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4288 9950 50  0001 C CNN
+F 3 "~" H 4250 10100 50  0001 C CNN
+F 4 "Murata" H 4250 10100 50  0001 C CNN "Manufacturer"
+F 5 "GRM1885C1H103JA01D" H 4250 10100 50  0001 C CNN "Part Number"
+	1    4250 10100
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3800 9600 4250 9600
-Connection ~ 3800 9600
-Text Notes 4300 8550 0    50   ~ 0
+	3800 9950 4250 9950
+Connection ~ 3800 9950
+Text Notes 4350 9250 0    50   ~ 0
 LPF fc = 3 kHz
-Text Notes 4300 9900 0    50   ~ 0
+Text Notes 4350 10350 0    50   ~ 0
 LPF fc = 18 kHz
 $Comp
 L power:+5VA #PWR021
 U 1 1 5EA06D2E
-P 3800 7950
-F 0 "#PWR021" H 3800 7800 50  0001 C CNN
-F 1 "+5VA" H 3815 8123 50  0000 C CNN
-F 2 "" H 3800 7950 50  0001 C CNN
-F 3 "" H 3800 7950 50  0001 C CNN
-	1    3800 7950
+P 3800 8500
+F 0 "#PWR021" H 3800 8350 50  0001 C CNN
+F 1 "+5VA" H 3815 8673 50  0000 C CNN
+F 2 "" H 3800 8500 50  0001 C CNN
+F 3 "" H 3800 8500 50  0001 C CNN
+	1    3800 8500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Ventilator:+24VA #PWR023
 U 1 1 5EA0A0BB
-P 3800 9300
-F 0 "#PWR023" H 3800 9150 50  0001 C CNN
-F 1 "+24VA" H 3815 9473 50  0000 C CNN
-F 2 "" H 3800 9300 50  0001 C CNN
-F 3 "" H 3800 9300 50  0001 C CNN
-	1    3800 9300
+P 3800 9650
+F 0 "#PWR023" H 3800 9500 50  0001 C CNN
+F 1 "+24VA" H 3815 9823 50  0000 C CNN
+F 2 "" H 3800 9650 50  0001 C CNN
+F 3 "" H 3800 9650 50  0001 C CNN
+	1    3800 9650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x03 J5
 U 1 1 5EA39911
-P 2600 5500
-F 0 "J5" H 2650 5750 50  0000 C CNN
-F 1 "Conn_01x03" H 2518 5726 50  0001 C CNN
-F 2 "Ventilator:Connector_Spring_Phoenix_1985205" H 2600 5500 50  0001 C CNN
-F 3 "~" H 2600 5500 50  0001 C CNN
-F 4 "Phoenix Contact" H 2600 5500 50  0001 C CNN "Manufacturer"
-F 5 "1985205" H 2600 5500 50  0001 C CNN "Part Number"
-	1    2600 5500
+P 2550 6000
+F 0 "J5" H 2600 6250 50  0000 C CNN
+F 1 "Conn_01x03" H 2468 6226 50  0001 C CNN
+F 2 "Ventilator:Connector_Spring_Phoenix_1985205" H 2550 6000 50  0001 C CNN
+F 3 "~" H 2550 6000 50  0001 C CNN
+F 4 "Phoenix Contact" H 2550 6000 50  0001 C CNN "Manufacturer"
+F 5 "1985205" H 2550 6000 50  0001 C CNN "Part Number"
+	1    2550 6000
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x03 J6
 U 1 1 5EA3B0FB
-P 2600 6250
-F 0 "J6" H 2650 6500 50  0000 C CNN
-F 1 "Conn_01x03" H 2518 6476 50  0001 C CNN
-F 2 "Ventilator:Connector_Spring_Phoenix_1985205" H 2600 6250 50  0001 C CNN
-F 3 "~" H 2600 6250 50  0001 C CNN
-F 4 "Phoenix Contact" H 2600 6250 50  0001 C CNN "Manufacturer"
-F 5 "1985205" H 2600 6250 50  0001 C CNN "Part Number"
-	1    2600 6250
+P 2550 6750
+F 0 "J6" H 2600 7000 50  0000 C CNN
+F 1 "Conn_01x03" H 2468 6976 50  0001 C CNN
+F 2 "Ventilator:Connector_Spring_Phoenix_1985205" H 2550 6750 50  0001 C CNN
+F 3 "~" H 2550 6750 50  0001 C CNN
+F 4 "Phoenix Contact" H 2550 6750 50  0001 C CNN "Manufacturer"
+F 5 "1985205" H 2550 6750 50  0001 C CNN "Part Number"
+	1    2550 6750
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	2800 5500 3750 5500
+	2750 6000 3700 6000
 $Comp
 L Ventilator:+24VA #PWR016
 U 1 1 5EA3EB06
-P 3450 5300
-F 0 "#PWR016" H 3450 5150 50  0001 C CNN
-F 1 "+24VA" H 3465 5473 50  0000 C CNN
-F 2 "" H 3450 5300 50  0001 C CNN
-F 3 "" H 3450 5300 50  0001 C CNN
-	1    3450 5300
+P 3400 5800
+F 0 "#PWR016" H 3400 5650 50  0001 C CNN
+F 1 "+24VA" H 3415 5973 50  0000 C CNN
+F 2 "" H 3400 5800 50  0001 C CNN
+F 3 "" H 3400 5800 50  0001 C CNN
+	1    3400 5800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3450 5300 3450 5400
+	3400 5800 3400 5900
 $Comp
 L power:GND #PWR013
 U 1 1 5EA4277D
-P 3100 5600
-F 0 "#PWR013" H 3100 5350 50  0001 C CNN
-F 1 "GND" H 3105 5427 50  0000 C CNN
-F 2 "" H 3100 5600 50  0001 C CNN
-F 3 "" H 3100 5600 50  0001 C CNN
-	1    3100 5600
+P 3050 6100
+F 0 "#PWR013" H 3050 5850 50  0001 C CNN
+F 1 "GND" H 3055 5927 50  0000 C CNN
+F 2 "" H 3050 6100 50  0001 C CNN
+F 3 "" H 3050 6100 50  0001 C CNN
+	1    3050 6100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3100 5600 2800 5600
+	3050 6100 2750 6100
 $Comp
 L Ventilator:+24VA #PWR017
 U 1 1 5EA495ED
-P 3450 6050
-F 0 "#PWR017" H 3450 5900 50  0001 C CNN
-F 1 "+24VA" H 3465 6223 50  0000 C CNN
-F 2 "" H 3450 6050 50  0001 C CNN
-F 3 "" H 3450 6050 50  0001 C CNN
-	1    3450 6050
+P 3400 6550
+F 0 "#PWR017" H 3400 6400 50  0001 C CNN
+F 1 "+24VA" H 3415 6723 50  0000 C CNN
+F 2 "" H 3400 6550 50  0001 C CNN
+F 3 "" H 3400 6550 50  0001 C CNN
+	1    3400 6550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2800 6250 3750 6250
+	2750 6750 3700 6750
 $Comp
 L power:GND #PWR014
 U 1 1 5EA52014
-P 3100 6350
-F 0 "#PWR014" H 3100 6100 50  0001 C CNN
-F 1 "GND" H 3105 6177 50  0000 C CNN
-F 2 "" H 3100 6350 50  0001 C CNN
-F 3 "" H 3100 6350 50  0001 C CNN
-	1    3100 6350
+P 3050 6850
+F 0 "#PWR014" H 3050 6600 50  0001 C CNN
+F 1 "GND" H 3055 6677 50  0000 C CNN
+F 2 "" H 3050 6850 50  0001 C CNN
+F 3 "" H 3050 6850 50  0001 C CNN
+	1    3050 6850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3100 6350 2800 6350
+	3050 6850 2750 6850
 Wire Wire Line
-	2800 7100 3750 7100
+	2750 7600 3700 7600
 $Comp
 L power:GND #PWR015
 U 1 1 5EA592EE
-P 3100 7200
-F 0 "#PWR015" H 3100 6950 50  0001 C CNN
-F 1 "GND" H 3105 7027 50  0000 C CNN
-F 2 "" H 3100 7200 50  0001 C CNN
-F 3 "" H 3100 7200 50  0001 C CNN
-	1    3100 7200
+P 3050 7700
+F 0 "#PWR015" H 3050 7450 50  0001 C CNN
+F 1 "GND" H 3055 7527 50  0000 C CNN
+F 2 "" H 3050 7700 50  0001 C CNN
+F 3 "" H 3050 7700 50  0001 C CNN
+	1    3050 7700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3100 7200 2800 7200
-Text Notes 1000 5600 0    50   ~ 0
+	3050 7700 2750 7700
+Text Notes 950  6100 0    50   ~ 0
 Pressure sensor input\n(Omega PXM309)\n0-10V output, 10 mA draw on +24VA
-Text Notes 1000 6350 0    50   ~ 0
+Text Notes 950  6850 0    50   ~ 0
 Pressure sensor input\n(Omega PXM309)\n0-10V output, 10 mA draw on +24VA
-Text Notes 1050 7300 0    50   ~ 0
+Text Notes 1000 7800 0    50   ~ 0
 Oxygen sensor input\n(Teledyne C44611-R22MED?)\n7 mV (0%)-13 mV (100% O2) output
-Text Notes 4200 7900 0    79   ~ 16
+Text Notes 4200 8450 0    79   ~ 16
 Power rail sensing
-Text Notes 3900 4950 0    79   ~ 16
+Text Notes 3650 4200 0    79   ~ 16
 Sensor inputs
 Text Notes 2450 650  0    79   ~ 16
 Power distribution
@@ -1391,13 +1346,13 @@ Wire Wire Line
 Text Label 7000 2450 0    50   ~ 0
 RPi_ADC0
 Wire Wire Line
-	4900 5400 5400 5400
+	4850 5900 5350 5900
 Wire Wire Line
-	4550 8250 4250 8250
-Connection ~ 4250 8250
+	4550 8800 4250 8800
+Connection ~ 4250 8800
 Wire Wire Line
-	4250 9600 4550 9600
-Connection ~ 4250 9600
+	4250 9950 4550 9950
+Connection ~ 4250 9950
 Text Label 11000 2650 2    50   ~ 0
 GPIO4
 $Comp
@@ -1636,8 +1591,8 @@ F 3 "" H 12100 950 50  0001 C CNN
 	1    12100 950 
 	1    0    0    -1  
 $EndComp
-Text Notes 2100 4950 0    50   ~ 0
-All sensor fuses:\n3.6 - 50 ohms (<0.5V drop @ 10 mA)\n1.5 s trip time max. @ 250 mA\nFault current 150 mA max.
+Text Notes 600  5650 0    50   ~ 0
+Both sensor fuses:\n3.6 - 50 ohms (<0.5V drop @ 10 mA)\n1.5 s trip time max. @ 250 mA\nFault current 150 mA max.
 Text Label 12900 3200 0    50   ~ 0
 RPi_valve1
 Text Label 12900 3400 0    50   ~ 0
@@ -1690,19 +1645,12 @@ Wire Wire Line
 	11000 2350 10700 2350
 Wire Wire Line
 	10700 2350 10700 1700
-Wire Wire Line
-	8300 1700 9050 1700
 Text Label 9550 1700 0    50   ~ 0
 +3.3V_RPi
 Text Notes 8050 1500 0    50   ~ 0
 LPF fc = 14 kHz
 Wire Wire Line
 	11500 2350 11950 2350
-Wire Wire Line
-	9050 2050 9050 1700
-Connection ~ 9050 1700
-Wire Wire Line
-	9050 1700 10700 1700
 Text Notes 9900 2850 0    50   ~ 0
 GPIO17
 Text Notes 9900 2950 0    50   ~ 0
@@ -1796,28 +1744,28 @@ $EndComp
 Text Notes 550  8900 0    79   ~ 16
 Voltage reference for limit comparators
 Wire Wire Line
-	3000 5400 2800 5400
+	2950 5900 2750 5900
 Wire Wire Line
-	3300 5400 3450 5400
+	3250 5900 3400 5900
 $Comp
 L Device:Polyfuse F5
 U 1 1 5EC7EA23
-P 3150 6150
-F 0 "F5" V 2925 6150 50  0000 C CNN
-F 1 "50mA 60V" V 3016 6150 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric" H 3200 5950 50  0001 L CNN
-F 3 "~" H 3150 6150 50  0001 C CNN
-F 4 "Bel Fuse" V 3150 6150 50  0001 C CNN "Manufacturer"
-F 5 "0ZCJ0005FF2E" V 3150 6150 50  0001 C CNN "Part Number"
-	1    3150 6150
+P 3100 6650
+F 0 "F5" V 2875 6650 50  0000 C CNN
+F 1 "50mA 60V" V 2966 6650 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 3150 6450 50  0001 L CNN
+F 3 "~" H 3100 6650 50  0001 C CNN
+F 4 "Bel Fuse" V 3100 6650 50  0001 C CNN "Manufacturer"
+F 5 "0ZCJ0005FF2E" V 3100 6650 50  0001 C CNN "Part Number"
+	1    3100 6650
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3300 6150 3450 6150
+	3250 6650 3400 6650
 Wire Wire Line
-	3450 6150 3450 6050
+	3400 6650 3400 6550
 Wire Wire Line
-	3000 6150 2800 6150
+	2950 6650 2750 6650
 Text Notes 1200 9200 0    50   ~ 0
 5 mA from +5VA
 $Comp
@@ -1867,14 +1815,14 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x02 J7
 U 1 1 5ED3FB1F
-P 2600 7100
-F 0 "J7" H 2650 7250 50  0000 C CNN
-F 1 "Conn_01x02" H 2518 7226 50  0001 C CNN
-F 2 "Ventilator:Connector_Spring_Phoenix_1985195" H 2600 7100 50  0001 C CNN
-F 3 "~" H 2600 7100 50  0001 C CNN
-F 4 "Phoenix Contact" H 2600 7100 50  0001 C CNN "Manufacturer"
-F 5 "1985195" H 2600 7100 50  0001 C CNN "Part Number"
-	1    2600 7100
+P 2550 7600
+F 0 "J7" H 2600 7750 50  0000 C CNN
+F 1 "Conn_01x02" H 2468 7726 50  0001 C CNN
+F 2 "Ventilator:Connector_Spring_Phoenix_1985195" H 2550 7600 50  0001 C CNN
+F 3 "~" H 2550 7600 50  0001 C CNN
+F 4 "Phoenix Contact" H 2550 7600 50  0001 C CNN "Manufacturer"
+F 5 "1985195" H 2550 7600 50  0001 C CNN "Part Number"
+	1    2550 7600
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1915,30 +1863,30 @@ Text Label 10300 2450 0    50   ~ 0
 RPi_SDA
 Text Label 10300 2550 0    50   ~ 0
 RPi_SCL
-Text Label 5900 5650 2    50   ~ 0
+Text Label 5850 6150 2    50   ~ 0
 Pressure1_Lim_H_Alarm
-Text Label 5900 5750 2    50   ~ 0
+Text Label 5850 6250 2    50   ~ 0
 Pressure1_Lim_L_Alarm
 Wire Wire Line
-	4900 5650 5900 5650
+	4850 6150 5850 6150
 Wire Wire Line
-	4900 5750 5900 5750
-Text Label 5900 6400 2    50   ~ 0
+	4850 6250 5850 6250
+Text Label 5850 6900 2    50   ~ 0
 Pressure2_Lim_H_Alarm
-Text Label 5900 6500 2    50   ~ 0
+Text Label 5850 7000 2    50   ~ 0
 Pressure2_Lim_L_Alarm
 Wire Wire Line
-	4900 6400 5900 6400
+	4850 6900 5850 6900
 Wire Wire Line
-	4900 6500 5900 6500
-Text Label 5900 7250 2    50   ~ 0
+	4850 7000 5850 7000
+Text Label 5850 7750 2    50   ~ 0
 O2_Lim_H_Alarm
-Text Label 5900 7350 2    50   ~ 0
+Text Label 5850 7850 2    50   ~ 0
 O2_Lim_L_Alarm
 Wire Wire Line
-	4900 7250 5900 7250
+	4850 7750 5850 7750
 Wire Wire Line
-	4900 7350 5900 7350
+	4850 7850 5850 7850
 $Sheet
 S 9850 6250 1900 2050
 U 5E8C8865
@@ -2257,26 +2205,26 @@ F 3 "" H 8250 6800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4900 5500 5400 5500
-Text Label 5400 5400 2    50   ~ 0
+	4850 6000 5350 6000
+Text Label 5350 5900 2    50   ~ 0
 RPi_ADC0
-Text Label 5400 5500 2    50   ~ 0
+Text Label 5350 6000 2    50   ~ 0
 CPLD_ADC0
 Wire Wire Line
-	4900 6150 5400 6150
+	4850 6650 5350 6650
 Wire Wire Line
-	4900 6250 5400 6250
-Text Label 5400 6150 2    50   ~ 0
+	4850 6750 5350 6750
+Text Label 5350 6650 2    50   ~ 0
 RPi_ADC1
-Text Label 5400 6250 2    50   ~ 0
+Text Label 5350 6750 2    50   ~ 0
 CPLD_ADC1
 Wire Wire Line
-	4900 7000 5400 7000
+	4850 7500 5350 7500
 Wire Wire Line
-	4900 7100 5400 7100
-Text Label 5400 7000 2    50   ~ 0
+	4850 7600 5350 7600
+Text Label 5350 7500 2    50   ~ 0
 RPi_ADC2
-Text Label 5400 7100 2    50   ~ 0
+Text Label 5350 7600 2    50   ~ 0
 CPLD_ADC2
 Text Label 6550 6400 0    50   ~ 0
 CPLD_ADC0
@@ -2294,9 +2242,9 @@ Text Label 6550 7000 0    50   ~ 0
 CPLD_ADC6
 Text Label 6550 7100 0    50   ~ 0
 CPLD_ADC7
-Text Label 4550 8250 2    50   ~ 0
+Text Label 4550 8800 2    50   ~ 0
 CPLD_ADC6
-Text Label 4550 9600 2    50   ~ 0
+Text Label 4550 9950 2    50   ~ 0
 CPLD_ADC7
 Wire Wire Line
 	11000 3350 10200 3350
@@ -3072,8 +3020,6 @@ F 5 "5019" H 9950 2450 50  0001 C CNN "Part Number"
 	1    0    0    -1  
 $EndComp
 Connection ~ 9950 2450
-Wire Wire Line
-	9950 2450 9050 2450
 $Comp
 L Connector:TestPoint_Flag TP13
 U 1 1 5F96B4A1
@@ -3664,4 +3610,144 @@ NoConn ~ 11500 3850
 NoConn ~ 11500 4050
 NoConn ~ 11500 4150
 NoConn ~ 11500 4250
+$Sheet
+S 3700 4350 1100 300 
+U 5F518E26
+F0 "Pressure Sensors, Digital (CPLD)" 50
+F1 "pressure_sensors_dig.sch" 50
+F2 "SDA" B R 4800 4450 50 
+F3 "SCL" I R 4800 4550 50 
+F4 "Vcc" I L 3700 4500 50 
+$EndSheet
+$Sheet
+S 3700 5000 1100 300 
+U 5F593E41
+F0 "Pressure Sensors, Digital (Raspberry Pi)" 50
+F1 "pressure_sensors_dig.sch" 50
+F2 "SDA" B R 4800 5100 50 
+F3 "SCL" I R 4800 5200 50 
+F4 "Vcc" I L 3700 5150 50 
+$EndSheet
+Text Label 5350 4450 2    50   ~ 0
+CPLD_SDA
+Text Label 5350 4550 2    50   ~ 0
+CPLD_SCL
+Wire Wire Line
+	5350 4450 4800 4450
+Wire Wire Line
+	4800 4550 5350 4550
+Text Label 5300 5100 2    50   ~ 0
+RPi_SDA
+Text Label 5300 5200 2    50   ~ 0
+RPi_SCL
+Wire Wire Line
+	5300 5100 4800 5100
+Wire Wire Line
+	4800 5200 5300 5200
+Text Label 3250 5150 0    50   ~ 0
++3.3V_RPi
+Wire Wire Line
+	3250 5150 3700 5150
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F644D1C
+P 3500 4500
+AR Path="/5E8FBD97/5F644D1C" Ref="#PWR?"  Part="1" 
+AR Path="/5E8E0754/5F644D1C" Ref="#PWR?"  Part="1" 
+AR Path="/5E8DFCAD/5F644D1C" Ref="#PWR?"  Part="1" 
+AR Path="/5E8DEDC0/5F644D1C" Ref="#PWR?"  Part="1" 
+AR Path="/5E8C8865/5F644D1C" Ref="#PWR?"  Part="1" 
+AR Path="/5F644D1C" Ref="#PWR0281"  Part="1" 
+F 0 "#PWR0281" H 3500 4350 50  0001 C CNN
+F 1 "+3.3V" H 3515 4673 50  0000 C CNN
+F 2 "" H 3500 4500 50  0001 C CNN
+F 3 "" H 3500 4500 50  0001 C CNN
+	1    3500 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 4500 3700 4500
+Wire Wire Line
+	9350 2550 9700 2550
+Wire Wire Line
+	8500 2550 9350 2550
+Connection ~ 9350 2550
+Wire Wire Line
+	9350 2400 9350 2550
+Wire Wire Line
+	9050 1700 10700 1700
+Wire Wire Line
+	8300 1700 9050 1700
+Connection ~ 9050 1700
+Wire Wire Line
+	8750 2050 9050 2050
+Wire Wire Line
+	9050 2050 9050 1700
+Connection ~ 9050 2050
+Wire Wire Line
+	9050 2150 9050 2050
+Wire Wire Line
+	9050 2050 9350 2050
+Wire Wire Line
+	9350 2050 9350 2100
+$Comp
+L Device:R R24
+U 1 1 5E8E3C59
+P 9350 2250
+AR Path="/5E8E3C59" Ref="R24"  Part="1" 
+AR Path="/5E8AFE9D/5E8E3C59" Ref="R?"  Part="1" 
+F 0 "R24" H 9500 2250 50  0000 C CNN
+F 1 "DNP" H 9500 2150 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 9280 2250 50  0001 C CNN
+F 3 "~" H 9350 2250 50  0001 C CNN
+	1    9350 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 2450 9050 2450
+Wire Wire Line
+	9050 2450 8500 2450
+Connection ~ 9050 2450
+$Comp
+L Device:R R23
+U 1 1 5E8E395C
+P 9050 2300
+AR Path="/5E8E395C" Ref="R23"  Part="1" 
+AR Path="/5E8AFE9D/5E8E395C" Ref="R?"  Part="1" 
+F 0 "R23" H 9120 2346 50  0000 L CNN
+F 1 "DNP" H 9120 2255 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 8980 2300 50  0001 C CNN
+F 3 "~" H 9050 2300 50  0001 C CNN
+	1    9050 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H5
+U 1 1 5F711A20
+P 15700 8800
+F 0 "H5" H 15800 8849 50  0000 L CNN
+F 1 "#4/M3" H 15800 8758 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 15700 8800 50  0001 C CNN
+F 3 "~" H 15700 8800 50  0001 C CNN
+	1    15700 8800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0343
+U 1 1 5F711A26
+P 15700 8900
+AR Path="/5F711A26" Ref="#PWR0343"  Part="1" 
+AR Path="/5E8AFE9D/5F711A26" Ref="#PWR?"  Part="1" 
+AR Path="/5E8FBD97/5F711A26" Ref="#PWR?"  Part="1" 
+AR Path="/5E8E0754/5F711A26" Ref="#PWR?"  Part="1" 
+AR Path="/5E8DFCAD/5F711A26" Ref="#PWR?"  Part="1" 
+AR Path="/5E8DEDC0/5F711A26" Ref="#PWR?"  Part="1" 
+AR Path="/5E8C8865/5F711A26" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0343" H 15700 8650 50  0001 C CNN
+F 1 "GND" H 15705 8727 50  0000 C CNN
+F 2 "" H 15700 8900 50  0001 C CNN
+F 3 "" H 15700 8900 50  0001 C CNN
+	1    15700 8900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

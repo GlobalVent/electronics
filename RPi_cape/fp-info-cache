@@ -1,4 +1,4 @@
-16361051483635929
+16367398308636592
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -73115,6 +73115,20 @@ varistor SIOV
 2
 2
 Ventilator
+Bosch_BMP388
+Bosch BMP388 gas pressure sensor in LGA package
+sensor pressure barom
+0
+10
+10
+Ventilator
+Bosch_BMP388_HandSolder
+Bosch BMP388 gas pressure sensor in LGA package, hand-solderable version
+sensor pressure barom
+0
+10
+10
+Ventilator
 Connector_Spring_Phoenix_1985195
 Phoenix Contact 1985195 3.5mm-pitch wire-to-board spring connector, 8A 400V
 connector spring
@@ -73136,6 +73150,13 @@ connector spring
 4
 4
 Ventilator
+Pressure_sensor_barb
+
+
+0
+0
+0
+Ventilator
 QFP40P900X900X120-65N
 
 
@@ -73149,6 +73170,13 @@ QFP50P1600X1600X120-100N
 0
 100
 100
+Ventilator
+TE_MS5803-05BA
+TE MS5803-05BA altimeter/dive pressure sensor
+sensor pressure barom
+0
+8
+8
 Ventilator
 TI_TO-PMOD-7
 

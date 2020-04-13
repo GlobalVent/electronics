@@ -22,10 +22,46 @@ K cpld intel altera
 F Altera
 $ENDCMP
 #
+$CMP BMP388
+D Bosch BMP388 gas pressure sensor in LGA package
+K sensor pressure barom
+$ENDCMP
+#
+$CMP LM4871M
+D Texas Instruments LM4871 3W Boomer audio amplifier
+K audio amp
+$ENDCMP
+#
 $CMP LMZ14203
 D 3A Adjustable Step-Down DC/DC Power Module
 K Step-Down DC/DC Module
 F http://www.ti.com/lit/ds/symlink/lmz14203.pdf
+$ENDCMP
+#
+$CMP MIC1557
+D Microchip/Micrel MIC1557 low-power oscillator / astable multivibrator up to 5 Mhz
+K oscillator astable
+$ENDCMP
+#
+$CMP MS5803-05BA
+D TE MS5803-05BA altimeter/dive pressure sensor
+K sensor pressure barom
+$ENDCMP
+#
+$CMP Pressure_sensor_barb
+D Barbed fitting for pressure sensors, mechanical only
+$ENDCMP
+#
+$CMP TPS1H100A
+D Texas Instruments TPS1H100A single-channel smart high-side power switch, with status flag output
+K load driver switch
+F https://www.ti.com/lit/ds/symlink/tps1h100-q1.pdf
+$ENDCMP
+#
+$CMP TPS1H100B
+D Texas Instruments TPS1H100A single-channel smart high-side power switch, with current sense output
+K load driver switch
+F https://www.ti.com/lit/ds/symlink/tps1h100-q1.pdf
 $ENDCMP
 #
 #End Doc Library

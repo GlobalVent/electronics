@@ -22,4 +22,3 @@ O2 sensor: Teledyne R-22MED
 	Total 2.0% FS
 	
 Pressure sensor: 0-10V
-	(

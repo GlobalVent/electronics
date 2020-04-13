@@ -8,3 +8,5 @@ RPi_cape/sensor_input.sch-bak
 RPi_cape/sensor_input_lowlevel.sch-bak
 *.log
 *.kicad_pcb-bak
+*.sch-bak
+*.kicad_pcb-bak

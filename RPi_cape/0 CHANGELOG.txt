@@ -23,3 +23,7 @@
 	* Moved rotary encoder inputs to CPLD
 	* Removed separate decoupling caps for smaller CPLD footprint due to routing constraints
 	* Added pull-downs on CPLD inputs for each valve driver (R198 etc.)
+	
+1.3 to 1.4:
+	* Added two digital pressure sensors each, on Raspberry Pi and CPLD I2C busses
+	* Added gnd plane on bottom layer for heatsinking 5V regulators
