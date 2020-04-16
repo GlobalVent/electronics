@@ -24,15 +24,15 @@ Options:
 	* RPi/CPLD output combining for valve drivers:
 		AND (both outputs required to turn on valve): Populate U8 etc. as 74LVC1G08
 		OR (either output can turn on valve): Populate U8 etc. as 74LVC1G32
+	* Valve driver monitoring options:
+		Current sense signal to CPLD's ADC: U9 etc. is TPS1H100B, populate R59=10K and Valve Motion Detection section; remove R58, R8-R9 - can't measure +24VA rail through CPLD's ADC ch.6
+		Digital fault output to CPLD's IO: U9 etc. is TPS1H100A, populate R58=0, R8=10K, R9=1K; remove R59 and Valve Motion Detection section - can measure +24VA rail through CPLD's ADC ch.6, no valve movement detection
 	* Analog input clamping:
 		Absolute voltage (Zener): populate D11 etc., remove D10 etc.
 		Clamp to rail (rectifier): populate D10 etc., remove D11 etc.
-	* Analog input op-amps:
-		2x single op-amps per input: populate U6, U7, etc.; remove U4 etc.
-		1x dual op-amp per input: populate U4 etc., remove U6, U7, etc.
 	* CPLD footprint:
-		5M40ZT64: Populate U31
-		5M80ZT100 or 5M240ZT100: Populate U33
+		5M40ZT64: Populate U31; does not have RPi_Valve* signals connected due to PCB routing constraints (valve driver output-combining logic must be external only)
+		5M80ZT100 or 5M240ZT100: Populate U33; does have RPi_Valve* signals as input, so valve driver output-combining logic can be internal
 	* Power output driver fusing:
 		PTC resettable fuse: Populate F6, etc. - possibility of going back to normal from temporary fault (although still likely too slow to protect MOSFET)
 		Normal one-time fuse: Populate F10, etc. - faster response time, more likely to protect

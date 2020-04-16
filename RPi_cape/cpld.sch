@@ -4,10 +4,10 @@ EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 10 14
+Sheet 10 15
 Title "CPLD"
 Date ""
-Rev "1.3"
+Rev "1.5"
 Comp "Partners COVID Innovation Group"
 Comment1 "Don Straney"
 Comment2 ""
@@ -21,7 +21,9 @@ P 11300 6850
 F 0 "U33" H 11300 8425 50  0000 C CNN
 F 1 "5M80ZT100 / 5M240ZT100" H 11300 8334 50  0000 C CNN
 F 2 "Ventilator:QFP50P1600X1600X120-100N" H 11300 6850 50  0001 L BNN
-F 3 "Altera" H 11300 6850 50  0001 L BNN
+F 3 "" H 11300 6850 50  0001 L BNN
+F 4 "Intel" H 11300 6850 50  0001 C CNN "Manufacturer"
+F 5 "5M240ZT100I5N" H 11300 6850 50  0001 C CNN "Part Number"
 	2    11300 6850
 	1    0    0    -1  
 $EndComp
@@ -32,7 +34,9 @@ P 13700 4550
 F 0 "U33" H 13650 5350 50  0000 C CNN
 F 1 "5M80ZT100 / 5M240ZT100" H 13650 5250 50  0000 C CNN
 F 2 "Ventilator:QFP50P1600X1600X120-100N" H 13700 4550 50  0001 L BNN
-F 3 "Altera" H 13700 4550 50  0001 L BNN
+F 3 "" H 13700 4550 50  0001 L BNN
+F 4 "Intel" H 13700 4550 50  0001 C CNN "Manufacturer"
+F 5 "5M240ZT100I5N" H 13700 4550 50  0001 C CNN "Part Number"
 	3    13700 4550
 	1    0    0    -1  
 $EndComp
@@ -664,10 +668,10 @@ F 3 "" H 7050 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even J15
+L Connector_Generic:Conn_02x05_Odd_Even P15
 U 1 1 5E97DAC2
 P 1400 1150
-F 0 "J15" H 1450 1475 50  0000 C CNN
+F 0 "P15" H 1450 1475 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 1450 1476 50  0001 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 1400 1150 50  0001 C CNN
 F 3 "~" H 1400 1150 50  0001 C CNN
@@ -749,6 +753,8 @@ F 0 "R152" H 800 1750 50  0000 C CNN
 F 1 "10K" H 800 1650 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 580 1600 50  0001 C CNN
 F 3 "~" H 650 1600 50  0001 C CNN
+F 4 "KOA Speer" H 650 1600 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1002F" H 650 1600 50  0001 C CNN "Part Number"
 	1    650  1600
 	1    0    0    -1  
 $EndComp
@@ -785,19 +791,19 @@ Wire Wire Line
 	6750 3700 7100 3700
 Text Label 7100 3700 2    50   ~ 0
 TDO
-Text HLabel 1500 2500 2    50   Output ~ 0
+Text HLabel 1300 2900 2    50   Output ~ 0
 Valve1
-Text HLabel 1500 2650 2    50   Output ~ 0
+Text HLabel 1300 3000 2    50   Output ~ 0
 Valve2
-Text HLabel 1500 2800 2    50   Output ~ 0
+Text HLabel 1300 3100 2    50   Output ~ 0
 Valve3
-Text HLabel 1500 2950 2    50   Output ~ 0
+Text HLabel 1300 3200 2    50   Output ~ 0
 Valve4
-Text HLabel 1100 3200 0    50   Input ~ 0
-RPi_Valve1
 Text HLabel 1100 3350 0    50   Input ~ 0
+RPi_Valve1
+Text HLabel 1100 3450 0    50   Input ~ 0
 RPi_Valve2
-Text HLabel 1100 3500 0    50   Input ~ 0
+Text HLabel 1100 3550 0    50   Input ~ 0
 RPi_Valve3
 Text HLabel 1100 3650 0    50   Input ~ 0
 RPi_Valve4
@@ -816,36 +822,36 @@ O2_Lim_L_Alarm
 Text HLabel 1550 4900 2    50   Output ~ 0
 Alarm_Spkr
 Wire Wire Line
-	1500 2500 950  2500
+	1300 2900 750  2900
 Wire Wire Line
-	1500 2650 950  2650
+	1300 3000 750  3000
 Wire Wire Line
-	1500 2800 950  2800
+	1300 3100 750  3100
 Wire Wire Line
-	1500 2950 950  2950
-Wire Wire Line
-	1650 3200 1100 3200
+	1300 3200 750  3200
 Wire Wire Line
 	1650 3350 1100 3350
 Wire Wire Line
-	1650 3500 1100 3500
+	1650 3450 1100 3450
+Wire Wire Line
+	1650 3550 1100 3550
 Wire Wire Line
 	1650 3650 1100 3650
 Wire Wire Line
 	1550 3950 2700 3950
-Text Label 950  2500 0    50   ~ 0
+Text Label 750  2900 0    50   ~ 0
 Valve1
-Text Label 950  2650 0    50   ~ 0
+Text Label 750  3000 0    50   ~ 0
 Valve2
-Text Label 950  2800 0    50   ~ 0
+Text Label 750  3100 0    50   ~ 0
 Valve3
-Text Label 950  2950 0    50   ~ 0
+Text Label 750  3200 0    50   ~ 0
 Valve4
-Text Label 1650 3200 2    50   ~ 0
-RPi_Valve1
 Text Label 1650 3350 2    50   ~ 0
+RPi_Valve1
+Text Label 1650 3450 2    50   ~ 0
 RPi_Valve2
-Text Label 1650 3500 2    50   ~ 0
+Text Label 1650 3550 2    50   ~ 0
 RPi_Valve3
 Text Label 1650 3650 2    50   ~ 0
 RPi_Valve4
@@ -898,7 +904,9 @@ P 11300 2800
 F 0 "U33" H 11300 4375 50  0000 C CNN
 F 1 "5M80ZT100 / 5M240ZT100" H 11300 4284 50  0000 C CNN
 F 2 "Ventilator:QFP50P1600X1600X120-100N" H 11300 2800 50  0001 L BNN
-F 3 "Altera" H 11300 2800 50  0001 L BNN
+F 3 "" H 11300 2800 50  0001 L BNN
+F 4 "Intel" H 11300 2800 50  0001 C CNN "Manufacturer"
+F 5 "5M240ZT100I5N" H 11300 2800 50  0001 C CNN "Part Number"
 	1    11300 2800
 	1    0    0    -1  
 $EndComp
@@ -923,6 +931,8 @@ F 0 "R153" V 1500 5800 50  0000 C CNN
 F 1 "10K" V 1300 5850 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 1330 5850 50  0001 C CNN
 F 3 "~" H 1400 5850 50  0001 C CNN
+F 4 "KOA Speer" H 1400 5850 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1002F" H 1400 5850 50  0001 C CNN "Part Number"
 	1    1400 5850
 	0    1    1    0   
 $EndComp
@@ -934,8 +944,10 @@ U 1 1 5EB7128E
 P 1750 5850
 F 0 "Q9" H 1941 5896 50  0000 L CNN
 F 1 "MMBT3904" H 1941 5805 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 1950 5775 50  0001 L CIN
+F 2 "Ventilator:SOT-23" H 1950 5775 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 1750 5850 50  0001 L CNN
+F 4 "Diodes Inc." H 1750 5850 50  0001 C CNN "Manufacturer"
+F 5 "MMBT3904-7-F" H 1750 5850 50  0001 C CNN "Part Number"
 	1    1750 5850
 	1    0    0    -1  
 $EndComp
@@ -972,6 +984,8 @@ F 0 "R155" H 1700 5400 50  0000 C CNN
 F 1 "3.3K" H 1700 5500 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 1780 5450 50  0001 C CNN
 F 3 "~" H 1850 5450 50  0001 C CNN
+F 4 "KOA Speer" H 1850 5450 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD3301F" H 1850 5450 50  0001 C CNN "Part Number"
 	1    1850 5450
 	-1   0    0    1   
 $EndComp
@@ -1007,6 +1021,8 @@ F 0 "R154" V 1500 7100 50  0000 C CNN
 F 1 "10K" V 1300 7150 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 1330 7150 50  0001 C CNN
 F 3 "~" H 1400 7150 50  0001 C CNN
+F 4 "KOA Speer" H 1400 7150 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1002F" H 1400 7150 50  0001 C CNN "Part Number"
 	1    1400 7150
 	0    1    1    0   
 $EndComp
@@ -1018,8 +1034,10 @@ U 1 1 5EB86DA9
 P 1750 7150
 F 0 "Q10" H 1941 7196 50  0000 L CNN
 F 1 "MMBT3904" H 1941 7105 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 1950 7075 50  0001 L CIN
+F 2 "Ventilator:SOT-23" H 1950 7075 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 1750 7150 50  0001 L CNN
+F 4 "Diodes Inc." H 1750 7150 50  0001 C CNN "Manufacturer"
+F 5 "MMBT3904-7-F" H 1750 7150 50  0001 C CNN "Part Number"
 	1    1750 7150
 	1    0    0    -1  
 $EndComp
@@ -1056,6 +1074,8 @@ F 0 "R156" H 1700 6700 50  0000 C CNN
 F 1 "3.3K" H 1700 6800 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 1780 6750 50  0001 C CNN
 F 3 "~" H 1850 6750 50  0001 C CNN
+F 4 "KOA Speer" H 1850 6750 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD3301F" H 1850 6750 50  0001 C CNN "Part Number"
 	1    1850 6750
 	-1   0    0    1   
 $EndComp
@@ -1092,7 +1112,7 @@ U 1 1 5F041CA5
 P 2000 8750
 F 0 "U29" H 2000 9117 50  0000 C CNN
 F 1 "LP5907MFX-3.3" H 2000 9026 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2000 9100 50  0001 C CNN
+F 2 "Ventilator:SOT-23-5" H 2000 9100 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lp5907.pdf" H 2000 9250 50  0001 C CNN
 F 4 "Texas Instruments" H 2000 8750 50  0001 C CNN "Manufacturer"
 F 5 "LP5907MFX-3.3/NOPB" H 2000 8750 50  0001 C CNN "Part Number"
@@ -1105,7 +1125,7 @@ U 1 1 5F04259E
 P 2000 9800
 F 0 "U30" H 2000 10167 50  0000 C CNN
 F 1 "LP5907MFX-1.8" H 2000 10076 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2000 10150 50  0001 C CNN
+F 2 "Ventilator:SOT-23-5" H 2000 10150 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lp5907.pdf" H 2000 10300 50  0001 C CNN
 F 4 "Texas Instruments" H 2000 9800 50  0001 C CNN "Manufacturer"
 F 5 "LP5907MFX-1.8/NOPB" H 2000 9800 50  0001 C CNN "Part Number"
@@ -1369,7 +1389,7 @@ U 1 1 5F0FEE79
 P 6150 9500
 F 0 "U32" H 6300 10000 50  0000 C CNN
 F 1 "MIC1557" H 6400 9900 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 6125 10000 50  0001 C CNN
+F 2 "Ventilator:SOT-23-5" H 6125 10000 50  0001 C CNN
 F 3 "" H 6125 10000 50  0001 C CNN
 F 4 "Microchip" H 6150 9500 50  0001 C CNN "Manufacturer"
 F 5 "MIC1557YM5-TR" H 6150 9500 50  0001 C CNN "Part Number"
@@ -1468,8 +1488,8 @@ F 0 "C79" H 6550 9850 50  0000 C CNN
 F 1 "1nF 50V NP0" H 6450 9950 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6788 9700 50  0001 C CNN
 F 3 "~" H 6750 9850 50  0001 C CNN
-F 4 "AVX" H 6750 9850 50  0001 C CNN "Manufacturer"
-F 5 "06035A102JAT2A" H 6750 9850 50  0001 C CNN "Part Number"
+F 4 "Murata" H 6750 9850 50  0001 C CNN "Manufacturer"
+F 5 "GRM1885C1H103JA01D" H 6750 9850 50  0001 C CNN "Part Number"
 	1    6750 9850
 	-1   0    0    1   
 $EndComp
@@ -1502,6 +1522,8 @@ F 0 "R165" H 6600 9450 50  0000 C CNN
 F 1 "10K" H 6550 9550 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 6680 9500 50  0001 C CNN
 F 3 "~" H 6750 9500 50  0001 C CNN
+F 4 "KOA Speer" H 6750 9500 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1002F" H 6750 9500 50  0001 C CNN "Part Number"
 	1    6750 9500
 	-1   0    0    1   
 $EndComp
@@ -1530,6 +1552,8 @@ F 0 "R166" H 7050 9450 50  0000 C CNN
 F 1 "24.9K" H 7000 9550 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 7130 9500 50  0001 C CNN
 F 3 "~" H 7200 9500 50  0001 C CNN
+F 4 "KOA Speer" H 7200 9500 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD2492F" H 7200 9500 50  0001 C CNN "Part Number"
 	1    7200 9500
 	-1   0    0    1   
 $EndComp
@@ -1734,7 +1758,7 @@ U 1 1 5F6EB8F0
 P 2850 10150
 F 0 "D46" V 2889 10033 50  0000 R CNN
 F 1 "Orange" V 2798 10033 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 2850 10150 50  0001 C CNN
+F 2 "Ventilator:LED_0805_2012Metric" H 2850 10150 50  0001 C CNN
 F 3 "~" H 2850 10150 50  0001 C CNN
 F 4 "Broadcom" H 2850 10150 50  0001 C CNN "Manufacturer"
 F 5 "HSMD-C170" H 2850 10150 50  0001 C CNN "Part Number"
@@ -1772,6 +1796,8 @@ F 0 "R159" H 2700 9800 50  0000 C CNN
 F 1 "100" H 2700 9900 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 2780 9850 50  0001 C CNN
 F 3 "~" H 2850 9850 50  0001 C CNN
+F 4 "KOA Speer" H 2850 9850 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1000F" H 2850 9850 50  0001 C CNN "Part Number"
 	1    2850 9850
 	-1   0    0    1   
 $EndComp
@@ -1784,7 +1810,7 @@ U 1 1 5F706463
 P 2850 9100
 F 0 "D45" V 2889 8983 50  0000 R CNN
 F 1 "Orange" V 2798 8983 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 2850 9100 50  0001 C CNN
+F 2 "Ventilator:LED_0805_2012Metric" H 2850 9100 50  0001 C CNN
 F 3 "~" H 2850 9100 50  0001 C CNN
 F 4 "Broadcom" H 2850 9100 50  0001 C CNN "Manufacturer"
 F 5 "HSMD-C170" H 2850 9100 50  0001 C CNN "Part Number"
@@ -1820,6 +1846,8 @@ F 0 "R158" H 2700 8750 50  0000 C CNN
 F 1 "1.5K" H 2700 8850 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 2780 8800 50  0001 C CNN
 F 3 "~" H 2850 8800 50  0001 C CNN
+F 4 "KOA Speer" H 2850 8800 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1501F" H 2850 8800 50  0001 C CNN "Part Number"
 	1    2850 8800
 	-1   0    0    1   
 $EndComp
@@ -1834,7 +1862,7 @@ U 1 1 5F811E90
 P 2850 4100
 F 0 "D44" V 2950 4050 50  0000 R CNN
 F 1 "Orange" V 2850 4050 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 2850 4100 50  0001 C CNN
+F 2 "Ventilator:LED_0805_2012Metric" H 2850 4100 50  0001 C CNN
 F 3 "~" H 2850 4100 50  0001 C CNN
 F 4 "Broadcom" H 2850 4100 50  0001 C CNN "Manufacturer"
 F 5 "HSMD-C170" H 2850 4100 50  0001 C CNN "Part Number"
@@ -1870,6 +1898,8 @@ F 0 "R157" H 2700 3750 50  0000 C CNN
 F 1 "1.5K" H 2650 3850 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 2780 3800 50  0001 C CNN
 F 3 "~" H 2850 3800 50  0001 C CNN
+F 4 "KOA Speer" H 2850 3800 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1501F" H 2850 3800 50  0001 C CNN "Part Number"
 	1    2850 3800
 	-1   0    0    1   
 $EndComp
@@ -1880,7 +1910,7 @@ U 1 1 5F8227A2
 P 3200 4850
 F 0 "D47" V 3239 4733 50  0000 R CNN
 F 1 "Orange" V 3148 4733 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 3200 4850 50  0001 C CNN
+F 2 "Ventilator:LED_0805_2012Metric" H 3200 4850 50  0001 C CNN
 F 3 "~" H 3200 4850 50  0001 C CNN
 F 4 "Broadcom" H 3200 4850 50  0001 C CNN "Manufacturer"
 F 5 "HSMD-C170" H 3200 4850 50  0001 C CNN "Part Number"
@@ -1916,6 +1946,8 @@ F 0 "R160" H 3050 4550 50  0000 C CNN
 F 1 "1.5K" H 3050 4650 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 3130 4550 50  0001 C CNN
 F 3 "~" H 3200 4550 50  0001 C CNN
+F 4 "KOA Speer" H 3200 4550 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1501F" H 3200 4550 50  0001 C CNN "Part Number"
 	1    3200 4550
 	-1   0    0    1   
 $EndComp
@@ -1930,7 +1962,7 @@ U 1 1 5F82E3C8
 P 3400 4100
 F 0 "D48" V 3439 3983 50  0000 R CNN
 F 1 "Orange" V 3348 3983 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 3400 4100 50  0001 C CNN
+F 2 "Ventilator:LED_0805_2012Metric" H 3400 4100 50  0001 C CNN
 F 3 "~" H 3400 4100 50  0001 C CNN
 F 4 "Broadcom" H 3400 4100 50  0001 C CNN "Manufacturer"
 F 5 "HSMD-C170" H 3400 4100 50  0001 C CNN "Part Number"
@@ -1966,6 +1998,8 @@ F 0 "R164" H 3250 3750 50  0000 C CNN
 F 1 "1.5K" H 3200 3850 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 3330 3800 50  0001 C CNN
 F 3 "~" H 3400 3800 50  0001 C CNN
+F 4 "KOA Speer" H 3400 3800 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1501F" H 3400 3800 50  0001 C CNN "Part Number"
 	1    3400 3800
 	-1   0    0    1   
 $EndComp
@@ -1980,7 +2014,7 @@ U 1 1 5F83A915
 P 3600 3350
 F 0 "D49" V 3700 3300 50  0000 R CNN
 F 1 "Orange" V 3600 3300 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 3600 3350 50  0001 C CNN
+F 2 "Ventilator:LED_0805_2012Metric" H 3600 3350 50  0001 C CNN
 F 3 "~" H 3600 3350 50  0001 C CNN
 F 4 "Broadcom" H 3600 3350 50  0001 C CNN "Manufacturer"
 F 5 "HSMD-C170" H 3600 3350 50  0001 C CNN "Part Number"
@@ -2016,6 +2050,8 @@ F 0 "R163" V 3200 3000 50  0000 C CNN
 F 1 "1.5K" V 3250 3250 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 3230 3050 50  0001 C CNN
 F 3 "~" H 3300 3050 50  0001 C CNN
+F 4 "KOA Speer" H 3300 3050 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1501F" H 3300 3050 50  0001 C CNN "Part Number"
 	1    3300 3050
 	0    1    1    0   
 $EndComp
@@ -2035,6 +2071,8 @@ F 0 "R162" V 3200 2800 50  0000 C CNN
 F 1 "1.5K" V 3250 3050 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 3230 2850 50  0001 C CNN
 F 3 "~" H 3300 2850 50  0001 C CNN
+F 4 "KOA Speer" H 3300 2850 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1501F" H 3300 2850 50  0001 C CNN "Part Number"
 	1    3300 2850
 	0    1    1    0   
 $EndComp
@@ -2049,6 +2087,8 @@ F 0 "R161" V 3200 2600 50  0000 C CNN
 F 1 "1.5K" V 3250 2850 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 3230 2650 50  0001 C CNN
 F 3 "~" H 3300 2650 50  0001 C CNN
+F 4 "KOA Speer" H 3300 2650 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1501F" H 3300 2650 50  0001 C CNN "Part Number"
 	1    3300 2650
 	0    1    1    0   
 $EndComp
@@ -2104,7 +2144,7 @@ U 1 1 5F85B04F
 P 4300 2800
 F 0 "D51" V 4339 2683 50  0000 R CNN
 F 1 "Orange" V 4400 2700 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 4300 2800 50  0001 C CNN
+F 2 "Ventilator:LED_0805_2012Metric" H 4300 2800 50  0001 C CNN
 F 3 "~" H 4300 2800 50  0001 C CNN
 F 4 "Broadcom" H 4300 2800 50  0001 C CNN "Manufacturer"
 F 5 "HSMD-C170" H 4300 2800 50  0001 C CNN "Part Number"
@@ -2117,7 +2157,7 @@ U 1 1 5F85AA7B
 P 3900 3000
 F 0 "D50" V 3939 2883 50  0000 R CNN
 F 1 "Orange" V 3848 2883 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 3900 3000 50  0001 C CNN
+F 2 "Ventilator:LED_0805_2012Metric" H 3900 3000 50  0001 C CNN
 F 3 "~" H 3900 3000 50  0001 C CNN
 F 4 "Broadcom" H 3900 3000 50  0001 C CNN "Manufacturer"
 F 5 "HSMD-C170" H 3900 3000 50  0001 C CNN "Part Number"
@@ -2161,6 +2201,8 @@ F 0 "R185" H 850 8450 50  0000 C CNN
 F 1 "0" H 850 8550 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 930 8500 50  0001 C CNN
 F 3 "~" H 1000 8500 50  0001 C CNN
+F 4 "Panasonic" H 1000 8500 50  0001 C CNN "Manufacturer"
+F 5 "ERJ-8GEY0R00V" H 1000 8500 50  0001 C CNN "Part Number"
 	1    1000 8500
 	-1   0    0    1   
 $EndComp
@@ -2482,9 +2524,9 @@ L Ventilator:5M40ZE64C5N U31
 U 1 1 5E8D8DD5
 P 6150 5200
 F 0 "U31" H 6100 8467 50  0000 C CNN
-F 1 "5M40ZE64" H 6100 8376 50  0000 C CNN
+F 1 "DNP (5M40ZE64)" H 6100 8376 50  0000 C CNN
 F 2 "Ventilator:QFP40P900X900X120-65N" H 6150 5200 50  0001 L BNN
-F 3 "Altera" H 6150 5200 50  0001 L BNN
+F 3 "" H 6150 5200 50  0001 L BNN
 	1    6150 5200
 	1    0    0    -1  
 $EndComp
@@ -2500,4 +2542,111 @@ Text Label 9450 2800 0    50   ~ 0
 CPLD_Clk
 Wire Wire Line
 	9450 2800 10300 2800
+Text HLabel 1100 2350 0    50   Input ~ 0
+~Valve1_Fault
+Wire Wire Line
+	1100 2350 1700 2350
+Text Label 1700 2350 2    50   ~ 0
+~Valve1_Fault
+Text Label 1700 2450 2    50   ~ 0
+~Valve2_Fault
+Text Label 1700 2550 2    50   ~ 0
+~Valve3_Fault
+Text Label 1700 2650 2    50   ~ 0
+~Valve4_Fault
+Wire Wire Line
+	1700 2450 1100 2450
+Wire Wire Line
+	1700 2550 1100 2550
+Wire Wire Line
+	1700 2650 1100 2650
+Text HLabel 1100 2450 0    50   Input ~ 0
+~Valve2_Fault
+Text HLabel 1100 2650 0    50   Input ~ 0
+~Valve4_Fault
+Text HLabel 1100 2550 0    50   Input ~ 0
+~Valve3_Fault
+Wire Wire Line
+	12850 1600 12300 1600
+Wire Wire Line
+	12850 1700 12300 1700
+Wire Wire Line
+	12850 1800 12300 1800
+Wire Wire Line
+	12850 1900 12300 1900
+Text Label 12850 1900 2    50   ~ 0
+RPi_Valve1
+Text Label 12850 1800 2    50   ~ 0
+RPi_Valve2
+Text Label 12850 1700 2    50   ~ 0
+RPi_Valve3
+Text Label 12850 1600 2    50   ~ 0
+RPi_Valve4
+Wire Wire Line
+	12300 6150 12900 6150
+Text Label 12900 6150 2    50   ~ 0
+~Valve1_Fault
+Text Label 12900 6250 2    50   ~ 0
+~Valve2_Fault
+Text Label 12900 6350 2    50   ~ 0
+~Valve3_Fault
+Text Label 12900 6450 2    50   ~ 0
+~Valve4_Fault
+Wire Wire Line
+	12900 6250 12300 6250
+Wire Wire Line
+	12900 6350 12300 6350
+Wire Wire Line
+	12900 6450 12300 6450
+Wire Wire Line
+	5450 6900 4850 6900
+Text Label 4850 6900 0    50   ~ 0
+~Valve1_Fault
+Text Label 4850 7000 0    50   ~ 0
+~Valve2_Fault
+Text Label 4850 7100 0    50   ~ 0
+~Valve3_Fault
+Text Label 4850 7200 0    50   ~ 0
+~Valve4_Fault
+Wire Wire Line
+	4850 7000 5450 7000
+Wire Wire Line
+	4850 7100 5450 7100
+Wire Wire Line
+	4850 7200 5450 7200
+$Comp
+L Connector:TestPoint_Flag TP?
+U 1 1 604469A1
+P 800 8350
+AR Path="/604469A1" Ref="TP?"  Part="1" 
+AR Path="/5E8C8865/604469A1" Ref="TP42"  Part="1" 
+F 0 "TP42" H 1050 8500 50  0000 R CNN
+F 1 "TestPoint_Flag" H 756 8353 50  0001 R CNN
+F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 1000 8350 50  0001 C CNN
+F 3 "~" H 1000 8350 50  0001 C CNN
+F 4 "Keystone" H 800 8350 50  0001 C CNN "Manufacturer"
+F 5 "5019" H 800 8350 50  0001 C CNN "Part Number"
+	1    800  8350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	800  8350 1000 8350
+Connection ~ 1000 8350
+$Comp
+L Connector:TestPoint_Flag TP?
+U 1 1 6046DF5B
+P 800 8650
+AR Path="/6046DF5B" Ref="TP?"  Part="1" 
+AR Path="/5E8C8865/6046DF5B" Ref="TP43"  Part="1" 
+F 0 "TP43" H 1050 8800 50  0000 R CNN
+F 1 "TestPoint_Flag" H 756 8653 50  0001 R CNN
+F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 1000 8650 50  0001 C CNN
+F 3 "~" H 1000 8650 50  0001 C CNN
+F 4 "Keystone" H 800 8650 50  0001 C CNN "Manufacturer"
+F 5 "5019" H 800 8650 50  0001 C CNN "Part Number"
+	1    800  8650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	800  8650 1000 8650
 $EndSCHEMATC

@@ -50,8 +50,8 @@ ST LMV321ILT, Digikey 79k
 TI LM6211MF/NOPB, Digikey 70k
 ST TSV321RILT, Digikey 42k
 TI LM7301IM5/NOPB, Digikey 50k
+TI LMV358MM/NOPB dual SSOP-8, 140k
 ...TLV2370
-...LMV358 dual
 
 Analog, op-amps for O2 sensor:
 * Rail-to-rail output
@@ -101,6 +101,13 @@ Vishay SMAJ30A-E3/61, Digikey 663k
 Diodes Inc SMAJ26A-13-F, Digikey 184k
 Diodes Inc SMAJ28A-13-F, Digikey 105k
 
+Output driver fuse:
+* 500mA - 1A rating
+* >= 32V rating
+* 1206 package
+Bourns SF-1206FP100-2, 1A, 145k
+Schurter 3413.0113.22, 0.5A - faster but possibly pushing limits in normal use between lower rating and ambient thermal derating
+
 Output safety logic gates:
 * LVC series, can operate with 3.3V and 5V
 * SOT-23-5 package
@@ -121,6 +128,10 @@ General zener diodes - selection:
 3.3V low-current, ON Semi MMSZ4684T1G, 423k
 5.1V, ON Semi MMSZ5231BT1G, >1M
 20V low-current, ON Semi MMSZ4707T1G, 64k
+
+General transistors - selection:
+3904, Diodes Inc. MMBT3904-7-F, 4M
+3906, Nexperia MMBT3906,215, 750k
 
 General AlPoly caps for +24V:
 * Vrated >= 35V
@@ -154,6 +165,9 @@ General PTC fuses - selection:
 140mA 60V https://www.digikey.com/product-detail/en/bel-fuse-inc/0ZCG0014FF2C/507-1755-1-ND/4156193, 312k
 50mA 15V https://www.digikey.com/product-detail/en/bel-fuse-inc/0ZCM0005FF2G/507-1816-1-ND/4156260, 328k
 50mA 60V 0ZCJ0005FF2E, Digikey 123k
+
+General resistors - selection:
+KOA Speer RK73H series have automotive qualification, high power rating: Digikey selection for 1206-size... https://www.digikey.com/products/en/resistors/chip-resistor-surface-mount/52?FV=7%7C2%2C1291%7C83708%2C-8%7C52&quantity=0&ColumnSort=2085&page=1&stock=1&k=rk73h&pageSize=25&pkeyword=rk73h
 
 General spring terminal connectors - selection:
 2x 3.5mm staggered TE 1-2834011-2, 80k

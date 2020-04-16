@@ -4,10 +4,10 @@ EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 1 14
+Sheet 1 15
 Title "Raspberry Pi Hat for JamVent Adaptation"
 Date ""
-Rev "1.3"
+Rev "1.5"
 Comp "Partners COVID Innovation Group"
 Comment1 "Don Straney"
 Comment2 ""
@@ -15,29 +15,16 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 3700 5800 1150 500 
+S 3350 5800 1150 500 
 U 5E8AFE9D
 F0 "Pressure Sensor Input 1" 50
 F1 "sensor_input.sch" 50
-F2 "In" I L 3700 6000 50 
-F3 "Out1" O R 4850 5900 50 
-F4 "Out2" O R 4850 6000 50 
-F5 "Lim_H_Alarm" O R 4850 6150 50 
-F6 "Lim_L_Alarm" O R 4850 6250 50 
+F2 "In" I L 3350 6000 50 
+F3 "Out1" O R 4500 5900 50 
+F4 "Out2" O R 4500 6000 50 
+F5 "Lim_H_Alarm" O R 4500 6150 50 
+F6 "Lim_L_Alarm" O R 4500 6250 50 
 $EndSheet
-$Comp
-L Connector_Generic:Conn_02x20_Odd_Even J8
-U 1 1 5E8C5CD9
-P 11200 3250
-F 0 "J8" H 11250 4275 50  0000 C CNN
-F 1 "Conn_02x20_Odd_Even" H 11250 4276 50  0001 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 11200 3250 50  0001 C CNN
-F 3 "~" H 11200 3250 50  0001 C CNN
-F 4 "Sullins" H 11200 3250 50  0001 C CNN "Manufacturer"
-F 5 "PPPC202LFBN-RC" H 11200 3250 50  0001 C CNN "Part Number"
-	1    11200 3250
-	1    0    0    -1  
-$EndComp
 Text Notes 10950 2050 0    50   ~ 0
 Raspberry Pi\n\n(GPIO0-8 have pull-ups\nenabled by default)
 $Comp
@@ -46,7 +33,7 @@ U 1 1 5E8D6D78
 P 8000 3050
 F 0 "U3" H 8200 4000 50  0000 C CNN
 F 1 "ADC128D818" H 8350 3850 50  0000 C CNN
-F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 8000 3050 50  0001 C CIN
+F 2 "Ventilator:TSSOP-16_4.4x5mm_P0.65mm" H 8000 3050 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/adc128d818.pdf" H 8000 3050 50  0001 C CNN
 F 4 "Texas Instruments" H 8000 3050 50  0001 C CNN "Manufacturer"
 F 5 "ADC128D818CIMTX/NOPB" H 8000 3050 50  0001 C CNN "Part Number"
@@ -239,14 +226,16 @@ Wire Wire Line
 Wire Wire Line
 	11950 2450 11500 2450
 $Sheet
-S 13400 3050 850  500 
+S 13350 2650 850  500 
 U 5E8FBD97
 F0 "Output Driver 1" 50
 F1 "output_driver.sch" 50
-F2 "OutH" O R 14250 3200 50 
-F3 "OutL" O R 14250 3400 50 
-F4 "In_noncrit" I L 13400 3200 50 
-F5 "In_crit" I L 13400 3400 50 
+F2 "OutH" O R 14200 2800 50 
+F3 "OutL" O R 14200 3000 50 
+F4 "In_noncrit" I L 13350 2750 50 
+F5 "In_crit" I L 13350 2850 50 
+F6 "CS" O L 13350 2950 50 
+F7 "~Fault" O L 13350 3050 50 
 $EndSheet
 Connection ~ 8000 1700
 $Comp
@@ -259,6 +248,8 @@ F 0 "R18" V 8250 1750 50  0000 C CNN
 F 1 "10" V 8050 1750 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 8080 1700 50  0001 C CNN
 F 3 "~" H 8150 1700 50  0001 C CNN
+F 4 "KOA Speer" H 8150 1700 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD10R0F" H 8150 1700 50  0001 C CNN "Part Number"
 	1    8150 1700
 	0    -1   -1   0   
 $EndComp
@@ -278,56 +269,62 @@ $EndComp
 Wire Wire Line
 	11950 2350 12100 2350
 $Sheet
-S 3700 6550 1150 500 
+S 3350 6550 1150 500 
 U 5E8A4ABF
 F0 "Pressure Sensor Input 2" 50
 F1 "sensor_input.sch" 50
-F2 "In" I L 3700 6750 50 
-F3 "Out1" O R 4850 6650 50 
-F4 "Out2" O R 4850 6750 50 
-F5 "Lim_H_Alarm" O R 4850 6900 50 
-F6 "Lim_L_Alarm" O R 4850 7000 50 
+F2 "In" I L 3350 6750 50 
+F3 "Out1" O R 4500 6650 50 
+F4 "Out2" O R 4500 6750 50 
+F5 "Lim_H_Alarm" O R 4500 6900 50 
+F6 "Lim_L_Alarm" O R 4500 7000 50 
 $EndSheet
 $Sheet
-S 3700 7400 1150 500 
+S 3350 7400 1150 500 
 U 5E8AA959
 F0 "Oxygen Sensor Input" 50
 F1 "sensor_input_lowlevel.sch" 50
-F2 "In" I L 3700 7600 50 
-F3 "Out1" O R 4850 7500 50 
-F4 "Out2" O R 4850 7600 50 
-F5 "Lim_H_Alarm" O R 4850 7750 50 
-F6 "Lim_L_Alarm" O R 4850 7850 50 
+F2 "In" I L 3350 7600 50 
+F3 "Out1" O R 4500 7500 50 
+F4 "Out2" O R 4500 7600 50 
+F5 "Lim_H_Alarm" O R 4500 7750 50 
+F6 "Lim_L_Alarm" O R 4500 7850 50 
 $EndSheet
 $Sheet
-S 13400 3950 850  500 
+S 13350 3550 850  500 
 U 5E8DEDC0
 F0 "Output Driver 2" 50
 F1 "output_driver.sch" 50
-F2 "OutH" O R 14250 4100 50 
-F3 "OutL" O R 14250 4300 50 
-F4 "In_noncrit" I L 13400 4100 50 
-F5 "In_crit" I L 13400 4300 50 
+F2 "OutH" O R 14200 3700 50 
+F3 "OutL" O R 14200 3900 50 
+F4 "In_noncrit" I L 13350 3650 50 
+F5 "In_crit" I L 13350 3750 50 
+F6 "CS" O L 13350 3850 50 
+F7 "~Fault" O L 13350 3950 50 
 $EndSheet
 $Sheet
-S 13400 4850 850  500 
+S 13350 4450 850  500 
 U 5E8DFCAD
 F0 "Output Driver 3" 50
 F1 "output_driver.sch" 50
-F2 "OutH" O R 14250 5000 50 
-F3 "OutL" O R 14250 5200 50 
-F4 "In_noncrit" I L 13400 5000 50 
-F5 "In_crit" I L 13400 5200 50 
+F2 "OutH" O R 14200 4600 50 
+F3 "OutL" O R 14200 4800 50 
+F4 "In_noncrit" I L 13350 4550 50 
+F5 "In_crit" I L 13350 4650 50 
+F6 "CS" O L 13350 4750 50 
+F7 "~Fault" O L 13350 4850 50 
 $EndSheet
 $Sheet
-S 13400 5700 850  500 
+S 13350 5300 850  500 
 U 5E8E0754
 F0 "Output Driver 4" 50
 F1 "output_driver.sch" 50
-F2 "OutH" O R 14250 5850 50 
-F3 "OutL" O R 14250 6050 50 
-F4 "In_noncrit" I L 13400 5850 50 
-F5 "In_crit" I L 13400 6050 50 
+F2 "OutH" O R 14200 5450 50 
+F3 "OutL" O R 14200 5650 50 
+F4 "In_noncrit" I L 13350 5400 50 
+F5 "In_crit" I L 13350 5500 50 
+F6 "CS" O L 13350 5600 50 
+F7 "~Fault" O L 13350 5700 50 
 $EndSheet
 $Sheet
 S 13850 7400 1450 750 
@@ -354,54 +351,54 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J9
 U 1 1 5E8FF730
-P 14700 3250
-F 0 "J9" H 14780 3242 50  0000 L CNN
-F 1 "Conn_01x02" H 14780 3151 50  0000 L CNN
-F 2 "Ventilator:Connector_Spring_Phoenix_1985195" H 14700 3250 50  0001 C CNN
-F 3 "~" H 14700 3250 50  0001 C CNN
-F 4 "Phoenix Contact" H 14700 3250 50  0001 C CNN "Manufacturer"
-F 5 "1985195" H 14700 3250 50  0001 C CNN "Part Number"
-	1    14700 3250
-	1    0    0    -1  
+P 14650 2950
+F 0 "J9" H 14730 2942 50  0000 L CNN
+F 1 "Conn_01x02" H 14730 2851 50  0001 L CNN
+F 2 "Ventilator:Connector_Spring_Phoenix_1985195" H 14650 2950 50  0001 C CNN
+F 3 "~" H 14650 2950 50  0001 C CNN
+F 4 "Phoenix Contact" H 14650 2950 50  0001 C CNN "Manufacturer"
+F 5 "1985195" H 14650 2950 50  0001 C CNN "Part Number"
+	1    14650 2950
+	1    0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J10
 U 1 1 5E9024C5
-P 14700 4150
-F 0 "J10" H 14780 4142 50  0000 L CNN
-F 1 "Conn_01x02" H 14780 4051 50  0000 L CNN
-F 2 "Ventilator:Connector_Spring_Phoenix_1985195" H 14700 4150 50  0001 C CNN
-F 3 "~" H 14700 4150 50  0001 C CNN
-F 4 "Phoenix Contact" H 14700 4150 50  0001 C CNN "Manufacturer"
-F 5 "1985195" H 14700 4150 50  0001 C CNN "Part Number"
-	1    14700 4150
-	1    0    0    -1  
+P 14650 3850
+F 0 "J10" H 14730 3842 50  0000 L CNN
+F 1 "Conn_01x02" H 14730 3751 50  0001 L CNN
+F 2 "Ventilator:Connector_Spring_Phoenix_1985195" H 14650 3850 50  0001 C CNN
+F 3 "~" H 14650 3850 50  0001 C CNN
+F 4 "Phoenix Contact" H 14650 3850 50  0001 C CNN "Manufacturer"
+F 5 "1985195" H 14650 3850 50  0001 C CNN "Part Number"
+	1    14650 3850
+	1    0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J11
 U 1 1 5E902A54
-P 14700 5050
-F 0 "J11" H 14780 5042 50  0000 L CNN
-F 1 "Conn_01x02" H 14780 4951 50  0000 L CNN
-F 2 "Ventilator:Connector_Spring_Phoenix_1985195" H 14700 5050 50  0001 C CNN
-F 3 "~" H 14700 5050 50  0001 C CNN
-F 4 "Phoenix Contact" H 14700 5050 50  0001 C CNN "Manufacturer"
-F 5 "1985195" H 14700 5050 50  0001 C CNN "Part Number"
-	1    14700 5050
-	1    0    0    -1  
+P 14650 4750
+F 0 "J11" H 14730 4742 50  0000 L CNN
+F 1 "Conn_01x02" H 14730 4651 50  0001 L CNN
+F 2 "Ventilator:Connector_Spring_Phoenix_1985195" H 14650 4750 50  0001 C CNN
+F 3 "~" H 14650 4750 50  0001 C CNN
+F 4 "Phoenix Contact" H 14650 4750 50  0001 C CNN "Manufacturer"
+F 5 "1985195" H 14650 4750 50  0001 C CNN "Part Number"
+	1    14650 4750
+	1    0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J12
 U 1 1 5E902EA9
-P 14700 5900
-F 0 "J12" H 14780 5892 50  0000 L CNN
-F 1 "Conn_01x02" H 14780 5801 50  0000 L CNN
-F 2 "Ventilator:Connector_Spring_Phoenix_1985195" H 14700 5900 50  0001 C CNN
-F 3 "~" H 14700 5900 50  0001 C CNN
-F 4 "Phoenix Contact" H 14700 5900 50  0001 C CNN "Manufacturer"
-F 5 "1985195" H 14700 5900 50  0001 C CNN "Part Number"
-	1    14700 5900
-	1    0    0    -1  
+P 14650 5600
+F 0 "J12" H 14730 5592 50  0000 L CNN
+F 1 "Conn_01x02" H 14730 5501 50  0001 L CNN
+F 2 "Ventilator:Connector_Spring_Phoenix_1985195" H 14650 5600 50  0001 C CNN
+F 3 "~" H 14650 5600 50  0001 C CNN
+F 4 "Phoenix Contact" H 14650 5600 50  0001 C CNN "Manufacturer"
+F 5 "1985195" H 14650 5600 50  0001 C CNN "Part Number"
+	1    14650 5600
+	1    0    0    1   
 $EndComp
 $Comp
 L Device:Polyfuse F1
@@ -417,14 +414,14 @@ $EndComp
 $Comp
 L Device:Polyfuse F4
 U 1 1 5E908397
-P 3100 5900
-F 0 "F4" V 2875 5900 50  0000 C CNN
-F 1 "50mA 60V" V 2966 5900 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric" H 3150 5700 50  0001 L CNN
-F 3 "~" H 3100 5900 50  0001 C CNN
-F 4 "Bel Fuse" V 3100 5900 50  0001 C CNN "Manufacturer"
-F 5 "0ZCJ0005FF2E" V 3100 5900 50  0001 C CNN "Part Number"
-	1    3100 5900
+P 2750 5900
+F 0 "F4" V 2525 5900 50  0000 C CNN
+F 1 "50mA 60V" V 2616 5900 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 2800 5700 50  0001 L CNN
+F 3 "~" H 2750 5900 50  0001 C CNN
+F 4 "Bel Fuse" V 2750 5900 50  0001 C CNN "Manufacturer"
+F 5 "0ZCJ0005FF2E" V 2750 5900 50  0001 C CNN "Part Number"
+	1    2750 5900
 	0    1    1    0   
 $EndComp
 $Comp
@@ -491,6 +488,8 @@ F 0 "R5" V 3300 2700 50  0000 C CNN
 F 1 "1" V 3300 2550 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 3130 2650 50  0001 C CNN
 F 3 "~" H 3200 2650 50  0001 C CNN
+F 4 "Panasonic" H 3200 2650 50  0001 C CNN "Manufacturer"
+F 5 "ERJ-8RQF1R0V" H 3200 2650 50  0001 C CNN "Part Number"
 	1    3200 2650
 	0    -1   -1   0   
 $EndComp
@@ -557,6 +556,8 @@ F 0 "R11" V 4100 1450 50  0000 C CNN
 F 1 "0" V 3900 1450 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 3930 1400 50  0001 C CNN
 F 3 "~" H 4000 1400 50  0001 C CNN
+F 4 "Panasonic" H 4000 1400 50  0001 C CNN "Manufacturer"
+F 5 "ERJ-8GEY0R00V" H 4000 1400 50  0001 C CNN "Part Number"
 	1    4000 1400
 	0    -1   -1   0   
 $EndComp
@@ -625,7 +626,7 @@ AR Path="/5E8E0754/5E93929F" Ref="D?"  Part="1"
 AR Path="/5E93929F" Ref="D1"  Part="1" 
 F 0 "D1" H 1950 750 50  0000 L CNN
 F 1 "ES2B" H 1900 850 50  0000 L CNN
-F 2 "Diode_SMD:D_SMA" H 2000 950 50  0001 C CNN
+F 2 "Ventilator:D_SMA" H 2000 950 50  0001 C CNN
 F 3 "~" H 2000 950 50  0001 C CNN
 F 4 "Vishay" H 2000 950 50  0001 C CNN "Manufacturer"
 F 5 "ES2G-E3/52T" H 2000 950 50  0001 C CNN "Part Number"
@@ -645,7 +646,7 @@ AR Path="/5E8E0754/5E93B9F0" Ref="D?"  Part="1"
 AR Path="/5E93B9F0" Ref="D2"  Part="1" 
 F 0 "D2" H 1900 1350 50  0000 L CNN
 F 1 "ES2B" H 1800 1250 50  0000 L CNN
-F 2 "Diode_SMD:D_SMA" H 2000 1150 50  0001 C CNN
+F 2 "Ventilator:D_SMA" H 2000 1150 50  0001 C CNN
 F 3 "~" H 2000 1150 50  0001 C CNN
 F 4 "Vishay" H 2000 1150 50  0001 C CNN "Manufacturer"
 F 5 "ES2G-E3/52T" H 2000 1150 50  0001 C CNN "Part Number"
@@ -669,6 +670,8 @@ F 0 "R10" V 4100 1000 50  0000 C CNN
 F 1 "10" V 3900 1000 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 3930 950 50  0001 C CNN
 F 3 "~" H 4000 950 50  0001 C CNN
+F 4 "KOA Speer" H 4000 950 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD10R0F" H 4000 950 50  0001 C CNN "Part Number"
 	1    4000 950 
 	0    -1   -1   0   
 $EndComp
@@ -769,218 +772,38 @@ Text Notes 3800 700  0    50   ~ 0
 Filtering for "quiet" +24V sensor power\nLPF fc = 159 Hz
 Text Notes 2550 2350 0    50   ~ 0
 Filtering for "quiet" +5V analog power
-$Comp
-L Device:CP1 C15
-U 1 1 5E975B9C
-P 15550 3300
-F 0 "C15" H 15665 3346 50  0000 L CNN
-F 1 "100uF 50V AlPoly" H 15665 3255 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_10x10.5" H 15550 3300 50  0001 C CNN
-F 3 "~" H 15550 3300 50  0001 C CNN
-F 4 "Panasonic" H 15550 3300 50  0001 C CNN "Manufacturer"
-F 5 "EEH-ZC1H101P" H 15550 3300 50  0001 C CNN "Part Number"
-	1    15550 3300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	14250 3200 14500 3200
+	14200 2800 14450 2800
 Wire Wire Line
-	14500 3200 14500 3250
+	14450 2800 14450 2850
 Wire Wire Line
-	14500 3400 14500 3350
+	14450 3000 14450 2950
 Wire Wire Line
-	14250 3400 14500 3400
+	14200 3000 14450 3000
 Wire Wire Line
-	14500 4100 14500 4150
+	14450 3700 14450 3750
 Wire Wire Line
-	14250 4300 14500 4300
+	14200 3900 14450 3900
 Wire Wire Line
-	14500 4300 14500 4250
+	14450 3900 14450 3850
 Wire Wire Line
-	14250 4100 14500 4100
+	14200 3700 14450 3700
 Wire Wire Line
-	14250 5000 14500 5000
+	14200 4600 14450 4600
 Wire Wire Line
-	14500 5000 14500 5050
+	14450 4600 14450 4650
 Wire Wire Line
-	14250 5200 14500 5200
+	14200 4800 14450 4800
 Wire Wire Line
-	14500 5200 14500 5150
+	14450 4800 14450 4750
 Wire Wire Line
-	14250 5850 14500 5850
+	14200 5450 14450 5450
 Wire Wire Line
-	14500 5850 14500 5900
+	14450 5450 14450 5500
 Wire Wire Line
-	14500 6050 14500 6000
+	14450 5650 14450 5600
 Wire Wire Line
-	14250 6050 14500 6050
-$Comp
-L power:+24V #PWR?
-U 1 1 5E9940C2
-P 15550 3150
-AR Path="/5E8FBD97/5E9940C2" Ref="#PWR?"  Part="1" 
-AR Path="/5E8DEDC0/5E9940C2" Ref="#PWR?"  Part="1" 
-AR Path="/5E8DFCAD/5E9940C2" Ref="#PWR?"  Part="1" 
-AR Path="/5E8E0754/5E9940C2" Ref="#PWR?"  Part="1" 
-AR Path="/5E9940C2" Ref="#PWR065"  Part="1" 
-F 0 "#PWR065" H 15550 3000 50  0001 C CNN
-F 1 "+24V" H 15565 3323 50  0000 C CNN
-F 2 "" H 15550 3150 50  0001 C CNN
-F 3 "" H 15550 3150 50  0001 C CNN
-	1    15550 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDPWR #PWR?
-U 1 1 5E99CBD9
-P 15550 3450
-AR Path="/5E8FBD97/5E99CBD9" Ref="#PWR?"  Part="1" 
-AR Path="/5E8DEDC0/5E99CBD9" Ref="#PWR?"  Part="1" 
-AR Path="/5E8DFCAD/5E99CBD9" Ref="#PWR?"  Part="1" 
-AR Path="/5E8E0754/5E99CBD9" Ref="#PWR?"  Part="1" 
-AR Path="/5E99CBD9" Ref="#PWR066"  Part="1" 
-F 0 "#PWR066" H 15550 3250 50  0001 C CNN
-F 1 "GNDPWR" H 15554 3296 50  0000 C CNN
-F 2 "" H 15550 3400 50  0001 C CNN
-F 3 "" H 15550 3400 50  0001 C CNN
-	1    15550 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP1 C16
-U 1 1 5E99FAAA
-P 15550 4150
-F 0 "C16" H 15665 4196 50  0000 L CNN
-F 1 "100uF 50V AlPoly" H 15665 4105 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_10x10.5" H 15550 4150 50  0001 C CNN
-F 3 "~" H 15550 4150 50  0001 C CNN
-F 4 "Panasonic" H 15550 4150 50  0001 C CNN "Manufacturer"
-F 5 "EEH-ZC1H101P" H 15550 4150 50  0001 C CNN "Part Number"
-	1    15550 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+24V #PWR?
-U 1 1 5E99FAB0
-P 15550 4000
-AR Path="/5E8FBD97/5E99FAB0" Ref="#PWR?"  Part="1" 
-AR Path="/5E8DEDC0/5E99FAB0" Ref="#PWR?"  Part="1" 
-AR Path="/5E8DFCAD/5E99FAB0" Ref="#PWR?"  Part="1" 
-AR Path="/5E8E0754/5E99FAB0" Ref="#PWR?"  Part="1" 
-AR Path="/5E99FAB0" Ref="#PWR067"  Part="1" 
-F 0 "#PWR067" H 15550 3850 50  0001 C CNN
-F 1 "+24V" H 15565 4173 50  0000 C CNN
-F 2 "" H 15550 4000 50  0001 C CNN
-F 3 "" H 15550 4000 50  0001 C CNN
-	1    15550 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDPWR #PWR?
-U 1 1 5E99FAB6
-P 15550 4300
-AR Path="/5E8FBD97/5E99FAB6" Ref="#PWR?"  Part="1" 
-AR Path="/5E8DEDC0/5E99FAB6" Ref="#PWR?"  Part="1" 
-AR Path="/5E8DFCAD/5E99FAB6" Ref="#PWR?"  Part="1" 
-AR Path="/5E8E0754/5E99FAB6" Ref="#PWR?"  Part="1" 
-AR Path="/5E99FAB6" Ref="#PWR068"  Part="1" 
-F 0 "#PWR068" H 15550 4100 50  0001 C CNN
-F 1 "GNDPWR" H 15554 4146 50  0000 C CNN
-F 2 "" H 15550 4250 50  0001 C CNN
-F 3 "" H 15550 4250 50  0001 C CNN
-	1    15550 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP1 C17
-U 1 1 5E9A4FC7
-P 15550 5050
-F 0 "C17" H 15665 5096 50  0000 L CNN
-F 1 "100uF 50V AlPoly" H 15665 5005 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_10x10.5" H 15550 5050 50  0001 C CNN
-F 3 "~" H 15550 5050 50  0001 C CNN
-F 4 "Panasonic" H 15550 5050 50  0001 C CNN "Manufacturer"
-F 5 "EEH-ZC1H101P" H 15550 5050 50  0001 C CNN "Part Number"
-	1    15550 5050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+24V #PWR?
-U 1 1 5E9A4FCD
-P 15550 4900
-AR Path="/5E8FBD97/5E9A4FCD" Ref="#PWR?"  Part="1" 
-AR Path="/5E8DEDC0/5E9A4FCD" Ref="#PWR?"  Part="1" 
-AR Path="/5E8DFCAD/5E9A4FCD" Ref="#PWR?"  Part="1" 
-AR Path="/5E8E0754/5E9A4FCD" Ref="#PWR?"  Part="1" 
-AR Path="/5E9A4FCD" Ref="#PWR069"  Part="1" 
-F 0 "#PWR069" H 15550 4750 50  0001 C CNN
-F 1 "+24V" H 15565 5073 50  0000 C CNN
-F 2 "" H 15550 4900 50  0001 C CNN
-F 3 "" H 15550 4900 50  0001 C CNN
-	1    15550 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDPWR #PWR?
-U 1 1 5E9A4FD3
-P 15550 5200
-AR Path="/5E8FBD97/5E9A4FD3" Ref="#PWR?"  Part="1" 
-AR Path="/5E8DEDC0/5E9A4FD3" Ref="#PWR?"  Part="1" 
-AR Path="/5E8DFCAD/5E9A4FD3" Ref="#PWR?"  Part="1" 
-AR Path="/5E8E0754/5E9A4FD3" Ref="#PWR?"  Part="1" 
-AR Path="/5E9A4FD3" Ref="#PWR070"  Part="1" 
-F 0 "#PWR070" H 15550 5000 50  0001 C CNN
-F 1 "GNDPWR" H 15554 5046 50  0000 C CNN
-F 2 "" H 15550 5150 50  0001 C CNN
-F 3 "" H 15550 5150 50  0001 C CNN
-	1    15550 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP1 C18
-U 1 1 5E9A79DD
-P 15550 5900
-F 0 "C18" H 15665 5946 50  0000 L CNN
-F 1 "100uF 50V AlPoly" H 15665 5855 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_10x10.5" H 15550 5900 50  0001 C CNN
-F 3 "~" H 15550 5900 50  0001 C CNN
-F 4 "Panasonic" H 15550 5900 50  0001 C CNN "Manufacturer"
-F 5 "EEH-ZC1H101P" H 15550 5900 50  0001 C CNN "Part Number"
-	1    15550 5900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+24V #PWR?
-U 1 1 5E9A79E3
-P 15550 5750
-AR Path="/5E8FBD97/5E9A79E3" Ref="#PWR?"  Part="1" 
-AR Path="/5E8DEDC0/5E9A79E3" Ref="#PWR?"  Part="1" 
-AR Path="/5E8DFCAD/5E9A79E3" Ref="#PWR?"  Part="1" 
-AR Path="/5E8E0754/5E9A79E3" Ref="#PWR?"  Part="1" 
-AR Path="/5E9A79E3" Ref="#PWR071"  Part="1" 
-F 0 "#PWR071" H 15550 5600 50  0001 C CNN
-F 1 "+24V" H 15565 5923 50  0000 C CNN
-F 2 "" H 15550 5750 50  0001 C CNN
-F 3 "" H 15550 5750 50  0001 C CNN
-	1    15550 5750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDPWR #PWR?
-U 1 1 5E9A79E9
-P 15550 6050
-AR Path="/5E8FBD97/5E9A79E9" Ref="#PWR?"  Part="1" 
-AR Path="/5E8DEDC0/5E9A79E9" Ref="#PWR?"  Part="1" 
-AR Path="/5E8DFCAD/5E9A79E9" Ref="#PWR?"  Part="1" 
-AR Path="/5E8E0754/5E9A79E9" Ref="#PWR?"  Part="1" 
-AR Path="/5E9A79E9" Ref="#PWR072"  Part="1" 
-F 0 "#PWR072" H 15550 5850 50  0001 C CNN
-F 1 "GNDPWR" H 15554 5896 50  0000 C CNN
-F 2 "" H 15550 6000 50  0001 C CNN
-F 3 "" H 15550 6000 50  0001 C CNN
-	1    15550 6050
-	1    0    0    -1  
-$EndComp
+	14200 5650 14450 5650
 Wire Wire Line
 	1650 2650 1800 2650
 Connection ~ 2400 2650
@@ -996,6 +819,8 @@ F 0 "R6" H 3900 8600 50  0000 C CNN
 F 1 "10K" H 3950 8700 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 3730 8650 50  0001 C CNN
 F 3 "~" H 3800 8650 50  0001 C CNN
+F 4 "KOA Speer" H 3800 8650 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1002F" H 3800 8650 50  0001 C CNN "Part Number"
 	1    3800 8650
 	1    0    0    -1  
 $EndComp
@@ -1009,6 +834,8 @@ F 0 "R7" H 3900 8900 50  0000 C CNN
 F 1 "10K" H 3950 9000 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 3730 8950 50  0001 C CNN
 F 3 "~" H 3800 8950 50  0001 C CNN
+F 4 "KOA Speer" H 3800 8950 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1002F" H 3800 8950 50  0001 C CNN "Part Number"
 	1    3800 8950
 	1    0    0    -1  
 $EndComp
@@ -1019,7 +846,7 @@ P 3800 9800
 AR Path="/5E9DF420" Ref="R8"  Part="1" 
 AR Path="/5E8AFE9D/5E9DF420" Ref="R?"  Part="1" 
 F 0 "R8" H 3900 9750 50  0000 C CNN
-F 1 "10K" H 3950 9850 50  0000 C CNN
+F 1 "DNP" H 3950 9850 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 3730 9800 50  0001 C CNN
 F 3 "~" H 3800 9800 50  0001 C CNN
 	1    3800 9800
@@ -1032,7 +859,7 @@ P 3800 10100
 AR Path="/5E9DF8CA" Ref="R9"  Part="1" 
 AR Path="/5E8AFE9D/5E9DF8CA" Ref="R?"  Part="1" 
 F 0 "R9" H 3900 10050 50  0000 C CNN
-F 1 "1K" H 3900 10150 50  0000 C CNN
+F 1 "DNP" H 3950 10150 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 3730 10100 50  0001 C CNN
 F 3 "~" H 3800 10100 50  0001 C CNN
 	1    3800 10100
@@ -1159,111 +986,111 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x03 J5
 U 1 1 5EA39911
-P 2550 6000
-F 0 "J5" H 2600 6250 50  0000 C CNN
-F 1 "Conn_01x03" H 2468 6226 50  0001 C CNN
-F 2 "Ventilator:Connector_Spring_Phoenix_1985205" H 2550 6000 50  0001 C CNN
-F 3 "~" H 2550 6000 50  0001 C CNN
-F 4 "Phoenix Contact" H 2550 6000 50  0001 C CNN "Manufacturer"
-F 5 "1985205" H 2550 6000 50  0001 C CNN "Part Number"
-	1    2550 6000
+P 2200 6000
+F 0 "J5" H 2250 6250 50  0000 C CNN
+F 1 "Conn_01x03" H 2118 6226 50  0001 C CNN
+F 2 "Ventilator:Connector_Spring_Phoenix_1985205" H 2200 6000 50  0001 C CNN
+F 3 "~" H 2200 6000 50  0001 C CNN
+F 4 "Phoenix Contact" H 2200 6000 50  0001 C CNN "Manufacturer"
+F 5 "1985205" H 2200 6000 50  0001 C CNN "Part Number"
+	1    2200 6000
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x03 J6
 U 1 1 5EA3B0FB
-P 2550 6750
-F 0 "J6" H 2600 7000 50  0000 C CNN
-F 1 "Conn_01x03" H 2468 6976 50  0001 C CNN
-F 2 "Ventilator:Connector_Spring_Phoenix_1985205" H 2550 6750 50  0001 C CNN
-F 3 "~" H 2550 6750 50  0001 C CNN
-F 4 "Phoenix Contact" H 2550 6750 50  0001 C CNN "Manufacturer"
-F 5 "1985205" H 2550 6750 50  0001 C CNN "Part Number"
-	1    2550 6750
+P 2200 6750
+F 0 "J6" H 2250 7000 50  0000 C CNN
+F 1 "Conn_01x03" H 2118 6976 50  0001 C CNN
+F 2 "Ventilator:Connector_Spring_Phoenix_1985205" H 2200 6750 50  0001 C CNN
+F 3 "~" H 2200 6750 50  0001 C CNN
+F 4 "Phoenix Contact" H 2200 6750 50  0001 C CNN "Manufacturer"
+F 5 "1985205" H 2200 6750 50  0001 C CNN "Part Number"
+	1    2200 6750
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	2750 6000 3700 6000
+	2400 6000 3350 6000
 $Comp
 L Ventilator:+24VA #PWR016
 U 1 1 5EA3EB06
-P 3400 5800
-F 0 "#PWR016" H 3400 5650 50  0001 C CNN
-F 1 "+24VA" H 3415 5973 50  0000 C CNN
-F 2 "" H 3400 5800 50  0001 C CNN
-F 3 "" H 3400 5800 50  0001 C CNN
-	1    3400 5800
+P 3050 5800
+F 0 "#PWR016" H 3050 5650 50  0001 C CNN
+F 1 "+24VA" H 3065 5973 50  0000 C CNN
+F 2 "" H 3050 5800 50  0001 C CNN
+F 3 "" H 3050 5800 50  0001 C CNN
+	1    3050 5800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3400 5800 3400 5900
+	3050 5800 3050 5900
 $Comp
 L power:GND #PWR013
 U 1 1 5EA4277D
-P 3050 6100
-F 0 "#PWR013" H 3050 5850 50  0001 C CNN
-F 1 "GND" H 3055 5927 50  0000 C CNN
-F 2 "" H 3050 6100 50  0001 C CNN
-F 3 "" H 3050 6100 50  0001 C CNN
-	1    3050 6100
+P 2700 6100
+F 0 "#PWR013" H 2700 5850 50  0001 C CNN
+F 1 "GND" H 2705 5927 50  0000 C CNN
+F 2 "" H 2700 6100 50  0001 C CNN
+F 3 "" H 2700 6100 50  0001 C CNN
+	1    2700 6100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3050 6100 2750 6100
+	2700 6100 2400 6100
 $Comp
 L Ventilator:+24VA #PWR017
 U 1 1 5EA495ED
-P 3400 6550
-F 0 "#PWR017" H 3400 6400 50  0001 C CNN
-F 1 "+24VA" H 3415 6723 50  0000 C CNN
-F 2 "" H 3400 6550 50  0001 C CNN
-F 3 "" H 3400 6550 50  0001 C CNN
-	1    3400 6550
+P 3050 6550
+F 0 "#PWR017" H 3050 6400 50  0001 C CNN
+F 1 "+24VA" H 3065 6723 50  0000 C CNN
+F 2 "" H 3050 6550 50  0001 C CNN
+F 3 "" H 3050 6550 50  0001 C CNN
+	1    3050 6550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2750 6750 3700 6750
+	2400 6750 3350 6750
 $Comp
 L power:GND #PWR014
 U 1 1 5EA52014
-P 3050 6850
-F 0 "#PWR014" H 3050 6600 50  0001 C CNN
-F 1 "GND" H 3055 6677 50  0000 C CNN
-F 2 "" H 3050 6850 50  0001 C CNN
-F 3 "" H 3050 6850 50  0001 C CNN
-	1    3050 6850
+P 2700 6850
+F 0 "#PWR014" H 2700 6600 50  0001 C CNN
+F 1 "GND" H 2705 6677 50  0000 C CNN
+F 2 "" H 2700 6850 50  0001 C CNN
+F 3 "" H 2700 6850 50  0001 C CNN
+	1    2700 6850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3050 6850 2750 6850
+	2700 6850 2400 6850
 Wire Wire Line
-	2750 7600 3700 7600
+	2400 7600 3350 7600
 $Comp
 L power:GND #PWR015
 U 1 1 5EA592EE
-P 3050 7700
-F 0 "#PWR015" H 3050 7450 50  0001 C CNN
-F 1 "GND" H 3055 7527 50  0000 C CNN
-F 2 "" H 3050 7700 50  0001 C CNN
-F 3 "" H 3050 7700 50  0001 C CNN
-	1    3050 7700
+P 2700 7700
+F 0 "#PWR015" H 2700 7450 50  0001 C CNN
+F 1 "GND" H 2705 7527 50  0000 C CNN
+F 2 "" H 2700 7700 50  0001 C CNN
+F 3 "" H 2700 7700 50  0001 C CNN
+	1    2700 7700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3050 7700 2750 7700
-Text Notes 950  6100 0    50   ~ 0
+	2700 7700 2400 7700
+Text Notes 600  6100 0    50   ~ 0
 Pressure sensor input\n(Omega PXM309)\n0-10V output, 10 mA draw on +24VA
-Text Notes 950  6850 0    50   ~ 0
+Text Notes 600  6850 0    50   ~ 0
 Pressure sensor input\n(Omega PXM309)\n0-10V output, 10 mA draw on +24VA
-Text Notes 1000 7800 0    50   ~ 0
+Text Notes 650  7800 0    50   ~ 0
 Oxygen sensor input\n(Teledyne C44611-R22MED?)\n7 mV (0%)-13 mV (100% O2) output
 Text Notes 4200 8450 0    79   ~ 16
 Power rail sensing
-Text Notes 3650 4200 0    79   ~ 16
+Text Notes 3400 4350 0    79   ~ 16
 Sensor inputs
 Text Notes 2450 650  0    79   ~ 16
 Power distribution
-Text Notes 13900 2600 0    79   ~ 16
+Text Notes 13550 2400 0    79   ~ 16
 Solenoid valve outputs
 Text Notes 9050 1150 0    79   ~ 16
 Controls and ADC
@@ -1346,7 +1173,7 @@ Wire Wire Line
 Text Label 7000 2450 0    50   ~ 0
 RPi_ADC0
 Wire Wire Line
-	4850 5900 5350 5900
+	4500 5900 5000 5900
 Wire Wire Line
 	4550 8800 4250 8800
 Connection ~ 4250 8800
@@ -1365,6 +1192,8 @@ F 0 "R25" V 14250 1050 50  0000 C CNN
 F 1 "10K" V 14250 800 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 13780 1000 50  0001 C CNN
 F 3 "~" H 13850 1000 50  0001 C CNN
+F 4 "KOA Speer" H 13850 1000 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1002F" H 13850 1000 50  0001 C CNN "Part Number"
 	1    13850 1000
 	0    -1   -1   0   
 $EndComp
@@ -1378,6 +1207,8 @@ F 0 "R26" V 14250 1150 50  0000 C CNN
 F 1 "10K" V 14250 900 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 13780 1100 50  0001 C CNN
 F 3 "~" H 13850 1100 50  0001 C CNN
+F 4 "KOA Speer" H 13850 1100 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1002F" H 13850 1100 50  0001 C CNN "Part Number"
 	1    13850 1100
 	0    -1   -1   0   
 $EndComp
@@ -1391,6 +1222,8 @@ F 0 "R27" V 14250 1250 50  0000 C CNN
 F 1 "10K" V 14250 1000 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 13780 1200 50  0001 C CNN
 F 3 "~" H 13850 1200 50  0001 C CNN
+F 4 "KOA Speer" H 13850 1200 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1002F" H 13850 1200 50  0001 C CNN "Part Number"
 	1    13850 1200
 	0    -1   -1   0   
 $EndComp
@@ -1404,6 +1237,8 @@ F 0 "R28" V 14250 1350 50  0000 C CNN
 F 1 "10K" V 14250 1100 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 13780 1300 50  0001 C CNN
 F 3 "~" H 13850 1300 50  0001 C CNN
+F 4 "KOA Speer" H 13850 1300 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1002F" H 13850 1300 50  0001 C CNN "Part Number"
 	1    13850 1300
 	0    -1   -1   0   
 $EndComp
@@ -1591,55 +1426,55 @@ F 3 "" H 12100 950 50  0001 C CNN
 	1    12100 950 
 	1    0    0    -1  
 $EndComp
-Text Notes 600  5650 0    50   ~ 0
+Text Notes 1200 5550 0    50   ~ 0
 Both sensor fuses:\n3.6 - 50 ohms (<0.5V drop @ 10 mA)\n1.5 s trip time max. @ 250 mA\nFault current 150 mA max.
-Text Label 12900 3200 0    50   ~ 0
+Text Label 12850 2750 0    50   ~ 0
 RPi_valve1
-Text Label 12900 3400 0    50   ~ 0
+Text Label 12850 2850 0    50   ~ 0
 CPLD_valve1
 Wire Wire Line
-	12900 3400 13400 3400
+	12850 2850 13350 2850
 Wire Wire Line
-	12900 3200 13400 3200
-Text Label 12900 4100 0    50   ~ 0
+	12850 2750 13350 2750
+Text Label 12850 3650 0    50   ~ 0
 RPi_valve2
-Text Label 12900 4300 0    50   ~ 0
+Text Label 12850 3750 0    50   ~ 0
 CPLD_valve2
 Wire Wire Line
-	12900 4300 13400 4300
+	12850 3750 13350 3750
 Wire Wire Line
-	12900 4100 13400 4100
-Text Label 12900 5000 0    50   ~ 0
+	12850 3650 13350 3650
+Text Label 12850 4550 0    50   ~ 0
 RPi_valve3
-Text Label 12900 5200 0    50   ~ 0
+Text Label 12850 4650 0    50   ~ 0
 CPLD_valve3
 Wire Wire Line
-	12900 5200 13400 5200
+	12850 4650 13350 4650
 Wire Wire Line
-	12900 5000 13400 5000
-Text Label 12900 5850 0    50   ~ 0
+	12850 4550 13350 4550
+Text Label 12850 5400 0    50   ~ 0
 RPi_valve4
-Text Label 12900 6050 0    50   ~ 0
+Text Label 12850 5500 0    50   ~ 0
 CPLD_valve4
 Wire Wire Line
-	12900 6050 13400 6050
+	12850 5500 13350 5500
 Wire Wire Line
-	12900 5850 13400 5850
+	12850 5400 13350 5400
 Wire Wire Line
-	11000 2850 10200 2850
+	11500 3850 12300 3850
 Wire Wire Line
-	11000 2950 10200 2950
+	11500 4050 12300 4050
 Wire Wire Line
-	11000 3050 10200 3050
+	11500 4150 12300 4150
 Wire Wire Line
-	11000 3250 10200 3250
-Text Label 10200 2850 0    50   ~ 0
+	11500 4250 12300 4250
+Text Label 12300 4250 2    50   ~ 0
 RPi_valve1
-Text Label 10200 2950 0    50   ~ 0
+Text Label 12300 4150 2    50   ~ 0
 RPi_valve2
-Text Label 10200 3050 0    50   ~ 0
+Text Label 12300 4050 2    50   ~ 0
 RPi_valve3
-Text Label 10200 3250 0    50   ~ 0
+Text Label 12300 3850 2    50   ~ 0
 RPi_valve4
 Wire Wire Line
 	11000 2350 10700 2350
@@ -1669,6 +1504,8 @@ F 0 "R2" H 1000 9450 50  0000 C CNN
 F 1 "1K" H 1000 9350 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 830 9400 50  0001 C CNN
 F 3 "~" H 900 9400 50  0001 C CNN
+F 4 "KOA Speer" H 900 9400 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1001F" H 900 9400 50  0001 C CNN "Part Number"
 	1    900  9400
 	1    0    0    -1  
 $EndComp
@@ -1683,6 +1520,8 @@ F 0 "R1" H 750 9450 50  0000 C CNN
 F 1 "1K" H 750 9350 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 580 9400 50  0001 C CNN
 F 3 "~" H 650 9400 50  0001 C CNN
+F 4 "KOA Speer" H 650 9400 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1001F" H 650 9400 50  0001 C CNN "Part Number"
 	1    650  9400
 	1    0    0    -1  
 $EndComp
@@ -1744,28 +1583,28 @@ $EndComp
 Text Notes 550  8900 0    79   ~ 16
 Voltage reference for limit comparators
 Wire Wire Line
-	2950 5900 2750 5900
+	2600 5900 2400 5900
 Wire Wire Line
-	3250 5900 3400 5900
+	2900 5900 3050 5900
 $Comp
 L Device:Polyfuse F5
 U 1 1 5EC7EA23
-P 3100 6650
-F 0 "F5" V 2875 6650 50  0000 C CNN
-F 1 "50mA 60V" V 2966 6650 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric" H 3150 6450 50  0001 L CNN
-F 3 "~" H 3100 6650 50  0001 C CNN
-F 4 "Bel Fuse" V 3100 6650 50  0001 C CNN "Manufacturer"
-F 5 "0ZCJ0005FF2E" V 3100 6650 50  0001 C CNN "Part Number"
-	1    3100 6650
+P 2750 6650
+F 0 "F5" V 2525 6650 50  0000 C CNN
+F 1 "50mA 60V" V 2616 6650 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 2800 6450 50  0001 L CNN
+F 3 "~" H 2750 6650 50  0001 C CNN
+F 4 "Bel Fuse" V 2750 6650 50  0001 C CNN "Manufacturer"
+F 5 "0ZCJ0005FF2E" V 2750 6650 50  0001 C CNN "Part Number"
+	1    2750 6650
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3250 6650 3400 6650
+	2900 6650 3050 6650
 Wire Wire Line
-	3400 6650 3400 6550
+	3050 6650 3050 6550
 Wire Wire Line
-	2950 6650 2750 6650
+	2600 6650 2400 6650
 Text Notes 1200 9200 0    50   ~ 0
 5 mA from +5VA
 $Comp
@@ -1795,6 +1634,8 @@ F 0 "R4" V 2400 1150 50  0000 C CNN
 F 1 "0" V 2500 1150 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 2530 1150 50  0001 C CNN
 F 3 "~" H 2600 1150 50  0001 C CNN
+F 4 "Panasonic" H 2600 1150 50  0001 C CNN "Manufacturer"
+F 5 "ERJ-8GEY0R00V" H 2600 1150 50  0001 C CNN "Part Number"
 	1    2600 1150
 	0    -1   -1   0   
 $EndComp
@@ -1815,14 +1656,14 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x02 J7
 U 1 1 5ED3FB1F
-P 2550 7600
-F 0 "J7" H 2600 7750 50  0000 C CNN
-F 1 "Conn_01x02" H 2468 7726 50  0001 C CNN
-F 2 "Ventilator:Connector_Spring_Phoenix_1985195" H 2550 7600 50  0001 C CNN
-F 3 "~" H 2550 7600 50  0001 C CNN
-F 4 "Phoenix Contact" H 2550 7600 50  0001 C CNN "Manufacturer"
-F 5 "1985195" H 2550 7600 50  0001 C CNN "Part Number"
-	1    2550 7600
+P 2200 7600
+F 0 "J7" H 2250 7750 50  0000 C CNN
+F 1 "Conn_01x02" H 2118 7726 50  0001 C CNN
+F 2 "Ventilator:Connector_Spring_Phoenix_1985195" H 2200 7600 50  0001 C CNN
+F 3 "~" H 2200 7600 50  0001 C CNN
+F 4 "Phoenix Contact" H 2200 7600 50  0001 C CNN "Manufacturer"
+F 5 "1985195" H 2200 7600 50  0001 C CNN "Part Number"
+	1    2200 7600
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1844,7 +1685,7 @@ U 1 1 5EBAD058
 P 900 9800
 F 0 "U1" V 946 9730 50  0000 R CNN
 F 1 "TL431A" V 855 9730 50  0000 R CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 900 9650 50  0001 C CIN
+F 2 "Ventilator:SOT-23" H 900 9650 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/tl431.pdf" H 900 9800 50  0001 C CIN
 F 4 "Nexperia" V 900 9800 50  0001 C CNN "Manufacturer"
 F 5 "TL431AQDBZR,215" V 900 9800 50  0001 C CNN "Part Number"
@@ -1863,39 +1704,39 @@ Text Label 10300 2450 0    50   ~ 0
 RPi_SDA
 Text Label 10300 2550 0    50   ~ 0
 RPi_SCL
-Text Label 5850 6150 2    50   ~ 0
+Text Label 5500 6150 2    50   ~ 0
 Pressure1_Lim_H_Alarm
-Text Label 5850 6250 2    50   ~ 0
+Text Label 5500 6250 2    50   ~ 0
 Pressure1_Lim_L_Alarm
 Wire Wire Line
-	4850 6150 5850 6150
+	4500 6150 5500 6150
 Wire Wire Line
-	4850 6250 5850 6250
-Text Label 5850 6900 2    50   ~ 0
+	4500 6250 5500 6250
+Text Label 5500 6900 2    50   ~ 0
 Pressure2_Lim_H_Alarm
-Text Label 5850 7000 2    50   ~ 0
+Text Label 5500 7000 2    50   ~ 0
 Pressure2_Lim_L_Alarm
 Wire Wire Line
-	4850 6900 5850 6900
+	4500 6900 5500 6900
 Wire Wire Line
-	4850 7000 5850 7000
-Text Label 5850 7750 2    50   ~ 0
+	4500 7000 5500 7000
+Text Label 5500 7750 2    50   ~ 0
 O2_Lim_H_Alarm
-Text Label 5850 7850 2    50   ~ 0
+Text Label 5500 7850 2    50   ~ 0
 O2_Lim_L_Alarm
 Wire Wire Line
-	4850 7750 5850 7750
+	4500 7750 5500 7750
 Wire Wire Line
-	4850 7850 5850 7850
+	4500 7850 5500 7850
 $Sheet
 S 9850 6250 1900 2050
 U 5E8C8865
 F0 "CPLD" 50
 F1 "cpld.sch" 50
-F2 "Valve1" O R 11750 6400 50 
-F3 "Valve2" O R 11750 6500 50 
-F4 "Valve3" O R 11750 6600 50 
-F5 "Valve4" O R 11750 6700 50 
+F2 "Valve1" O R 11750 6350 50 
+F3 "Valve2" O R 11750 6450 50 
+F4 "Valve3" O R 11750 6550 50 
+F5 "Valve4" O R 11750 6650 50 
 F6 "RPi_Valve1" I L 9850 6350 50 
 F7 "RPi_Valve2" I L 9850 6450 50 
 F8 "RPi_Valve3" I L 9850 6550 50 
@@ -1906,21 +1747,25 @@ F12 "Pressure2_Lim_H_Alarm" I L 9850 7450 50
 F13 "Pressure2_Lim_L_Alarm" I L 9850 7550 50 
 F14 "O2_Lim_H_Alarm" I L 9850 7650 50 
 F15 "O2_Lim_L_Alarm" I L 9850 7750 50 
-F16 "Alarm_Spkr" O R 11750 7350 50 
+F16 "Alarm_Spkr" O R 11750 7400 50 
 F17 "SDA" O L 9850 6900 50 
 F18 "SCL" O L 9850 7000 50 
 F19 "~ADC_INT" I L 9850 7100 50 
-F20 "Low_Bat" I R 11750 7000 50 
-F21 "RPi_Comms1" B R 11750 7550 50 
-F22 "RPi_Comms2" B R 11750 7650 50 
-F23 "RPi_Comms3" B R 11750 7750 50 
-F24 "RPi_Comms4" B R 11750 7850 50 
-F25 "RPi_Comms5" B R 11750 7950 50 
-F26 "RPi_Comms6" B R 11750 8050 50 
-F27 "RPi_En" O R 11750 6850 50 
+F20 "Low_Bat" I R 11750 7250 50 
+F21 "RPi_Comms1" B R 11750 7700 50 
+F22 "RPi_Comms2" B R 11750 7800 50 
+F23 "RPi_Comms3" B R 11750 7900 50 
+F24 "RPi_Comms4" B R 11750 8000 50 
+F25 "RPi_Comms5" B R 11750 8100 50 
+F26 "RPi_Comms6" B R 11750 8200 50 
+F27 "RPi_En" O R 11750 7600 50 
 F28 "Enc_A" I L 9850 8000 50 
 F29 "Enc_B" I L 9850 8100 50 
 F30 "Enc_Sw" I L 9850 8200 50 
+F31 "~Valve1_Fault" I R 11750 6800 50 
+F32 "~Valve2_Fault" I R 11750 6900 50 
+F33 "~Valve4_Fault" I R 11750 7100 50 
+F34 "~Valve3_Fault" I R 11750 7000 50 
 $EndSheet
 Wire Wire Line
 	9850 6350 9050 6350
@@ -1938,22 +1783,22 @@ Text Label 9050 6550 0    50   ~ 0
 RPi_valve3
 Text Label 9050 6650 0    50   ~ 0
 RPi_valve4
-Text Label 12250 6400 2    50   ~ 0
+Text Label 12250 6350 2    50   ~ 0
 CPLD_valve1
 Wire Wire Line
-	11750 6400 12250 6400
-Text Label 12250 6500 2    50   ~ 0
+	11750 6350 12250 6350
+Text Label 12250 6450 2    50   ~ 0
 CPLD_valve2
 Wire Wire Line
-	11750 6500 12250 6500
-Text Label 12250 6600 2    50   ~ 0
+	11750 6450 12250 6450
+Text Label 12250 6550 2    50   ~ 0
 CPLD_valve3
 Wire Wire Line
-	11750 6600 12250 6600
-Text Label 12250 6700 2    50   ~ 0
+	11750 6550 12250 6550
+Text Label 12250 6650 2    50   ~ 0
 CPLD_valve4
 Wire Wire Line
-	11750 6700 12250 6700
+	11750 6650 12250 6650
 Text Label 8850 7250 0    50   ~ 0
 Pressure1_Lim_H_Alarm
 Text Label 8850 7350 0    50   ~ 0
@@ -1998,7 +1843,7 @@ U 1 1 5EC1A867
 P 7550 7000
 F 0 "U2" H 7750 7950 50  0000 C CNN
 F 1 "ADC128D818" H 7900 7800 50  0000 C CNN
-F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 7550 7000 50  0001 C CIN
+F 2 "Ventilator:TSSOP-16_4.4x5mm_P0.65mm" H 7550 7000 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/adc128d818.pdf" H 7550 7000 50  0001 C CNN
 F 4 "Texas Instruments" H 7550 7000 50  0001 C CNN "Manufacturer"
 F 5 "ADC128D818CIMTX/NOPB" H 7550 7000 50  0001 C CNN "Part Number"
@@ -2113,6 +1958,8 @@ F 0 "R16" V 7800 5700 50  0000 C CNN
 F 1 "10" V 7600 5700 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 7630 5650 50  0001 C CNN
 F 3 "~" H 7700 5650 50  0001 C CNN
+F 4 "KOA Speer" H 7700 5650 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD10R0F" H 7700 5650 50  0001 C CNN "Part Number"
 	1    7700 5650
 	0    -1   -1   0   
 $EndComp
@@ -2124,12 +1971,6 @@ Wire Wire Line
 	7050 6500 6550 6500
 Wire Wire Line
 	7050 6600 6550 6600
-Wire Wire Line
-	7050 6700 6550 6700
-Wire Wire Line
-	7050 6800 6550 6800
-Wire Wire Line
-	7050 6900 6550 6900
 Wire Wire Line
 	7050 7000 6550 7000
 Wire Wire Line
@@ -2181,6 +2022,8 @@ F 0 "R19" V 8350 7000 50  0000 C CNN
 F 1 "10K" V 8150 7000 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 8180 6950 50  0001 C CNN
 F 3 "~" H 8250 6950 50  0001 C CNN
+F 4 "KOA Speer" H 8250 6950 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1002F" H 8250 6950 50  0001 C CNN "Part Number"
 	1    8250 6950
 	1    0    0    -1  
 $EndComp
@@ -2205,26 +2048,26 @@ F 3 "" H 8250 6800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4850 6000 5350 6000
-Text Label 5350 5900 2    50   ~ 0
+	4500 6000 5000 6000
+Text Label 5000 5900 2    50   ~ 0
 RPi_ADC0
-Text Label 5350 6000 2    50   ~ 0
+Text Label 5000 6000 2    50   ~ 0
 CPLD_ADC0
 Wire Wire Line
-	4850 6650 5350 6650
+	4500 6650 5000 6650
 Wire Wire Line
-	4850 6750 5350 6750
-Text Label 5350 6650 2    50   ~ 0
+	4500 6750 5000 6750
+Text Label 5000 6650 2    50   ~ 0
 RPi_ADC1
-Text Label 5350 6750 2    50   ~ 0
+Text Label 5000 6750 2    50   ~ 0
 CPLD_ADC1
 Wire Wire Line
-	4850 7500 5350 7500
+	4500 7500 5000 7500
 Wire Wire Line
-	4850 7600 5350 7600
-Text Label 5350 7500 2    50   ~ 0
+	4500 7600 5000 7600
+Text Label 5000 7500 2    50   ~ 0
 RPi_ADC2
-Text Label 5350 7600 2    50   ~ 0
+Text Label 5000 7600 2    50   ~ 0
 CPLD_ADC2
 Text Label 6550 6400 0    50   ~ 0
 CPLD_ADC0
@@ -2242,18 +2085,18 @@ Text Label 6550 7000 0    50   ~ 0
 CPLD_ADC6
 Text Label 6550 7100 0    50   ~ 0
 CPLD_ADC7
-Text Label 4550 8800 2    50   ~ 0
-CPLD_ADC6
 Text Label 4550 9950 2    50   ~ 0
+CPLD_ADC6
+Text Label 4550 8800 2    50   ~ 0
 CPLD_ADC7
 Wire Wire Line
-	11000 3350 10200 3350
-Text Label 10200 3350 0    50   ~ 0
+	11000 2850 10200 2850
+Text Label 10200 2850 0    50   ~ 0
 RPi_Alarm_Spkr
 Text Notes 9900 3350 0    50   ~ 0
 GPIO9
 Wire Wire Line
-	12900 7350 12900 7900
+	12900 7400 12900 7900
 Wire Wire Line
 	12900 7900 13850 7900
 Text Label 13000 7900 0    50   ~ 0
@@ -2365,8 +2208,10 @@ AR Path="/5E8AFE9D/5EEFBA56" Ref="D?"  Part="1"
 AR Path="/5E8A4ABF/5EEFBA56" Ref="D?"  Part="1" 
 F 0 "D3" V 4854 3529 50  0000 L CNN
 F 1 "5.1V" V 4950 3550 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-123" H 4900 3450 50  0001 C CNN
+F 2 "Ventilator:D_SOD-123" H 4900 3450 50  0001 C CNN
 F 3 "~" H 4900 3450 50  0001 C CNN
+F 4 "ON Semiconductor" H 4900 3450 50  0001 C CNN "Manufacturer"
+F 5 "MMSZ5231BT1G" H 4900 3450 50  0001 C CNN "Part Number"
 	1    4900 3450
 	0    1    1    0   
 $EndComp
@@ -2384,6 +2229,8 @@ F 0 "R13" H 4750 3050 50  0000 C CNN
 F 1 "10K" H 4750 2950 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 4830 3050 50  0001 C CNN
 F 3 "~" H 4900 3050 50  0001 C CNN
+F 4 "KOA Speer" H 4900 3050 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1002F" H 4900 3050 50  0001 C CNN "Part Number"
 	1    4900 3050
 	1    0    0    -1  
 $EndComp
@@ -2405,6 +2252,8 @@ F 0 "R12" H 4500 2300 50  0000 C CNN
 F 1 "10K" H 4550 2400 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 4630 2350 50  0001 C CNN
 F 3 "~" H 4700 2350 50  0001 C CNN
+F 4 "KOA Speer" H 4700 2350 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1002F" H 4700 2350 50  0001 C CNN "Part Number"
 	1    4700 2350
 	1    0    0    -1  
 $EndComp
@@ -2437,34 +2286,34 @@ Optional onboard\n5V supplies
 Wire Wire Line
 	13850 7500 13550 7500
 Wire Wire Line
-	13550 7500 13550 7000
+	13550 7500 13550 7250
 Wire Wire Line
-	11750 7000 13550 7000
+	11750 7250 13550 7250
 Wire Wire Line
-	11750 7350 12900 7350
+	11750 7400 12900 7400
 Wire Wire Line
-	11750 7550 12150 7550
+	11750 7700 12150 7700
 Wire Wire Line
-	11750 7650 12150 7650
+	11750 7800 12150 7800
 Wire Wire Line
-	11750 7750 12150 7750
+	11750 7900 12150 7900
 Wire Wire Line
-	11750 7850 12150 7850
+	11750 8000 12150 8000
 Wire Wire Line
-	11750 7950 12150 7950
+	11750 8100 12150 8100
 Wire Wire Line
-	11750 8050 12150 8050
-Text Label 12150 7550 2    50   ~ 0
+	11750 8200 12150 8200
+Text Label 12150 7700 2    50   ~ 0
 Comms1
-Text Label 12150 7650 2    50   ~ 0
+Text Label 12150 7800 2    50   ~ 0
 Comms2
-Text Label 12150 7750 2    50   ~ 0
+Text Label 12150 7900 2    50   ~ 0
 Comms3
-Text Label 12150 7850 2    50   ~ 0
+Text Label 12150 8000 2    50   ~ 0
 Comms4
-Text Label 12150 7950 2    50   ~ 0
+Text Label 12150 8100 2    50   ~ 0
 Comms5
-Text Label 12150 8050 2    50   ~ 0
+Text Label 12150 8200 2    50   ~ 0
 Comms6
 Text Notes 11650 2750 0    50   ~ 0
 GPIO15
@@ -2674,7 +2523,7 @@ AR Path="/5E8C8865/5F71C06E" Ref="D?"  Part="1"
 AR Path="/5F71C06E" Ref="D6"  Part="1" 
 F 0 "D6" V 7489 9683 50  0000 R CNN
 F 1 "Orange" V 7398 9683 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 7450 9800 50  0001 C CNN
+F 2 "Ventilator:LED_0805_2012Metric" H 7450 9800 50  0001 C CNN
 F 3 "~" H 7450 9800 50  0001 C CNN
 F 4 "Broadcom" H 7450 9800 50  0001 C CNN "Manufacturer"
 F 5 "HSMD-C170" H 7450 9800 50  0001 C CNN "Part Number"
@@ -2710,6 +2559,8 @@ F 0 "R17" H 7300 9450 50  0000 C CNN
 F 1 "3.3K" H 7250 9550 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 7380 9500 50  0001 C CNN
 F 3 "~" H 7450 9500 50  0001 C CNN
+F 4 "KOA Speer" H 7450 9500 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD3301F" H 7450 9500 50  0001 C CNN "Part Number"
 	1    7450 9500
 	-1   0    0    1   
 $EndComp
@@ -2721,7 +2572,7 @@ AR Path="/5E8C8865/5F73176B" Ref="D?"  Part="1"
 AR Path="/5F73176B" Ref="D7"  Part="1" 
 F 0 "D7" V 7939 9683 50  0000 R CNN
 F 1 "Orange" V 7848 9683 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 7900 9800 50  0001 C CNN
+F 2 "Ventilator:LED_0805_2012Metric" H 7900 9800 50  0001 C CNN
 F 3 "~" H 7900 9800 50  0001 C CNN
 F 4 "Broadcom" H 7900 9800 50  0001 C CNN "Manufacturer"
 F 5 "HSMD-C170" H 7900 9800 50  0001 C CNN "Part Number"
@@ -2739,6 +2590,8 @@ F 0 "R20" H 7750 9450 50  0000 C CNN
 F 1 "22K" H 7700 9550 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 7830 9500 50  0001 C CNN
 F 3 "~" H 7900 9500 50  0001 C CNN
+F 4 "KOA Speer" H 7900 9500 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD2202F" H 7900 9500 50  0001 C CNN "Part Number"
 	1    7900 9500
 	-1   0    0    1   
 $EndComp
@@ -2750,7 +2603,7 @@ AR Path="/5E8C8865/5F747049" Ref="D?"  Part="1"
 AR Path="/5F747049" Ref="D8"  Part="1" 
 F 0 "D8" V 8389 9683 50  0000 R CNN
 F 1 "Orange" V 8298 9683 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 8350 9800 50  0001 C CNN
+F 2 "Ventilator:LED_0805_2012Metric" H 8350 9800 50  0001 C CNN
 F 3 "~" H 8350 9800 50  0001 C CNN
 F 4 "Broadcom" H 8350 9800 50  0001 C CNN "Manufacturer"
 F 5 "HSMD-C170" H 8350 9800 50  0001 C CNN "Part Number"
@@ -2786,6 +2639,8 @@ F 0 "R22" H 8200 9450 50  0000 C CNN
 F 1 "22K" H 8150 9550 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 8280 9500 50  0001 C CNN
 F 3 "~" H 8350 9500 50  0001 C CNN
+F 4 "KOA Speer" H 8350 9500 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD2202F" H 8350 9500 50  0001 C CNN "Part Number"
 	1    8350 9500
 	-1   0    0    1   
 $EndComp
@@ -2797,7 +2652,7 @@ AR Path="/5E8C8865/5F75CD15" Ref="D?"  Part="1"
 AR Path="/5F75CD15" Ref="D5"  Part="1" 
 F 0 "D5" V 7039 9683 50  0000 R CNN
 F 1 "Orange" V 6948 9683 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 7000 9800 50  0001 C CNN
+F 2 "Ventilator:LED_0805_2012Metric" H 7000 9800 50  0001 C CNN
 F 3 "~" H 7000 9800 50  0001 C CNN
 F 4 "Broadcom" H 7000 9800 50  0001 C CNN "Manufacturer"
 F 5 "HSMD-C170" H 7000 9800 50  0001 C CNN "Part Number"
@@ -2833,6 +2688,8 @@ F 0 "R15" H 6850 9450 50  0000 C CNN
 F 1 "3.3K" H 6800 9550 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 6930 9500 50  0001 C CNN
 F 3 "~" H 7000 9500 50  0001 C CNN
+F 4 "KOA Speer" H 7000 9500 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD3301F" H 7000 9500 50  0001 C CNN "Part Number"
 	1    7000 9500
 	-1   0    0    1   
 $EndComp
@@ -2844,7 +2701,7 @@ AR Path="/5E8C8865/5F7728BF" Ref="D?"  Part="1"
 AR Path="/5F7728BF" Ref="D4"  Part="1" 
 F 0 "D4" V 6589 9683 50  0000 R CNN
 F 1 "Orange" V 6498 9683 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 6550 9800 50  0001 C CNN
+F 2 "Ventilator:LED_0805_2012Metric" H 6550 9800 50  0001 C CNN
 F 3 "~" H 6550 9800 50  0001 C CNN
 F 4 "Broadcom" H 6550 9800 50  0001 C CNN "Manufacturer"
 F 5 "HSMD-C170" H 6550 9800 50  0001 C CNN "Part Number"
@@ -2880,6 +2737,8 @@ F 0 "R14" H 6400 9450 50  0000 C CNN
 F 1 "3.3K" H 6350 9550 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 6480 9500 50  0001 C CNN
 F 3 "~" H 6550 9500 50  0001 C CNN
+F 4 "KOA Speer" H 6550 9500 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD3301F" H 6550 9500 50  0001 C CNN "Part Number"
 	1    6550 9500
 	-1   0    0    1   
 $EndComp
@@ -2962,7 +2821,7 @@ AR Path="/5E8C8865/5F7DBFAC" Ref="D?"  Part="1"
 AR Path="/5F7DBFAC" Ref="D9"  Part="1" 
 F 0 "D9" V 10939 1133 50  0000 R CNN
 F 1 "Orange" V 10848 1133 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 10900 1250 50  0001 C CNN
+F 2 "Ventilator:LED_0805_2012Metric" H 10900 1250 50  0001 C CNN
 F 3 "~" H 10900 1250 50  0001 C CNN
 F 4 "Broadcom" H 10900 1250 50  0001 C CNN "Manufacturer"
 F 5 "HSMD-C170" H 10900 1250 50  0001 C CNN "Part Number"
@@ -2998,6 +2857,8 @@ F 0 "R29" H 10750 900 50  0000 C CNN
 F 1 "1.5K" H 10700 1000 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 10830 950 50  0001 C CNN
 F 3 "~" H 10900 950 50  0001 C CNN
+F 4 "KOA Speer" H 10900 950 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1501F" H 10900 950 50  0001 C CNN "Part Number"
 	1    10900 950 
 	-1   0    0    1   
 $EndComp
@@ -3063,8 +2924,8 @@ F 3 "" H 8300 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11750 6850 12250 6850
-Text Label 12250 6850 2    50   ~ 0
+	11750 7600 12250 7600
+Text Label 12250 7600 2    50   ~ 0
 RPi_En
 Text Notes 12300 9350 0    50   Italic 0
 Unless otherwise noted: resistors are 1% tolerance, capacitors are 5% tolerance
@@ -3215,6 +3076,8 @@ F 0 "R193" H 10400 9300 50  0000 C CNN
 F 1 "3.3K" H 10350 9400 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 10480 9350 50  0001 C CNN
 F 3 "~" H 10550 9350 50  0001 C CNN
+F 4 "KOA Speer" H 10550 9350 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD3301F" H 10550 9350 50  0001 C CNN "Part Number"
 	1    10550 9350
 	-1   0    0    1   
 $EndComp
@@ -3229,6 +3092,8 @@ F 0 "R194" H 10800 9300 50  0000 C CNN
 F 1 "3.3K" H 10800 9400 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 10880 9350 50  0001 C CNN
 F 3 "~" H 10950 9350 50  0001 C CNN
+F 4 "KOA Speer" H 10950 9350 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD3301F" H 10950 9350 50  0001 C CNN "Part Number"
 	1    10950 9350
 	-1   0    0    1   
 $EndComp
@@ -3243,6 +3108,8 @@ F 0 "R192" H 9700 9950 50  0000 C CNN
 F 1 "10K" H 9650 10050 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 9780 10000 50  0001 C CNN
 F 3 "~" H 9850 10000 50  0001 C CNN
+F 4 "KOA Speer" H 9850 10000 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1002F" H 9850 10000 50  0001 C CNN "Part Number"
 	1    9850 10000
 	-1   0    0    1   
 $EndComp
@@ -3281,11 +3148,11 @@ Text Label 11800 9550 2    50   ~ 0
 Enc_A
 Text Label 11800 9650 2    50   ~ 0
 Enc_B
-Text Notes 11650 4050 0    50   ~ 0
+Text Notes 12350 4050 0    50   ~ 0
 GPIO16
-Text Notes 11650 4150 0    50   ~ 0
+Text Notes 12350 4150 0    50   ~ 0
 GPIO20
-Text Notes 11650 4250 0    50   ~ 0
+Text Notes 12350 4250 0    50   ~ 0
 GPIO21
 Wire Wire Line
 	10950 9500 10950 9650
@@ -3300,6 +3167,8 @@ F 0 "R196" V 10900 9700 50  0000 C CNN
 F 1 "10K" V 11000 9650 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 11030 9650 50  0001 C CNN
 F 3 "~" H 11100 9650 50  0001 C CNN
+F 4 "KOA Speer" H 11100 9650 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1002F" H 11100 9650 50  0001 C CNN "Part Number"
 	1    11100 9650
 	0    -1   -1   0   
 $EndComp
@@ -3315,6 +3184,8 @@ F 0 "R197" V 11550 9550 50  0000 C CNN
 F 1 "10K" V 11450 9550 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 11280 9550 50  0001 C CNN
 F 3 "~" H 11350 9550 50  0001 C CNN
+F 4 "KOA Speer" H 11350 9550 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1002F" H 11350 9550 50  0001 C CNN "Part Number"
 	1    11350 9550
 	0    -1   -1   0   
 $EndComp
@@ -3334,6 +3205,8 @@ F 0 "R195" V 10100 10050 50  0000 C CNN
 F 1 "10K" V 10200 10050 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 10230 10000 50  0001 C CNN
 F 3 "~" H 10300 10000 50  0001 C CNN
+F 4 "KOA Speer" H 10300 10000 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1002F" H 10300 10000 50  0001 C CNN "Part Number"
 	1    10300 10000
 	0    -1   -1   0   
 $EndComp
@@ -3443,7 +3316,7 @@ Text Notes 11500 9200 0    50   ~ 0
 RC filters help suppress EMI, ESD
 Text Notes 8950 9250 0    50   ~ 0
 30mA max. from +5VD
-Text Notes 11650 3850 0    50   ~ 0
+Text Notes 12350 3850 0    50   ~ 0
 GPIO12
 $Comp
 L Mechanical:MountingHole_Pad H4
@@ -3606,67 +3479,63 @@ Text Label 9350 8200 0    50   ~ 0
 Enc_Sw
 Wire Wire Line
 	9350 8200 9850 8200
-NoConn ~ 11500 3850
-NoConn ~ 11500 4050
-NoConn ~ 11500 4150
-NoConn ~ 11500 4250
 $Sheet
-S 3700 4350 1100 300 
+S 3350 4600 1100 300 
 U 5F518E26
 F0 "Pressure Sensors, Digital (CPLD)" 50
 F1 "pressure_sensors_dig.sch" 50
-F2 "SDA" B R 4800 4450 50 
-F3 "SCL" I R 4800 4550 50 
-F4 "Vcc" I L 3700 4500 50 
+F2 "SDA" B R 4450 4700 50 
+F3 "SCL" I R 4450 4800 50 
+F4 "Vcc" I L 3350 4750 50 
 $EndSheet
 $Sheet
-S 3700 5000 1100 300 
+S 3350 5200 1100 300 
 U 5F593E41
 F0 "Pressure Sensors, Digital (Raspberry Pi)" 50
 F1 "pressure_sensors_dig.sch" 50
-F2 "SDA" B R 4800 5100 50 
-F3 "SCL" I R 4800 5200 50 
-F4 "Vcc" I L 3700 5150 50 
+F2 "SDA" B R 4450 5300 50 
+F3 "SCL" I R 4450 5400 50 
+F4 "Vcc" I L 3350 5350 50 
 $EndSheet
-Text Label 5350 4450 2    50   ~ 0
+Text Label 5000 4700 2    50   ~ 0
 CPLD_SDA
-Text Label 5350 4550 2    50   ~ 0
+Text Label 5000 4800 2    50   ~ 0
 CPLD_SCL
 Wire Wire Line
-	5350 4450 4800 4450
+	5000 4700 4450 4700
 Wire Wire Line
-	4800 4550 5350 4550
-Text Label 5300 5100 2    50   ~ 0
+	4450 4800 5000 4800
+Text Label 4950 5300 2    50   ~ 0
 RPi_SDA
-Text Label 5300 5200 2    50   ~ 0
+Text Label 4950 5400 2    50   ~ 0
 RPi_SCL
 Wire Wire Line
-	5300 5100 4800 5100
+	4950 5300 4450 5300
 Wire Wire Line
-	4800 5200 5300 5200
-Text Label 3250 5150 0    50   ~ 0
+	4450 5400 4950 5400
+Text Label 2900 5350 0    50   ~ 0
 +3.3V_RPi
 Wire Wire Line
-	3250 5150 3700 5150
+	2900 5350 3350 5350
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5F644D1C
-P 3500 4500
+P 3150 4750
 AR Path="/5E8FBD97/5F644D1C" Ref="#PWR?"  Part="1" 
 AR Path="/5E8E0754/5F644D1C" Ref="#PWR?"  Part="1" 
 AR Path="/5E8DFCAD/5F644D1C" Ref="#PWR?"  Part="1" 
 AR Path="/5E8DEDC0/5F644D1C" Ref="#PWR?"  Part="1" 
 AR Path="/5E8C8865/5F644D1C" Ref="#PWR?"  Part="1" 
 AR Path="/5F644D1C" Ref="#PWR0281"  Part="1" 
-F 0 "#PWR0281" H 3500 4350 50  0001 C CNN
-F 1 "+3.3V" H 3515 4673 50  0000 C CNN
-F 2 "" H 3500 4500 50  0001 C CNN
-F 3 "" H 3500 4500 50  0001 C CNN
-	1    3500 4500
+F 0 "#PWR0281" H 3150 4600 50  0001 C CNN
+F 1 "+3.3V" H 3165 4923 50  0000 C CNN
+F 2 "" H 3150 4750 50  0001 C CNN
+F 3 "" H 3150 4750 50  0001 C CNN
+	1    3150 4750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3500 4500 3700 4500
+	3150 4750 3350 4750
 Wire Wire Line
 	9350 2550 9700 2550
 Wire Wire Line
@@ -3721,33 +3590,193 @@ F 3 "~" H 9050 2300 50  0001 C CNN
 	1    9050 2300
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	13350 3050 12850 3050
+Text Label 12850 3050 0    50   ~ 0
+~Valve1_Fault
+Wire Wire Line
+	13350 3850 12850 3850
+Wire Wire Line
+	13350 3950 12850 3950
+Text Label 12850 3950 0    50   ~ 0
+~Valve2_Fault
+Wire Wire Line
+	13350 4750 12850 4750
+Wire Wire Line
+	13350 4850 12850 4850
+Text Label 12850 4850 0    50   ~ 0
+~Valve3_Fault
+Wire Wire Line
+	13350 5700 12850 5700
+Text Label 12850 5700 0    50   ~ 0
+~Valve4_Fault
+Text Label 12250 7000 2    50   ~ 0
+~Valve3_Fault
+Text Label 12250 6900 2    50   ~ 0
+~Valve2_Fault
+Text Label 12250 6800 2    50   ~ 0
+~Valve1_Fault
+Text Label 12250 7100 2    50   ~ 0
+~Valve4_Fault
+Wire Wire Line
+	11750 6800 12250 6800
+Wire Wire Line
+	12250 6900 11750 6900
+Wire Wire Line
+	11750 7000 12250 7000
+Wire Wire Line
+	12250 7100 11750 7100
+Text Label 12850 5600 0    50   ~ 0
+CPLD_ADC3
+Text Label 12850 4750 0    50   ~ 0
+CPLD_ADC4
+Text Label 12850 3850 0    50   ~ 0
+CPLD_ADC5
+Text Label 12850 2950 0    50   ~ 0
+CPLD_ADC6
+Text Notes 4100 9800 0    50   ~ 0
+Populate (10K, 1K) if not using\nthe valve driver current sense
 $Comp
-L Mechanical:MountingHole_Pad H5
-U 1 1 5F711A20
-P 15700 8800
-F 0 "H5" H 15800 8849 50  0000 L CNN
-F 1 "#4/M3" H 15800 8758 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 15700 8800 50  0001 C CNN
-F 3 "~" H 15700 8800 50  0001 C CNN
-	1    15700 8800
+L Connector_Generic:Conn_02x20_Odd_Even J8
+U 1 1 5E8C5CD9
+P 11200 3250
+F 0 "J8" H 11250 4275 50  0000 C CNN
+F 1 "Conn_02x20_Odd_Even" H 11250 4276 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 11200 3250 50  0001 C CNN
+F 3 "~" H 11200 3250 50  0001 C CNN
+F 4 "Sullins" H 11200 3250 50  0001 C CNN "Manufacturer"
+F 5 "PPPC202LFBN-RC" H 11200 3250 50  0001 C CNN "Part Number"
+	1    11200 3250
+	1    0    0    -1  
+$EndComp
+NoConn ~ 11000 2950
+NoConn ~ 11000 3050
+NoConn ~ 11000 3250
+NoConn ~ 11000 3350
+$Comp
+L power:GND #PWR0356
+U 1 1 5FF86CE9
+P 6400 7450
+AR Path="/5FF86CE9" Ref="#PWR0356"  Part="1" 
+AR Path="/5E8AFE9D/5FF86CE9" Ref="#PWR?"  Part="1" 
+AR Path="/5E8A4ABF/5FF86CE9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0356" H 6400 7200 50  0001 C CNN
+F 1 "GND" H 6405 7277 50  0000 C CNN
+F 2 "" H 6400 7450 50  0001 C CNN
+F 3 "" H 6400 7450 50  0001 C CNN
+	1    6400 7450
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0343
-U 1 1 5F711A26
-P 15700 8900
-AR Path="/5F711A26" Ref="#PWR0343"  Part="1" 
-AR Path="/5E8AFE9D/5F711A26" Ref="#PWR?"  Part="1" 
-AR Path="/5E8FBD97/5F711A26" Ref="#PWR?"  Part="1" 
-AR Path="/5E8E0754/5F711A26" Ref="#PWR?"  Part="1" 
-AR Path="/5E8DFCAD/5F711A26" Ref="#PWR?"  Part="1" 
-AR Path="/5E8DEDC0/5F711A26" Ref="#PWR?"  Part="1" 
-AR Path="/5E8C8865/5F711A26" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0343" H 15700 8650 50  0001 C CNN
-F 1 "GND" H 15705 8727 50  0000 C CNN
-F 2 "" H 15700 8900 50  0001 C CNN
-F 3 "" H 15700 8900 50  0001 C CNN
-	1    15700 8900
+L Device:C C49
+U 1 1 5FF86CF1
+P 6400 7300
+AR Path="/5FF86CF1" Ref="C49"  Part="1" 
+AR Path="/5E8AFE9D/5FF86CF1" Ref="C?"  Part="1" 
+AR Path="/5E8A4ABF/5FF86CF1" Ref="C?"  Part="1" 
+F 0 "C49" V 6500 7450 50  0000 C CNN
+F 1 "10nF 50V NP0" V 6250 7450 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6438 7150 50  0001 C CNN
+F 3 "~" H 6400 7300 50  0001 C CNN
+F 4 "Murata" H 6400 7300 50  0001 C CNN "Manufacturer"
+F 5 "GRM1885C1H103JA01D" H 6400 7300 50  0001 C CNN "Part Number"
+	1    6400 7300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0357
+U 1 1 6006604F
+P 6050 7450
+AR Path="/6006604F" Ref="#PWR0357"  Part="1" 
+AR Path="/5E8AFE9D/6006604F" Ref="#PWR?"  Part="1" 
+AR Path="/5E8A4ABF/6006604F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0357" H 6050 7200 50  0001 C CNN
+F 1 "GND" H 6055 7277 50  0000 C CNN
+F 2 "" H 6050 7450 50  0001 C CNN
+F 3 "" H 6050 7450 50  0001 C CNN
+	1    6050 7450
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:C C30
+U 1 1 60066057
+P 6050 7300
+AR Path="/60066057" Ref="C30"  Part="1" 
+AR Path="/5E8AFE9D/60066057" Ref="C?"  Part="1" 
+AR Path="/5E8A4ABF/60066057" Ref="C?"  Part="1" 
+F 0 "C30" V 6150 7450 50  0000 C CNN
+F 1 "10nF 50V NP0" V 5900 7450 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6088 7150 50  0001 C CNN
+F 3 "~" H 6050 7300 50  0001 C CNN
+F 4 "Murata" H 6050 7300 50  0001 C CNN "Manufacturer"
+F 5 "GRM1885C1H103JA01D" H 6050 7300 50  0001 C CNN "Part Number"
+	1    6050 7300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0358
+U 1 1 60084792
+P 5700 7450
+AR Path="/60084792" Ref="#PWR0358"  Part="1" 
+AR Path="/5E8AFE9D/60084792" Ref="#PWR?"  Part="1" 
+AR Path="/5E8A4ABF/60084792" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0358" H 5700 7200 50  0001 C CNN
+F 1 "GND" H 5705 7277 50  0000 C CNN
+F 2 "" H 5700 7450 50  0001 C CNN
+F 3 "" H 5700 7450 50  0001 C CNN
+	1    5700 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C29
+U 1 1 6008479A
+P 5700 7300
+AR Path="/6008479A" Ref="C29"  Part="1" 
+AR Path="/5E8AFE9D/6008479A" Ref="C?"  Part="1" 
+AR Path="/5E8A4ABF/6008479A" Ref="C?"  Part="1" 
+F 0 "C29" V 5800 7450 50  0000 C CNN
+F 1 "10nF 50V NP0" V 5550 7450 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5738 7150 50  0001 C CNN
+F 3 "~" H 5700 7300 50  0001 C CNN
+F 4 "Murata" H 5700 7300 50  0001 C CNN "Manufacturer"
+F 5 "GRM1885C1H103JA01D" H 5700 7300 50  0001 C CNN "Part Number"
+	1    5700 7300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6400 7150 6400 6900
+Wire Wire Line
+	6400 6900 7050 6900
+Wire Wire Line
+	6050 7150 6050 6800
+Wire Wire Line
+	6050 6800 7050 6800
+Wire Wire Line
+	5700 7150 5700 6700
+Wire Wire Line
+	5700 6700 7050 6700
+Wire Wire Line
+	12850 2950 13350 2950
+$Sheet
+S 13350 6100 850  200 
+U 60304D29
+F0 "Valve Motion Detection" 50
+F1 "valve_detect.sch" 50
+F2 "CS" I L 13350 6200 50 
+F3 "Movement" O R 14200 6200 50 
+$EndSheet
+Wire Wire Line
+	14200 6200 14700 6200
+Text Label 14700 6200 2    50   ~ 0
+~Valve4_Fault
+Wire Wire Line
+	13350 6200 12750 6200
+Wire Wire Line
+	12750 6200 12750 5600
+Wire Wire Line
+	12750 5600 13350 5600
+Text Notes 14800 6350 0    50   ~ 0
+When analog current sense drivers used,\nCPLD fault input for valve 4 is handled by\n"valve motion detection" circuit\n(all other valve fault inputs are inactive)
+Text Notes 14350 7150 0    79   ~ 16
+Alarm(s)
 $EndSCHEMATC

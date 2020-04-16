@@ -1,4 +1,4 @@
-16367398308636592
+16368985198483866
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -73151,7 +73151,14 @@ connector spring
 4
 Ventilator
 Pressure_sensor_barb
+Barbed fitting for pressure sensors, mechanical only
 
+0
+0
+0
+Ventilator
+Pressure_sensor_barb_dual
+Barbed fitting for dual pressure sensors, mechanical only
 
 0
 0

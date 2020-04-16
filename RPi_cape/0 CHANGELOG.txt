@@ -27,3 +27,11 @@
 1.3 to 1.4:
 	* Added two digital pressure sensors each, on Raspberry Pi and CPLD I2C busses
 	* Added gnd plane on bottom layer for heatsinking 5V regulators
+	
+1.4 to 1.5:
+	* Added strain-relief slots and barb mounting dimensions for digital pressure sensors
+	* Changed valve drivers from discrete power MOSFETs to "smart" industrial/automotive driver ICs for the current monitoring, including valve-movement monitor for #4
+	* Connected RPi_Valve* signals to larger CPLD footprint, changed Raspberry Pi pin assignment as a result to ease PCB routing
+	* Updated footprints, page layout to create readable assembly drawing
+	* Added current-measurement testpoints for CPLD power from BATT+
+	* Changed power diodes in power-down-alarm circuit to small-signal parts for more compact layout
