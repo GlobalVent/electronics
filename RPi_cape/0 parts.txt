@@ -143,8 +143,12 @@ Panasonic EEH-ZA1V271V (100uF->270uF), 20k
 Nichicon UWT1V221MNL1GS (non-poly, 220uF, 8mm), Digikey 496k
 
 General Raspberry Pi connector:
-Sullins PPPC202LFBN-RC, 17k
+* 20x2 rectangular header (female)
+* 0.1" (2.54 mm) pitch
+* Gold-plated contacts
+* >8 mm body height (not inc. pins)
 Sullins SFH11-PBPC-D20-ST-BK, 7k
+Sullins PPPC202LFBN-RC, 17k - now 1.7k as of 2020-04-16
 
 General ceramic caps:
 10uF 50V X7S 1210, Murata GCM32EC71H106KA03, 126k

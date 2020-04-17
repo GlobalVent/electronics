@@ -1,4 +1,4 @@
-16368985198483866
+16392795329287049
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -73150,6 +73150,34 @@ connector spring
 4
 4
 Ventilator
+D_SMA
+Diode SMA (DO-214AC)
+Diode SMA (DO-214AC)
+0
+2
+2
+Ventilator
+D_SOD-123
+SOD-123
+SOD-123
+0
+2
+2
+Ventilator
+D_SOD-323
+SOD-323
+SOD-323
+0
+2
+2
+Ventilator
+LED_0805_2012Metric
+LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator
+diode
+0
+2
+2
+Ventilator
 Pressure_sensor_barb
 Barbed fitting for pressure sensors, mechanical only
 
@@ -73159,6 +73187,27 @@ Barbed fitting for pressure sensors, mechanical only
 Ventilator
 Pressure_sensor_barb_dual
 Barbed fitting for dual pressure sensors, mechanical only
+
+0
+0
+0
+Ventilator
+Pressure_sensor_barb_inner-lip
+Barbed fitting for pressure sensors, mechanical only
+
+0
+0
+0
+Ventilator
+Pressure_sensor_barb_inner-lip-expanded-slots
+Barbed fitting for pressure sensors, mechanical only
+
+0
+0
+0
+Ventilator
+Pressure_sensor_barb_no-lip
+Barbed fitting for pressure sensors, mechanical only
 
 0
 0
@@ -73178,6 +73227,27 @@ QFP50P1600X1600X120-100N
 100
 100
 Ventilator
+SOIC-8_3.9x4.9mm_P1.27mm
+SOIC, 8 Pin (JEDEC MS-012AA, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_8.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOIC SO
+0
+8
+8
+Ventilator
+SOT-23
+SOT-23, Standard
+SOT-23
+0
+3
+3
+Ventilator
+SOT-23-5
+5-pin SOT23 package
+SOT-23-5
+0
+5
+5
+Ventilator
 TE_MS5803-05BA
 TE MS5803-05BA altimeter/dive pressure sensor
 sensor pressure barom
@@ -73188,6 +73258,41 @@ Ventilator
 TI_TO-PMOD-7
 
 
+0
+8
+8
+Ventilator
+TSSOP-14-1EP_4.4x5mm_P0.65mm
+14-Lead Plastic Thin Shrink Small Outline (ST)-4.4 mm Body [TSSOP] with exposed pad (http://cds.linear.com/docs/en/datasheet/34301fa.pdf)
+SSOP 0.65 exposed pad
+0
+18
+15
+Ventilator
+TSSOP-14_4.4x5mm_P0.65mm
+14-Lead Plastic Thin Shrink Small Outline (ST)-4.4 mm Body [TSSOP] (see Microchip Packaging Specification 00000049BS.pdf)
+SSOP 0.65
+0
+14
+14
+Ventilator
+TSSOP-16-1EP_4.4x5mm_P0.65mm
+FE Package; 16-Lead Plastic TSSOP (4.4mm); Exposed Pad Variation BB; (see Linear Technology 1956f.pdf)
+SSOP 0.65
+0
+24
+17
+Ventilator
+TSSOP-16_4.4x5mm_P0.65mm
+16-Lead Plastic Thin Shrink Small Outline (ST)-4.4 mm Body [TSSOP] (see Microchip Packaging Specification 00000049BS.pdf)
+SSOP 0.65
+0
+16
+16
+Ventilator
+VSSOP-8_3.0x3.0mm_P0.65mm
+VSSOP-8 3.0 x 3.0, http://www.ti.com/lit/ds/symlink/lm75b.pdf
+VSSOP-8 3.0 x 3.0
 0
 8
 8

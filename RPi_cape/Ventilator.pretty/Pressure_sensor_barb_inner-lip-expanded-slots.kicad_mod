@@ -1,4 +1,4 @@
-(module Pressure_sensor_barb_inner-lip-expanded-slots (layer F.Cu) (tedit 5E988B92)
+(module Pressure_sensor_barb_inner-lip-expanded-slots (layer F.Cu) (tedit 5E99E8FE)
   (descr "Barbed fitting for pressure sensors, mechanical only")
   (attr virtual)
   (fp_text reference REF** (at 0 0.5) (layer F.SilkS)

@@ -2106,4 +2106,8 @@ F 5 "LM2903DGKR" H 1450 9450 50  0001 C CNN "Part Number"
 	3    1450 9450
 	1    0    0    -1  
 $EndComp
+Text Notes 13650 8000 0    50   ~ 0
+~~0.6 mA battery load
+Text Notes 1850 8500 0    50   ~ 0
+~~0.3 mA battery load
 $EndSCHEMATC

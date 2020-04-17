@@ -1,4 +1,4 @@
-(module Pressure_sensor_barb (layer F.Cu) (tedit 5E985F1A)
+(module Pressure_sensor_barb (layer F.Cu) (tedit 5E99E8EE)
   (descr "Barbed fitting for pressure sensors, mechanical only")
   (attr virtual)
   (fp_text reference REF** (at 0 0.5) (layer F.SilkS)

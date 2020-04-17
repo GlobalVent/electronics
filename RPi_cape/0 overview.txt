@@ -2,7 +2,7 @@ Power:
 	+24V and GNDPWR are noisy 24V for solenoid valves
 	+24VA and GND are quiet 24V for sensors - this is derived from filtered +24V/GNDPWR
 	+5VD is digital Raspberry Pi power, kept separate from CPLD and analog power for reliability
-	+5V is digital CPLD power
+	+5V is digital CPLD power and alarm power (when not running off backup battery)
 	+5VA is analog (sensor conditioning, limit comparator) power - derived from filtered +5V
 	+3.3V is digital CPLD I/O power, output combining-logic power - regulated by LDO from +5V, or optionally alarm backup battery when +5V down
 	+1.8V is digital CPLD internal power - regulated by LDO from +5V, or optionally alarm backup battery when +5V down

@@ -1,9 +1,11 @@
-4 layers
+4 layers, 1.6 mm (0.062") thickness, LPI soldermask and silkscreen both sides
+Outer layers 1 oz copper, inner layers either 0.5 oz or 1 oz copper (choose standard/cheapest)
+ENIG plating on pads
 Overall dimensions 104 x 255 mm (4.095" x 10.039")
-All copper layers positive
 Min. trace/spacing 0.18 mm (0.007")
-Min. hole size 0.26 mm (0.010")
+Min. hole size 0.26 mm (0.010"), all holes plated
 
+All copper layers positive
 *-F_Cu.gbr: Top copper (signal)
 *-In1_Cu.gbr: Layer 2 copper (plane)
 *-In2_Cu.gbr: Layer 3 copper (mixed plane/signal)
