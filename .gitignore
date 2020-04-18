@@ -1,12 +1,3 @@
-
-RPi_cape/5V_reg.sch-bak
-RPi_cape/audio_alarm.sch-bak
-RPi_cape/cpld.sch-bak
-RPi_cape/output_driver.sch-bak
-RPi_cape/RPi_cape.sch-bak
-RPi_cape/sensor_input.sch-bak
-RPi_cape/sensor_input_lowlevel.sch-bak
 *.log
 *.kicad_pcb-bak
 *.sch-bak
-*.kicad_pcb-bak
