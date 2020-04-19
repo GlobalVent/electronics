@@ -31,15 +31,15 @@ ST SMBJ24A-TR, 62k
 Alarm audio amps:
 TI LM4871MX/NOPB, 220k
 
-Alarm battery holder - not physically compatible:
-* 3x AA (maybe 4x AA too?)
+Alarm battery holder - not physically compatible with each other:
+* 4x AA
 MPD BH34AAW, 4x flying leads, 29k
 Keystone 2478, 4x flying leads, 14k
-MPD BK-1280-PC6, 3x PCB-mount, 13k
 MPD BC4AAW, 4x flying leads, 12k
+Keystone 2477, 4x PCB-mount, 7k
+MPD BK-1280-PC6, 3x PCB-mount, 13k
 MPD BA3AAPC, 3x PCB-mount, 8k
 MPD BC3AAPC, 3x PCB-mount, 8k
-Keystone 2477, 4x PCB-mount, 7k
 
 Analog, ADCs:
 * >= 10 bits
@@ -85,14 +85,6 @@ Analog, low-leakage diodes:
 * <5 nA @ <1V
 * SOD-323 package
 ON Semi BAS21AHT1G, >1M
-
-Output driver MOSFET:
-* Vds >= 60V
-* Rds-on <= 100 mOhms (for max. fault dissipation of 0.1W)
-* D-Pak (TO-252) package
-ON Semiconductor NTD5865NLT4G
-Alpha & Omega aod482
-ST STD35NF06T4
 
 Output driver optocoupler:
 * CTR >=50% @ 5 mA LED
