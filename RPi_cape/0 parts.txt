@@ -20,6 +20,14 @@ Power, LDOs for CPLD:
 TI LP5907MFX-3.3/NOPB, 3.3V, Digikey 316k
 TI LP5907MFX-1.8/NOPB, 1.8V, Digikey 213k
 
+Power, input protection TVS:
+* 24V "working voltage" / "standoff voltage"
+* Max. clamping voltage < 43V (abs. max rating of LMZ14203)
+* SMB package
+Littlefuse SMBJ24A, 250k
+Vishay SMBJ24CA-E3/52, 30k
+ST SMBJ24A-TR, 62k
+
 Alarm audio amps:
 TI LM4871MX/NOPB, 220k
 
