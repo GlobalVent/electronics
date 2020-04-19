@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 15
 Title "Raspberry Pi Hat for JamVent Adaptation"
 Date ""
-Rev "1.5"
+Rev "1.6"
 Comp "Partners COVID Innovation Group"
 Comment1 "Don Straney"
 Comment2 ""
@@ -334,6 +334,7 @@ F1 "audio_alarm.sch" 50
 F2 "In_RPi" I L 13850 7750 50 
 F3 "In_CPLD" I L 13850 7900 50 
 F4 "Low_Bat" O L 13850 7500 50 
+F5 "~Bat_On" O L 13850 7600 50 
 $EndSheet
 $Comp
 L Connector_Generic:Conn_01x04 J1
@@ -755,7 +756,7 @@ F 3 "" H 2950 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2950 950  3350 950 
+	2950 950  3250 950 
 $Comp
 L Ventilator:+24VA #PWR029
 U 1 1 5E96BDDF
@@ -815,8 +816,8 @@ U 1 1 5E9D7F90
 P 3800 8650
 AR Path="/5E9D7F90" Ref="R6"  Part="1" 
 AR Path="/5E8AFE9D/5E9D7F90" Ref="R?"  Part="1" 
-F 0 "R6" H 3900 8600 50  0000 C CNN
-F 1 "10K" H 3950 8700 50  0000 C CNN
+F 0 "R6" H 3650 8600 50  0000 C CNN
+F 1 "DNP (10K)" H 3500 8700 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 3730 8650 50  0001 C CNN
 F 3 "~" H 3800 8650 50  0001 C CNN
 F 4 "KOA Speer" H 3800 8650 50  0001 C CNN "Manufacturer"
@@ -830,8 +831,8 @@ U 1 1 5E9DF1E8
 P 3800 8950
 AR Path="/5E9DF1E8" Ref="R7"  Part="1" 
 AR Path="/5E8AFE9D/5E9DF1E8" Ref="R?"  Part="1" 
-F 0 "R7" H 3900 8900 50  0000 C CNN
-F 1 "10K" H 3950 9000 50  0000 C CNN
+F 0 "R7" H 3650 8900 50  0000 C CNN
+F 1 "DNP (10K)" H 3500 9000 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 3730 8950 50  0001 C CNN
 F 3 "~" H 3800 8950 50  0001 C CNN
 F 4 "KOA Speer" H 3800 8950 50  0001 C CNN "Manufacturer"
@@ -846,9 +847,11 @@ P 3800 9800
 AR Path="/5E9DF420" Ref="R8"  Part="1" 
 AR Path="/5E8AFE9D/5E9DF420" Ref="R?"  Part="1" 
 F 0 "R8" H 3900 9750 50  0000 C CNN
-F 1 "DNP" H 3950 9850 50  0000 C CNN
+F 1 "10K" H 3950 9850 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 3730 9800 50  0001 C CNN
 F 3 "~" H 3800 9800 50  0001 C CNN
+F 4 "KOA Speer" H 3800 9800 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1002F" H 3800 9800 50  0001 C CNN "Part Number"
 	1    3800 9800
 	1    0    0    -1  
 $EndComp
@@ -859,9 +862,11 @@ P 3800 10100
 AR Path="/5E9DF8CA" Ref="R9"  Part="1" 
 AR Path="/5E8AFE9D/5E9DF8CA" Ref="R?"  Part="1" 
 F 0 "R9" H 3900 10050 50  0000 C CNN
-F 1 "DNP" H 3950 10150 50  0000 C CNN
+F 1 "1K" H 3950 10150 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 3730 10100 50  0001 C CNN
 F 3 "~" H 3800 10100 50  0001 C CNN
+F 4 "KOA Speer" H 3800 10100 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1001F" H 3800 10100 50  0001 C CNN "Part Number"
 	1    3800 10100
 	1    0    0    -1  
 $EndComp
@@ -1728,45 +1733,6 @@ Wire Wire Line
 	4500 7750 5500 7750
 Wire Wire Line
 	4500 7850 5500 7850
-$Sheet
-S 9850 6250 1900 2050
-U 5E8C8865
-F0 "CPLD" 50
-F1 "cpld.sch" 50
-F2 "Valve1" O R 11750 6350 50 
-F3 "Valve2" O R 11750 6450 50 
-F4 "Valve3" O R 11750 6550 50 
-F5 "Valve4" O R 11750 6650 50 
-F6 "RPi_Valve1" I L 9850 6350 50 
-F7 "RPi_Valve2" I L 9850 6450 50 
-F8 "RPi_Valve3" I L 9850 6550 50 
-F9 "RPi_Valve4" I L 9850 6650 50 
-F10 "Pressure1_Lim_H_Alarm" I L 9850 7250 50 
-F11 "Pressure1_Lim_L_Alarm" I L 9850 7350 50 
-F12 "Pressure2_Lim_H_Alarm" I L 9850 7450 50 
-F13 "Pressure2_Lim_L_Alarm" I L 9850 7550 50 
-F14 "O2_Lim_H_Alarm" I L 9850 7650 50 
-F15 "O2_Lim_L_Alarm" I L 9850 7750 50 
-F16 "Alarm_Spkr" O R 11750 7400 50 
-F17 "SDA" O L 9850 6900 50 
-F18 "SCL" O L 9850 7000 50 
-F19 "~ADC_INT" I L 9850 7100 50 
-F20 "Low_Bat" I R 11750 7250 50 
-F21 "RPi_Comms1" B R 11750 7700 50 
-F22 "RPi_Comms2" B R 11750 7800 50 
-F23 "RPi_Comms3" B R 11750 7900 50 
-F24 "RPi_Comms4" B R 11750 8000 50 
-F25 "RPi_Comms5" B R 11750 8100 50 
-F26 "RPi_Comms6" B R 11750 8200 50 
-F27 "RPi_En" O R 11750 7600 50 
-F28 "Enc_A" I L 9850 8000 50 
-F29 "Enc_B" I L 9850 8100 50 
-F30 "Enc_Sw" I L 9850 8200 50 
-F31 "~Valve1_Fault" I R 11750 6800 50 
-F32 "~Valve2_Fault" I R 11750 6900 50 
-F33 "~Valve4_Fault" I R 11750 7100 50 
-F34 "~Valve3_Fault" I R 11750 7000 50 
-$EndSheet
 Wire Wire Line
 	9850 6350 9050 6350
 Wire Wire Line
@@ -2085,9 +2051,9 @@ Text Label 6550 7000 0    50   ~ 0
 CPLD_ADC6
 Text Label 6550 7100 0    50   ~ 0
 CPLD_ADC7
-Text Label 4550 9950 2    50   ~ 0
-CPLD_ADC6
 Text Label 4550 8800 2    50   ~ 0
+CPLD_ADC6
+Text Label 4550 9950 2    50   ~ 0
 CPLD_ADC7
 Wire Wire Line
 	11000 2850 10200 2850
@@ -2096,7 +2062,7 @@ RPi_Alarm_Spkr
 Text Notes 9900 3350 0    50   ~ 0
 GPIO9
 Wire Wire Line
-	12900 7400 12900 7900
+	12900 7450 12900 7900
 Wire Wire Line
 	12900 7900 13850 7900
 Text Label 13000 7900 0    50   ~ 0
@@ -2290,7 +2256,7 @@ Wire Wire Line
 Wire Wire Line
 	11750 7250 13550 7250
 Wire Wire Line
-	11750 7400 12900 7400
+	11750 7450 12900 7450
 Wire Wire Line
 	11750 7700 12150 7700
 Wire Wire Line
@@ -3634,8 +3600,8 @@ Text Label 12850 3850 0    50   ~ 0
 CPLD_ADC5
 Text Label 12850 2950 0    50   ~ 0
 CPLD_ADC6
-Text Notes 4100 9800 0    50   ~ 0
-Populate (10K, 1K) if not using\nthe valve driver current sense
+Text Notes 4200 8650 0    50   ~ 0
+Populate if not using\nthe valve driver current sense
 $Comp
 L Connector_Generic:Conn_02x20_Odd_Even J8
 U 1 1 5E8C5CD9
@@ -3779,4 +3745,92 @@ Text Notes 14800 6350 0    50   ~ 0
 When analog current sense drivers used,\nCPLD fault input for valve 4 is handled by\n"valve motion detection" circuit\n(all other valve fault inputs are inactive)
 Text Notes 14350 7150 0    79   ~ 16
 Alarm(s)
+Wire Wire Line
+	13850 7600 13450 7600
+Wire Wire Line
+	13450 7600 13450 7350
+Wire Wire Line
+	13450 7350 11750 7350
+$Sheet
+S 9850 6250 1900 2050
+U 5E8C8865
+F0 "CPLD" 50
+F1 "cpld.sch" 50
+F2 "Valve1" O R 11750 6350 50 
+F3 "Valve2" O R 11750 6450 50 
+F4 "Valve3" O R 11750 6550 50 
+F5 "Valve4" O R 11750 6650 50 
+F6 "RPi_Valve1" I L 9850 6350 50 
+F7 "RPi_Valve2" I L 9850 6450 50 
+F8 "RPi_Valve3" I L 9850 6550 50 
+F9 "RPi_Valve4" I L 9850 6650 50 
+F10 "Pressure1_Lim_H_Alarm" I L 9850 7250 50 
+F11 "Pressure1_Lim_L_Alarm" I L 9850 7350 50 
+F12 "Pressure2_Lim_H_Alarm" I L 9850 7450 50 
+F13 "Pressure2_Lim_L_Alarm" I L 9850 7550 50 
+F14 "O2_Lim_H_Alarm" I L 9850 7650 50 
+F15 "O2_Lim_L_Alarm" I L 9850 7750 50 
+F16 "Alarm_Spkr" O R 11750 7450 50 
+F17 "SDA" O L 9850 6900 50 
+F18 "SCL" O L 9850 7000 50 
+F19 "~ADC_INT" I L 9850 7100 50 
+F20 "Low_Bat" I R 11750 7250 50 
+F21 "RPi_Comms1" B R 11750 7700 50 
+F22 "RPi_Comms2" B R 11750 7800 50 
+F23 "RPi_Comms3" B R 11750 7900 50 
+F24 "RPi_Comms4" B R 11750 8000 50 
+F25 "RPi_Comms5" B R 11750 8100 50 
+F26 "RPi_Comms6" B R 11750 8200 50 
+F27 "RPi_En" O R 11750 7600 50 
+F28 "Enc_A" I L 9850 8000 50 
+F29 "Enc_B" I L 9850 8100 50 
+F30 "Enc_Sw" I L 9850 8200 50 
+F31 "~Valve1_Fault" I R 11750 6800 50 
+F32 "~Valve2_Fault" I R 11750 6900 50 
+F33 "~Valve4_Fault" I R 11750 7100 50 
+F34 "~Valve3_Fault" I R 11750 7000 50 
+F35 "~Bat_On" I R 11750 7350 50 
+$EndSheet
+$Comp
+L Device:D_Zener_ALT D?
+U 1 1 5F21EF66
+P 3250 1400
+AR Path="/5F21EF66" Ref="D?"  Part="1" 
+AR Path="/5E8AFE9D/5F21EF66" Ref="D?"  Part="1" 
+AR Path="/5E8FBD97/5F21EF66" Ref="D?"  Part="1" 
+AR Path="/5E8DEDC0/5F21EF66" Ref="D?"  Part="1" 
+AR Path="/5E8DFCAD/5F21EF66" Ref="D?"  Part="1" 
+AR Path="/5E8E0754/5F21EF66" Ref="D?"  Part="1" 
+F 0 "D?" V 3204 1479 50  0000 L CNN
+F 1 "DNP" V 3300 1500 50  0000 L CNN
+F 2 "Ventilator:D_SMB" H 3250 1400 50  0001 C CNN
+F 3 "~" H 3250 1400 50  0001 C CNN
+F 4 "Littelfuse" H 3250 1400 50  0001 C CNN "Manufacturer"
+F 5 "SMBJ24A" H 3250 1400 50  0001 C CNN "Part Number"
+	1    3250 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 5F23EB06
+P 3250 1550
+AR Path="/5E8FBD97/5F23EB06" Ref="#PWR?"  Part="1" 
+AR Path="/5E8DEDC0/5F23EB06" Ref="#PWR?"  Part="1" 
+AR Path="/5E8DFCAD/5F23EB06" Ref="#PWR?"  Part="1" 
+AR Path="/5E8E0754/5F23EB06" Ref="#PWR?"  Part="1" 
+AR Path="/5F23EB06" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3250 1350 50  0001 C CNN
+F 1 "GNDPWR" H 3254 1396 50  0000 C CNN
+F 2 "" H 3250 1500 50  0001 C CNN
+F 3 "" H 3250 1500 50  0001 C CNN
+	1    3250 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 1250 3250 950 
+Connection ~ 3250 950 
+Wire Wire Line
+	3250 950  3350 950 
+Text Notes 3050 1700 2    50   ~ 0
+TVS clamps @ 39V max @ 15A,\nvs. cap ratings of 50V, LMZ14203\nabs-max rating of 43V
 $EndSCHEMATC

@@ -35,3 +35,8 @@
 	* Updated footprints, page layout to create readable assembly drawing
 	* Added current-measurement testpoints for CPLD power from BATT+
 	* Changed power diodes in power-down-alarm circuit to small-signal parts for more compact layout
+	
+1.5 to 1.6:
+	* Switched CPLD_ADC7 to +24V monitoring (from +5V monitoring), and added CPLD ~Bat_On digital input(s) to know when it's running from backup battery, to cover low-input-voltage edge cases
+	* Added series 1K resistors (R226-231) on CPLD<->RPi Comms1-6 lines, to protect CPLD in case of overvoltage from RPi failure
+	* Added optional input TVS D23 to handle sustained over-voltage or large surges

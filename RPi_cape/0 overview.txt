@@ -19,25 +19,25 @@ Options:
 		No global fusing: populate R4, remove F1
 		Global fusing: populate F1, remove R4 - likely unnecessary as +24VA and each individual solenoid driver has its own fusing
 	* CPLD power
-		CPLD powered from analog +5V: populate R186 and +5VA/+24VA monitoring on power-down alarm (D37/D38 etc.), remove R185 - less drain on backup battery when active, possible other unforeseen consequences
-		CPLD powered from alarm power (analog +5V when present, backup battery otherwise): populate R185, remove R186 and +5VA/+24VA monitoring on power-down alarm (D37/D38 etc.) - CPLD can sound better (standard IEC 60601-1-8) alarms on power down than the hardwired 1-sec beep
+		CPLD powered from analog +5V: populate R186 and +5VA/+24VA monitoring on power-down alarm (D37-38), remove R185, remove +1.8V monitoring on power-down alarm (D14) - less drain on backup battery when active, possible other unforeseen consequences
+		CPLD powered from alarm power (analog +5V when present, backup battery otherwise): populate R185, remove R186 and +5VA/+24VA monitoring on power-down alarm (D37-D38), add +1.8V monitoring on power-down alarm (D14) - CPLD can sound better (standard IEC 60601-1-8) alarms on power down than the hardwired 1-sec beep
 	* RPi/CPLD output combining for valve drivers:
 		AND (both outputs required to turn on valve): Populate U8 etc. as 74LVC1G08
 		OR (either output can turn on valve): Populate U8 etc. as 74LVC1G32
 	* Valve driver monitoring options:
-		Current sense signal to CPLD's ADC: U9 etc. is TPS1H100B, populate R59=10K and Valve Motion Detection section; remove R58, R8-R9 - can't measure +24VA rail through CPLD's ADC ch.6
-		Digital fault output to CPLD's IO: U9 etc. is TPS1H100A, populate R58=0, R8=10K, R9=1K; remove R59 and Valve Motion Detection section - can measure +24VA rail through CPLD's ADC ch.6, no valve movement detection
+		Current sense signal to CPLD's ADC: U9 etc. is TPS1H100B, populate R59=10K and Valve Motion Detection section; remove R58, R8-R9 - can't measure +5VA rail through CPLD's ADC ch.6
+		Digital fault output to CPLD's IO: U9 etc. is TPS1H100A, populate R58=0, R8=10K, R9=1K; remove R59 and Valve Motion Detection section - can measure +5VA rail through CPLD's ADC ch.6, no valve movement detection
 	* Analog input clamping:
 		Absolute voltage (Zener): populate D11 etc., remove D10 etc.
 		Clamp to rail (rectifier): populate D10 etc., remove D11 etc.
 	* CPLD footprint:
 		5M40ZT64: Populate U31; does not have RPi_Valve* signals connected due to PCB routing constraints (valve driver output-combining logic must be external only)
 		5M80ZT100 or 5M240ZT100: Populate U33; does have RPi_Valve* signals as input, so valve driver output-combining logic can be internal
-	* Power output driver fusing:
+	* Valve driver fusing:
 		PTC resettable fuse: Populate F6, etc. - possibility of going back to normal from temporary fault (although still likely too slow to protect MOSFET)
 		Normal one-time fuse: Populate F10, etc. - faster response time, more likely to protect
-	* Power output default Raspberry Pi input state:
-		Default low Raspberry Pi input in case of power loss: populate R53 etc., remove R55 etc.
+	* Valve default Raspberry Pi output state:
+		Default low Raspberry Pi output in case of power loss: populate R53 etc., remove R55 etc.
 		Default high: populate R55 etc., remove R53 etc.
 	* Low-battery output for alarm backup battery
 		CPLD handles low-battery notification (and/or passes it on to the Raspberry Pi to display/report): populate R146, R177; remove R145, Q8, R147, J13

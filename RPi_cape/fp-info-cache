@@ -1,4 +1,4 @@
-16392795329287049
+16394382829770714
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -73153,6 +73153,13 @@ Ventilator
 D_SMA
 Diode SMA (DO-214AC)
 Diode SMA (DO-214AC)
+0
+2
+2
+Ventilator
+D_SMB
+Diode SMB (DO-214AA)
+Diode SMB (DO-214AA)
 0
 2
 2

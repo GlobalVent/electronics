@@ -4,10 +4,10 @@ EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 10 15
+Sheet 15 15
 Title "CPLD"
 Date ""
-Rev "1.5"
+Rev "1.6"
 Comp "Partners COVID Innovation Group"
 Comment1 "Don Straney"
 Comment2 ""
@@ -1584,30 +1584,18 @@ Text HLabel 2650 2200 0    50   BiDi ~ 0
 RPi_Comms5
 Text HLabel 2650 2300 0    50   BiDi ~ 0
 RPi_Comms6
-Wire Wire Line
-	2650 1800 3250 1800
-Wire Wire Line
-	2650 1900 3250 1900
-Wire Wire Line
-	2650 2000 3250 2000
-Wire Wire Line
-	2650 2100 3250 2100
-Wire Wire Line
-	2650 2200 3250 2200
-Wire Wire Line
-	2650 2300 3250 2300
-Text Label 3250 1800 2    50   ~ 0
-RPi_Comms1
-Text Label 3250 1900 2    50   ~ 0
-RPi_Comms2
-Text Label 3250 2000 2    50   ~ 0
-RPi_Comms3
-Text Label 3250 2100 2    50   ~ 0
-RPi_Comms4
-Text Label 3250 2200 2    50   ~ 0
-RPi_Comms5
-Text Label 3250 2300 2    50   ~ 0
-RPi_Comms6
+Text Label 3950 1800 2    50   ~ 0
+Comms1
+Text Label 3950 1900 2    50   ~ 0
+Comms2
+Text Label 3950 2000 2    50   ~ 0
+Comms3
+Text Label 3950 2100 2    50   ~ 0
+Comms4
+Text Label 3950 2200 2    50   ~ 0
+Comms5
+Text Label 3950 2300 2    50   ~ 0
+Comms6
 $Comp
 L Connector:TestPoint_Flag TP?
 U 1 1 5F64E928
@@ -2142,8 +2130,8 @@ $Comp
 L Device:LED D51
 U 1 1 5F85B04F
 P 4300 2800
-F 0 "D51" V 4339 2683 50  0000 R CNN
-F 1 "Orange" V 4400 2700 50  0000 R CNN
+F 0 "D51" V 4400 2800 50  0000 R CNN
+F 1 "Orange" V 4500 2800 50  0000 R CNN
 F 2 "Ventilator:LED_0805_2012Metric" H 4300 2800 50  0001 C CNN
 F 3 "~" H 4300 2800 50  0001 C CNN
 F 4 "Broadcom" H 4300 2800 50  0001 C CNN "Manufacturer"
@@ -2166,13 +2154,13 @@ F 5 "HSMD-C170" H 3900 3000 50  0001 C CNN "Part Number"
 $EndComp
 Wire Wire Line
 	3600 3050 3600 3200
-Text HLabel 1550 2000 2    50   Output ~ 0
+Text HLabel 3050 900  2    50   Output ~ 0
 RPi_En
 Wire Wire Line
-	1550 2000 1000 2000
-Text Label 1000 2000 0    50   ~ 0
+	3050 900  2500 900 
+Text Label 2500 900  0    50   ~ 0
 RPi_En
-Text Notes 950  1900 0    50   ~ 0
+Text Notes 2450 800  0    50   ~ 0
 WARNING:\nRPi_En output only has\nan effect if onboard 5V\nsupplies are used
 Text Notes 6600 8900 0    50   ~ 0
 100 kHz clock
@@ -2230,51 +2218,51 @@ CPLD can be powered from backup battery when\nmain 5V power is out
 Wire Wire Line
 	12300 2300 12900 2300
 Text Label 12900 2300 2    50   ~ 0
-RPi_Comms1
+Comms1
 Wire Wire Line
 	12300 2400 12900 2400
 Text Label 12900 2400 2    50   ~ 0
-RPi_Comms2
+Comms2
 Wire Wire Line
 	12300 2500 12900 2500
 Text Label 12900 2500 2    50   ~ 0
-RPi_Comms3
+Comms3
 Wire Wire Line
 	12300 2600 12900 2600
 Text Label 12900 2600 2    50   ~ 0
-RPi_Comms4
+Comms4
 Wire Wire Line
 	12300 2700 12900 2700
 Text Label 12900 2700 2    50   ~ 0
-RPi_Comms5
+Comms5
 Wire Wire Line
 	12300 2800 12900 2800
 Text Label 12900 2800 2    50   ~ 0
-RPi_Comms6
+Comms6
 Wire Wire Line
 	5450 4200 4850 4200
 Text Label 4850 4200 0    50   ~ 0
-RPi_Comms1
+Comms1
 Wire Wire Line
 	5450 4300 4850 4300
 Text Label 4850 4300 0    50   ~ 0
-RPi_Comms2
+Comms2
 Wire Wire Line
 	5450 4400 4850 4400
 Text Label 4850 4400 0    50   ~ 0
-RPi_Comms3
+Comms3
 Wire Wire Line
 	5450 4500 4850 4500
 Text Label 4850 4500 0    50   ~ 0
-RPi_Comms4
+Comms4
 Wire Wire Line
 	5450 4600 4850 4600
 Text Label 4850 4600 0    50   ~ 0
-RPi_Comms5
+Comms5
 Wire Wire Line
 	5450 4700 4850 4700
 Text Label 4850 4700 0    50   ~ 0
-RPi_Comms6
+Comms6
 Wire Wire Line
 	10300 3900 9950 3900
 Text Label 12900 3300 2    50   ~ 0
@@ -2467,23 +2455,23 @@ Wire Wire Line
 	5450 6200 4950 6200
 Text Label 4950 6200 0    50   ~ 0
 Extra4
-Text HLabel 2600 1300 0    50   Input ~ 0
+Text HLabel 2600 1100 0    50   Input ~ 0
 Enc_A
-Text HLabel 2600 1400 0    50   Input ~ 0
+Text HLabel 2600 1200 0    50   Input ~ 0
 Enc_B
-Text HLabel 2600 1500 0    50   Input ~ 0
+Text HLabel 2600 1300 0    50   Input ~ 0
 Enc_Sw
 Wire Wire Line
-	2600 1500 3250 1500
-Wire Wire Line
-	2600 1400 3250 1400
-Wire Wire Line
 	2600 1300 3250 1300
-Text Label 3250 1300 2    50   ~ 0
+Wire Wire Line
+	2600 1200 3250 1200
+Wire Wire Line
+	2600 1100 3250 1100
+Text Label 3250 1100 2    50   ~ 0
 Enc_A
-Text Label 3250 1400 2    50   ~ 0
+Text Label 3250 1200 2    50   ~ 0
 Enc_B
-Text Label 3250 1500 2    50   ~ 0
+Text Label 3250 1300 2    50   ~ 0
 Enc_Sw
 Wire Wire Line
 	10300 5650 9650 5650
@@ -2649,4 +2637,197 @@ F 5 "5019" H 800 8650 50  0001 C CNN "Part Number"
 $EndComp
 Wire Wire Line
 	800  8650 1000 8650
+Text HLabel 1100 2100 0    50   Input ~ 0
+~Bat_On
+Wire Wire Line
+	1100 2100 1650 2100
+Text Label 1650 2100 2    50   ~ 0
+~Bat_On
+Wire Wire Line
+	5450 2600 4900 2600
+Text Label 4900 2600 0    50   ~ 0
+~Bat_On
+Wire Wire Line
+	10300 1600 9750 1600
+Text Label 9750 1600 0    50   ~ 0
+~Bat_On
+NoConn ~ 5450 2700
+NoConn ~ 5450 3000
+NoConn ~ 5450 3200
+NoConn ~ 5450 3700
+NoConn ~ 5450 3800
+NoConn ~ 5450 3900
+NoConn ~ 5450 4000
+NoConn ~ 5450 4100
+NoConn ~ 5450 5600
+NoConn ~ 5450 5700
+NoConn ~ 5450 5800
+NoConn ~ 5450 7300
+NoConn ~ 5450 7600
+NoConn ~ 5450 7700
+NoConn ~ 5450 7800
+NoConn ~ 10300 7850
+NoConn ~ 10300 7650
+NoConn ~ 10300 7550
+NoConn ~ 10300 7350
+NoConn ~ 10300 7250
+NoConn ~ 10300 6350
+NoConn ~ 10300 6250
+NoConn ~ 10300 6150
+NoConn ~ 10300 6050
+NoConn ~ 10300 5950
+NoConn ~ 10300 1700
+NoConn ~ 10300 2000
+NoConn ~ 10300 2100
+NoConn ~ 10300 2200
+NoConn ~ 10300 2300
+NoConn ~ 10300 2900
+NoConn ~ 10300 3600
+NoConn ~ 10300 3700
+NoConn ~ 10300 3800
+NoConn ~ 12300 3000
+NoConn ~ 12300 3100
+NoConn ~ 12300 3200
+NoConn ~ 12300 2000
+NoConn ~ 12300 2100
+NoConn ~ 12300 2200
+NoConn ~ 12300 5650
+NoConn ~ 12300 5750
+NoConn ~ 12300 5850
+NoConn ~ 12300 5950
+NoConn ~ 12300 6050
+NoConn ~ 12300 6550
+NoConn ~ 12300 6850
+NoConn ~ 12300 6950
+NoConn ~ 12300 7050
+NoConn ~ 12300 7150
+NoConn ~ 12300 7250
+$Comp
+L Device:R R?
+U 1 1 5F031CC2
+P 3050 1800
+AR Path="/5F031CC2" Ref="R?"  Part="1" 
+AR Path="/5E8AFE9D/5F031CC2" Ref="R?"  Part="1" 
+AR Path="/5E8C8865/5F031CC2" Ref="R226"  Part="1" 
+AR Path="/5E8E1F08/5F031CC2" Ref="R?"  Part="1" 
+F 0 "R226" V 3100 1600 50  0000 C CNN
+F 1 "1K" V 3100 2000 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 2980 1800 50  0001 C CNN
+F 3 "~" H 3050 1800 50  0001 C CNN
+F 4 "KOA Speer" H 3050 1800 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1001F" H 3050 1800 50  0001 C CNN "Part Number"
+	1    3050 1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3200 1800 3950 1800
+$Comp
+L Device:R R?
+U 1 1 5F06A793
+P 3050 1900
+AR Path="/5F06A793" Ref="R?"  Part="1" 
+AR Path="/5E8AFE9D/5F06A793" Ref="R?"  Part="1" 
+AR Path="/5E8C8865/5F06A793" Ref="R227"  Part="1" 
+AR Path="/5E8E1F08/5F06A793" Ref="R?"  Part="1" 
+F 0 "R227" V 3100 1700 50  0000 C CNN
+F 1 "1K" V 3100 2100 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 2980 1900 50  0001 C CNN
+F 3 "~" H 3050 1900 50  0001 C CNN
+F 4 "KOA Speer" H 3050 1900 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1001F" H 3050 1900 50  0001 C CNN "Part Number"
+	1    3050 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F06A9F1
+P 3050 2000
+AR Path="/5F06A9F1" Ref="R?"  Part="1" 
+AR Path="/5E8AFE9D/5F06A9F1" Ref="R?"  Part="1" 
+AR Path="/5E8C8865/5F06A9F1" Ref="R228"  Part="1" 
+AR Path="/5E8E1F08/5F06A9F1" Ref="R?"  Part="1" 
+F 0 "R228" V 3100 1800 50  0000 C CNN
+F 1 "1K" V 3100 2200 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 2980 2000 50  0001 C CNN
+F 3 "~" H 3050 2000 50  0001 C CNN
+F 4 "KOA Speer" H 3050 2000 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1001F" H 3050 2000 50  0001 C CNN "Part Number"
+	1    3050 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F06ACB9
+P 3050 2100
+AR Path="/5F06ACB9" Ref="R?"  Part="1" 
+AR Path="/5E8AFE9D/5F06ACB9" Ref="R?"  Part="1" 
+AR Path="/5E8C8865/5F06ACB9" Ref="R229"  Part="1" 
+AR Path="/5E8E1F08/5F06ACB9" Ref="R?"  Part="1" 
+F 0 "R229" V 3100 1900 50  0000 C CNN
+F 1 "1K" V 3100 2300 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 2980 2100 50  0001 C CNN
+F 3 "~" H 3050 2100 50  0001 C CNN
+F 4 "KOA Speer" H 3050 2100 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1001F" H 3050 2100 50  0001 C CNN "Part Number"
+	1    3050 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F06AEA9
+P 3050 2200
+AR Path="/5F06AEA9" Ref="R?"  Part="1" 
+AR Path="/5E8AFE9D/5F06AEA9" Ref="R?"  Part="1" 
+AR Path="/5E8C8865/5F06AEA9" Ref="R230"  Part="1" 
+AR Path="/5E8E1F08/5F06AEA9" Ref="R?"  Part="1" 
+F 0 "R230" V 3100 2000 50  0000 C CNN
+F 1 "1K" V 3100 2400 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 2980 2200 50  0001 C CNN
+F 3 "~" H 3050 2200 50  0001 C CNN
+F 4 "KOA Speer" H 3050 2200 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1001F" H 3050 2200 50  0001 C CNN "Part Number"
+	1    3050 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F06B0AF
+P 3050 2300
+AR Path="/5F06B0AF" Ref="R?"  Part="1" 
+AR Path="/5E8AFE9D/5F06B0AF" Ref="R?"  Part="1" 
+AR Path="/5E8C8865/5F06B0AF" Ref="R231"  Part="1" 
+AR Path="/5E8E1F08/5F06B0AF" Ref="R?"  Part="1" 
+F 0 "R231" V 3100 2100 50  0000 C CNN
+F 1 "1K" V 3100 2500 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 2980 2300 50  0001 C CNN
+F 3 "~" H 3050 2300 50  0001 C CNN
+F 4 "KOA Speer" H 3050 2300 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1001F" H 3050 2300 50  0001 C CNN "Part Number"
+	1    3050 2300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3200 2300 3950 2300
+Wire Wire Line
+	3200 2200 3950 2200
+Wire Wire Line
+	3200 2100 3950 2100
+Wire Wire Line
+	3200 2000 3950 2000
+Wire Wire Line
+	3200 1900 3950 1900
+Wire Wire Line
+	2650 1800 2900 1800
+Wire Wire Line
+	2900 1900 2650 1900
+Wire Wire Line
+	2650 2000 2900 2000
+Wire Wire Line
+	2900 2100 2650 2100
+Wire Wire Line
+	2650 2200 2900 2200
+Wire Wire Line
+	2900 2300 2650 2300
+Text Notes 2150 1700 0    50   ~ 0
+Series resistors provide current limiting in\ncase of over-voltage from Raspberry Pi:\n(5V-3.3V)/1K = 1.7 mA into CPLD GPIO's ESD diodes
 $EndSCHEMATC
