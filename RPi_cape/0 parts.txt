@@ -142,13 +142,35 @@ Nichicon PCV1V181MCL2GS (100uF->180uF), 19k
 Panasonic EEH-ZA1V271V (100uF->270uF), 20k
 Nichicon UWT1V221MNL1GS (non-poly, 220uF, 8mm), Digikey 496k
 
-General Raspberry Pi connector:
-* 20x2 rectangular header (female)
+Connectors, Raspberry Pi:
+* 20x2 rectangular header (female), through-hole vertical
 * 0.1" (2.54 mm) pitch
 * Gold-plated contacts
 * >8 mm body height (not inc. pins)
 Sullins SFH11-PBPC-D20-ST-BK, 7k
+Samtec SSQ-110-01-G-D, 3.5k
+Samtec SSQ-110-03-T-D, 2k
+Molex 15-44-5120, 1.7k
 Sullins PPPC202LFBN-RC, 17k - now 1.7k as of 2020-04-16
+
+Connectors, JTAG:
+* 5x2 rectangular header (male), through-hole vertical
+* 0.1" (2.54 mm) pitch
+* Gold-plated contacts
+Sullins PRPC005DFAN-RC, unshrouded, 35k Digikey
+Assman AWHW 10G-0202-T, shrouded, 39k Digikey
+Sullins SBH11-PBPC-D05-ST-BK, shrouded, 29k Digikey
+CNC Tech 3020-10-0100-00, shrouded, 27k Digikey
+TE 5103308-1, shrouded, 26k Digikey
+
+Connectors, rotary encoder (Grayhill PCB-mount)
+* 6x1 rectangular header (female), through-hole vertical
+* 0.1" (2.54 mm) pitch
+Sullins PPPC061LFBN-RC, gold, 21k
+Molex 0901471206, gold, 9k
+Sullins PPTC061LFBN-RC, tin, 63k
+3M 929974-01-06-RK, tin, 138k
+(possibly more, search through Mouser)
 
 General ceramic caps:
 10uF 50V X7S 1210, Murata GCM32EC71H106KA03, 126k
@@ -186,6 +208,23 @@ General spring terminal connectors - selection:
 General oscillators - not pin-compatible:
 TI TLC555CDR and IDR, 2.1 Mhz max, Digikey 179k
 Microchip MIC1557YM5-TR, 5 Mhz max, 136k
+
+Fans - selection:
+* 24VDC power, brushless
+* Quiet preferred
+NMB 3110SB-05W-B40-E00, 80mm 36CFM 26dBA, 7k
+Orion OD4010-24HB, 40mm 7CFM 25dB(A?), 7.5k inc. ...01A
+NMB 2410SB-05W-B40-B00, 60mm 20CFM 27dBA, 3.5k
+Delta AFB0524VHD, 50mm 20CFM 41dBA, 6k
+Delta FFB0424VHN-B, 40mm 16CFM 45dBA, 6k Digikey
+ebm-papst 414JHH, 40mm 14CFM 46dBA, 6.5k Digikey
+
+
+Speakers - selection:
+CUI CPE-827, panel-mount piezo, 14k Digikey
+CUI CEP-1112, PCB-mount piezo, 13k Digikey
+PUI Audio AS06608PS-WR-R, panel-mount magnetic, 14k Digikey
+CUI CMS0361KLX, panel-mount magnetic, 10k Digikey
 
 Power supplies - selection:
 TDK-Lambda
