@@ -40,3 +40,6 @@
 	* Switched CPLD_ADC7 to +24V monitoring (from +5V monitoring), and added CPLD ~Bat_On digital input(s) to know when it's running from backup battery, to cover low-input-voltage edge cases
 	* Added series 1K resistors (R226-231) on CPLD<->RPi Comms1-6 lines, to protect CPLD in case of overvoltage from RPi failure
 	* Added optional input TVS D23 to handle sustained over-voltage or large surges
+	
+1.6 to 1.7:
+	* Separated +1.8V and +5VA monitoring and added +3.3V output for +5VA on ~5VA_On signal to CPLD, to cover an extra failure mode

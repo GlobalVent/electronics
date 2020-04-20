@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 15 15
 Title "CPLD"
 Date ""
-Rev "1.6"
+Rev "1.7"
 Comp "Partners COVID Innovation Group"
 Comment1 "Don Straney"
 Comment2 ""
@@ -2651,7 +2651,6 @@ Wire Wire Line
 	10300 1600 9750 1600
 Text Label 9750 1600 0    50   ~ 0
 ~Bat_On
-NoConn ~ 5450 2700
 NoConn ~ 5450 3000
 NoConn ~ 5450 3200
 NoConn ~ 5450 3700
@@ -2676,7 +2675,6 @@ NoConn ~ 10300 6250
 NoConn ~ 10300 6150
 NoConn ~ 10300 6050
 NoConn ~ 10300 5950
-NoConn ~ 10300 1700
 NoConn ~ 10300 2000
 NoConn ~ 10300 2100
 NoConn ~ 10300 2200
@@ -2830,4 +2828,18 @@ Wire Wire Line
 	2900 2300 2650 2300
 Text Notes 2150 1700 0    50   ~ 0
 Series resistors provide current limiting in\ncase of over-voltage from Raspberry Pi:\n(5V-3.3V)/1K = 1.7 mA into CPLD GPIO's ESD diodes
+Text HLabel 1250 1850 0    50   Input ~ 0
+~+5VA_On
+Wire Wire Line
+	1250 1850 1700 1850
+Text Label 1700 1850 2    50   ~ 0
+~+5VA_On
+Text Label 4900 2700 0    50   ~ 0
+~+5VA_On
+Wire Wire Line
+	4900 2700 5450 2700
+Text Label 9750 1700 0    50   ~ 0
+~+5VA_On
+Wire Wire Line
+	9750 1700 10300 1700
 $EndSCHEMATC

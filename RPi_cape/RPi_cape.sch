@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 15
 Title "Raspberry Pi Hat for JamVent Adaptation"
 Date ""
-Rev "1.6"
+Rev "1.7"
 Comp "Partners COVID Innovation Group"
 Comment1 "Don Straney"
 Comment2 ""
@@ -331,10 +331,11 @@ S 13850 7400 1450 750
 U 5E8E1F08
 F0 "Auditory Alarm" 50
 F1 "audio_alarm.sch" 50
-F2 "In_RPi" I L 13850 7750 50 
-F3 "In_CPLD" I L 13850 7900 50 
+F2 "In_RPi" I L 13850 7950 50 
+F3 "In_CPLD" I L 13850 8050 50 
 F4 "Low_Bat" O L 13850 7500 50 
 F5 "~Bat_On" O L 13850 7600 50 
+F6 "~+5VA_On" O L 13850 7700 50 
 $EndSheet
 $Comp
 L Connector_Generic:Conn_01x04 J1
@@ -2062,14 +2063,14 @@ RPi_Alarm_Spkr
 Text Notes 9900 3350 0    50   ~ 0
 GPIO9
 Wire Wire Line
-	12900 7450 12900 7900
+	12900 7600 12900 8050
 Wire Wire Line
-	12900 7900 13850 7900
-Text Label 13000 7900 0    50   ~ 0
+	12900 8050 13850 8050
+Text Label 13000 8050 0    50   ~ 0
 CPLD_Alarm_Spkr
 Wire Wire Line
-	13050 7750 13850 7750
-Text Label 13050 7750 0    50   ~ 0
+	13050 7950 13850 7950
+Text Label 13050 7950 0    50   ~ 0
 RPi_Alarm_Spkr
 $Sheet
 S 5150 2250 900  350 
@@ -2256,30 +2257,30 @@ Wire Wire Line
 Wire Wire Line
 	11750 7250 13550 7250
 Wire Wire Line
-	11750 7450 12900 7450
+	11750 7600 12900 7600
 Wire Wire Line
-	11750 7700 12150 7700
+	11750 7950 12150 7950
 Wire Wire Line
-	11750 7800 12150 7800
+	11750 8050 12150 8050
 Wire Wire Line
-	11750 7900 12150 7900
+	11750 8150 12150 8150
 Wire Wire Line
-	11750 8000 12150 8000
+	11750 8250 12150 8250
 Wire Wire Line
-	11750 8100 12150 8100
+	11750 8350 12150 8350
 Wire Wire Line
-	11750 8200 12150 8200
-Text Label 12150 7700 2    50   ~ 0
+	11750 8450 12150 8450
+Text Label 12150 7950 2    50   ~ 0
 Comms1
-Text Label 12150 7800 2    50   ~ 0
+Text Label 12150 8050 2    50   ~ 0
 Comms2
-Text Label 12150 7900 2    50   ~ 0
+Text Label 12150 8150 2    50   ~ 0
 Comms3
-Text Label 12150 8000 2    50   ~ 0
+Text Label 12150 8250 2    50   ~ 0
 Comms4
-Text Label 12150 8100 2    50   ~ 0
+Text Label 12150 8350 2    50   ~ 0
 Comms5
-Text Label 12150 8200 2    50   ~ 0
+Text Label 12150 8450 2    50   ~ 0
 Comms6
 Text Notes 11650 2750 0    50   ~ 0
 GPIO15
@@ -2890,8 +2891,8 @@ F 3 "" H 8300 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11750 7600 12250 7600
-Text Label 12250 7600 2    50   ~ 0
+	11750 7800 12250 7800
+Text Label 12250 7800 2    50   ~ 0
 RPi_En
 Text Notes 12300 9350 0    50   Italic 0
 Unless otherwise noted: resistors are 1% tolerance, capacitors are 5% tolerance
@@ -3752,7 +3753,7 @@ Wire Wire Line
 Wire Wire Line
 	13450 7350 11750 7350
 $Sheet
-S 9850 6250 1900 2050
+S 9850 6250 1900 2300
 U 5E8C8865
 F0 "CPLD" 50
 F1 "cpld.sch" 50
@@ -3770,18 +3771,18 @@ F12 "Pressure2_Lim_H_Alarm" I L 9850 7450 50
 F13 "Pressure2_Lim_L_Alarm" I L 9850 7550 50 
 F14 "O2_Lim_H_Alarm" I L 9850 7650 50 
 F15 "O2_Lim_L_Alarm" I L 9850 7750 50 
-F16 "Alarm_Spkr" O R 11750 7450 50 
+F16 "Alarm_Spkr" O R 11750 7600 50 
 F17 "SDA" O L 9850 6900 50 
 F18 "SCL" O L 9850 7000 50 
 F19 "~ADC_INT" I L 9850 7100 50 
 F20 "Low_Bat" I R 11750 7250 50 
-F21 "RPi_Comms1" B R 11750 7700 50 
-F22 "RPi_Comms2" B R 11750 7800 50 
-F23 "RPi_Comms3" B R 11750 7900 50 
-F24 "RPi_Comms4" B R 11750 8000 50 
-F25 "RPi_Comms5" B R 11750 8100 50 
-F26 "RPi_Comms6" B R 11750 8200 50 
-F27 "RPi_En" O R 11750 7600 50 
+F21 "RPi_Comms1" B R 11750 7950 50 
+F22 "RPi_Comms2" B R 11750 8050 50 
+F23 "RPi_Comms3" B R 11750 8150 50 
+F24 "RPi_Comms4" B R 11750 8250 50 
+F25 "RPi_Comms5" B R 11750 8350 50 
+F26 "RPi_Comms6" B R 11750 8450 50 
+F27 "RPi_En" O R 11750 7800 50 
 F28 "Enc_A" I L 9850 8000 50 
 F29 "Enc_B" I L 9850 8100 50 
 F30 "Enc_Sw" I L 9850 8200 50 
@@ -3790,6 +3791,7 @@ F32 "~Valve2_Fault" I R 11750 6900 50
 F33 "~Valve4_Fault" I R 11750 7100 50 
 F34 "~Valve3_Fault" I R 11750 7000 50 
 F35 "~Bat_On" I R 11750 7350 50 
+F36 "~+5VA_On" I R 11750 7450 50 
 $EndSheet
 $Comp
 L Device:D_Zener_ALT D23
@@ -3833,4 +3835,10 @@ Wire Wire Line
 	3250 950  3350 950 
 Text Notes 3050 1700 2    50   ~ 0
 TVS clamps @ 39V max @ 15A,\nvs. cap ratings of 50V, LMZ14203\nabs-max rating of 43V
+Wire Wire Line
+	11750 7450 13350 7450
+Wire Wire Line
+	13350 7450 13350 7700
+Wire Wire Line
+	13350 7700 13850 7700
 $EndSCHEMATC
