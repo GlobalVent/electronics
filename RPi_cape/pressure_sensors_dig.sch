@@ -7,9 +7,9 @@ encoding utf-8
 Sheet 13 15
 Title ""
 Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Rev "1.7"
+Comp "US JamVent Team"
+Comment1 "Don Straney"
 Comment2 ""
 Comment3 ""
 Comment4 ""

@@ -7,8 +7,8 @@ encoding utf-8
 Sheet 11 15
 Title "5V Buck Regulator"
 Date ""
-Rev "1.0"
-Comp "Partners COVID Innovation Center"
+Rev "1.7"
+Comp "US JamVent Team"
 Comment1 "Don Straney"
 Comment2 ""
 Comment3 ""

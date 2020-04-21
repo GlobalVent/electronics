@@ -8,7 +8,7 @@ Sheet 1 15
 Title "Raspberry Pi Hat for JamVent Adaptation"
 Date ""
 Rev "1.7"
-Comp "Partners COVID Innovation Group"
+Comp "US JamVent Team"
 Comment1 "Don Straney"
 Comment2 ""
 Comment3 ""

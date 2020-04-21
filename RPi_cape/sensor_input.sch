@@ -7,8 +7,8 @@ encoding utf-8
 Sheet 2 15
 Title "Sensor Input (0-10V)"
 Date ""
-Rev "1.0"
-Comp "Partners COVID Innovation Group"
+Rev "1.7"
+Comp "US JamVent Team"
 Comment1 "Don Straney"
 Comment2 ""
 Comment3 ""

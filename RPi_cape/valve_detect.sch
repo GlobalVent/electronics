@@ -7,8 +7,8 @@ encoding utf-8
 Sheet 14 15
 Title "Valve Movement Detection"
 Date ""
-Rev "1.5"
-Comp "Partners COVID Innovation Group"
+Rev "1.7"
+Comp "US JamVent Team"
 Comment1 "Don Straney"
 Comment2 ""
 Comment3 ""
