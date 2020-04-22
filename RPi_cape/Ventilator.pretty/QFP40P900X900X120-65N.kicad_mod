@@ -1,4 +1,5 @@
-(module QFP40P900X900X120-65N (layer F.Cu) (tedit 5E9718AA)
+(module QFP40P900X900X120-65N (layer F.Cu) (tedit 5E9FB546)
+  (attr smd)
   (fp_text reference REF** (at -1.02662 -5.74404) (layer F.SilkS)
     (effects (font (size 1.001575 1.001575) (thickness 0.15)))
   )
