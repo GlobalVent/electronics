@@ -163,7 +163,7 @@ Sullins SBH11-PBPC-D05-ST-BK, shrouded, 29k Digikey
 CNC Tech 3020-10-0100-00, shrouded, 27k Digikey
 TE 5103308-1, shrouded, 26k Digikey
 
-Connectors, rotary encoder (Grayhill PCB-mount)
+Connectors, rotary encoder (Grayhill 61C11-01-08-02 PCB-mount)
 * 6x1 rectangular header (female), through-hole vertical
 * 0.1" (2.54 mm) pitch
 Sullins PPPC061LFBN-RC, gold, 21k
@@ -171,6 +171,23 @@ Molex 0901471206, gold, 9k
 Sullins PPTC061LFBN-RC, tin, 63k
 3M 929974-01-06-RK, tin, 138k
 (possibly more, search through Mouser)
+
+Connectors, rotary encoder (Grayhill C14D32P-B3 or C14D16N-B3 w/cable)
+* Mates with TE AMP 215083-6
+TE AMP 215079-6, through-hole friction-fit, 23k (inc. 7-... for reel packaging)
+TE AMP 338068-6, through-hole latch, 66k (inc. 7-... for reel packaging)
+TE AMP 188275-6, SMT friction-fit, 93k (inc. 7-... for reel packaging)
+TE AMP 338069-6, SMT latch, 23k (inc. 7-... for reel packaging)
+
+General spring terminal connectors - selection:
+2x 3.5mm staggered TE 1-2834011-2, 80k
+2x 5mm dual Eaton EM278502, 36k
+2x 3.5mm staggered Phoenix 1985195, 97k
+3x 3.5mm staggered Phoenix 1985205, 75k
+4x 3.5mm staggered Phoenix 1985218, 43k
+4x 3.5mm staggered Phoenix 1984989, 42k
+4x 2.5mm staggered Phoenix 1990025, 26k
+6x 2.5mm staggered TE 1-2834021-6, 5.4k
 
 General ceramic caps:
 10uF 50V X7S 1210, Murata GCM32EC71H106KA03, 126k
@@ -182,6 +199,7 @@ General ceramic caps:
 100nF 50V X7R 0603, AVX 06035C104JAT2A, Digikey >1.7M
 10nF 50V NP0 0603, Murata GRM1885C1H103JA01D, Digikey 352k
 1nF 50V NP0 0603, AVX 06035A102JAT2A, Digikey >1M
+100pF 50V NP0 0603, Kemet C0603C101J5GACTU, Digikey 3M
 
 General PTC fuses - selection:
 1.5A 33V https://www.digikey.com/product-detail/en/bel-fuse-inc/0ZCF0150FF2C/507-1746-1-ND/4156178, 120k
@@ -194,16 +212,6 @@ General PTC fuses - selection:
 
 General resistors - selection:
 KOA Speer RK73H series have automotive qualification, high power rating: Digikey selection for 1206-size... https://www.digikey.com/products/en/resistors/chip-resistor-surface-mount/52?FV=7%7C2%2C1291%7C83708%2C-8%7C52&quantity=0&ColumnSort=2085&page=1&stock=1&k=rk73h&pageSize=25&pkeyword=rk73h
-
-General spring terminal connectors - selection:
-2x 3.5mm staggered TE 1-2834011-2, 80k
-2x 5mm dual Eaton EM278502, 36k
-2x 3.5mm staggered Phoenix 1985195, 97k
-3x 3.5mm staggered Phoenix 1985205, 75k
-4x 3.5mm staggered Phoenix 1985218, 43k
-4x 3.5mm staggered Phoenix 1984989, 42k
-4x 2.5mm staggered Phoenix 1990025, 26k
-6x 2.5mm staggered TE 1-2834021-6, 5.4k
 
 General oscillators - not pin-compatible:
 TI TLC555CDR and IDR, 2.1 Mhz max, Digikey 179k
@@ -218,7 +226,6 @@ NMB 2410SB-05W-B40-B00, 60mm 20CFM 27dBA, 3.5k
 Delta AFB0524VHD, 50mm 20CFM 41dBA, 6k
 Delta FFB0424VHN-B, 40mm 16CFM 45dBA, 6k Digikey
 ebm-papst 414JHH, 40mm 14CFM 46dBA, 6.5k Digikey
-
 
 Speakers - selection:
 CUI CPE-827, panel-mount piezo, 14k Digikey

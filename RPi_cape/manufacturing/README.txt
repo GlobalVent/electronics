@@ -3,7 +3,7 @@ Outer layers 1 oz copper, inner layers either 0.5 oz or 1 oz copper (choose stan
 ENIG plating on pads
 Overall dimensions 104 x 255 mm (4.095" x 10.039")
 Min. trace/spacing 0.18 mm (0.007")
-Min. hole size 0.26 mm (0.010"), all holes plated
+Min. hole size 0.26 mm (0.010")
 
 All copper layers positive
 *-F_Cu.gbr: Top copper (signal)
@@ -16,9 +16,11 @@ All copper layers positive
 *-B_SilkS.gbr: Bottom silkscreen
 *-Edge_Cuts.gbr: Outline and internal cutouts
 *-F_Paste.gbr: Top solder paste
-*.drl: Drill file (plated holes)
+*-PTH.drl: Drill file (plated holes)
+*-NPTH.drl: Drill file (non-plated holes)
+*-PTH-drl_map.pdf: Drill map (plated holes)
+*-NPTH-drl_map.pdf: Drill map (non-plated holes)
 fab.pdf: Fabrication drawing (excluding drills)
-drill map.pdf: Drill map
 
 *.pos: Pick-and-place centroid position file
 assy top.pdf: Assembly drawing (top side)

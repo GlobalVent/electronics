@@ -5,9 +5,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 11 15
-Title "5V Buck Regulator"
+Title "Raspberry Pi Hat for JamVent Adaptation"
 Date ""
-Rev "1.7"
+Rev "1.8"
 Comp "US JamVent Team"
 Comment1 "Don Straney"
 Comment2 ""

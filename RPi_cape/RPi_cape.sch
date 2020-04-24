@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 15
 Title "Raspberry Pi Hat for JamVent Adaptation"
 Date ""
-Rev "1.7"
+Rev "1.8"
 Comp "US JamVent Team"
 Comment1 "Don Straney"
 Comment2 ""
@@ -254,7 +254,7 @@ F 5 "RK73H2BTTD10R0F" H 8150 1700 50  0001 C CNN "Part Number"
 	0    -1   -1   0   
 $EndComp
 Text Notes 7600 4250 0    50   ~ 0
-<2 mA current draw active
+I2C address 0011101\n<2 mA current draw active
 $Comp
 L power:+5VD #PWR064
 U 1 1 5E897600
@@ -1930,8 +1930,8 @@ F 5 "RK73H2BTTD10R0F" H 7700 5650 50  0001 C CNN "Part Number"
 	1    7700 5650
 	0    -1   -1   0   
 $EndComp
-Text Notes 7700 7850 0    50   ~ 0
-<2 mA current draw active
+Text Notes 7700 7900 0    50   ~ 0
+I2C address 0011101\n<2 mA current draw active
 Wire Wire Line
 	7050 6400 6550 6400
 Wire Wire Line
@@ -2985,7 +2985,7 @@ F 3 "~" H 9500 9750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text Notes 9550 9100 0    50   ~ 0
-Rotary encoder input:\nDesigned for Grayhill 61C11-01-08-02\nbut will work with mech. encoders too\nwith pinout swap
+Rotary encoder input:\nDesigned for Grayhill 61C11-01-08-02 (0.1" header)\nor C14D32P-B3 (SMT/through-hole TE connectors)\nbut will work with mech. encoders too\nwith pinout swap
 $Comp
 L power:GND #PWR0140
 U 1 1 5EEE36F7
@@ -3841,4 +3841,66 @@ Wire Wire Line
 	13350 7450 13350 7700
 Wire Wire Line
 	13350 7700 13850 7700
+$Comp
+L Connector_Generic:Conn_01x06 J21
+U 1 1 5EF6278F
+P 9150 9750
+F 0 "J21" H 9150 9350 50  0000 C CNN
+F 1 "Conn_01x06" H 9068 9316 50  0001 C CNN
+F 2 "Ventilator:TE_215079-6" H 9150 9750 50  0001 C CNN
+F 3 "~" H 9150 9750 50  0001 C CNN
+F 4 "TE AMP" H 9150 9750 50  0001 C CNN "Manufacturer"
+F 5 "215079-6" H 9150 9750 50  0001 C CNN "Part Number"
+	1    9150 9750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J15
+U 1 1 5EF6344E
+P 8850 9750
+F 0 "J15" H 8850 9350 50  0000 C CNN
+F 1 "Conn_01x06" H 8768 9316 50  0001 C CNN
+F 2 "Ventilator:TE_188275-6" H 8850 9750 50  0001 C CNN
+F 3 "~" H 8850 9750 50  0001 C CNN
+F 4 "TE AMP" H 8850 9750 50  0001 C CNN "Manufacturer"
+F 5 "188275-6" H 8850 9750 50  0001 C CNN "Part Number"
+	1    8850 9750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9050 9450 9350 9450
+Connection ~ 9700 9450
+Connection ~ 9350 9450
+Wire Wire Line
+	9350 9450 9700 9450
+Wire Wire Line
+	9050 9550 9350 9550
+Connection ~ 9700 9550
+Connection ~ 9350 9550
+Wire Wire Line
+	9350 9550 9700 9550
+Wire Wire Line
+	9050 9650 9350 9650
+Connection ~ 9700 9650
+Connection ~ 9350 9650
+Wire Wire Line
+	9350 9650 9700 9650
+Wire Wire Line
+	9050 9750 9350 9750
+Connection ~ 9700 9750
+Connection ~ 9350 9750
+Wire Wire Line
+	9350 9750 9700 9750
+Wire Wire Line
+	9050 9850 9350 9850
+Connection ~ 9700 9850
+Connection ~ 9350 9850
+Wire Wire Line
+	9350 9850 9700 9850
+Wire Wire Line
+	9050 9950 9350 9950
+Connection ~ 9700 9950
+Connection ~ 9350 9950
+Wire Wire Line
+	9350 9950 9700 9950
 $EndSCHEMATC

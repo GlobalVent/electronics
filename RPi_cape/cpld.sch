@@ -5,9 +5,9 @@ EELAYER END
 $Descr B 17000 11000
 encoding utf-8
 Sheet 15 15
-Title "CPLD"
+Title "Raspberry Pi Hat for JamVent Adaptation"
 Date ""
-Rev "1.7"
+Rev "1.8"
 Comp "US JamVent Team"
 Comment1 "Don Straney"
 Comment2 ""
@@ -2216,16 +2216,16 @@ Connection ~ 1000 8650
 Text Notes 600  8100 0    50   ~ 0
 CPLD can be powered from backup battery when\nmain 5V power is out
 Wire Wire Line
-	12300 2300 12900 2300
-Text Label 12900 2300 2    50   ~ 0
-Comms1
-Wire Wire Line
 	12300 2400 12900 2400
 Text Label 12900 2400 2    50   ~ 0
-Comms2
+Comms1
 Wire Wire Line
 	12300 2500 12900 2500
 Text Label 12900 2500 2    50   ~ 0
+Comms2
+Wire Wire Line
+	10300 3800 9700 3800
+Text Label 9700 3800 0    50   ~ 0
 Comms3
 Wire Wire Line
 	12300 2600 12900 2600
@@ -2344,13 +2344,13 @@ Wire Wire Line
 Text Label 4600 2800 0    50   ~ 0
 Pressure1_Lim_H_Alarm
 Wire Wire Line
-	10300 7950 9850 7950
-Text Label 12850 7350 2    50   ~ 0
+	12300 7250 12850 7250
+Text Label 12850 7150 2    50   ~ 0
 SDA_Drive
-Text Label 9850 7950 0    50   ~ 0
+Text Label 12850 7250 2    50   ~ 0
 SDA_Sense
 Wire Wire Line
-	12850 7350 12300 7350
+	12850 7150 12300 7150
 Wire Wire Line
 	5450 8000 4750 8000
 Wire Wire Line
@@ -2667,7 +2667,6 @@ NoConn ~ 5450 7700
 NoConn ~ 5450 7800
 NoConn ~ 10300 7850
 NoConn ~ 10300 7650
-NoConn ~ 10300 7550
 NoConn ~ 10300 7350
 NoConn ~ 10300 7250
 NoConn ~ 10300 6350
@@ -2682,7 +2681,6 @@ NoConn ~ 10300 2300
 NoConn ~ 10300 2900
 NoConn ~ 10300 3600
 NoConn ~ 10300 3700
-NoConn ~ 10300 3800
 NoConn ~ 12300 3000
 NoConn ~ 12300 3100
 NoConn ~ 12300 3200
@@ -2698,8 +2696,6 @@ NoConn ~ 12300 6550
 NoConn ~ 12300 6850
 NoConn ~ 12300 6950
 NoConn ~ 12300 7050
-NoConn ~ 12300 7150
-NoConn ~ 12300 7250
 $Comp
 L Device:R R?
 U 1 1 5F031CC2
@@ -2842,4 +2838,44 @@ Text Label 9750 1700 0    50   ~ 0
 ~+5VA_On
 Wire Wire Line
 	9750 1700 10300 1700
+$Comp
+L Connector:TestPoint TP44
+U 1 1 5F052F66
+P 9550 7550
+F 0 "TP44" H 9600 7700 50  0000 L CNN
+F 1 "TestPoint" H 9608 7577 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 9750 7550 50  0001 C CNN
+F 3 "~" H 9750 7550 50  0001 C CNN
+	1    9550 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 7550 10300 7550
+$Comp
+L Connector:TestPoint TP46
+U 1 1 5F07D857
+P 9650 7950
+F 0 "TP46" H 9700 8100 50  0000 L CNN
+F 1 "TestPoint" H 9708 7977 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 9850 7950 50  0001 C CNN
+F 3 "~" H 9850 7950 50  0001 C CNN
+	1    9650 7950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 7950 9650 7950
+$Comp
+L Connector:TestPoint TP45
+U 1 1 5F0937C5
+P 12800 2300
+F 0 "TP45" H 12850 2450 50  0000 L CNN
+F 1 "TestPoint" H 12858 2327 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 13000 2300 50  0001 C CNN
+F 3 "~" H 13000 2300 50  0001 C CNN
+	1    12800 2300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	12800 2300 12300 2300
+NoConn ~ 12300 7350
 $EndSCHEMATC

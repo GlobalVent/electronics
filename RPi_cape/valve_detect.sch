@@ -5,9 +5,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 14 15
-Title "Valve Movement Detection"
+Title "Raspberry Pi Hat for JamVent Adaptation"
 Date ""
-Rev "1.7"
+Rev "1.8"
 Comp "US JamVent Team"
 Comment1 "Don Straney"
 Comment2 ""
@@ -396,11 +396,11 @@ AR Path="/5E8A4ABF/60224EAB" Ref="R?"  Part="1"
 AR Path="/601431F1/60224EAB" Ref="R219"  Part="1" 
 AR Path="/60304D29/60224EAB" Ref="R223"  Part="1" 
 F 0 "R223" V 8993 3400 50  0000 C CNN
-F 1 "100K" V 9084 3400 50  0000 C CNN
+F 1 "1K" V 9084 3400 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 9130 3400 50  0001 C CNN
 F 3 "~" H 9200 3400 50  0001 C CNN
 F 4 "KOA Speer" H 9200 3400 50  0001 C CNN "Manufacturer"
-F 5 "RK73H2BTTD1003F" H 9200 3400 50  0001 C CNN "Part Number"
+F 5 "RK73H2BTTD1001F" H 9200 3400 50  0001 C CNN "Part Number"
 	1    9200 3400
 	0    1    1    0   
 $EndComp
@@ -499,7 +499,7 @@ Wire Wire Line
 Wire Wire Line
 	8050 3750 8400 3750
 Text Notes 9050 3550 0    50   ~ 0
-~~1 ms minimum pulse width
+~~10 us minimum pulse width
 $Comp
 L Connector:TestPoint_Flag TP?
 U 1 1 602455CE
@@ -539,8 +539,8 @@ Text Notes 10250 3600 0    50   ~ 0
 Use with Schmitt trigger\ndigital input
 Text Notes 3850 2300 0    50   ~ 0
 Peak detector on current sense, decay time constant 50 ms\ntime constant = C55 * (R219 || (R220+R221))
-Text Notes 6800 2100 0    50   ~ 0
-Op-amp used as comparator, output goes high\nwhen current falls below peak value\n(With optional ~~5 mV hysteresis:\nhysteresis must be smaller than earlier threshold offset)
+Text Notes 6700 2050 0    50   ~ 0
+Op-amp used as comparator, output goes high\nwhen current falls below peak value;\nuses AC instead of DC hysteresis to avoid disturbing DC level\nof peak detector (100 pF / 1M = ~~1 ms)
 Text Notes 9400 2600 0    50   ~ 0
 Glitch filter
 Connection ~ 9650 3400
@@ -561,34 +561,16 @@ AR Path="/5E8A4ABF/60277704" Ref="R?"  Part="1"
 AR Path="/601431F1/60277704" Ref="R?"  Part="1" 
 AR Path="/60304D29/60277704" Ref="R220"  Part="1" 
 F 0 "R220" V 6950 3350 50  0000 C CNN
-F 1 "1K" V 6850 3350 50  0000 C CNN
+F 1 "1M" V 6850 3350 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 6680 3300 50  0001 C CNN
 F 3 "~" H 6750 3300 50  0001 C CNN
 F 4 "KOA Speer" H 6750 3300 50  0001 C CNN "Manufacturer"
-F 5 "RK73H2BTTD1001F" H 6750 3300 50  0001 C CNN "Part Number"
+F 5 "RK73H2BTTD1004F" H 6750 3300 50  0001 C CNN "Part Number"
 	1    6750 3300
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	6900 3300 7050 3300
-$Comp
-L Device:R R?
-U 1 1 60279BA3
-P 7350 2400
-AR Path="/60279BA3" Ref="R?"  Part="1" 
-AR Path="/5E8AFE9D/60279BA3" Ref="R?"  Part="1" 
-AR Path="/5E8A4ABF/60279BA3" Ref="R?"  Part="1" 
-AR Path="/601431F1/60279BA3" Ref="R?"  Part="1" 
-AR Path="/60304D29/60279BA3" Ref="R221"  Part="1" 
-F 0 "R221" V 7550 2400 50  0000 C CNN
-F 1 "1M" V 7450 2400 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 7280 2400 50  0001 C CNN
-F 3 "~" H 7350 2400 50  0001 C CNN
-F 4 "KOA Speer" H 7350 2400 50  0001 C CNN "Manufacturer"
-F 5 "RK73H2BTTD1004F" H 7350 2400 50  0001 C CNN "Part Number"
-	1    7350 2400
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	7200 2400 6900 2400
 Wire Wire Line
@@ -753,7 +735,7 @@ Wire Wire Line
 Wire Wire Line
 	3600 4200 6900 4200
 Text Notes 5400 1000 0    79   ~ 16
-Valve Movement Detector
+Valve Motion Detector
 $Comp
 L power:GND #PWR?
 U 1 1 603E15DB
@@ -774,4 +756,58 @@ Wire Wire Line
 	9350 3400 9650 3400
 Text Notes 9800 2950 0    50   ~ 0
 (Already has 10K pull-up to +3.3V)
+$Comp
+L Device:C C?
+U 1 1 5F28A2C9
+P 7350 2400
+AR Path="/5F28A2C9" Ref="C?"  Part="1" 
+AR Path="/5E8AFE9D/5F28A2C9" Ref="C?"  Part="1" 
+AR Path="/5E8A4ABF/5F28A2C9" Ref="C?"  Part="1" 
+AR Path="/601431F1/5F28A2C9" Ref="C?"  Part="1" 
+AR Path="/60304D29/5F28A2C9" Ref="C114"  Part="1" 
+F 0 "C114" V 7600 2450 50  0000 C CNN
+F 1 "100pF 50V NP0" V 7500 2400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7388 2250 50  0001 C CNN
+F 3 "~" H 7350 2400 50  0001 C CNN
+F 4 "Kemet" H 7350 2400 50  0001 C CNN "Manufacturer"
+F 5 "C0603C101J5GACTU" H 7350 2400 50  0001 C CNN "Part Number"
+	1    7350 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F299EA1
+P 3600 4350
+AR Path="/5F299EA1" Ref="C?"  Part="1" 
+AR Path="/5E8AFE9D/5F299EA1" Ref="C?"  Part="1" 
+AR Path="/5E8A4ABF/5F299EA1" Ref="C?"  Part="1" 
+AR Path="/601431F1/5F299EA1" Ref="C?"  Part="1" 
+AR Path="/60304D29/5F299EA1" Ref="C?"  Part="1" 
+F 0 "C?" H 3850 4500 50  0000 C CNN
+F 1 "DNP" H 3900 4400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3638 4200 50  0001 C CNN
+F 3 "~" H 3600 4350 50  0001 C CNN
+F 4 "" H 3600 4350 50  0001 C CNN "Manufacturer"
+F 5 "" H 3600 4350 50  0001 C CNN "Part Number"
+	1    3600 4350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F299EA7
+P 3600 4500
+AR Path="/5F299EA7" Ref="#PWR?"  Part="1" 
+AR Path="/5E8AFE9D/5F299EA7" Ref="#PWR?"  Part="1" 
+AR Path="/5E8A4ABF/5F299EA7" Ref="#PWR?"  Part="1" 
+AR Path="/601431F1/5F299EA7" Ref="#PWR?"  Part="1" 
+AR Path="/60304D29/5F299EA7" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3600 4250 50  0001 C CNN
+F 1 "GND" H 3605 4327 50  0000 C CNN
+F 2 "" H 3600 4500 50  0001 C CNN
+F 3 "" H 3600 4500 50  0001 C CNN
+	1    3600 4500
+	1    0    0    -1  
+$EndComp
+Text Notes 3750 4400 0    50   ~ 0
+Optional add'l filtering
 $EndSCHEMATC

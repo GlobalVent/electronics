@@ -5,9 +5,9 @@ EELAYER END
 $Descr B 17000 11000
 encoding utf-8
 Sheet 9 15
-Title "Audible Alarm"
+Title "Raspberry Pi Hat for JamVent Adaptation"
 Date ""
-Rev "1.7"
+Rev "1.8"
 Comp "US JamVent Team"
 Comment1 "Don Straney"
 Comment2 ""
@@ -325,12 +325,12 @@ $EndComp
 $Comp
 L power:+5V #PWR0227
 U 1 1 5F150046
-P 12100 7000
-F 0 "#PWR0227" H 12100 6850 50  0001 C CNN
-F 1 "+5V" H 12115 7173 50  0000 C CNN
-F 2 "" H 12100 7000 50  0001 C CNN
-F 3 "" H 12100 7000 50  0001 C CNN
-	1    12100 7000
+P 11900 7000
+F 0 "#PWR0227" H 11900 6850 50  0001 C CNN
+F 1 "+5V" H 11915 7173 50  0000 C CNN
+F 2 "" H 11900 7000 50  0001 C CNN
+F 3 "" H 11900 7000 50  0001 C CNN
+	1    11900 7000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -340,7 +340,7 @@ P 12650 7250
 AR Path="/5F15AD75" Ref="C?"  Part="1" 
 AR Path="/5E8E1F08/5F15AD75" Ref="C62"  Part="1" 
 F 0 "C62" H 12300 7200 50  0000 L CNN
-F 1 "100uF 50V AlPoly" V 12500 6750 50  0000 L CNN
+F 1 "100uF 50V AlPoly" V 12500 6800 50  0000 L CNN
 F 2 "Capacitor_SMD:CP_Elec_10x10.5" H 12650 7250 50  0001 C CNN
 F 3 "~" H 12650 7250 50  0001 C CNN
 F 4 "Panasonic" H 12650 7250 50  0001 C CNN "Manufacturer"
@@ -1790,18 +1790,18 @@ Wire Wire Line
 $Comp
 L Device:D_Zener_ALT D?
 U 1 1 5E992FFC
-P 12100 7900
+P 11900 7900
 AR Path="/5E992FFC" Ref="D?"  Part="1" 
 AR Path="/5E8AFE9D/5E992FFC" Ref="D?"  Part="1" 
 AR Path="/5E8A4ABF/5E992FFC" Ref="D?"  Part="1" 
 AR Path="/5E8E1F08/5E992FFC" Ref="D52"  Part="1" 
-F 0 "D52" V 12054 7979 50  0000 L CNN
-F 1 "3.3V" V 12150 8000 50  0000 L CNN
-F 2 "Ventilator:D_SOD-123" H 12100 7900 50  0001 C CNN
-F 3 "~" H 12100 7900 50  0001 C CNN
-F 4 "ON Semiconductor" H 12100 7900 50  0001 C CNN "Manufacturer"
-F 5 "MMSZ4684T1G" H 12100 7900 50  0001 C CNN "Part Number"
-	1    12100 7900
+F 0 "D52" V 11854 7979 50  0000 L CNN
+F 1 "3.3V" V 11950 8000 50  0000 L CNN
+F 2 "Ventilator:D_SOD-123" H 11900 7900 50  0001 C CNN
+F 3 "~" H 11900 7900 50  0001 C CNN
+F 4 "ON Semiconductor" H 11900 7900 50  0001 C CNN "Manufacturer"
+F 5 "MMSZ4684T1G" H 11900 7900 50  0001 C CNN "Part Number"
+	1    11900 7900
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1820,24 +1820,24 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 5E993008
-P 12250 8250
+P 12050 8250
 AR Path="/5E993008" Ref="R?"  Part="1" 
 AR Path="/5E8AFE9D/5E993008" Ref="R?"  Part="1" 
 AR Path="/5E8C8865/5E993008" Ref="R?"  Part="1" 
 AR Path="/5E8E1F08/5E993008" Ref="R188"  Part="1" 
-F 0 "R188" H 12100 8200 50  0000 C CNN
-F 1 "10K" H 12100 8100 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 12180 8250 50  0001 C CNN
-F 3 "~" H 12250 8250 50  0001 C CNN
-F 4 "KOA Speer" H 12250 8250 50  0001 C CNN "Manufacturer"
-F 5 "RK73H2BTTD1002F" H 12250 8250 50  0001 C CNN "Part Number"
-	1    12250 8250
+F 0 "R188" H 12000 8450 50  0000 C CNN
+F 1 "10K" H 11950 8550 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 11980 8250 50  0001 C CNN
+F 3 "~" H 12050 8250 50  0001 C CNN
+F 4 "KOA Speer" H 12050 8250 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1002F" H 12050 8250 50  0001 C CNN "Part Number"
+	1    12050 8250
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	12250 8100 12100 8100
+	12050 8100 11900 8100
 Wire Wire Line
-	12100 8100 12100 8050
+	11900 8100 11900 8050
 $Comp
 L power:GND #PWR?
 U 1 1 5E993010
@@ -1854,37 +1854,36 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 5E993016
-P 12100 8250
+P 11900 8250
 AR Path="/5E993016" Ref="R?"  Part="1" 
 AR Path="/5E8AFE9D/5E993016" Ref="R?"  Part="1" 
 AR Path="/5E8C8865/5E993016" Ref="R?"  Part="1" 
 AR Path="/5E8E1F08/5E993016" Ref="R187"  Part="1" 
-F 0 "R187" H 12250 8200 50  0000 C CNN
-F 1 "10K" H 12250 8300 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 12030 8250 50  0001 C CNN
-F 3 "~" H 12100 8250 50  0001 C CNN
-F 4 "KOA Speer" H 12100 8250 50  0001 C CNN "Manufacturer"
-F 5 "RK73H2BTTD1002F" H 12100 8250 50  0001 C CNN "Part Number"
-	1    12100 8250
+F 0 "R187" H 12050 8200 50  0000 C CNN
+F 1 "10K" H 12050 8300 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 11830 8250 50  0001 C CNN
+F 3 "~" H 11900 8250 50  0001 C CNN
+F 4 "KOA Speer" H 11900 8250 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1002F" H 11900 8250 50  0001 C CNN "Part Number"
+	1    11900 8250
 	-1   0    0    1   
 $EndComp
-Connection ~ 12100 8100
+Connection ~ 11900 8100
 $Comp
 L power:GND #PWR?
 U 1 1 5E99301D
-P 12100 8400
+P 11900 8400
 AR Path="/5E99301D" Ref="#PWR?"  Part="1" 
 AR Path="/5E8E1F08/5E99301D" Ref="#PWR0326"  Part="1" 
-F 0 "#PWR0326" H 12100 8150 50  0001 C CNN
-F 1 "GND" H 12105 8227 50  0000 C CNN
-F 2 "" H 12100 8400 50  0001 C CNN
-F 3 "" H 12100 8400 50  0001 C CNN
-	1    12100 8400
+F 0 "#PWR0326" H 11900 8150 50  0001 C CNN
+F 1 "GND" H 11905 8227 50  0000 C CNN
+F 2 "" H 11900 8400 50  0001 C CNN
+F 3 "" H 11900 8400 50  0001 C CNN
+	1    11900 8400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12100 7000 12100 7750
-Connection ~ 12100 7000
+	11900 7000 11900 7750
 $Comp
 L Transistor_BJT:MMBT3906 Q12
 U 1 1 5E99DC89
@@ -1935,8 +1934,8 @@ $Comp
 L Transistor_BJT:MMBT3904 Q13
 U 1 1 5E9AF013
 P 13400 8200
-F 0 "Q13" H 13750 8250 50  0000 L CNN
-F 1 "MMBT3904" H 13600 8350 50  0000 L CNN
+F 0 "Q13" H 13600 8150 50  0000 L CNN
+F 1 "MMBT3904" H 13500 8050 50  0000 L CNN
 F 2 "Ventilator:SOT-23" H 13600 8125 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 13400 8200 50  0001 L CNN
 F 4 "Diodes Inc." H 13400 8200 50  0001 C CNN "Manufacturer"
@@ -1953,11 +1952,11 @@ AR Path="/5E8AFE9D/5E9BB72E" Ref="R?"  Part="1"
 AR Path="/5E8C8865/5E9BB72E" Ref="R?"  Part="1" 
 AR Path="/5E8E1F08/5E9BB72E" Ref="R190"  Part="1" 
 F 0 "R190" H 13150 7800 50  0000 C CNN
-F 1 "3K" H 13150 7900 50  0000 C CNN
+F 1 "2.4K" H 13150 7900 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 13230 7850 50  0001 C CNN
 F 3 "~" H 13300 7850 50  0001 C CNN
 F 4 "KOA Speer" H 13300 7850 50  0001 C CNN "Manufacturer"
-F 5 "RK73H2BTTD3001F" H 13300 7850 50  0001 C CNN "Part Number"
+F 5 "RK73H2BTTD2401F" H 13300 7850 50  0001 C CNN "Part Number"
 	1    13300 7850
 	-1   0    0    1   
 $EndComp
@@ -2002,7 +2001,7 @@ Text Notes 12800 6750 0    50   ~ 0
 Bypass resistor in case PNP\ncircuit doesn't work as expected
 Text Notes 12100 6450 0    50   ~ 0
 PNP circuit disables alarm battery output when +5V is present,\neven though battery voltage is higher than 5V
-Text Notes 11250 7750 0    50   ~ 0
+Text Notes 11050 7750 0    50   ~ 0
 Threshold ~~3.5-4.2V
 Text Notes 700  6100 0    50   ~ 0
 * +5VD is not monitored because if the Raspberry Pi stops responding,\nthe CPLD will already be able to detect this through its watchdog\nfunction and sound a more appropriate alarm.\n* +5VA and +24VA monitoring are unpopulated by default, to match\nthe default "power CPLD from backup battery" configuration: if either\n+5V/+5VA or +24V/+24VA disappears, the CPLD will still have power\nand be able to detect this through its ADC supply monitoring, and\nsound a more appropriate alarm.\n    If the CPLD is NOT configured to operate from backup battery power,\n    (R185/R186), then these should be populated.\n* +3.3V and +1.8V monitoring are most important because if either disappears, the\nCPLD will not have power (even if connected to backup battery) to\nsound an alarm on its own. 
@@ -2334,7 +2333,7 @@ Wire Wire Line
 	4000 2050 4150 2050
 Connection ~ 4150 2050
 Wire Wire Line
-	4150 2050 4150 2750
+	4150 2050 4150 2450
 Wire Wire Line
 	3700 2050 3600 2050
 $Comp
@@ -2428,4 +2427,84 @@ Text HLabel 4800 3800 2    50   Output ~ 0
 ~+5VA_On
 Text Notes 4700 4050 0    50   ~ 0
 Signal to CPLD,\nlow when +5VA is present
+$Comp
+L Device:R R?
+U 1 1 5F0C0AAB
+P 12650 8000
+AR Path="/5F0C0AAB" Ref="R?"  Part="1" 
+AR Path="/5E8AFE9D/5F0C0AAB" Ref="R?"  Part="1" 
+AR Path="/5E8A4ABF/5F0C0AAB" Ref="R?"  Part="1" 
+AR Path="/5E8E1F08/5F0C0AAB" Ref="R236"  Part="1" 
+F 0 "R236" V 12600 7700 50  0000 C CNN
+F 1 "1M" V 12600 8200 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 12580 8000 50  0001 C CNN
+F 3 "~" H 12650 8000 50  0001 C CNN
+F 4 "KOA Speer" H 12650 8000 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1004F" H 12650 8000 50  0001 C CNN "Part Number"
+	1    12650 8000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12800 8000 13300 8000
+Wire Wire Line
+	12250 8400 12250 8000
+Wire Wire Line
+	12250 8000 12500 8000
+Wire Wire Line
+	11900 7000 12100 7000
+Connection ~ 11900 7000
+Wire Wire Line
+	12050 8400 12250 8400
+Connection ~ 12250 8400
+Text Notes 12300 7900 0    50   ~ 0
+Optional hysteresis
+$Comp
+L Device:C C?
+U 1 1 5F0F65B2
+P 3800 2700
+AR Path="/5F0F65B2" Ref="C?"  Part="1" 
+AR Path="/5E8AFE9D/5F0F65B2" Ref="C?"  Part="1" 
+AR Path="/5E8FBD97/5F0F65B2" Ref="C?"  Part="1" 
+AR Path="/5E8E0754/5F0F65B2" Ref="C?"  Part="1" 
+AR Path="/5E8DFCAD/5F0F65B2" Ref="C?"  Part="1" 
+AR Path="/5E8DEDC0/5F0F65B2" Ref="C?"  Part="1" 
+AR Path="/5E8C8865/5F0F65B2" Ref="C?"  Part="1" 
+AR Path="/5E8E1F08/5F0F65B2" Ref="C85"  Part="1" 
+F 0 "C85" V 3550 2700 50  0000 C CNN
+F 1 "100nF 50V X7R" V 3650 2850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3838 2550 50  0001 C CNN
+F 3 "~" H 3800 2700 50  0001 C CNN
+F 4 "AVX" H 3800 2700 50  0001 C CNN "Manufacturer"
+F 5 "06035C104JAT2A" H 3800 2700 50  0001 C CNN "Part Number"
+	1    3800 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F0F65B8
+P 3800 2850
+AR Path="/5F0F65B8" Ref="#PWR?"  Part="1" 
+AR Path="/5E8AFE9D/5F0F65B8" Ref="#PWR?"  Part="1" 
+AR Path="/5E8FBD97/5F0F65B8" Ref="#PWR?"  Part="1" 
+AR Path="/5E8E0754/5F0F65B8" Ref="#PWR?"  Part="1" 
+AR Path="/5E8DFCAD/5F0F65B8" Ref="#PWR?"  Part="1" 
+AR Path="/5E8DEDC0/5F0F65B8" Ref="#PWR?"  Part="1" 
+AR Path="/5E8C8865/5F0F65B8" Ref="#PWR?"  Part="1" 
+AR Path="/5E8E1F08/5F0F65B8" Ref="#PWR0379"  Part="1" 
+F 0 "#PWR0379" H 3800 2600 50  0001 C CNN
+F 1 "GND" H 3805 2677 50  0000 C CNN
+F 2 "" H 3800 2850 50  0001 C CNN
+F 3 "" H 3800 2850 50  0001 C CNN
+	1    3800 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 2550 3800 2450
+Wire Wire Line
+	3800 2450 4150 2450
+Connection ~ 4150 2450
+Wire Wire Line
+	4150 2450 4150 2750
+Text Notes 3650 2450 0    50   ~ 0
+~~1 ms filter
 $EndSCHEMATC

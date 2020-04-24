@@ -1,8 +1,9 @@
-88 through-hole pads
+94 through-hole pads
 4 pads from mounting holes
-SMT pads = KiCAD reading - 92 = 1375
-489 vias
-610 holes
+SMT pads = KiCAD reading - 98 = 1391
+490 vias
+621 holes
 
-54 BOM lines
+436 total parts
+53 BOM lines
 16 no-lead pads
