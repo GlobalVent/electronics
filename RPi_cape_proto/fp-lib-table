@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Ventilator)(type KiCad)(uri ${KIPRJMOD}/Ventilator.pretty)(options "")(descr ""))
+)
