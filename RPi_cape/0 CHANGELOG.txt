@@ -50,3 +50,10 @@
 	* Changed R190 from 3K to 2.4K to increase overhead on base current required for saturation, and consolidate BOM
 	* Added 3 solderable testpoints for expanding CPLD pin options (TP44-46), adjusted some CPLD pin assignments to allow physical routing to pins
 	* Fixed valve motion detector by changing comparator's hysteresis to AC-only, changing NPN's series resistor to 1K (allows low-enough DC level to count as logic low), and adding optional filtering cap C115 to offset divider
+	
+1.8 to 1.9:
+	* Changed 24V LED resistors (R20, R22) to 24.9K to consolidate BOM
+	* Adjusted audio amp volume and filtering according to breadboard experiments
+	* Moved bottom-end mounting holes and encoder connectors to avoid interfering mechanically with Raspberry Pi
+	* Replaced under-sized power-ORing diodes with better Schottky option, added heatsinking with copper planes
+	* Improved LMZ14203 heatsinking by removing thermal reliefs, re-arranging input-current-measurement testpoints to increase top-layer copper area

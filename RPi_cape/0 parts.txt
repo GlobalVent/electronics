@@ -28,6 +28,32 @@ Littlefuse SMBJ24A, 250k
 Vishay SMBJ24CA-E3/52, 30k
 ST SMBJ24A-TR, 62k
 
+Power, input OR-ing diode (dual):
+* Vreverse >= 48V (2x nominal input)
+* Iforward >= 3A continuous
+* Ileakage << 1 mA @ 48V, 100°C (for battery/power supply integrity)
+* D-Pak / TO-252 package
+ST STPS15H100CB-TR, Schottky 0.65Vmax @ 2A/25°C, 89k
+Vishay VS-12CWQ10FN-M3, Schottky 0.65Vmax @ 2A/25°C, 16k
+Vishay VS-6CWQ10FN-M3, Schottky 0.7Vmax @ 2A/25°C, 9k
+Diodes Inc SBR15U100CTLQ-13, SBR 0.5Vtyp @ 2A/25°C, 9k
+Diodes Inc MBRD20100CT, Schottky 0.6Vtyp @ 2A/25°C, 26k
+ON Semi MURD620CTT4G, 0.9Vtyp @ 2A/25°C, 230k
+ST STTH802CB-TR, 45k
+Power Integrations LQA10N200C, 0.85Vtyp @ 2A/25°C, 33k
+
+Power, input OR-ing diode (individual):
+* Vreverse >= 48V (2x nominal input)
+* Iforward >= 3A continuous
+* Vf < 0.8V typical @ 2A, 25°C (semi-arbitrary)
+* Ileakage << 1 mA @ 48V, 100°C (for battery/power supply integrity)
+* SMB package
+(ES3B-ES3G of any kind)
+Diodes Inc ES3DB-13-F, 0.7Vtyp @ 2A/25°C, 141k
+Diodes Inc ES3BB-13-F, 0.7Vtyp @ 2A/25°C, 32k
+Diodes Inc ES3CB-13-F, 0.7Vtyp @ 2A/25°C, 2k
+Taiwan Semi MUR320SBHR5G, 0.75Vtyp @ 2A/25°C, 4k
+
 Alarm audio amps:
 TI LM4871MX/NOPB, 220k
 
@@ -119,6 +145,7 @@ TI SN74LVC1G08DBVR (OR), 307k
 General power diode:
 * Vreverse >= 100V
 * Iforward >= 2A continuous
+* SMA package
 (ES2B-ES2G of any kind)
 Vishay ES2G-E3/52T, 185k
 Diodes Inc ES2B-13-F, 44k

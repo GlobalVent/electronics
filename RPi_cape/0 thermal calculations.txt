@@ -1,0 +1,46 @@
+Power OR-ing diode (D1):
+	Combined max. power draw on +24V is 2A
+		In practice, average current will be lower because valves are not all on at the same time, continuously
+		In fault state (such as +5V or +5VD shorted), continuous current draw could be higher, subject to test: power supply (GST60A24-P1J) is limited to 3.75A max. @ 24V though
+	Preferred part (ST STPS15H100CB) has 0.65V max. Vf @ 2A, 25°C = 1.3W max. (normal), 0.97V max. Vf @ 4A, 125°C = 3.6W max. (fault)
+		In practice, this will cause a junction temperature rise that will reduce Vf and reduce dissipation
+	Heatsinking is ~23 K/W
+		Top copper area is ~5 cm^2 = 47 K/W from datasheet
+		Bottom copper area is ~17 cm^2 = 37 K/W from datasheet + ~6 K/W from 30x 10-mil vias = 43 K/W
+		Inner layer is ~16 cm^2 but this is ignored as calculation of its spreading resistance to ambient is difficult		
+		47 K/W || 43 K/W = ~23 K/W
+	Estimated Tj rise is 30 K; even with pessimistic 60°C ambient inside box (during fault condition), Tj = 90°C (normal); 168°C (fault)
+	
++5VD power supply (U34):
+	Max. continuous load from Raspberry Pi and screen is 2.5A; LMZ14203's max. current limit is 5.25A
+	Power loss @ 24V->5V @ 2.5A, 85°C = 2W from datasheet (vs. 1.7W @ 25°C)
+	Heatsinking is ~22 K/W
+		Top copper area is ~5.5 cm^2 = 45 K/W from STPS15H100CB datasheet
+		Bottom copper area is ~28 cm^2 = 35 K/W from STPS15H100CB datasheet + ~6 K/W estimated from vias = 41 K/W
+		Inner copper area is ~210 cm^2 but this is ignored as calculation of its spreading resistance to ambient is difficult
+		45 K/W || 41 K/W = ~22 K/W
+	Estimated Tj rise is 44 K; even with pessimistic 60°C ambient inside box, Tj = 104°C
+		In practice, this will be significantly lower because of spreading from inner copper layer
+		Tj is internally limited in fault case, to avoid fire and/or damage
+		
++5V power supply (U35):
+	Max. continuous load is 0.13A; LMZ14203's max. current limit is 5.25A
+	Power loss @ 24V->5V @ 0.13A, 85°C = ~0.1W from LMZ14203 datasheet
+	Heatsinking is ~22 K/W
+		Top copper area is ~4.5 cm^2 = 47 K/W from STPS15H100CB datasheet
+		Bottom copper area is ~28 cm^2 = 35 K/W from STPS15H100CB datasheet + ~6 K/W estimated from vias = 41 K/W
+		Inner copper area is ~210 cm^2 but this is ignored as calculation of its spreading resistance to ambient is difficult
+		47 K/W || 41 K/W = ~22 K/W
+	Estimated Tj rise is 5 K; even with pessimistic 60°C ambient inside box, Tj = 65°C
+		Tj is internally limited in fault case, to avoid fire and/or damage
+	
+Valve drivers (U9 etc.):
+	Max. valve required power is 10W @ 24V = 420 mA @ 24V input, 490 mA @ 28V input; fault current is limited to 1.23A max.
+	Total dissipation is 280 mW each (normal)
+		TPS1H100's max. on-resistance (even at pessimistic 125°C Tj) = 0.166Ω, max. power loss = 40 mW
+		No-load operating current is 5 mA max., power loss = 140 mW
+		140 + 40 = 280 mW
+	Heatsinking is ~75 K/W from datasheet (with no copper area)
+		In practice this is a severe over-estimate because there are thermal vias from exposed pad to massive 210 cm^2 internal copper plane
+	Estimated Tj rise is 11 K; even with pessimistic 60°C ambient inside box, Tj = 71°C
+		Tj is internally limited in fault case, to avoid fire and/or damage

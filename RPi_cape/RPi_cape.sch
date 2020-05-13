@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 15
 Title "Raspberry Pi Hat for JamVent Adaptation"
 Date ""
-Rev "1.8"
+Rev "1.9"
 Comp "US JamVent Team"
 Comment1 "Don Straney"
 Comment2 ""
@@ -618,51 +618,6 @@ Wire Wire Line
 	1750 1050 1750 1250
 Connection ~ 1750 1250
 $Comp
-L Device:D_ALT D?
-U 1 1 5E93929F
-P 2000 950
-AR Path="/5E8FBD97/5E93929F" Ref="D?"  Part="1" 
-AR Path="/5E8DEDC0/5E93929F" Ref="D?"  Part="1" 
-AR Path="/5E8DFCAD/5E93929F" Ref="D?"  Part="1" 
-AR Path="/5E8E0754/5E93929F" Ref="D?"  Part="1" 
-AR Path="/5E93929F" Ref="D1"  Part="1" 
-F 0 "D1" H 1950 750 50  0000 L CNN
-F 1 "ES2B" H 1900 850 50  0000 L CNN
-F 2 "Ventilator:D_SMA" H 2000 950 50  0001 C CNN
-F 3 "~" H 2000 950 50  0001 C CNN
-F 4 "Vishay" H 2000 950 50  0001 C CNN "Manufacturer"
-F 5 "ES2G-E3/52T" H 2000 950 50  0001 C CNN "Part Number"
-	1    2000 950 
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1850 950  1650 950 
-$Comp
-L Device:D_ALT D?
-U 1 1 5E93B9F0
-P 2000 1150
-AR Path="/5E8FBD97/5E93B9F0" Ref="D?"  Part="1" 
-AR Path="/5E8DEDC0/5E93B9F0" Ref="D?"  Part="1" 
-AR Path="/5E8DFCAD/5E93B9F0" Ref="D?"  Part="1" 
-AR Path="/5E8E0754/5E93B9F0" Ref="D?"  Part="1" 
-AR Path="/5E93B9F0" Ref="D2"  Part="1" 
-F 0 "D2" H 1900 1350 50  0000 L CNN
-F 1 "ES2B" H 1800 1250 50  0000 L CNN
-F 2 "Ventilator:D_SMA" H 2000 1150 50  0001 C CNN
-F 3 "~" H 2000 1150 50  0001 C CNN
-F 4 "Vishay" H 2000 1150 50  0001 C CNN "Manufacturer"
-F 5 "ES2G-E3/52T" H 2000 1150 50  0001 C CNN "Part Number"
-	1    2000 1150
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1650 1150 1850 1150
-Wire Wire Line
-	2150 1150 2150 950 
-Wire Wire Line
-	2150 950  2350 950 
-Connection ~ 2150 950 
-$Comp
 L Device:R R10
 U 1 1 5E9432CB
 P 4000 950
@@ -1113,10 +1068,6 @@ F 3 "~" H 1800 600 50  0001 C CNN
 	1    1800 600 
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	1950 600  2150 600 
-Wire Wire Line
-	2150 600  2150 950 
 Wire Wire Line
 	1650 600  1650 950 
 Connection ~ 1650 950 
@@ -2554,11 +2505,11 @@ AR Path="/5F731777" Ref="R20"  Part="1"
 AR Path="/5E8AFE9D/5F731777" Ref="R?"  Part="1" 
 AR Path="/5E8C8865/5F731777" Ref="R?"  Part="1" 
 F 0 "R20" H 7750 9450 50  0000 C CNN
-F 1 "22K" H 7700 9550 50  0000 C CNN
+F 1 "24.9K" H 7700 9550 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 7830 9500 50  0001 C CNN
 F 3 "~" H 7900 9500 50  0001 C CNN
 F 4 "KOA Speer" H 7900 9500 50  0001 C CNN "Manufacturer"
-F 5 "RK73H2BTTD2202F" H 7900 9500 50  0001 C CNN "Part Number"
+F 5 "RK73H2BTTD2492F" H 7900 9500 50  0001 C CNN "Part Number"
 	1    7900 9500
 	-1   0    0    1   
 $EndComp
@@ -2603,11 +2554,11 @@ AR Path="/5F747055" Ref="R22"  Part="1"
 AR Path="/5E8AFE9D/5F747055" Ref="R?"  Part="1" 
 AR Path="/5E8C8865/5F747055" Ref="R?"  Part="1" 
 F 0 "R22" H 8200 9450 50  0000 C CNN
-F 1 "22K" H 8150 9550 50  0000 C CNN
+F 1 "24.9K" H 8150 9550 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 8280 9500 50  0001 C CNN
 F 3 "~" H 8350 9500 50  0001 C CNN
 F 4 "KOA Speer" H 8350 9500 50  0001 C CNN "Manufacturer"
-F 5 "RK73H2BTTD2202F" H 8350 9500 50  0001 C CNN "Part Number"
+F 5 "RK73H2BTTD2492F" H 8350 9500 50  0001 C CNN "Part Number"
 	1    8350 9500
 	-1   0    0    1   
 $EndComp
@@ -3903,4 +3854,33 @@ Connection ~ 9700 9950
 Connection ~ 9350 9950
 Wire Wire Line
 	9350 9950 9700 9950
+$Comp
+L Device:D_x2_KCom_AKA D?
+U 1 1 5EC00ED4
+P 2150 950
+F 0 "D?" V 1850 1700 50  0000 L CNN
+F 1 "STPS15H100CB" V 1950 1500 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 2150 950 50  0001 C CNN
+F 3 "~" H 2150 950 50  0001 C CNN
+F 4 "ST" V 2150 950 50  0001 C CNN "Manufacturer"
+F 5 "STPS15H100CB-TR" V 2150 950 50  0001 C CNN "Part Number"
+	1    2150 950 
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2350 600  2350 950 
+Wire Wire Line
+	1950 600  2350 600 
+Wire Wire Line
+	2000 950  2000 650 
+Wire Wire Line
+	2000 650  2150 650 
+Wire Wire Line
+	1650 950  2000 950 
+Wire Wire Line
+	2000 1150 2000 1250
+Wire Wire Line
+	2000 1250 2150 1250
+Wire Wire Line
+	1650 1150 2000 1150
 $EndSCHEMATC

@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 14 15
 Title "Raspberry Pi Hat for JamVent Adaptation"
 Date ""
-Rev "1.8"
+Rev "1.9"
 Comp "US JamVent Team"
 Comment1 "Don Straney"
 Comment2 ""
@@ -782,8 +782,8 @@ AR Path="/5F299EA1" Ref="C?"  Part="1"
 AR Path="/5E8AFE9D/5F299EA1" Ref="C?"  Part="1" 
 AR Path="/5E8A4ABF/5F299EA1" Ref="C?"  Part="1" 
 AR Path="/601431F1/5F299EA1" Ref="C?"  Part="1" 
-AR Path="/60304D29/5F299EA1" Ref="C?"  Part="1" 
-F 0 "C?" H 3850 4500 50  0000 C CNN
+AR Path="/60304D29/5F299EA1" Ref="C115"  Part="1" 
+F 0 "C115" H 3850 4500 50  0000 C CNN
 F 1 "DNP" H 3900 4400 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3638 4200 50  0001 C CNN
 F 3 "~" H 3600 4350 50  0001 C CNN
@@ -800,8 +800,8 @@ AR Path="/5F299EA7" Ref="#PWR?"  Part="1"
 AR Path="/5E8AFE9D/5F299EA7" Ref="#PWR?"  Part="1" 
 AR Path="/5E8A4ABF/5F299EA7" Ref="#PWR?"  Part="1" 
 AR Path="/601431F1/5F299EA7" Ref="#PWR?"  Part="1" 
-AR Path="/60304D29/5F299EA7" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3600 4250 50  0001 C CNN
+AR Path="/60304D29/5F299EA7" Ref="#PWR0380"  Part="1" 
+F 0 "#PWR0380" H 3600 4250 50  0001 C CNN
 F 1 "GND" H 3605 4327 50  0000 C CNN
 F 2 "" H 3600 4500 50  0001 C CNN
 F 3 "" H 3600 4500 50  0001 C CNN

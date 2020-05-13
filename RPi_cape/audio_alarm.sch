@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 9 15
 Title "Raspberry Pi Hat for JamVent Adaptation"
 Date ""
-Rev "1.8"
+Rev "1.9"
 Comp "US JamVent Team"
 Comment1 "Don Straney"
 Comment2 ""
@@ -504,11 +504,11 @@ AR Path="/5E8AFE9D/5F17DF13" Ref="R?"  Part="1"
 AR Path="/5E8A4ABF/5F17DF13" Ref="R?"  Part="1" 
 AR Path="/5E8E1F08/5F17DF13" Ref="R151"  Part="1" 
 F 0 "R151" V 10400 2650 50  0000 C CNN
-F 1 "10K" V 10300 2650 50  0000 C CNN
+F 1 "24.9K" V 10300 2650 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 10130 2650 50  0001 C CNN
 F 3 "~" H 10200 2650 50  0001 C CNN
 F 4 "KOA Speer" H 10200 2650 50  0001 C CNN "Manufacturer"
-F 5 "RK73H2BTTD1002F" H 10200 2650 50  0001 C CNN "Part Number"
+F 5 "RK73H2BTTD2492F" H 10200 2650 50  0001 C CNN "Part Number"
 	1    10200 2650
 	0    -1   -1   0   
 $EndComp
@@ -554,11 +554,11 @@ AR Path="/5E8AFE9D/5F18A428" Ref="R?"  Part="1"
 AR Path="/5E8A4ABF/5F18A428" Ref="R?"  Part="1" 
 AR Path="/5E8E1F08/5F18A428" Ref="R148"  Part="1" 
 F 0 "R148" V 8943 2350 50  0000 C CNN
-F 1 "10K" V 9034 2350 50  0000 C CNN
+F 1 "100K" V 9034 2350 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 9080 2350 50  0001 C CNN
 F 3 "~" H 9150 2350 50  0001 C CNN
 F 4 "KOA Speer" H 9150 2350 50  0001 C CNN "Manufacturer"
-F 5 "RK73H2BTTD1002F" H 9150 2350 50  0001 C CNN "Part Number"
+F 5 "RK73H2BTTD1003F" H 9150 2350 50  0001 C CNN "Part Number"
 	1    9150 2350
 	0    -1   -1   0   
 $EndComp
@@ -601,11 +601,11 @@ AR Path="/5E8AFE9D/5F192E05" Ref="C?"  Part="1"
 AR Path="/5E8A4ABF/5F192E05" Ref="C?"  Part="1" 
 AR Path="/5E8E1F08/5F192E05" Ref="C64"  Part="1" 
 F 0 "C64" V 8550 2500 50  0000 C CNN
-F 1 "1uF 16V X7R" V 8450 2500 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 8638 2200 50  0001 C CNN
+F 1 "100nF 50V X7R" V 8450 2500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8638 2200 50  0001 C CNN
 F 3 "~" H 8600 2350 50  0001 C CNN
-F 4 "Kemet" H 8600 2350 50  0001 C CNN "Manufacturer"
-F 5 "C0805C105K4RACTU" H 8600 2350 50  0001 C CNN "Part Number"
+F 4 "AVX" H 8600 2350 50  0001 C CNN "Manufacturer"
+F 5 "06035C104JAT2A" H 8600 2350 50  0001 C CNN "Part Number"
 	1    8600 2350
 	0    -1   -1   0   
 $EndComp
@@ -618,11 +618,11 @@ AR Path="/5E8AFE9D/5F1933A7" Ref="C?"  Part="1"
 AR Path="/5E8A4ABF/5F1933A7" Ref="C?"  Part="1" 
 AR Path="/5E8E1F08/5F1933A7" Ref="C66"  Part="1" 
 F 0 "C66" V 8650 2800 50  0000 C CNN
-F 1 "1uF 16V X7R" V 8550 2800 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 8738 2500 50  0001 C CNN
+F 1 "100nF 50V X7R" V 8550 2800 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8738 2500 50  0001 C CNN
 F 3 "~" H 8700 2650 50  0001 C CNN
-F 4 "Kemet" H 8700 2650 50  0001 C CNN "Manufacturer"
-F 5 "C0805C105K4RACTU" H 8700 2650 50  0001 C CNN "Part Number"
+F 4 "AVX" H 8700 2650 50  0001 C CNN "Manufacturer"
+F 5 "06035C104JAT2A" H 8700 2650 50  0001 C CNN "Part Number"
 	1    8700 2650
 	0    -1   -1   0   
 $EndComp
@@ -635,11 +635,11 @@ AR Path="/5E8AFE9D/5F19381A" Ref="C?"  Part="1"
 AR Path="/5E8A4ABF/5F19381A" Ref="C?"  Part="1" 
 AR Path="/5E8E1F08/5F19381A" Ref="C67"  Part="1" 
 F 0 "C67" V 8650 3150 50  0000 C CNN
-F 1 "1uF 16V X7R" V 8550 3150 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 8738 2850 50  0001 C CNN
+F 1 "100nF 50V X7R" V 8550 3150 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8738 2850 50  0001 C CNN
 F 3 "~" H 8700 3000 50  0001 C CNN
-F 4 "Kemet" H 8700 3000 50  0001 C CNN "Manufacturer"
-F 5 "C0805C105K4RACTU" H 8700 3000 50  0001 C CNN "Part Number"
+F 4 "AVX" H 8700 3000 50  0001 C CNN "Manufacturer"
+F 5 "06035C104JAT2A" H 8700 3000 50  0001 C CNN "Part Number"
 	1    8700 3000
 	0    -1   -1   0   
 $EndComp
@@ -653,10 +653,10 @@ Wire Wire Line
 	8850 2650 9000 2650
 Wire Wire Line
 	8750 2350 9000 2350
-Text Notes 8200 3400 0    50   ~ 0
-Resistors set volumes for individual audio sources
-Text Notes 10000 3050 0    50   ~ 0
-Resistor sets global audio gain,\ncapacitor adds optional harmonic filtering
+Text Notes 8200 3450 0    50   ~ 0
+Resistors set volumes for individual audio sources\n~~16 Hz HPF on each input
+Text Notes 10150 3100 0    50   ~ 0
+Resistor sets global audio gain,\ncapacitor adds harmonic filtering\n(~~640 Hz)
 $Comp
 L Device:C C?
 U 1 1 5F19C623
@@ -666,9 +666,11 @@ AR Path="/5E8AFE9D/5F19C623" Ref="C?"  Part="1"
 AR Path="/5E8A4ABF/5F19C623" Ref="C?"  Part="1" 
 AR Path="/5E8E1F08/5F19C623" Ref="C69"  Part="1" 
 F 0 "C69" V 9850 3000 50  0000 C CNN
-F 1 "DNP" V 9750 3000 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 9938 2700 50  0001 C CNN
+F 1 "10nF 50V NP0" V 9750 3000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9938 2700 50  0001 C CNN
 F 3 "~" H 9900 2850 50  0001 C CNN
+F 4 "Murata" H 9900 2850 50  0001 C CNN "Manufacturer"
+F 5 "GRM1885C1H103JA01D" H 9900 2850 50  0001 C CNN "Part Number"
 	1    9900 2850
 	0    -1   -1   0   
 $EndComp

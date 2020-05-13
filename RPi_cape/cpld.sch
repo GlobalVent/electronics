@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 15 15
 Title "Raspberry Pi Hat for JamVent Adaptation"
 Date ""
-Rev "1.8"
+Rev "1.9"
 Comp "US JamVent Team"
 Comment1 "Don Straney"
 Comment2 ""
