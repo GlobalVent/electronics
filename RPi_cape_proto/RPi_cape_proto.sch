@@ -291,7 +291,7 @@ F0 "Auditory Alarm" 50
 F1 "audio_alarm.sch" 50
 F2 "In_RPi" I L 13850 7950 50 
 F3 "In_CPLD" I L 13850 8050 50 
-F5 "~Bat_On" O L 13850 7600 50 
+F4 "~Bat_On" O L 13850 7600 50 
 $EndSheet
 $Comp
 L Connector_Generic:Conn_01x04 J1
@@ -2909,11 +2909,11 @@ L Device:D_x2_KCom_AKA D1
 U 1 1 5F804B03
 P 2150 950
 F 0 "D1" V 1800 1350 50  0000 L CNN
-F 1 "MURD620CTT4G" V 1900 1250 50  0000 L CNN
+F 1 "STPS15H100CB" V 1900 1250 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:TO-252-2" H 2150 950 50  0001 C CNN
 F 3 "~" H 2150 950 50  0001 C CNN
-F 4 "ON Semiconductor" V 2150 950 50  0001 C CNN "Manufacturer"
-F 5 "MURD620CTT4G" V 2150 950 50  0001 C CNN "Part Number"
+F 4 "ST" V 2150 950 50  0001 C CNN "Manufacturer"
+F 5 "STPS15H100CB" V 2150 950 50  0001 C CNN "Part Number"
 	1    2150 950 
 	0    -1   1    0   
 $EndComp
