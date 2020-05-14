@@ -1,0 +1,11 @@
+Features (from Raspberry Pi, CPLD perspective) which are in 'full' design but missing here:
+* Analog pressure sensor options, on first two ADC inputs (RPi, CPLD)
+* O2 sensor and analog pressure sensor hard-wired limit alarm signals (CPLD)
+* Low-battery signal for alarm backup battery (CPLD)
+* "+5VA on" monitor signal (CPLD)
+
+Features (from safety perspective) which are in 'full' design but missing here
+* Power-down alarm hard-wired to sound if CPLD loses power (watches +3.3V, +1.8V)
+* Heatsinking to handle full fault capacity on power input OR-ing diodes
+* O2 sensor hard-wired limit alarms to CPLD
+* Misc extra input protections and default-unused options (digital-fault-output valve drivers, Raspberry Pi's valve output pull-ups, +5VA voltage sensing to CPLD's ADC, etc.)

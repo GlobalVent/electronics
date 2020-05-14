@@ -248,8 +248,6 @@ F1 "sensor_input_lowlevel.sch" 50
 F2 "In" I L 1400 8300 50 
 F3 "Out1" O R 2550 8200 50 
 F4 "Out2" O R 2550 8300 50 
-F5 "Lim_H_Alarm" O R 2550 8450 50 
-F6 "Lim_L_Alarm" O R 2550 8550 50 
 $EndSheet
 $Sheet
 S 13350 3550 850  500 
@@ -874,14 +872,6 @@ Text Label 10300 2450 0    50   ~ 0
 RPi_SDA
 Text Label 10300 2550 0    50   ~ 0
 RPi_SCL
-Text Label 3550 8450 2    50   ~ 0
-O2_Lim_H_Alarm
-Text Label 3550 8550 2    50   ~ 0
-O2_Lim_L_Alarm
-Wire Wire Line
-	2550 8450 3550 8450
-Wire Wire Line
-	2550 8550 3550 8550
 Wire Wire Line
 	8750 7900 7950 7900
 Wire Wire Line
