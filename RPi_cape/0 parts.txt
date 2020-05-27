@@ -2,6 +2,16 @@ NOTES:
 "*k" refers to quantity available; if no distributor listed, number is total available at all combined authorized distributors
 All options are pin-compatible drop-in replacements unless otherwise noted
 
+CPLD:
+(100-pin options)
+Intel 5M570ZM100C5N, 1.4k
+Intel 5M570ZT100I5N, 2k
+(144-pin options)
+Intel 5M570ZT144C5N, 310 (+ >30k under 'Altera' from non-auth distributors)
+Intel 5M570ZT144I5N, 530 (+ 2.8k under 'Altera' from non-auth distributors)
+Intel 5M1270ZT144I5N, 1.5k
+Intel 5M1270ZT144C5N, 1.9k
+
 Power, 24V-to-5V step-down module (only differences with suffixes are number-on-reel options; different part numbers though are not pin-compatible):
 TI LMZ14203HTZX/NOPB, 38k
 TI LMZ14203TZX-ADJ/NOPB, 22k
@@ -78,9 +88,9 @@ Analog, op-amps for pressure sensors (6 mV max offset):
 * Rail-to-rail output
 * Input CM range includes gnd
 * Input offset <= 10 mV max. (0.5% full-scale)
-TI LMC7101BIM5/NOPB, 400k
+TI LMC7101BIM5/NOPB, 400k - reversed power pins
 TI OPA171AIDBVR, 132k
-ST LMV321ILT, Digikey 79k
+ST LMV321ILT, 135k - many other LMV321 alternatives too (TI, ON Semi)
 TI LM6211MF/NOPB, Digikey 70k
 ST TSV321RILT, Digikey 42k
 TI LM7301IM5/NOPB, Digikey 50k

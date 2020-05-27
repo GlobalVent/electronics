@@ -5,12 +5,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 14 15
-Title "Raspberry Pi Hat for JamVent Adaptation"
+Title "GlobalVent Stand-Alone Controller"
 Date ""
-Rev "1.9"
-Comp "US JamVent Team"
-Comment1 "Don Straney"
-Comment2 ""
+Rev "1.10"
+Comp "US GlobalVent Team"
+Comment1 "Licensed under CERN-OHL-S v2"
+Comment2 "Don Straney"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -179,7 +179,7 @@ AR Path="/601431F1/601F8680" Ref="TP39"  Part="1"
 AR Path="/60304D29/601F8680" Ref="TP39"  Part="1" 
 F 0 "TP39" H 6450 3450 50  0000 R CNN
 F 1 "TestPoint_Flag" H 6256 3303 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 6500 3300 50  0001 C CNN
+F 2 "Ventilator:TestPoint_Keystone_5019_Minature" H 6500 3300 50  0001 C CNN
 F 3 "~" H 6500 3300 50  0001 C CNN
 F 4 "Keystone" H 6300 3300 50  0001 C CNN "Manufacturer"
 F 5 "5019" H 6300 3300 50  0001 C CNN "Part Number"
@@ -509,7 +509,7 @@ AR Path="/601431F1/602455CE" Ref="TP40"  Part="1"
 AR Path="/60304D29/602455CE" Ref="TP40"  Part="1" 
 F 0 "TP40" H 8250 3550 50  0000 R CNN
 F 1 "TestPoint_Flag" H 8006 3403 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 8250 3400 50  0001 C CNN
+F 2 "Ventilator:TestPoint_Keystone_5019_Minature" H 8250 3400 50  0001 C CNN
 F 3 "~" H 8250 3400 50  0001 C CNN
 F 4 "Keystone" H 8050 3400 50  0001 C CNN "Manufacturer"
 F 5 "5019" H 8050 3400 50  0001 C CNN "Part Number"
@@ -526,7 +526,7 @@ AR Path="/601431F1/60245AA3" Ref="TP41"  Part="1"
 AR Path="/60304D29/60245AA3" Ref="TP41"  Part="1" 
 F 0 "TP41" H 10450 3550 50  0000 R CNN
 F 1 "TestPoint_Flag" H 10256 3403 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 10500 3400 50  0001 C CNN
+F 2 "Ventilator:TestPoint_Keystone_5019_Minature" H 10500 3400 50  0001 C CNN
 F 3 "~" H 10500 3400 50  0001 C CNN
 F 4 "Keystone" H 10300 3400 50  0001 C CNN "Manufacturer"
 F 5 "5019" H 10300 3400 50  0001 C CNN "Part Number"

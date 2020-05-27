@@ -5,12 +5,12 @@ EELAYER END
 $Descr B 17000 11000
 encoding utf-8
 Sheet 9 15
-Title "Raspberry Pi Hat for JamVent Adaptation"
+Title "GlobalVent Stand-Alone Controller"
 Date ""
-Rev "1.9"
-Comp "US JamVent Team"
-Comment1 "Don Straney"
-Comment2 ""
+Rev "1.10"
+Comp "US GlobalVent Team"
+Comment1 "Licensed under CERN-OHL-S v2"
+Comment2 "Don Straney"
 Comment3 ""
 Comment4 ""
 $EndDescr

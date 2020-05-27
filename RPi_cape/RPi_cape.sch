@@ -5,12 +5,12 @@ EELAYER END
 $Descr B 17000 11000
 encoding utf-8
 Sheet 1 15
-Title "Raspberry Pi Hat for JamVent Adaptation"
+Title "GlobalVent Stand-Alone Controller"
 Date ""
-Rev "1.9"
-Comp "US JamVent Team"
-Comment1 "Don Straney"
-Comment2 ""
+Rev "1.10"
+Comp "US GlobalVent Team"
+Comment1 "Licensed under CERN-OHL-S v2"
+Comment2 "Don Straney"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -1142,245 +1142,245 @@ GPIO4
 $Comp
 L Device:R R25
 U 1 1 5E94AC0A
-P 13850 1000
+P 10150 4800
 AR Path="/5E94AC0A" Ref="R25"  Part="1" 
 AR Path="/5E8AFE9D/5E94AC0A" Ref="R?"  Part="1" 
-F 0 "R25" V 14250 1050 50  0000 C CNN
-F 1 "10K" V 14250 800 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 13780 1000 50  0001 C CNN
-F 3 "~" H 13850 1000 50  0001 C CNN
-F 4 "KOA Speer" H 13850 1000 50  0001 C CNN "Manufacturer"
-F 5 "RK73H2BTTD1002F" H 13850 1000 50  0001 C CNN "Part Number"
-	1    13850 1000
+F 0 "R25" V 10550 4850 50  0000 C CNN
+F 1 "10K" V 10550 4600 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 10080 4800 50  0001 C CNN
+F 3 "~" H 10150 4800 50  0001 C CNN
+F 4 "KOA Speer" H 10150 4800 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1002F" H 10150 4800 50  0001 C CNN "Part Number"
+	1    10150 4800
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R26
 U 1 1 5E94B23B
-P 13850 1100
+P 10150 4900
 AR Path="/5E94B23B" Ref="R26"  Part="1" 
 AR Path="/5E8AFE9D/5E94B23B" Ref="R?"  Part="1" 
-F 0 "R26" V 14250 1150 50  0000 C CNN
-F 1 "10K" V 14250 900 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 13780 1100 50  0001 C CNN
-F 3 "~" H 13850 1100 50  0001 C CNN
-F 4 "KOA Speer" H 13850 1100 50  0001 C CNN "Manufacturer"
-F 5 "RK73H2BTTD1002F" H 13850 1100 50  0001 C CNN "Part Number"
-	1    13850 1100
+F 0 "R26" V 10550 4950 50  0000 C CNN
+F 1 "10K" V 10550 4700 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 10080 4900 50  0001 C CNN
+F 3 "~" H 10150 4900 50  0001 C CNN
+F 4 "KOA Speer" H 10150 4900 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1002F" H 10150 4900 50  0001 C CNN "Part Number"
+	1    10150 4900
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R27
 U 1 1 5E94B4FF
-P 13850 1200
+P 10150 5000
 AR Path="/5E94B4FF" Ref="R27"  Part="1" 
 AR Path="/5E8AFE9D/5E94B4FF" Ref="R?"  Part="1" 
-F 0 "R27" V 14250 1250 50  0000 C CNN
-F 1 "10K" V 14250 1000 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 13780 1200 50  0001 C CNN
-F 3 "~" H 13850 1200 50  0001 C CNN
-F 4 "KOA Speer" H 13850 1200 50  0001 C CNN "Manufacturer"
-F 5 "RK73H2BTTD1002F" H 13850 1200 50  0001 C CNN "Part Number"
-	1    13850 1200
+F 0 "R27" V 10550 5050 50  0000 C CNN
+F 1 "10K" V 10550 4800 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 10080 5000 50  0001 C CNN
+F 3 "~" H 10150 5000 50  0001 C CNN
+F 4 "KOA Speer" H 10150 5000 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1002F" H 10150 5000 50  0001 C CNN "Part Number"
+	1    10150 5000
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R28
 U 1 1 5E94B7C0
-P 13850 1300
+P 10150 5100
 AR Path="/5E94B7C0" Ref="R28"  Part="1" 
 AR Path="/5E8AFE9D/5E94B7C0" Ref="R?"  Part="1" 
-F 0 "R28" V 14250 1350 50  0000 C CNN
-F 1 "10K" V 14250 1100 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 13780 1300 50  0001 C CNN
-F 3 "~" H 13850 1300 50  0001 C CNN
-F 4 "KOA Speer" H 13850 1300 50  0001 C CNN "Manufacturer"
-F 5 "RK73H2BTTD1002F" H 13850 1300 50  0001 C CNN "Part Number"
-	1    13850 1300
+F 0 "R28" V 10550 5150 50  0000 C CNN
+F 1 "10K" V 10550 4900 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 10080 5100 50  0001 C CNN
+F 3 "~" H 10150 5100 50  0001 C CNN
+F 4 "KOA Speer" H 10150 5100 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1002F" H 10150 5100 50  0001 C CNN "Part Number"
+	1    10150 5100
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:C C14
 U 1 1 5E94EEFC
-P 13500 1550
+P 9800 5350
 AR Path="/5E94EEFC" Ref="C14"  Part="1" 
 AR Path="/5E8AFE9D/5E94EEFC" Ref="C?"  Part="1" 
-F 0 "C14" H 13350 1450 50  0000 C CNN
-F 1 "100nF 50V X7R" H 13100 1350 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 13538 1400 50  0001 C CNN
-F 3 "~" H 13500 1550 50  0001 C CNN
-F 4 "AVX" H 13500 1550 50  0001 C CNN "Manufacturer"
-F 5 "06035C104JAT2A" H 13500 1550 50  0001 C CNN "Part Number"
-	1    13500 1550
+F 0 "C14" H 9650 5250 50  0000 C CNN
+F 1 "100nF 50V X7R" H 9400 5150 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9838 5200 50  0001 C CNN
+F 3 "~" H 9800 5350 50  0001 C CNN
+F 4 "AVX" H 9800 5350 50  0001 C CNN "Manufacturer"
+F 5 "06035C104JAT2A" H 9800 5350 50  0001 C CNN "Part Number"
+	1    9800 5350
 	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR059
 U 1 1 5E95430A
-P 13500 1700
-F 0 "#PWR059" H 13500 1450 50  0001 C CNN
-F 1 "GND" H 13505 1527 50  0000 C CNN
-F 2 "" H 13500 1700 50  0001 C CNN
-F 3 "" H 13500 1700 50  0001 C CNN
-	1    13500 1700
+P 9800 5500
+F 0 "#PWR059" H 9800 5250 50  0001 C CNN
+F 1 "GND" H 9805 5327 50  0000 C CNN
+F 2 "" H 9800 5500 50  0001 C CNN
+F 3 "" H 9800 5500 50  0001 C CNN
+	1    9800 5500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13700 1300 13500 1300
+	10000 5100 9800 5100
 Wire Wire Line
-	13500 1300 13500 1350
+	9800 5100 9800 5150
 $Comp
 L Device:C C13
 U 1 1 5E95977F
-P 13200 1550
+P 9500 5350
 AR Path="/5E95977F" Ref="C13"  Part="1" 
 AR Path="/5E8AFE9D/5E95977F" Ref="C?"  Part="1" 
-F 0 "C13" H 13100 1650 50  0000 C CNN
-F 1 "100nF 50V X7R" H 13200 1150 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 13238 1400 50  0001 C CNN
-F 3 "~" H 13200 1550 50  0001 C CNN
-F 4 "AVX" H 13200 1550 50  0001 C CNN "Manufacturer"
-F 5 "06035C104JAT2A" H 13200 1550 50  0001 C CNN "Part Number"
-	1    13200 1550
+F 0 "C13" H 9400 5450 50  0000 C CNN
+F 1 "100nF 50V X7R" H 9500 4950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9538 5200 50  0001 C CNN
+F 3 "~" H 9500 5350 50  0001 C CNN
+F 4 "AVX" H 9500 5350 50  0001 C CNN "Manufacturer"
+F 5 "06035C104JAT2A" H 9500 5350 50  0001 C CNN "Part Number"
+	1    9500 5350
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:C C12
 U 1 1 5E959C3B
-P 12900 1550
+P 9200 5350
 AR Path="/5E959C3B" Ref="C12"  Part="1" 
 AR Path="/5E8AFE9D/5E959C3B" Ref="C?"  Part="1" 
-F 0 "C12" H 12800 1650 50  0000 C CNN
-F 1 "100nF 50V X7R" H 12950 1250 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 12938 1400 50  0001 C CNN
-F 3 "~" H 12900 1550 50  0001 C CNN
-F 4 "AVX" H 12900 1550 50  0001 C CNN "Manufacturer"
-F 5 "06035C104JAT2A" H 12900 1550 50  0001 C CNN "Part Number"
-	1    12900 1550
+F 0 "C12" H 9100 5450 50  0000 C CNN
+F 1 "100nF 50V X7R" H 9250 5050 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9238 5200 50  0001 C CNN
+F 3 "~" H 9200 5350 50  0001 C CNN
+F 4 "AVX" H 9200 5350 50  0001 C CNN "Manufacturer"
+F 5 "06035C104JAT2A" H 9200 5350 50  0001 C CNN "Part Number"
+	1    9200 5350
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:C C11
 U 1 1 5E959FC0
-P 12650 1550
+P 8950 5350
 AR Path="/5E959FC0" Ref="C11"  Part="1" 
 AR Path="/5E8AFE9D/5E959FC0" Ref="C?"  Part="1" 
-F 0 "C11" H 12850 1650 50  0000 C CNN
-F 1 "100nF 50V X7R" H 12750 1350 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 12688 1400 50  0001 C CNN
-F 3 "~" H 12650 1550 50  0001 C CNN
-F 4 "AVX" H 12650 1550 50  0001 C CNN "Manufacturer"
-F 5 "06035C104JAT2A" H 12650 1550 50  0001 C CNN "Part Number"
-	1    12650 1550
+F 0 "C11" H 9150 5450 50  0000 C CNN
+F 1 "100nF 50V X7R" H 9050 5150 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8988 5200 50  0001 C CNN
+F 3 "~" H 8950 5350 50  0001 C CNN
+F 4 "AVX" H 8950 5350 50  0001 C CNN "Manufacturer"
+F 5 "06035C104JAT2A" H 8950 5350 50  0001 C CNN "Part Number"
+	1    8950 5350
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	12650 1000 12650 1400
+	8950 4800 8950 5200
 Wire Wire Line
-	12650 1700 12900 1700
-Connection ~ 13500 1700
+	8950 5500 9200 5500
+Connection ~ 9800 5500
 $Comp
 L Connector:TestPoint_Flag TP11
 U 1 1 5E97063B
-P 12650 1000
-F 0 "TP11" H 12650 1100 50  0000 R CNN
-F 1 "TestPoint_Flag" H 12606 1003 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 12850 1000 50  0001 C CNN
-F 3 "~" H 12850 1000 50  0001 C CNN
-F 4 "Keystone" H 12650 1000 50  0001 C CNN "Manufacturer"
-F 5 "5019" H 12650 1000 50  0001 C CNN "Part Number"
-	1    12650 1000
+P 8950 4800
+F 0 "TP11" H 8950 4900 50  0000 R CNN
+F 1 "TestPoint_Flag" H 8906 4803 50  0001 R CNN
+F 2 "Ventilator:TestPoint_Keystone_5019_Minature" H 9150 4800 50  0001 C CNN
+F 3 "~" H 9150 4800 50  0001 C CNN
+F 4 "Keystone" H 8950 4800 50  0001 C CNN "Manufacturer"
+F 5 "5019" H 8950 4800 50  0001 C CNN "Part Number"
+	1    8950 4800
 	-1   0    0    -1  
 $EndComp
-Connection ~ 12650 1000
+Connection ~ 8950 4800
 $Comp
 L Connector:TestPoint_Flag TP12
 U 1 1 5E971907
-P 12900 1150
-F 0 "TP12" H 12900 1250 50  0000 R CNN
-F 1 "TestPoint_Flag" H 12856 1153 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 13100 1150 50  0001 C CNN
-F 3 "~" H 13100 1150 50  0001 C CNN
-F 4 "Keystone" H 12900 1150 50  0001 C CNN "Manufacturer"
-F 5 "5019" H 12900 1150 50  0001 C CNN "Part Number"
-	1    12900 1150
+P 9200 4950
+F 0 "TP12" H 9200 5050 50  0000 R CNN
+F 1 "TestPoint_Flag" H 9156 4953 50  0001 R CNN
+F 2 "Ventilator:TestPoint_Keystone_5019_Minature" H 9400 4950 50  0001 C CNN
+F 3 "~" H 9400 4950 50  0001 C CNN
+F 4 "Keystone" H 9200 4950 50  0001 C CNN "Manufacturer"
+F 5 "5019" H 9200 4950 50  0001 C CNN "Part Number"
+	1    9200 4950
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector:TestPoint_Flag TP14
 U 1 1 5E9721BD
-P 13200 1250
-F 0 "TP14" H 13200 1350 50  0000 R CNN
-F 1 "TestPoint_Flag" H 13156 1253 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 13400 1250 50  0001 C CNN
-F 3 "~" H 13400 1250 50  0001 C CNN
-F 4 "Keystone" H 13200 1250 50  0001 C CNN "Manufacturer"
-F 5 "5019" H 13200 1250 50  0001 C CNN "Part Number"
-	1    13200 1250
+P 9500 5050
+F 0 "TP14" H 9500 5150 50  0000 R CNN
+F 1 "TestPoint_Flag" H 9456 5053 50  0001 R CNN
+F 2 "Ventilator:TestPoint_Keystone_5019_Minature" H 9700 5050 50  0001 C CNN
+F 3 "~" H 9700 5050 50  0001 C CNN
+F 4 "Keystone" H 9500 5050 50  0001 C CNN "Manufacturer"
+F 5 "5019" H 9500 5050 50  0001 C CNN "Part Number"
+	1    9500 5050
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector:TestPoint_Flag TP16
 U 1 1 5E972616
-P 13500 1350
-F 0 "TP16" H 13500 1450 50  0000 R CNN
-F 1 "TestPoint_Flag" H 13456 1353 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 13700 1350 50  0001 C CNN
-F 3 "~" H 13700 1350 50  0001 C CNN
-F 4 "Keystone" H 13500 1350 50  0001 C CNN "Manufacturer"
-F 5 "5019" H 13500 1350 50  0001 C CNN "Part Number"
-	1    13500 1350
+P 9800 5150
+F 0 "TP16" H 9800 5250 50  0000 R CNN
+F 1 "TestPoint_Flag" H 9756 5153 50  0001 R CNN
+F 2 "Ventilator:TestPoint_Keystone_5019_Minature" H 10000 5150 50  0001 C CNN
+F 3 "~" H 10000 5150 50  0001 C CNN
+F 4 "Keystone" H 9800 5150 50  0001 C CNN "Manufacturer"
+F 5 "5019" H 9800 5150 50  0001 C CNN "Part Number"
+	1    9800 5150
 	-1   0    0    -1  
 $EndComp
-Connection ~ 13500 1350
+Connection ~ 9800 5150
 Wire Wire Line
-	13500 1350 13500 1400
+	9800 5150 9800 5200
 Wire Wire Line
-	12650 1000 13700 1000
+	8950 4800 10000 4800
 Wire Wire Line
-	13200 1400 13200 1250
+	9500 5200 9500 5050
 Wire Wire Line
-	13200 1200 13700 1200
-Connection ~ 13200 1250
+	9500 5000 10000 5000
+Connection ~ 9500 5050
 Wire Wire Line
-	13200 1250 13200 1200
+	9500 5050 9500 5000
 Wire Wire Line
-	12900 1400 12900 1150
-Connection ~ 12900 1150
+	9200 5200 9200 4950
+Connection ~ 9200 4950
 Wire Wire Line
-	12900 1150 12900 1100
+	9200 4950 9200 4900
 Wire Wire Line
-	12900 1100 13700 1100
+	9200 4900 10000 4900
 Wire Wire Line
-	12900 1700 13200 1700
-Connection ~ 12900 1700
+	9200 5500 9500 5500
+Connection ~ 9200 5500
 Wire Wire Line
-	13200 1700 13500 1700
-Connection ~ 13200 1700
-Text Notes 12450 800  0    50   ~ 0
+	9500 5500 9800 5500
+Connection ~ 9500 5500
+Text Notes 8750 4600 0    50   ~ 0
 PWM analog outputs for\ndevelopment/debug\n(LPF fc = 159 Hz)
 $Comp
 L Connector:TestPoint_Flag TP17
 U 1 1 5E9AC255
-P 12100 950
-F 0 "TP17" H 12100 1050 50  0000 R CNN
-F 1 "TestPoint_Flag" H 12056 953 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 12300 950 50  0001 C CNN
-F 3 "~" H 12300 950 50  0001 C CNN
-F 4 "Keystone" H 12100 950 50  0001 C CNN "Manufacturer"
-F 5 "5019" H 12100 950 50  0001 C CNN "Part Number"
-	1    12100 950 
+P 8400 4750
+F 0 "TP17" H 8400 4850 50  0000 R CNN
+F 1 "TestPoint_Flag" H 8356 4753 50  0001 R CNN
+F 2 "Ventilator:TestPoint_Keystone_5019_Minature" H 8600 4750 50  0001 C CNN
+F 3 "~" H 8600 4750 50  0001 C CNN
+F 4 "Keystone" H 8400 4750 50  0001 C CNN "Manufacturer"
+F 5 "5019" H 8400 4750 50  0001 C CNN "Part Number"
+	1    8400 4750
 	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR060
 U 1 1 5E9AC5E4
-P 12100 950
-F 0 "#PWR060" H 12100 700 50  0001 C CNN
-F 1 "GND" H 12105 777 50  0000 C CNN
-F 2 "" H 12100 950 50  0001 C CNN
-F 3 "" H 12100 950 50  0001 C CNN
-	1    12100 950 
+P 8400 4750
+F 0 "#PWR060" H 8400 4500 50  0001 C CNN
+F 1 "GND" H 8405 4577 50  0000 C CNN
+F 2 "" H 8400 4750 50  0001 C CNN
+F 3 "" H 8400 4750 50  0001 C CNN
+	1    8400 4750
 	1    0    0    -1  
 $EndComp
 Text Notes 1200 5550 0    50   ~ 0
@@ -2273,7 +2273,7 @@ U 1 1 5F5E7043
 P 3350 950
 F 0 "TP3" H 3350 1050 50  0000 R CNN
 F 1 "TestPoint_Flag" H 3306 953 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 3550 950 50  0001 C CNN
+F 2 "Ventilator:TestPoint_Keystone_5019_Minature" H 3550 950 50  0001 C CNN
 F 3 "~" H 3550 950 50  0001 C CNN
 F 4 "Keystone" H 3350 950 50  0001 C CNN "Manufacturer"
 F 5 "5019" H 3350 950 50  0001 C CNN "Part Number"
@@ -2289,7 +2289,7 @@ U 1 1 5F5FBE92
 P 5050 950
 F 0 "TP5" H 5050 1050 50  0000 R CNN
 F 1 "TestPoint_Flag" H 5006 953 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 5250 950 50  0001 C CNN
+F 2 "Ventilator:TestPoint_Keystone_5019_Minature" H 5250 950 50  0001 C CNN
 F 3 "~" H 5250 950 50  0001 C CNN
 F 4 "Keystone" H 5050 950 50  0001 C CNN "Manufacturer"
 F 5 "5019" H 5050 950 50  0001 C CNN "Part Number"
@@ -2304,7 +2304,7 @@ U 1 1 5F6119C4
 P 3850 2650
 F 0 "TP4" H 3850 2750 50  0000 R CNN
 F 1 "TestPoint_Flag" H 3806 2653 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 4050 2650 50  0001 C CNN
+F 2 "Ventilator:TestPoint_Keystone_5019_Minature" H 4050 2650 50  0001 C CNN
 F 3 "~" H 4050 2650 50  0001 C CNN
 F 4 "Keystone" H 3850 2650 50  0001 C CNN "Manufacturer"
 F 5 "5019" H 3850 2650 50  0001 C CNN "Part Number"
@@ -2317,7 +2317,7 @@ U 1 1 5F614CBF
 P 1850 2650
 F 0 "TP1" H 1850 2750 50  0000 R CNN
 F 1 "TestPoint_Flag" H 1806 2653 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 2050 2650 50  0001 C CNN
+F 2 "Ventilator:TestPoint_Keystone_5019_Minature" H 2050 2650 50  0001 C CNN
 F 3 "~" H 2050 2650 50  0001 C CNN
 F 4 "Keystone" H 1850 2650 50  0001 C CNN "Manufacturer"
 F 5 "5019" H 1850 2650 50  0001 C CNN "Part Number"
@@ -2335,7 +2335,7 @@ U 1 1 5F629BAE
 P 6050 950
 F 0 "TP6" H 6050 1050 50  0000 R CNN
 F 1 "TestPoint_Flag" H 6006 953 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 6250 950 50  0001 C CNN
+F 2 "Ventilator:TestPoint_Keystone_5019_Minature" H 6250 950 50  0001 C CNN
 F 3 "~" H 6250 950 50  0001 C CNN
 F 4 "Keystone" H 6050 950 50  0001 C CNN "Manufacturer"
 F 5 "5019" H 6050 950 50  0001 C CNN "Part Number"
@@ -2359,7 +2359,7 @@ U 1 1 5F62CA83
 P 6550 950
 F 0 "TP7" H 6550 1050 50  0000 R CNN
 F 1 "TestPoint_Flag" H 6506 953 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 6750 950 50  0001 C CNN
+F 2 "Ventilator:TestPoint_Keystone_5019_Minature" H 6750 950 50  0001 C CNN
 F 3 "~" H 6750 950 50  0001 C CNN
 F 4 "Keystone" H 6550 950 50  0001 C CNN "Manufacturer"
 F 5 "5019" H 6550 950 50  0001 C CNN "Part Number"
@@ -2388,7 +2388,7 @@ U 1 1 5F62E5E1
 P 1950 9550
 F 0 "TP2" H 1950 9650 50  0000 R CNN
 F 1 "TestPoint_Flag" H 1906 9553 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 2150 9550 50  0001 C CNN
+F 2 "Ventilator:TestPoint_Keystone_5019_Minature" H 2150 9550 50  0001 C CNN
 F 3 "~" H 2150 9550 50  0001 C CNN
 F 4 "Keystone" H 1950 9550 50  0001 C CNN "Manufacturer"
 F 5 "5019" H 1950 9550 50  0001 C CNN "Part Number"
@@ -2403,7 +2403,7 @@ U 1 1 5F674B6E
 P 8650 6400
 F 0 "TP10" H 8850 6550 50  0000 R CNN
 F 1 "TestPoint_Flag" H 8606 6403 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 8850 6400 50  0001 C CNN
+F 2 "Ventilator:TestPoint_Keystone_5019_Minature" H 8850 6400 50  0001 C CNN
 F 3 "~" H 8850 6400 50  0001 C CNN
 F 4 "Keystone" H 8650 6400 50  0001 C CNN "Manufacturer"
 F 5 "5019" H 8650 6400 50  0001 C CNN "Part Number"
@@ -2417,7 +2417,7 @@ U 1 1 5F68B6F6
 P 8400 6200
 F 0 "TP9" H 8600 6350 50  0000 R CNN
 F 1 "TestPoint_Flag" H 8356 6203 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 8600 6200 50  0001 C CNN
+F 2 "Ventilator:TestPoint_Keystone_5019_Minature" H 8600 6200 50  0001 C CNN
 F 3 "~" H 8600 6200 50  0001 C CNN
 F 4 "Keystone" H 8400 6200 50  0001 C CNN "Manufacturer"
 F 5 "5019" H 8400 6200 50  0001 C CNN "Part Number"
@@ -2791,7 +2791,7 @@ U 1 1 5F8C5EDE
 P 9950 2450
 F 0 "TP15" H 10150 2600 50  0000 R CNN
 F 1 "TestPoint_Flag" H 9906 2453 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 10150 2450 50  0001 C CNN
+F 2 "Ventilator:TestPoint_Keystone_5019_Minature" H 10150 2450 50  0001 C CNN
 F 3 "~" H 10150 2450 50  0001 C CNN
 F 4 "Keystone" H 9950 2450 50  0001 C CNN "Manufacturer"
 F 5 "5019" H 9950 2450 50  0001 C CNN "Part Number"
@@ -2805,7 +2805,7 @@ U 1 1 5F96B4A1
 P 9700 2400
 F 0 "TP13" H 9900 2550 50  0000 R CNN
 F 1 "TestPoint_Flag" H 9656 2403 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 9900 2400 50  0001 C CNN
+F 2 "Ventilator:TestPoint_Keystone_5019_Minature" H 9900 2400 50  0001 C CNN
 F 3 "~" H 9900 2400 50  0001 C CNN
 F 4 "Keystone" H 9700 2400 50  0001 C CNN "Manufacturer"
 F 5 "5019" H 9700 2400 50  0001 C CNN "Part Number"
@@ -2823,7 +2823,7 @@ U 1 1 5F98523A
 P 8300 950
 F 0 "TP8" H 8300 1050 50  0000 R CNN
 F 1 "TestPoint_Flag" H 8256 953 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 8500 950 50  0001 C CNN
+F 2 "Ventilator:TestPoint_Keystone_5019_Minature" H 8500 950 50  0001 C CNN
 F 3 "~" H 8500 950 50  0001 C CNN
 F 4 "Keystone" H 8300 950 50  0001 C CNN "Manufacturer"
 F 5 "5019" H 8300 950 50  0001 C CNN "Part Number"
@@ -2877,20 +2877,20 @@ Connection ~ 1800 2650
 Wire Wire Line
 	1800 2650 1850 2650
 Wire Wire Line
-	14000 1000 14550 1000
+	10300 4800 10850 4800
 Wire Wire Line
-	14000 1100 14550 1100
+	10300 4900 10850 4900
 Wire Wire Line
-	14000 1200 14550 1200
+	10300 5000 10850 5000
 Wire Wire Line
-	14000 1300 14550 1300
-Text Label 14550 1000 2    50   ~ 0
+	10300 5100 10850 5100
+Text Label 10850 4800 2    50   ~ 0
 RPi_PWM1
-Text Label 14550 1100 2    50   ~ 0
+Text Label 10850 4900 2    50   ~ 0
 RPi_PWM2
-Text Label 14550 1200 2    50   ~ 0
+Text Label 10850 5000 2    50   ~ 0
 RPi_PWM3
-Text Label 14550 1300 2    50   ~ 0
+Text Label 10850 5100 2    50   ~ 0
 RPi_PWM4
 Text Notes 10100 3950 0    50   ~ 0
 GPIO13
@@ -3239,51 +3239,51 @@ GPIO12
 $Comp
 L Mechanical:MountingHole_Pad H4
 U 1 1 5EA8A09A
-P 15200 8800
-F 0 "H4" H 15300 8849 50  0000 L CNN
-F 1 "#4/M3" H 15300 8758 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 15200 8800 50  0001 C CNN
-F 3 "~" H 15200 8800 50  0001 C CNN
-	1    15200 8800
+P 14500 8800
+F 0 "H4" H 14600 8849 50  0000 L CNN
+F 1 "#4/M3" H 14600 8758 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 14500 8800 50  0001 C CNN
+F 3 "~" H 14500 8800 50  0001 C CNN
+	1    14500 8800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H3
 U 1 1 5EA8A69E
-P 14700 8800
-F 0 "H3" H 14800 8849 50  0000 L CNN
-F 1 "#4/M3" H 14800 8758 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 14700 8800 50  0001 C CNN
-F 3 "~" H 14700 8800 50  0001 C CNN
-	1    14700 8800
+P 14000 8800
+F 0 "H3" H 14100 8849 50  0000 L CNN
+F 1 "#4/M3" H 14100 8758 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 14000 8800 50  0001 C CNN
+F 3 "~" H 14000 8800 50  0001 C CNN
+	1    14000 8800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H2
 U 1 1 5EA8A8CF
-P 14200 8800
-F 0 "H2" H 14300 8849 50  0000 L CNN
-F 1 "#4/M3" H 14300 8758 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 14200 8800 50  0001 C CNN
-F 3 "~" H 14200 8800 50  0001 C CNN
-	1    14200 8800
+P 13500 8800
+F 0 "H2" H 13600 8849 50  0000 L CNN
+F 1 "#4/M3" H 13600 8758 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 13500 8800 50  0001 C CNN
+F 3 "~" H 13500 8800 50  0001 C CNN
+	1    13500 8800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 5EA8AB78
-P 13700 8800
-F 0 "H1" H 13800 8849 50  0000 L CNN
-F 1 "#4/M3" H 13800 8758 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 13700 8800 50  0001 C CNN
-F 3 "~" H 13700 8800 50  0001 C CNN
-	1    13700 8800
+P 13000 8800
+F 0 "H1" H 13100 8849 50  0000 L CNN
+F 1 "#4/M3" H 13100 8758 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 13000 8800 50  0001 C CNN
+F 3 "~" H 13000 8800 50  0001 C CNN
+	1    13000 8800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0155
 U 1 1 5EA8B543
-P 13700 8900
+P 13000 8900
 AR Path="/5EA8B543" Ref="#PWR0155"  Part="1" 
 AR Path="/5E8AFE9D/5EA8B543" Ref="#PWR?"  Part="1" 
 AR Path="/5E8FBD97/5EA8B543" Ref="#PWR?"  Part="1" 
@@ -3291,17 +3291,17 @@ AR Path="/5E8E0754/5EA8B543" Ref="#PWR?"  Part="1"
 AR Path="/5E8DFCAD/5EA8B543" Ref="#PWR?"  Part="1" 
 AR Path="/5E8DEDC0/5EA8B543" Ref="#PWR?"  Part="1" 
 AR Path="/5E8C8865/5EA8B543" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0155" H 13700 8650 50  0001 C CNN
-F 1 "GND" H 13705 8727 50  0000 C CNN
-F 2 "" H 13700 8900 50  0001 C CNN
-F 3 "" H 13700 8900 50  0001 C CNN
-	1    13700 8900
+F 0 "#PWR0155" H 13000 8650 50  0001 C CNN
+F 1 "GND" H 13005 8727 50  0000 C CNN
+F 2 "" H 13000 8900 50  0001 C CNN
+F 3 "" H 13000 8900 50  0001 C CNN
+	1    13000 8900
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0209
 U 1 1 5EA8BD42
-P 14200 8900
+P 13500 8900
 AR Path="/5EA8BD42" Ref="#PWR0209"  Part="1" 
 AR Path="/5E8AFE9D/5EA8BD42" Ref="#PWR?"  Part="1" 
 AR Path="/5E8FBD97/5EA8BD42" Ref="#PWR?"  Part="1" 
@@ -3309,17 +3309,17 @@ AR Path="/5E8E0754/5EA8BD42" Ref="#PWR?"  Part="1"
 AR Path="/5E8DFCAD/5EA8BD42" Ref="#PWR?"  Part="1" 
 AR Path="/5E8DEDC0/5EA8BD42" Ref="#PWR?"  Part="1" 
 AR Path="/5E8C8865/5EA8BD42" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0209" H 14200 8650 50  0001 C CNN
-F 1 "GND" H 14205 8727 50  0000 C CNN
-F 2 "" H 14200 8900 50  0001 C CNN
-F 3 "" H 14200 8900 50  0001 C CNN
-	1    14200 8900
+F 0 "#PWR0209" H 13500 8650 50  0001 C CNN
+F 1 "GND" H 13505 8727 50  0000 C CNN
+F 2 "" H 13500 8900 50  0001 C CNN
+F 3 "" H 13500 8900 50  0001 C CNN
+	1    13500 8900
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0330
 U 1 1 5EA8C5D3
-P 15200 8900
+P 14500 8900
 AR Path="/5EA8C5D3" Ref="#PWR0330"  Part="1" 
 AR Path="/5E8AFE9D/5EA8C5D3" Ref="#PWR?"  Part="1" 
 AR Path="/5E8FBD97/5EA8C5D3" Ref="#PWR?"  Part="1" 
@@ -3327,17 +3327,17 @@ AR Path="/5E8E0754/5EA8C5D3" Ref="#PWR?"  Part="1"
 AR Path="/5E8DFCAD/5EA8C5D3" Ref="#PWR?"  Part="1" 
 AR Path="/5E8DEDC0/5EA8C5D3" Ref="#PWR?"  Part="1" 
 AR Path="/5E8C8865/5EA8C5D3" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0330" H 15200 8650 50  0001 C CNN
-F 1 "GND" H 15205 8727 50  0000 C CNN
-F 2 "" H 15200 8900 50  0001 C CNN
-F 3 "" H 15200 8900 50  0001 C CNN
-	1    15200 8900
+F 0 "#PWR0330" H 14500 8650 50  0001 C CNN
+F 1 "GND" H 14505 8727 50  0000 C CNN
+F 2 "" H 14500 8900 50  0001 C CNN
+F 3 "" H 14500 8900 50  0001 C CNN
+	1    14500 8900
 	1    0    0    -1  
 $EndComp
 NoConn ~ 11000 3150
 Text Notes 8550 3150 0    50   ~ 0
 +3.3V_RPi not connected to pin 17 for PCB routing reasons
-NoConn ~ 14700 8900
+NoConn ~ 14000 8900
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5F0853E6
@@ -3883,4 +3883,93 @@ Wire Wire Line
 	2000 1250 2150 1250
 Wire Wire Line
 	1650 1150 2000 1150
+$Comp
+L Mechanical:MountingHole_Pad H5
+U 1 1 5EC142BF
+P 15000 8800
+F 0 "H5" H 15100 8849 50  0000 L CNN
+F 1 "#4/M3" H 15100 8758 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 15000 8800 50  0001 C CNN
+F 3 "~" H 15000 8800 50  0001 C CNN
+	1    15000 8800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H6
+U 1 1 5EC14660
+P 15500 8800
+F 0 "H6" H 15600 8849 50  0000 L CNN
+F 1 "#4/M3" H 15600 8758 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 15500 8800 50  0001 C CNN
+F 3 "~" H 15500 8800 50  0001 C CNN
+	1    15500 8800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H7
+U 1 1 5EC406FC
+P 16000 8800
+F 0 "H7" H 16100 8849 50  0000 L CNN
+F 1 "#4/M3" H 16100 8758 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 16000 8800 50  0001 C CNN
+F 3 "~" H 16000 8800 50  0001 C CNN
+	1    16000 8800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0381
+U 1 1 5EC408F5
+P 15000 8900
+AR Path="/5EC408F5" Ref="#PWR0381"  Part="1" 
+AR Path="/5E8AFE9D/5EC408F5" Ref="#PWR?"  Part="1" 
+AR Path="/5E8FBD97/5EC408F5" Ref="#PWR?"  Part="1" 
+AR Path="/5E8E0754/5EC408F5" Ref="#PWR?"  Part="1" 
+AR Path="/5E8DFCAD/5EC408F5" Ref="#PWR?"  Part="1" 
+AR Path="/5E8DEDC0/5EC408F5" Ref="#PWR?"  Part="1" 
+AR Path="/5E8C8865/5EC408F5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0381" H 15000 8650 50  0001 C CNN
+F 1 "GND" H 15005 8727 50  0000 C CNN
+F 2 "" H 15000 8900 50  0001 C CNN
+F 3 "" H 15000 8900 50  0001 C CNN
+	1    15000 8900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0382
+U 1 1 5EC40ACB
+P 15500 8900
+AR Path="/5EC40ACB" Ref="#PWR0382"  Part="1" 
+AR Path="/5E8AFE9D/5EC40ACB" Ref="#PWR?"  Part="1" 
+AR Path="/5E8FBD97/5EC40ACB" Ref="#PWR?"  Part="1" 
+AR Path="/5E8E0754/5EC40ACB" Ref="#PWR?"  Part="1" 
+AR Path="/5E8DFCAD/5EC40ACB" Ref="#PWR?"  Part="1" 
+AR Path="/5E8DEDC0/5EC40ACB" Ref="#PWR?"  Part="1" 
+AR Path="/5E8C8865/5EC40ACB" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0382" H 15500 8650 50  0001 C CNN
+F 1 "GND" H 15505 8727 50  0000 C CNN
+F 2 "" H 15500 8900 50  0001 C CNN
+F 3 "" H 15500 8900 50  0001 C CNN
+	1    15500 8900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0383
+U 1 1 5EC40D05
+P 16000 8900
+AR Path="/5EC40D05" Ref="#PWR0383"  Part="1" 
+AR Path="/5E8AFE9D/5EC40D05" Ref="#PWR?"  Part="1" 
+AR Path="/5E8FBD97/5EC40D05" Ref="#PWR?"  Part="1" 
+AR Path="/5E8E0754/5EC40D05" Ref="#PWR?"  Part="1" 
+AR Path="/5E8DFCAD/5EC40D05" Ref="#PWR?"  Part="1" 
+AR Path="/5E8DEDC0/5EC40D05" Ref="#PWR?"  Part="1" 
+AR Path="/5E8C8865/5EC40D05" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0383" H 16000 8650 50  0001 C CNN
+F 1 "GND" H 16005 8727 50  0000 C CNN
+F 2 "" H 16000 8900 50  0001 C CNN
+F 3 "" H 16000 8900 50  0001 C CNN
+	1    16000 8900
+	1    0    0    -1  
+$EndComp
+Text Notes 16450 1300 2    50   ~ 0
+Copyright Don Straney 2020.\nThis source describes Open Hardware and is licensed under the CERN-OHL-S v2\n\nYou may redistribute and modify this documentation and make products\nusing it under the terms of the CERN-OHL-S v2 (https:/cern.ch/cern-ohl).\nThis documentation is distributed WITHOUT ANY EXPRESS OR IMPLIED\nWARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY\nAND FITNESS FOR A PARTICULAR PURPOSE. Please see the CERN-OHL-S v2\nfor applicable conditions.
 $EndSCHEMATC

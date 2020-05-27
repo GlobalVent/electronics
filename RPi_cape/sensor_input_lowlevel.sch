@@ -5,12 +5,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 15
-Title "Raspberry Pi Hat for JamVent Adaptation"
+Title "GlobalVent Stand-Alone Controller"
 Date ""
-Rev "1.9"
-Comp "US JamVent Team"
-Comment1 "Don Straney"
-Comment2 ""
+Rev "1.10"
+Comp "US GlobalVent Team"
+Comment1 "Licensed under CERN-OHL-S v2"
+Comment2 "Don Straney"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -990,7 +990,7 @@ AR Path="/5F6700EA" Ref="TP?"  Part="1"
 AR Path="/5E8AA959/5F6700EA" Ref="TP20"  Part="1" 
 F 0 "TP20" H 2500 7300 50  0000 R CNN
 F 1 "TestPoint_Flag" H 2456 7203 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 2700 7200 50  0001 C CNN
+F 2 "Ventilator:TestPoint_Keystone_5019_Minature" H 2700 7200 50  0001 C CNN
 F 3 "~" H 2700 7200 50  0001 C CNN
 F 4 "Keystone" H 2500 7200 50  0001 C CNN "Manufacturer"
 F 5 "5019" H 2500 7200 50  0001 C CNN "Part Number"

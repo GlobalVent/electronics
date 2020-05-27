@@ -5,12 +5,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 11 15
-Title "Raspberry Pi Hat for JamVent Adaptation"
+Title "GlobalVent Stand-Alone Controller"
 Date ""
-Rev "1.9"
-Comp "US JamVent Team"
-Comment1 "Don Straney"
-Comment2 ""
+Rev "1.10"
+Comp "US GlobalVent Team"
+Comment1 "Licensed under CERN-OHL-S v2"
+Comment2 "Don Straney"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -422,7 +422,7 @@ AR Path="/5EE065CD/5EEA6827" Ref="TP30"  Part="1"
 AR Path="/5EEB3F52/5EEA6827" Ref="TP34"  Part="1" 
 F 0 "TP34" H 2550 2800 50  0000 L CNN
 F 1 "TestPoint_Flag" H 2760 2653 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 2700 2650 50  0001 C CNN
+F 2 "Ventilator:TestPoint_Keystone_5019_Minature" H 2700 2650 50  0001 C CNN
 F 3 "~" H 2700 2650 50  0001 C CNN
 F 4 "Keystone" H 2500 2650 50  0001 C CNN "Manufacturer"
 F 5 "5019" H 2500 2650 50  0001 C CNN "Part Number"
@@ -437,7 +437,7 @@ AR Path="/5EE065CD/5EEA7A58" Ref="TP29"  Part="1"
 AR Path="/5EEB3F52/5EEA7A58" Ref="TP33"  Part="1" 
 F 0 "TP33" H 2150 2800 50  0000 L CNN
 F 1 "TestPoint_Flag" H 2360 2653 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 2300 2650 50  0001 C CNN
+F 2 "Ventilator:TestPoint_Keystone_5019_Minature" H 2300 2650 50  0001 C CNN
 F 3 "~" H 2300 2650 50  0001 C CNN
 F 4 "Keystone" H 2100 2650 50  0001 C CNN "Manufacturer"
 F 5 "5019" H 2100 2650 50  0001 C CNN "Part Number"
@@ -462,7 +462,7 @@ AR Path="/5EE065CD/5EEA8BCB" Ref="TP31"  Part="1"
 AR Path="/5EEB3F52/5EEA8BCB" Ref="TP35"  Part="1" 
 F 0 "TP35" H 8050 2850 50  0000 L CNN
 F 1 "TestPoint_Flag" H 8260 2703 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 8200 2700 50  0001 C CNN
+F 2 "Ventilator:TestPoint_Keystone_5019_Minature" H 8200 2700 50  0001 C CNN
 F 3 "~" H 8200 2700 50  0001 C CNN
 F 4 "Keystone" H 8000 2700 50  0001 C CNN "Manufacturer"
 F 5 "5019" H 8000 2700 50  0001 C CNN "Part Number"
@@ -484,7 +484,7 @@ AR Path="/5EE065CD/5EEAED2A" Ref="TP32"  Part="1"
 AR Path="/5EEB3F52/5EEAED2A" Ref="TP36"  Part="1" 
 F 0 "TP36" H 8450 2850 50  0000 L CNN
 F 1 "TestPoint_Flag" H 8660 2703 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 8600 2700 50  0001 C CNN
+F 2 "Ventilator:TestPoint_Keystone_5019_Minature" H 8600 2700 50  0001 C CNN
 F 3 "~" H 8600 2700 50  0001 C CNN
 F 4 "Keystone" H 8400 2700 50  0001 C CNN "Manufacturer"
 F 5 "5019" H 8400 2700 50  0001 C CNN "Part Number"

@@ -2,3 +2,11 @@
 *.kicad_pcb-bak
 *.sch-bak
 RPi_cape/_autosave-RPi_cape.sch
+RPi_cape/3d/Keystone 5019.STEP
+RPi_cape/3d/Phoenix 1985195.stp
+RPi_cape/3d/Phoenix 1985205.stp
+RPi_cape/3d/Phoenix 1985218.stp
+RPi_cape/3d/Phoenix disclaimer.pdf
+RPi_cape/3d/TE 188275-6.stp
+RPi_cape/3d/TE 215079-6.stp
+RPi_cape/3d/TE disclaimer.txt

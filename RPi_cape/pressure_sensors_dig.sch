@@ -4,13 +4,13 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 13 15
-Title "Raspberry Pi Hat for JamVent Adaptation"
+Sheet 12 15
+Title "GlobalVent Stand-Alone Controller"
 Date ""
-Rev "1.9"
-Comp "US JamVent Team"
-Comment1 "Don Straney"
-Comment2 ""
+Rev "1.10"
+Comp "US GlobalVent Team"
+Comment1 "Licensed under CERN-OHL-S v2"
+Comment2 "Don Straney"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -26,7 +26,7 @@ U 1 1 5F542369
 P 2450 2800
 AR Path="/5F518E26/5F542369" Ref="U10"  Part="1" 
 AR Path="/5F593E41/5F542369" Ref="U15"  Part="1" 
-F 0 "U15" H 2123 2821 50  0000 R CNN
+F 0 "U10" H 2123 2821 50  0000 R CNN
 F 1 "MS5803-05BA" H 2123 2730 50  0000 R CNN
 F 2 "Ventilator:TE_MS5803-05BA" H 2450 2800 50  0001 C CNN
 F 3 "" H 2450 2800 50  0001 C CNN
@@ -41,7 +41,7 @@ U 1 1 5F542954
 P 2450 5050
 AR Path="/5F518E26/5F542954" Ref="U14"  Part="1" 
 AR Path="/5F593E41/5F542954" Ref="U16"  Part="1" 
-F 0 "U16" H 2122 5071 50  0000 R CNN
+F 0 "U14" H 2122 5071 50  0000 R CNN
 F 1 "BMP388" H 2122 4980 50  0000 R CNN
 F 2 "Ventilator:Bosch_BMP388" H 2450 5100 50  0001 C CNN
 F 3 "" H 2450 5100 50  0001 C CNN
@@ -69,7 +69,7 @@ AR Path="/5F5543A0" Ref="C?"  Part="1"
 AR Path="/5E8AFE9D/5F5543A0" Ref="C?"  Part="1" 
 AR Path="/5F518E26/5F5543A0" Ref="C77"  Part="1" 
 AR Path="/5F593E41/5F5543A0" Ref="C81"  Part="1" 
-F 0 "C81" H 1500 4600 50  0000 C CNN
+F 0 "C77" H 1500 4600 50  0000 C CNN
 F 1 "100nF 50V X7R" H 1400 4700 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1788 4450 50  0001 C CNN
 F 3 "~" H 1750 4600 50  0001 C CNN
@@ -103,7 +103,7 @@ AR Path="/5F5543B2" Ref="R?"  Part="1"
 AR Path="/5E8AFE9D/5F5543B2" Ref="R?"  Part="1" 
 AR Path="/5F518E26/5F5543B2" Ref="R202"  Part="1" 
 AR Path="/5F593E41/5F5543B2" Ref="R205"  Part="1" 
-F 0 "R205" H 2100 4250 50  0000 C CNN
+F 0 "R202" H 2100 4250 50  0000 C CNN
 F 1 "0" H 2100 4150 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 2180 4200 50  0001 C CNN
 F 3 "~" H 2250 4200 50  0001 C CNN
@@ -130,7 +130,7 @@ AR Path="/5F55CEFC" Ref="C?"  Part="1"
 AR Path="/5E8AFE9D/5F55CEFC" Ref="C?"  Part="1" 
 AR Path="/5F518E26/5F55CEFC" Ref="C80"  Part="1" 
 AR Path="/5F593E41/5F55CEFC" Ref="C83"  Part="1" 
-F 0 "C83" H 2300 4150 50  0000 C CNN
+F 0 "C80" H 2300 4150 50  0000 C CNN
 F 1 "100nF 50V X7R" H 2200 4250 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2588 4000 50  0001 C CNN
 F 3 "~" H 2550 4150 50  0001 C CNN
@@ -186,7 +186,7 @@ AR Path="/5F560E40" Ref="C?"  Part="1"
 AR Path="/5E8AFE9D/5F560E40" Ref="C?"  Part="1" 
 AR Path="/5F518E26/5F560E40" Ref="C78"  Part="1" 
 AR Path="/5F593E41/5F560E40" Ref="C82"  Part="1" 
-F 0 "C82" H 2250 1900 50  0000 C CNN
+F 0 "C78" H 2250 1900 50  0000 C CNN
 F 1 "100nF 50V X7R" H 2150 2000 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2538 1750 50  0001 C CNN
 F 3 "~" H 2500 1900 50  0001 C CNN
@@ -256,7 +256,7 @@ AR Path="/5F56BBEF" Ref="R?"  Part="1"
 AR Path="/5E8AFE9D/5F56BBEF" Ref="R?"  Part="1" 
 AR Path="/5F518E26/5F56BBEF" Ref="R204"  Part="1" 
 AR Path="/5F593E41/5F56BBEF" Ref="R207"  Part="1" 
-F 0 "R207" H 4200 5050 50  0000 C CNN
+F 0 "R204" H 4200 5050 50  0000 C CNN
 F 1 "0" H 4200 4950 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 4280 5000 50  0001 C CNN
 F 3 "~" H 4350 5000 50  0001 C CNN
@@ -295,7 +295,7 @@ U 1 1 5F570F1D
 P 3550 5250
 AR Path="/5F518E26/5F570F1D" Ref="TP37"  Part="1" 
 AR Path="/5F593E41/5F570F1D" Ref="TP38"  Part="1" 
-F 0 "TP38" H 3608 5322 50  0000 L CNN
+F 0 "TP37" H 3608 5322 50  0000 L CNN
 F 1 "TestPoint" H 3608 5277 50  0001 L CNN
 F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 3750 5250 50  0001 C CNN
 F 3 "~" H 3750 5250 50  0001 C CNN
@@ -320,7 +320,7 @@ AR Path="/5F5769F4" Ref="R?"  Part="1"
 AR Path="/5E8AFE9D/5F5769F4" Ref="R?"  Part="1" 
 AR Path="/5F518E26/5F5769F4" Ref="R203"  Part="1" 
 AR Path="/5F593E41/5F5769F4" Ref="R206"  Part="1" 
-F 0 "R206" H 2700 3450 50  0000 C CNN
+F 0 "R203" H 2700 3450 50  0000 C CNN
 F 1 "0" H 2700 3350 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 2780 3400 50  0001 C CNN
 F 3 "~" H 2850 3400 50  0001 C CNN
@@ -362,9 +362,9 @@ U 1 1 5F666F01
 P 1750 2500
 AR Path="/5F518E26/5F666F01" Ref="J18"  Part="1" 
 AR Path="/5F593E41/5F666F01" Ref="J20"  Part="1" 
-F 0 "J20" H 1928 2650 50  0000 L CNN
+F 0 "J18" H 1928 2650 50  0000 L CNN
 F 1 "Pressure_sensor_barb" H 1700 2850 50  0001 C CNN
-F 2 "Ventilator:Pressure_sensor_barb_inner-lip-expanded-slots" H 1750 2500 50  0001 C CNN
+F 2 "Ventilator:Pressure_sensor_barb" H 1750 2500 50  0001 C CNN
 F 3 "" H 1750 2500 50  0001 C CNN
 	1    1750 2500
 	1    0    0    -1  
@@ -375,9 +375,9 @@ U 1 1 5F667549
 P 1700 5650
 AR Path="/5F518E26/5F667549" Ref="J17"  Part="1" 
 AR Path="/5F593E41/5F667549" Ref="J19"  Part="1" 
-F 0 "J19" H 1878 5800 50  0000 L CNN
+F 0 "J17" H 1878 5800 50  0000 L CNN
 F 1 "Pressure_sensor_barb" H 1650 6000 50  0001 C CNN
-F 2 "Ventilator:Pressure_sensor_barb_inner-lip-expanded-slots" H 1700 5650 50  0001 C CNN
+F 2 "Ventilator:Pressure_sensor_barb" H 1700 5650 50  0001 C CNN
 F 3 "" H 1700 5650 50  0001 C CNN
 	1    1700 5650
 	1    0    0    -1  

@@ -57,3 +57,12 @@
 	* Moved bottom-end mounting holes and encoder connectors to avoid interfering mechanically with Raspberry Pi
 	* Replaced under-sized power-ORing diodes with better Schottky option, added heatsinking with copper planes
 	* Improved LMZ14203 heatsinking by removing thermal reliefs, re-arranging input-current-measurement testpoints to increase top-layer copper area
+	
+1.9 to 1.10:
+	* Updated name on schematic, PCB silkscreen
+	* Added 3 mounting holes on inside area of board for better mechanical robustness
+	* Removed extra unused pressure sensor barb packages from library
+	* Fixed Phoenix spring connector footprints, and added 3D models from Phoenix website
+	* Added 3D models to TE encoder connector footprints, QFP-100 for CPLD, and 5019 testpoint
+	* Changed DIAG_EN pin connection from valve drivers from +24V (too high) to +3.3V
+	* Added CERN licensing terms
