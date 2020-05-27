@@ -5,12 +5,12 @@ EELAYER END
 $Descr B 17000 11000
 encoding utf-8
 Sheet 1 8
-Title "JamVent Adaptation: Quick and Dirty Prototype"
+Title "GlobalVent Controller: Quick and Dirty Prototype"
 Date ""
 Rev "1.0"
-Comp "US JamVent Team"
-Comment1 "Don Straney"
-Comment2 ""
+Comp "US GlobalVent Team"
+Comment1 "Licensed under CERN-OHL-S v2"
+Comment2 "Don Straney"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -873,37 +873,37 @@ RPi_SDA
 Text Label 10300 2550 0    50   ~ 0
 RPi_SCL
 Wire Wire Line
-	8750 7900 7950 7900
+	6700 8050 5900 8050
 Wire Wire Line
-	8750 8000 7950 8000
+	6700 8150 5900 8150
 Wire Wire Line
-	8750 8100 7950 8100
+	6700 8250 5900 8250
 Wire Wire Line
-	8750 8200 7950 8200
-Text Label 7950 7900 0    50   ~ 0
+	6700 8350 5900 8350
+Text Label 5900 8050 0    50   ~ 0
 RPi_valve1
-Text Label 7950 8000 0    50   ~ 0
+Text Label 5900 8150 0    50   ~ 0
 RPi_valve2
-Text Label 7950 8100 0    50   ~ 0
+Text Label 5900 8250 0    50   ~ 0
 RPi_valve3
-Text Label 7950 8200 0    50   ~ 0
+Text Label 5900 8350 0    50   ~ 0
 RPi_valve4
-Text Label 8800 7450 2    50   ~ 0
+Text Label 6750 7600 2    50   ~ 0
 CPLD_valve1
 Wire Wire Line
-	8300 7450 8800 7450
-Text Label 8800 7550 2    50   ~ 0
+	6250 7600 6750 7600
+Text Label 6750 7700 2    50   ~ 0
 CPLD_valve2
 Wire Wire Line
-	8300 7550 8800 7550
-Text Label 8800 7650 2    50   ~ 0
+	6250 7700 6750 7700
+Text Label 6750 7800 2    50   ~ 0
 CPLD_valve3
 Wire Wire Line
-	8300 7650 8800 7650
-Text Label 8800 7750 2    50   ~ 0
+	6250 7800 6750 7800
+Text Label 6750 7900 2    50   ~ 0
 CPLD_valve4
 Wire Wire Line
-	8300 7750 8800 7750
+	6250 7900 6750 7900
 Text Label 7000 2550 0    50   ~ 0
 RPi_ADC1
 Text Label 7000 2650 0    50   ~ 0
@@ -2163,23 +2163,23 @@ Wire Wire Line
 	10400 9900 10850 9900
 Wire Wire Line
 	9700 9750 10400 9750
-Text Label 8250 8350 0    50   ~ 0
+Text Label 6200 8500 0    50   ~ 0
 Enc_A
-Text Label 8250 8450 0    50   ~ 0
+Text Label 6200 8600 0    50   ~ 0
 Enc_B
 Wire Wire Line
-	8750 8450 8250 8450
+	6700 8600 6200 8600
 Wire Wire Line
-	8250 8350 8750 8350
-Text Label 8250 8550 0    50   ~ 0
+	6200 8500 6700 8500
+Text Label 6200 8700 0    50   ~ 0
 Enc_Sw
 Wire Wire Line
-	8250 8550 8750 8550
+	6200 8700 6700 8700
 Wire Wire Line
 	13350 3850 12850 3850
 Wire Wire Line
 	13350 4750 12850 4750
-Text Label 12450 6550 2    50   ~ 0
+Text Label 12100 6500 2    50   ~ 0
 ~Valve4_Fault
 Text Label 12850 5600 0    50   ~ 0
 CPLD_ADC3
@@ -2436,51 +2436,51 @@ Connection ~ 9700 9950
 Connection ~ 9350 9950
 Wire Wire Line
 	9350 9950 9700 9950
-Text Label 5150 4650 0    50   ~ 0
+Text Label 4650 3100 0    50   ~ 0
 SDA_Sense
-Text Label 5150 4900 0    50   ~ 0
+Text Label 4650 3350 0    50   ~ 0
 SDA_Drive
-Text Label 5150 5950 0    50   ~ 0
+Text Label 4650 4400 0    50   ~ 0
 SCL_Sense
-Text Label 5150 6200 0    50   ~ 0
+Text Label 4650 4650 0    50   ~ 0
 SCL_Drive
 $Comp
 L Device:R R1
 U 1 1 5EBC73AD
-P 5800 4900
+P 5300 3350
 AR Path="/5EBC73AD" Ref="R1"  Part="1" 
 AR Path="/5E8AFE9D/5EBC73AD" Ref="R?"  Part="1" 
 AR Path="/5E8C8865/5EBC73AD" Ref="R?"  Part="1" 
-F 0 "R1" V 5900 4850 50  0000 C CNN
-F 1 "10K" V 5700 4900 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 5730 4900 50  0001 C CNN
-F 3 "~" H 5800 4900 50  0001 C CNN
-F 4 "KOA Speer" H 5800 4900 50  0001 C CNN "Manufacturer"
-F 5 "RK73H2BTTD1002F" H 5800 4900 50  0001 C CNN "Part Number"
-	1    5800 4900
+F 0 "R1" V 5400 3300 50  0000 C CNN
+F 1 "10K" V 5200 3350 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 5230 3350 50  0001 C CNN
+F 3 "~" H 5300 3350 50  0001 C CNN
+F 4 "KOA Speer" H 5300 3350 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1002F" H 5300 3350 50  0001 C CNN "Part Number"
+	1    5300 3350
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5650 4900 5150 4900
+	5150 3350 4650 3350
 $Comp
 L Transistor_BJT:MMBT3904 Q?
 U 1 1 5EBC73B6
-P 6150 4900
+P 5650 3350
 AR Path="/5E8C8865/5EBC73B6" Ref="Q?"  Part="1" 
 AR Path="/5EBC73B6" Ref="Q2"  Part="1" 
-F 0 "Q2" H 6341 4946 50  0000 L CNN
-F 1 "MMBT3904" H 6341 4855 50  0000 L CNN
-F 2 "Ventilator:SOT-23" H 6350 4825 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 6150 4900 50  0001 L CNN
-F 4 "Diodes Inc." H 6150 4900 50  0001 C CNN "Manufacturer"
-F 5 "MMBT3904-7-F" H 6150 4900 50  0001 C CNN "Part Number"
-	1    6150 4900
+F 0 "Q2" H 5841 3396 50  0000 L CNN
+F 1 "MMBT3904" H 5841 3305 50  0000 L CNN
+F 2 "Ventilator:SOT-23" H 5850 3275 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 5650 3350 50  0001 L CNN
+F 4 "Diodes Inc." H 5650 3350 50  0001 C CNN "Manufacturer"
+F 5 "MMBT3904-7-F" H 5650 3350 50  0001 C CNN "Part Number"
+	1    5650 3350
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0101
 U 1 1 5EBC73BC
-P 6250 5100
+P 5750 3550
 AR Path="/5EBC73BC" Ref="#PWR0101"  Part="1" 
 AR Path="/5E8AFE9D/5EBC73BC" Ref="#PWR?"  Part="1" 
 AR Path="/5E8FBD97/5EBC73BC" Ref="#PWR?"  Part="1" 
@@ -2488,90 +2488,90 @@ AR Path="/5E8E0754/5EBC73BC" Ref="#PWR?"  Part="1"
 AR Path="/5E8DFCAD/5EBC73BC" Ref="#PWR?"  Part="1" 
 AR Path="/5E8DEDC0/5EBC73BC" Ref="#PWR?"  Part="1" 
 AR Path="/5E8C8865/5EBC73BC" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0101" H 6250 4850 50  0001 C CNN
-F 1 "GND" H 6255 4927 50  0000 C CNN
-F 2 "" H 6250 5100 50  0001 C CNN
-F 3 "" H 6250 5100 50  0001 C CNN
-	1    6250 5100
+F 0 "#PWR0101" H 5750 3300 50  0001 C CNN
+F 1 "GND" H 5755 3377 50  0000 C CNN
+F 2 "" H 5750 3550 50  0001 C CNN
+F 3 "" H 5750 3550 50  0001 C CNN
+	1    5750 3550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5150 4650 6250 4650
+	4650 3100 5750 3100
 Wire Wire Line
-	6250 4650 6250 4700
+	5750 3100 5750 3150
 $Comp
 L Device:R R3
 U 1 1 5EBC73C6
-P 6250 4500
+P 5750 2950
 AR Path="/5EBC73C6" Ref="R3"  Part="1" 
 AR Path="/5E8AFE9D/5EBC73C6" Ref="R?"  Part="1" 
 AR Path="/5E8C8865/5EBC73C6" Ref="R?"  Part="1" 
-F 0 "R3" H 6100 4450 50  0000 C CNN
-F 1 "3.3K" H 6100 4550 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 6180 4500 50  0001 C CNN
-F 3 "~" H 6250 4500 50  0001 C CNN
-F 4 "KOA Speer" H 6250 4500 50  0001 C CNN "Manufacturer"
-F 5 "RK73H2BTTD3301F" H 6250 4500 50  0001 C CNN "Part Number"
-	1    6250 4500
+F 0 "R3" H 5600 2900 50  0000 C CNN
+F 1 "3.3K" H 5600 3000 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 5680 2950 50  0001 C CNN
+F 3 "~" H 5750 2950 50  0001 C CNN
+F 4 "KOA Speer" H 5750 2950 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD3301F" H 5750 2950 50  0001 C CNN "Part Number"
+	1    5750 2950
 	-1   0    0    1   
 $EndComp
-Connection ~ 6250 4650
+Connection ~ 5750 3100
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5EBC73CD
-P 6250 4350
+P 5750 2800
 AR Path="/5E8FBD97/5EBC73CD" Ref="#PWR?"  Part="1" 
 AR Path="/5E8E0754/5EBC73CD" Ref="#PWR?"  Part="1" 
 AR Path="/5E8DFCAD/5EBC73CD" Ref="#PWR?"  Part="1" 
 AR Path="/5E8DEDC0/5EBC73CD" Ref="#PWR?"  Part="1" 
 AR Path="/5E8C8865/5EBC73CD" Ref="#PWR?"  Part="1" 
 AR Path="/5EBC73CD" Ref="#PWR0113"  Part="1" 
-F 0 "#PWR0113" H 6250 4200 50  0001 C CNN
-F 1 "+3.3V" H 6265 4523 50  0000 C CNN
-F 2 "" H 6250 4350 50  0001 C CNN
-F 3 "" H 6250 4350 50  0001 C CNN
-	1    6250 4350
+F 0 "#PWR0113" H 5750 2650 50  0001 C CNN
+F 1 "+3.3V" H 5765 2973 50  0000 C CNN
+F 2 "" H 5750 2800 50  0001 C CNN
+F 3 "" H 5750 2800 50  0001 C CNN
+	1    5750 2800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6250 4650 6900 4650
+	5750 3100 6400 3100
 $Comp
 L Device:R R2
 U 1 1 5EBC73D7
-P 5800 6200
+P 5300 4650
 AR Path="/5EBC73D7" Ref="R2"  Part="1" 
 AR Path="/5E8AFE9D/5EBC73D7" Ref="R?"  Part="1" 
 AR Path="/5E8C8865/5EBC73D7" Ref="R?"  Part="1" 
-F 0 "R2" V 5900 6150 50  0000 C CNN
-F 1 "10K" V 5700 6200 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 5730 6200 50  0001 C CNN
-F 3 "~" H 5800 6200 50  0001 C CNN
-F 4 "KOA Speer" H 5800 6200 50  0001 C CNN "Manufacturer"
-F 5 "RK73H2BTTD1002F" H 5800 6200 50  0001 C CNN "Part Number"
-	1    5800 6200
+F 0 "R2" V 5400 4600 50  0000 C CNN
+F 1 "10K" V 5200 4650 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 5230 4650 50  0001 C CNN
+F 3 "~" H 5300 4650 50  0001 C CNN
+F 4 "KOA Speer" H 5300 4650 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1002F" H 5300 4650 50  0001 C CNN "Part Number"
+	1    5300 4650
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5650 6200 5150 6200
+	5150 4650 4650 4650
 $Comp
 L Transistor_BJT:MMBT3904 Q?
 U 1 1 5EBC73E0
-P 6150 6200
+P 5650 4650
 AR Path="/5E8C8865/5EBC73E0" Ref="Q?"  Part="1" 
 AR Path="/5EBC73E0" Ref="Q3"  Part="1" 
-F 0 "Q3" H 6341 6246 50  0000 L CNN
-F 1 "MMBT3904" H 6341 6155 50  0000 L CNN
-F 2 "Ventilator:SOT-23" H 6350 6125 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 6150 6200 50  0001 L CNN
-F 4 "Diodes Inc." H 6150 6200 50  0001 C CNN "Manufacturer"
-F 5 "MMBT3904-7-F" H 6150 6200 50  0001 C CNN "Part Number"
-	1    6150 6200
+F 0 "Q3" H 5841 4696 50  0000 L CNN
+F 1 "MMBT3904" H 5841 4605 50  0000 L CNN
+F 2 "Ventilator:SOT-23" H 5850 4575 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 5650 4650 50  0001 L CNN
+F 4 "Diodes Inc." H 5650 4650 50  0001 C CNN "Manufacturer"
+F 5 "MMBT3904-7-F" H 5650 4650 50  0001 C CNN "Part Number"
+	1    5650 4650
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0114
 U 1 1 5EBC73E6
-P 6250 6400
+P 5750 4850
 AR Path="/5EBC73E6" Ref="#PWR0114"  Part="1" 
 AR Path="/5E8AFE9D/5EBC73E6" Ref="#PWR?"  Part="1" 
 AR Path="/5E8FBD97/5EBC73E6" Ref="#PWR?"  Part="1" 
@@ -2579,53 +2579,53 @@ AR Path="/5E8E0754/5EBC73E6" Ref="#PWR?"  Part="1"
 AR Path="/5E8DFCAD/5EBC73E6" Ref="#PWR?"  Part="1" 
 AR Path="/5E8DEDC0/5EBC73E6" Ref="#PWR?"  Part="1" 
 AR Path="/5E8C8865/5EBC73E6" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0114" H 6250 6150 50  0001 C CNN
-F 1 "GND" H 6255 6227 50  0000 C CNN
-F 2 "" H 6250 6400 50  0001 C CNN
-F 3 "" H 6250 6400 50  0001 C CNN
-	1    6250 6400
+F 0 "#PWR0114" H 5750 4600 50  0001 C CNN
+F 1 "GND" H 5755 4677 50  0000 C CNN
+F 2 "" H 5750 4850 50  0001 C CNN
+F 3 "" H 5750 4850 50  0001 C CNN
+	1    5750 4850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5150 5950 6250 5950
+	4650 4400 5750 4400
 Wire Wire Line
-	6250 5950 6250 6000
+	5750 4400 5750 4450
 $Comp
 L Device:R R6
 U 1 1 5EBC73F0
-P 6250 5800
+P 5750 4250
 AR Path="/5EBC73F0" Ref="R6"  Part="1" 
 AR Path="/5E8AFE9D/5EBC73F0" Ref="R?"  Part="1" 
 AR Path="/5E8C8865/5EBC73F0" Ref="R?"  Part="1" 
-F 0 "R6" H 6100 5750 50  0000 C CNN
-F 1 "3.3K" H 6100 5850 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 6180 5800 50  0001 C CNN
-F 3 "~" H 6250 5800 50  0001 C CNN
-F 4 "KOA Speer" H 6250 5800 50  0001 C CNN "Manufacturer"
-F 5 "RK73H2BTTD3301F" H 6250 5800 50  0001 C CNN "Part Number"
-	1    6250 5800
+F 0 "R6" H 5600 4200 50  0000 C CNN
+F 1 "3.3K" H 5600 4300 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 5680 4250 50  0001 C CNN
+F 3 "~" H 5750 4250 50  0001 C CNN
+F 4 "KOA Speer" H 5750 4250 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD3301F" H 5750 4250 50  0001 C CNN "Part Number"
+	1    5750 4250
 	-1   0    0    1   
 $EndComp
-Connection ~ 6250 5950
+Connection ~ 5750 4400
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5EBC73F7
-P 6250 5650
+P 5750 4100
 AR Path="/5E8FBD97/5EBC73F7" Ref="#PWR?"  Part="1" 
 AR Path="/5E8E0754/5EBC73F7" Ref="#PWR?"  Part="1" 
 AR Path="/5E8DFCAD/5EBC73F7" Ref="#PWR?"  Part="1" 
 AR Path="/5E8DEDC0/5EBC73F7" Ref="#PWR?"  Part="1" 
 AR Path="/5E8C8865/5EBC73F7" Ref="#PWR?"  Part="1" 
 AR Path="/5EBC73F7" Ref="#PWR0115"  Part="1" 
-F 0 "#PWR0115" H 6250 5500 50  0001 C CNN
-F 1 "+3.3V" H 6265 5823 50  0000 C CNN
-F 2 "" H 6250 5650 50  0001 C CNN
-F 3 "" H 6250 5650 50  0001 C CNN
-	1    6250 5650
+F 0 "#PWR0115" H 5750 3950 50  0001 C CNN
+F 1 "+3.3V" H 5765 4273 50  0000 C CNN
+F 2 "" H 5750 4100 50  0001 C CNN
+F 3 "" H 5750 4100 50  0001 C CNN
+	1    5750 4100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6250 5950 6900 5950
+	5750 4400 6400 4400
 $Comp
 L Device:R R11
 U 1 1 5E91F835
@@ -2672,39 +2672,39 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_02x20_Odd_Even J2
 U 1 1 5F189822
-P 9750 7250
-F 0 "J2" H 9800 8275 50  0000 C CNN
-F 1 "Conn_02x20_Odd_Even" H 9800 8276 50  0001 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 9750 7250 50  0001 C CNN
-F 3 "~" H 9750 7250 50  0001 C CNN
-F 4 "Sullins" H 9750 7250 50  0001 C CNN "Manufacturer"
-F 5 "PPPC202LFBN-RC" H 9750 7250 50  0001 C CNN "Part Number"
-	1    9750 7250
+P 8150 7200
+F 0 "J2" H 8200 8225 50  0000 C CNN
+F 1 "Conn_02x20_Odd_Even" H 8200 8226 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 8150 7200 50  0001 C CNN
+F 3 "~" H 8150 7200 50  0001 C CNN
+F 4 "Sullins" H 8150 7200 50  0001 C CNN "Manufacturer"
+F 5 "PPPC202LFBN-RC" H 8150 7200 50  0001 C CNN "Part Number"
+	1    8150 7200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_02x20_Odd_Even J5
 U 1 1 5F18F558
-P 11600 7250
-F 0 "J5" H 11650 8275 50  0000 C CNN
-F 1 "Conn_02x20_Odd_Even" H 11650 8276 50  0001 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 11600 7250 50  0001 C CNN
-F 3 "~" H 11600 7250 50  0001 C CNN
-F 4 "Sullins" H 11600 7250 50  0001 C CNN "Manufacturer"
-F 5 "PPPC202LFBN-RC" H 11600 7250 50  0001 C CNN "Part Number"
-	1    11600 7250
+P 11250 7200
+F 0 "J5" H 11300 8225 50  0000 C CNN
+F 1 "Conn_02x20_Odd_Even" H 11300 8226 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 11250 7200 50  0001 C CNN
+F 3 "~" H 11250 7200 50  0001 C CNN
+F 4 "Sullins" H 11250 7200 50  0001 C CNN "Manufacturer"
+F 5 "PPPC202LFBN-RC" H 11250 7200 50  0001 C CNN "Part Number"
+	1    11250 7200
 	1    0    0    -1  
 $EndComp
-Text Notes 9800 5650 0    50   ~ 10
+Text Notes 9050 5650 0    50   ~ 10
 CPLD (MAX V CPLD Development Board)
-Text Notes 9550 6150 0    50   ~ 0
+Text Notes 7950 6100 0    50   ~ 0
 Mates with J6
-Text Notes 11350 6150 0    50   ~ 0
+Text Notes 11000 6100 0    50   ~ 0
 Mates with J7
 $Comp
 L power:GND #PWR0118
 U 1 1 5F1A120C
-P 10050 6850
+P 8450 6800
 AR Path="/5F1A120C" Ref="#PWR0118"  Part="1" 
 AR Path="/5E8AFE9D/5F1A120C" Ref="#PWR?"  Part="1" 
 AR Path="/5E8FBD97/5F1A120C" Ref="#PWR?"  Part="1" 
@@ -2712,17 +2712,17 @@ AR Path="/5E8E0754/5F1A120C" Ref="#PWR?"  Part="1"
 AR Path="/5E8DFCAD/5F1A120C" Ref="#PWR?"  Part="1" 
 AR Path="/5E8DEDC0/5F1A120C" Ref="#PWR?"  Part="1" 
 AR Path="/5E8C8865/5F1A120C" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0118" H 10050 6600 50  0001 C CNN
-F 1 "GND" H 10055 6677 50  0000 C CNN
-F 2 "" H 10050 6850 50  0001 C CNN
-F 3 "" H 10050 6850 50  0001 C CNN
-	1    10050 6850
+F 0 "#PWR0118" H 8450 6550 50  0001 C CNN
+F 1 "GND" H 8455 6627 50  0000 C CNN
+F 2 "" H 8450 6800 50  0001 C CNN
+F 3 "" H 8450 6800 50  0001 C CNN
+	1    8450 6800
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0119
 U 1 1 5F1A2221
-P 10050 7750
+P 8450 7700
 AR Path="/5F1A2221" Ref="#PWR0119"  Part="1" 
 AR Path="/5E8AFE9D/5F1A2221" Ref="#PWR?"  Part="1" 
 AR Path="/5E8FBD97/5F1A2221" Ref="#PWR?"  Part="1" 
@@ -2730,17 +2730,17 @@ AR Path="/5E8E0754/5F1A2221" Ref="#PWR?"  Part="1"
 AR Path="/5E8DFCAD/5F1A2221" Ref="#PWR?"  Part="1" 
 AR Path="/5E8DEDC0/5F1A2221" Ref="#PWR?"  Part="1" 
 AR Path="/5E8C8865/5F1A2221" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0119" H 10050 7500 50  0001 C CNN
-F 1 "GND" H 10055 7577 50  0000 C CNN
-F 2 "" H 10050 7750 50  0001 C CNN
-F 3 "" H 10050 7750 50  0001 C CNN
-	1    10050 7750
+F 0 "#PWR0119" H 8450 7450 50  0001 C CNN
+F 1 "GND" H 8455 7527 50  0000 C CNN
+F 2 "" H 8450 7700 50  0001 C CNN
+F 3 "" H 8450 7700 50  0001 C CNN
+	1    8450 7700
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0120
 U 1 1 5F1A2628
-P 11900 7750
+P 11550 7700
 AR Path="/5F1A2628" Ref="#PWR0120"  Part="1" 
 AR Path="/5E8AFE9D/5F1A2628" Ref="#PWR?"  Part="1" 
 AR Path="/5E8FBD97/5F1A2628" Ref="#PWR?"  Part="1" 
@@ -2748,17 +2748,17 @@ AR Path="/5E8E0754/5F1A2628" Ref="#PWR?"  Part="1"
 AR Path="/5E8DFCAD/5F1A2628" Ref="#PWR?"  Part="1" 
 AR Path="/5E8DEDC0/5F1A2628" Ref="#PWR?"  Part="1" 
 AR Path="/5E8C8865/5F1A2628" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0120" H 11900 7500 50  0001 C CNN
-F 1 "GND" H 11905 7577 50  0000 C CNN
-F 2 "" H 11900 7750 50  0001 C CNN
-F 3 "" H 11900 7750 50  0001 C CNN
-	1    11900 7750
+F 0 "#PWR0120" H 11550 7450 50  0001 C CNN
+F 1 "GND" H 11555 7527 50  0000 C CNN
+F 2 "" H 11550 7700 50  0001 C CNN
+F 3 "" H 11550 7700 50  0001 C CNN
+	1    11550 7700
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0121
 U 1 1 5F1A2AE9
-P 11900 6850
+P 11550 6800
 AR Path="/5F1A2AE9" Ref="#PWR0121"  Part="1" 
 AR Path="/5E8AFE9D/5F1A2AE9" Ref="#PWR?"  Part="1" 
 AR Path="/5E8FBD97/5F1A2AE9" Ref="#PWR?"  Part="1" 
@@ -2766,134 +2766,132 @@ AR Path="/5E8E0754/5F1A2AE9" Ref="#PWR?"  Part="1"
 AR Path="/5E8DFCAD/5F1A2AE9" Ref="#PWR?"  Part="1" 
 AR Path="/5E8DEDC0/5F1A2AE9" Ref="#PWR?"  Part="1" 
 AR Path="/5E8C8865/5F1A2AE9" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0121" H 11900 6600 50  0001 C CNN
-F 1 "GND" H 11905 6677 50  0000 C CNN
-F 2 "" H 11900 6850 50  0001 C CNN
-F 3 "" H 11900 6850 50  0001 C CNN
-	1    11900 6850
+F 0 "#PWR0121" H 11550 6550 50  0001 C CNN
+F 1 "GND" H 11555 6627 50  0000 C CNN
+F 2 "" H 11550 6800 50  0001 C CNN
+F 3 "" H 11550 6800 50  0001 C CNN
+	1    11550 6800
 	0    -1   -1   0   
 $EndComp
 Text Label 4350 6000 2    50   ~ 0
 ~CPLD_ADC_INT
-Text Label 6900 4650 2    50   ~ 0
+Text Label 6400 3100 2    50   ~ 0
 CPLD_SDA
-Text Label 6900 5950 2    50   ~ 0
+Text Label 6400 4400 2    50   ~ 0
 CPLD_SCL
-Text Label 9100 6350 0    50   ~ 0
+Text Label 7500 6300 0    50   ~ 0
 SCL_Sense
-Text Label 9100 6450 0    50   ~ 0
+Text Label 7500 6400 0    50   ~ 0
 SDA_Sense
 Wire Wire Line
-	9550 6350 9100 6350
+	7950 6300 7500 6300
 Wire Wire Line
-	9550 6450 9100 6450
+	7950 6400 7500 6400
 Wire Wire Line
 	950  8300 1400 8300
-Text Label 10450 6350 2    50   ~ 0
+Text Label 8850 6300 2    50   ~ 0
 SCL_Drive
-Text Label 10450 6450 2    50   ~ 0
+Text Label 8850 6400 2    50   ~ 0
 SDA_Drive
 Wire Wire Line
-	10050 6450 10450 6450
+	8450 6400 8850 6400
 Wire Wire Line
-	10050 6350 10450 6350
+	8450 6300 8850 6300
 $Comp
 L power:+BATT #PWR?
 U 1 1 5F48E963
-P 9100 6850
+P 7500 6800
 AR Path="/5E8E1F08/5F48E963" Ref="#PWR?"  Part="1" 
 AR Path="/5F48E963" Ref="#PWR0122"  Part="1" 
-F 0 "#PWR0122" H 9100 6700 50  0001 C CNN
-F 1 "+BATT" H 9115 7023 50  0000 C CNN
-F 2 "" H 9100 6850 50  0001 C CNN
-F 3 "" H 9100 6850 50  0001 C CNN
-	1    9100 6850
+F 0 "#PWR0122" H 7500 6650 50  0001 C CNN
+F 1 "+BATT" H 7515 6973 50  0000 C CNN
+F 2 "" H 7500 6800 50  0001 C CNN
+F 3 "" H 7500 6800 50  0001 C CNN
+	1    7500 6800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9100 6850 9550 6850
+	7500 6800 7950 6800
 $Comp
 L power:+BATT #PWR?
 U 1 1 5F4B323C
-P 10750 6850
+P 11050 6800
 AR Path="/5E8E1F08/5F4B323C" Ref="#PWR?"  Part="1" 
 AR Path="/5F4B323C" Ref="#PWR0123"  Part="1" 
-F 0 "#PWR0123" H 10750 6700 50  0001 C CNN
-F 1 "+BATT" H 10765 7023 50  0000 C CNN
-F 2 "" H 10750 6850 50  0001 C CNN
-F 3 "" H 10750 6850 50  0001 C CNN
-	1    10750 6850
+F 0 "#PWR0123" H 11050 6650 50  0001 C CNN
+F 1 "+BATT" V 11050 7050 50  0000 C CNN
+F 2 "" H 11050 6800 50  0001 C CNN
+F 3 "" H 11050 6800 50  0001 C CNN
+	1    11050 6800
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5F4C846C
-P 9550 7750
+P 7950 7700
 AR Path="/5E8FBD97/5F4C846C" Ref="#PWR?"  Part="1" 
 AR Path="/5E8E0754/5F4C846C" Ref="#PWR?"  Part="1" 
 AR Path="/5E8DFCAD/5F4C846C" Ref="#PWR?"  Part="1" 
 AR Path="/5E8DEDC0/5F4C846C" Ref="#PWR?"  Part="1" 
 AR Path="/5E8C8865/5F4C846C" Ref="#PWR?"  Part="1" 
 AR Path="/5F4C846C" Ref="#PWR0124"  Part="1" 
-F 0 "#PWR0124" H 9550 7600 50  0001 C CNN
-F 1 "+3.3V" H 9565 7923 50  0000 C CNN
-F 2 "" H 9550 7750 50  0001 C CNN
-F 3 "" H 9550 7750 50  0001 C CNN
-	1    9550 7750
+F 0 "#PWR0124" H 7950 7550 50  0001 C CNN
+F 1 "+3.3V" H 7965 7873 50  0000 C CNN
+F 2 "" H 7950 7700 50  0001 C CNN
+F 3 "" H 7950 7700 50  0001 C CNN
+	1    7950 7700
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5F4CB214
-P 11400 7750
+P 11050 7700
 AR Path="/5E8FBD97/5F4CB214" Ref="#PWR?"  Part="1" 
 AR Path="/5E8E0754/5F4CB214" Ref="#PWR?"  Part="1" 
 AR Path="/5E8DFCAD/5F4CB214" Ref="#PWR?"  Part="1" 
 AR Path="/5E8DEDC0/5F4CB214" Ref="#PWR?"  Part="1" 
 AR Path="/5E8C8865/5F4CB214" Ref="#PWR?"  Part="1" 
 AR Path="/5F4CB214" Ref="#PWR0125"  Part="1" 
-F 0 "#PWR0125" H 11400 7600 50  0001 C CNN
-F 1 "+3.3V" H 11415 7923 50  0000 C CNN
-F 2 "" H 11400 7750 50  0001 C CNN
-F 3 "" H 11400 7750 50  0001 C CNN
-	1    11400 7750
+F 0 "#PWR0125" H 11050 7550 50  0001 C CNN
+F 1 "+3.3V" H 11065 7873 50  0000 C CNN
+F 2 "" H 11050 7700 50  0001 C CNN
+F 3 "" H 11050 7700 50  0001 C CNN
+	1    11050 7700
 	0    -1   -1   0   
 $EndComp
-Text Notes 7650 7250 0    50   ~ 0
+Text Notes 5600 7400 0    50   ~ 0
 Wire manually to CPLD header pins
-NoConn ~ 8750 7900
-NoConn ~ 8750 8000
-NoConn ~ 8750 8100
-NoConn ~ 8750 8200
-NoConn ~ 8750 8350
-NoConn ~ 8750 8450
-NoConn ~ 8750 8550
-NoConn ~ 8300 7450
-NoConn ~ 8300 7550
-NoConn ~ 8300 7650
-NoConn ~ 8300 7750
-Text Notes 9700 5850 0    50   ~ 0
+NoConn ~ 6700 8050
+NoConn ~ 6700 8150
+NoConn ~ 6700 8250
+NoConn ~ 6700 8350
+NoConn ~ 6700 8500
+NoConn ~ 6700 8600
+NoConn ~ 6700 8700
+NoConn ~ 6250 7600
+NoConn ~ 6250 7700
+NoConn ~ 6250 7800
+NoConn ~ 6250 7900
+Text Notes 8950 5850 0    50   ~ 0
 On dev. board, wire J2 (5V_CONN) to BATT+,\nJ11 (3.3V_CONN) to C28 (non-gnd pad)
 Wire Wire Line
-	11900 6550 12450 6550
-Text Label 10600 6550 2    50   ~ 0
+	11550 6500 12100 6500
+Text Label 9000 6500 2    50   ~ 0
 ~CPLD_ADC_INT
 Wire Wire Line
-	10050 6550 10600 6550
+	8450 6500 9000 6500
 Wire Wire Line
-	10050 6750 10450 6750
+	8450 6700 8850 6700
 Wire Wire Line
 	13350 7600 13850 7600
 Text Label 13350 7600 0    50   ~ 0
 ~Bat_On
-Text Label 10450 6750 2    50   ~ 0
+Text Label 8850 6700 2    50   ~ 0
 ~Bat_On
-Text Label 10750 6750 0    50   ~ 0
+Text Label 10400 6700 0    50   ~ 0
 CPLD_Alarm_Spkr
 Wire Wire Line
-	10750 6850 11400 6850
-Wire Wire Line
-	10750 6750 11400 6750
+	10400 6700 11050 6700
 $Comp
 L Device:D_x2_KCom_AKA D1
 U 1 1 5F804B03
@@ -2921,4 +2919,22 @@ Wire Wire Line
 	1950 1250 2150 1250
 Wire Wire Line
 	1650 1150 1950 1150
+Text Notes 7450 6300 2    50   ~ 0
+AGPIO_1 / P2
+Text Notes 8950 6300 0    50   ~ 0
+AGPIO_2 / M4
+Text Notes 7450 6400 2    50   ~ 0
+AGPIO_3 / L4
+Text Notes 8950 6400 0    50   ~ 0
+AGPIO_4 / N3
+Text Notes 9100 6500 0    50   ~ 0
+AGPIO_6 / N1
+Text Notes 8900 6700 0    50   ~ 0
+AGPIO_10 / L3
+Text Notes 12150 6500 0    50   ~ 0
+BGPIO_7 / B14
+Text Notes 9750 6700 0    50   ~ 0
+BGPIO_9 / E16
+Text Notes 16450 1250 2    50   ~ 0
+Copyright Don Straney 2020.\nThis source describes Open Hardware and is licensed under the CERN-OHL-S v2\n\nYou may redistribute and modify this documentation and make products\nusing it under the terms of the CERN-OHL-S v2 (https:/cern.ch/cern-ohl).\nThis documentation is distributed WITHOUT ANY EXPRESS OR IMPLIED\nWARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY\nAND FITNESS FOR A PARTICULAR PURPOSE. Please see the CERN-OHL-S v2\nfor applicable conditions.
 $EndSCHEMATC

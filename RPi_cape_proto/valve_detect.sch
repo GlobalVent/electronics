@@ -5,12 +5,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 8 8
-Title "JamVent Adaptation: Quick and Dirty Prototype"
+Title "GlobalVent Controller: Quick and Dirty Prototype"
 Date ""
 Rev "1.0"
-Comp "US JamVent Team"
-Comment1 "Don Straney"
-Comment2 ""
+Comp "US GlobalVent Team"
+Comment1 "Licensed under CERN-OHL-S v2"
+Comment2 "Don Straney"
 Comment3 ""
 Comment4 ""
 $EndDescr
