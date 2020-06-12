@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 5
 Title "GlobalVent Controller: Software Simulator"
 Date ""
-Rev "1.0"
+Rev "1.0r1"
 Comp "US GlobalVent Team"
 Comment1 "Licensed under CERN-OHL-S v2"
 Comment2 "Don Straney"
@@ -2158,4 +2158,22 @@ Text Label 4700 5200 2    50   ~ 0
 RPi_SCL
 Wire Wire Line
 	4300 5200 4700 5200
+Text Notes 5150 5900 0    50   ~ 0
+A2
+Text Notes 5500 5800 0    50   ~ 0
+A3
+Text Notes 7150 6100 0    50   ~ 0
+D0
+Text Notes 7150 6000 0    50   ~ 0
+D1
+Wire Notes Line
+	5750 5700 5300 5700
+Wire Notes Line
+	5300 5700 5300 6100
+Wire Notes Line
+	5300 6100 5350 6100
+Text Notes 4950 6350 0    50   ~ 0
+(A0 bridged to A4 to avoid\noverlapping interrupts)
+Text Notes 5500 5700 0    50   ~ 0
+A4
 $EndSCHEMATC

@@ -84,18 +84,14 @@ Analog, ADCs:
 * Serial interface preferred
 TI ADC128D818, 76k
 
-Analog, op-amps for pressure sensors (6 mV max offset):
+Analog, op-amps for pressure sensors/valve motion detect:
 * Rail-to-rail output
 * Input CM range includes gnd
 * Input offset <= 10 mV max. (0.5% full-scale)
-TI LMC7101BIM5/NOPB, 400k - reversed power pins
+* Bias current <= 10 nA (for peak detector, 1M inputs)
+TI TLV6001IDBVR, >2M
 TI OPA171AIDBVR, 132k
-ST LMV321ILT, 135k - many other LMV321 alternatives too (TI, ON Semi)
-TI LM6211MF/NOPB, Digikey 70k
-ST TSV321RILT, Digikey 42k
-TI LM7301IM5/NOPB, Digikey 50k
-TI LMV358MM/NOPB dual SSOP-8, 140k
-...TLV2370
+TI LMC7101BIM5/NOPB, 400k - reversed power pins
 
 Analog, op-amps for O2 sensor:
 * Rail-to-rail output
