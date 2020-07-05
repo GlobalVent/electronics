@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:\Users\Don\GitHub\electronics\Pressure_sensor_daughterboard-MS5607-MS5803\Pressure_sensor_daughterboard-MS5607-MS5803.sch</source>
+    <date>7/5/2020 2:00:00 PM</date>
+    <tool>Eeschema (5.1.4)-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Pressure sensor daughterboard: MS5607, MS5803 sensors</title>
+        <company>GlobalVent US team</company>
+        <rev>1.0</rev>
+        <date/>
+        <source>Pressure_sensor_daughterboard-MS5607-MS5803.sch</source>
+        <comment number="1" value="Licensed under CERN-OHL-S v2"/>
+        <comment number="2" value="Don Straney"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Sensors (FPGA)/" tstamps="/5F04EA78/">
+      <title_block>
+        <title>Pressure sensor daughterboard, sensor set</title>
+        <company>GlobalVent US team</company>
+        <rev>1.0</rev>
+        <date/>
+        <source>sensor_set.sch</source>
+        <comment number="1" value="Licensed under CERN-OHL-S v2"/>
+        <comment number="2" value="Don Straney"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/Sensors (RPi)/" tstamps="/5F065BFC/">
+      <title_block>
+        <title>Pressure sensor daughterboard, sensor set</title>
+        <company>GlobalVent US team</company>
+        <rev>1.0</rev>
+        <date/>
+        <source>sensor_set.sch</source>
+        <comment number="1" value="Licensed under CERN-OHL-S v2"/>
+        <comment number="2" value="Don Straney"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="H1">
+      <value>#6</value>
+      <footprint>MountingHole:MountingHole_3.7mm_Pad_Via</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F02465C</tstamp>
+    </comp>
+    <comp ref="H2">
+      <value>#6</value>
+      <footprint>MountingHole:MountingHole_3.7mm_Pad_Via</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F0250D4</tstamp>
+    </comp>
+    <comp ref="H3">
+      <value>#6</value>
+      <footprint>MountingHole:MountingHole_3.7mm_Pad_Via</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F0254C7</tstamp>
+    </comp>
+    <comp ref="H4">
+      <value>#6</value>
+      <footprint>MountingHole:MountingHole_3.7mm_Pad_Via</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F0258E1</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>MS5803-05BA</value>
+      <footprint>Pressure_sensors:TE_MS5803-05BA</footprint>
+      <fields>
+        <field name="Manufacturer">TE</field>
+        <field name="Part Number">MS5803-05BA01-00</field>
+      </fields>
+      <libsource lib="Pressure_sensors" part="MS5803-05BA" description=""/>
+      <sheetpath names="/Sensors (FPGA)/" tstamps="/5F04EA78/"/>
+      <tstamp>5F05EA8A</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>100nF 50V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">AVX</field>
+        <field name="Part Number">06035C104JAT2A</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Sensors (FPGA)/" tstamps="/5F04EA78/"/>
+      <tstamp>5F05EA92</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>100nF 50V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">AVX</field>
+        <field name="Part Number">06035C104JAT2A</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Sensors (FPGA)/" tstamps="/5F04EA78/"/>
+      <tstamp>5F05EAA6</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>0</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Panasonic</field>
+        <field name="Part Number">ERJ-8GEY0R00V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Sensors (FPGA)/" tstamps="/5F04EA78/"/>
+      <tstamp>5F05EABE</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>0</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Panasonic</field>
+        <field name="Part Number">ERJ-8GEY0R00V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Sensors (FPGA)/" tstamps="/5F04EA78/"/>
+      <tstamp>5F05EAC8</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Pressure_sensor_barb</value>
+      <footprint>Pressure_sensors:Sensor_cap_glued_8.5x8.5</footprint>
+      <libsource lib="Pressure_sensors" part="Pressure_sensor_barb" description=""/>
+      <sheetpath names="/Sensors (FPGA)/" tstamps="/5F04EA78/"/>
+      <tstamp>5F05EAD8</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>Pressure_sensor_barb</value>
+      <footprint>Pressure_sensors:Sensor_cap_glued_8.5x8.5</footprint>
+      <libsource lib="Pressure_sensors" part="Pressure_sensor_barb" description=""/>
+      <sheetpath names="/Sensors (FPGA)/" tstamps="/5F04EA78/"/>
+      <tstamp>5F05EADE</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>MS5607-02BA03</value>
+      <footprint>Pressure_sensors:TE_MS5607-02BA03</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=MS5607-02BA03&amp;DocType=Data+Sheet&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="Manufacturer">TE Connectivity</field>
+        <field name="Part Number">MS560702BA03-50</field>
+      </fields>
+      <libsource lib="Pressure_sensors" part="MS5607-02BA03" description=""/>
+      <sheetpath names="/Sensors (FPGA)/" tstamps="/5F04EA78/"/>
+      <tstamp>5F05EAE6</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>Conn_02x03_Odd_Even</value>
+      <footprint>Pressure_sensors:Samtec_HLE-103-02-xxx-DV-BE_2x03_P2.54mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Samtec</field>
+        <field name="Part Number">HLE-103-02-L-DV-BE-K-TR</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_02x03_Odd_Even" description="Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Sensors (FPGA)/" tstamps="/5F04EA78/"/>
+      <tstamp>5F05EB21</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>MS5803-05BA</value>
+      <footprint>Pressure_sensors:TE_MS5803-05BA</footprint>
+      <fields>
+        <field name="Manufacturer">TE</field>
+        <field name="Part Number">MS5803-05BA01-00</field>
+      </fields>
+      <libsource lib="Pressure_sensors" part="MS5803-05BA" description=""/>
+      <sheetpath names="/Sensors (RPi)/" tstamps="/5F065BFC/"/>
+      <tstamp>5F05EA8A</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>100nF 50V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">AVX</field>
+        <field name="Part Number">06035C104JAT2A</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Sensors (RPi)/" tstamps="/5F065BFC/"/>
+      <tstamp>5F05EA92</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>100nF 50V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">AVX</field>
+        <field name="Part Number">06035C104JAT2A</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Sensors (RPi)/" tstamps="/5F065BFC/"/>
+      <tstamp>5F05EAA6</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>0</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Panasonic</field>
+        <field name="Part Number">ERJ-8GEY0R00V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Sensors (RPi)/" tstamps="/5F065BFC/"/>
+      <tstamp>5F05EABE</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>0</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Panasonic</field>
+        <field name="Part Number">ERJ-8GEY0R00V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Sensors (RPi)/" tstamps="/5F065BFC/"/>
+      <tstamp>5F05EAC8</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>Pressure_sensor_barb</value>
+      <footprint>Pressure_sensors:Sensor_cap_glued_8.5x8.5</footprint>
+      <libsource lib="Pressure_sensors" part="Pressure_sensor_barb" description=""/>
+      <sheetpath names="/Sensors (RPi)/" tstamps="/5F065BFC/"/>
+      <tstamp>5F05EAD8</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>Pressure_sensor_barb</value>
+      <footprint>Pressure_sensors:Sensor_cap_glued_8.5x8.5</footprint>
+      <libsource lib="Pressure_sensors" part="Pressure_sensor_barb" description=""/>
+      <sheetpath names="/Sensors (RPi)/" tstamps="/5F065BFC/"/>
+      <tstamp>5F05EADE</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>MS5607-02BA03</value>
+      <footprint>Pressure_sensors:TE_MS5607-02BA03</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=MS5607-02BA03&amp;DocType=Data+Sheet&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="Manufacturer">TE Connectivity</field>
+        <field name="Part Number">MS560702BA03-50</field>
+      </fields>
+      <libsource lib="Pressure_sensors" part="MS5607-02BA03" description=""/>
+      <sheetpath names="/Sensors (RPi)/" tstamps="/5F065BFC/"/>
+      <tstamp>5F05EAE6</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>Conn_02x03_Odd_Even</value>
+      <footprint>Pressure_sensors:Samtec_HLE-103-02-xxx-DV-BE_2x03_P2.54mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Samtec</field>
+        <field name="Part Number">HLE-103-02-L-DV-BE-K-TR</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_02x03_Odd_Even" description="Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Sensors (RPi)/" tstamps="/5F065BFC/"/>
+      <tstamp>5F05EB21</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector_Generic" part="Conn_02x03_Odd_Even">
+      <description>Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x03_Odd_Even</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole_Pad">
+      <description>Mounting Hole with connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*Pad*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole_Pad</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Pressure_sensors" part="MS5607-02BA03">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MS5607-02BA03</field>
+        <field name="Footprint">Pressure_sensors:TE_MS5607-02BA03</field>
+        <field name="Manufacturer">TE Connectivity</field>
+        <field name="Part Number">MS560702BA03-50</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD" type="power_in"/>
+        <pin num="2" name="PS" type="input"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="SDI/SDA" type="BiDi"/>
+        <pin num="5" name="~CS" type="input"/>
+        <pin num="6" name="SDO" type="output"/>
+        <pin num="8" name="SCLK" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Pressure_sensors" part="MS5803-05BA">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MS5803-05BA</field>
+        <field name="Footprint">Pressure_sensors:TE_MS5803-05BA</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SCLK" type="input"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="~CS" type="input"/>
+        <pin num="5" name="VDD" type="power_in"/>
+        <pin num="6" name="PS" type="input"/>
+        <pin num="7" name="SDI/SDA" type="input"/>
+        <pin num="8" name="SDO" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="Pressure_sensors" part="Pressure_sensor_barb">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Pressure_sensor_barb</field>
+      </fields>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector_Generic">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Connector_Generic.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Mechanical.lib</uri>
+    </library>
+    <library logical="Pressure_sensors">
+      <uri>C:\Users\Don\GitHub\electronics\Pressure_sensor_daughterboard-MS5607-MS5803/Pressure_sensors.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(H2-Pad1)">
+      <node ref="H2" pin="1"/>
+    </net>
+    <net code="2" name="Net-(H3-Pad1)">
+      <node ref="H3" pin="1"/>
+    </net>
+    <net code="3" name="Net-(H4-Pad1)">
+      <node ref="H4" pin="1"/>
+    </net>
+    <net code="4" name="Net-(H1-Pad1)">
+      <node ref="H1" pin="1"/>
+    </net>
+    <net code="5" name="/Sensors (FPGA)/SCL">
+      <node ref="U2" pin="8"/>
+      <node ref="J3" pin="3"/>
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="6" name="/Sensors (FPGA)/SDA">
+      <node ref="U2" pin="4"/>
+      <node ref="J3" pin="1"/>
+      <node ref="U1" pin="7"/>
+    </net>
+    <net code="7" name="GND">
+      <node ref="C1" pin="1"/>
+      <node ref="U1" pin="2"/>
+      <node ref="C2" pin="1"/>
+      <node ref="U2" pin="3"/>
+      <node ref="R1" pin="2"/>
+      <node ref="R3" pin="2"/>
+      <node ref="U4" pin="3"/>
+      <node ref="U3" pin="2"/>
+      <node ref="C4" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="J6" pin="2"/>
+      <node ref="J6" pin="5"/>
+      <node ref="J6" pin="6"/>
+      <node ref="J3" pin="6"/>
+      <node ref="J3" pin="5"/>
+      <node ref="J3" pin="2"/>
+    </net>
+    <net code="8" name="+3V3">
+      <node ref="U3" pin="5"/>
+      <node ref="U3" pin="6"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="J6" pin="4"/>
+      <node ref="R2" pin="1"/>
+      <node ref="R4" pin="1"/>
+      <node ref="J3" pin="4"/>
+      <node ref="U4" pin="1"/>
+      <node ref="U1" pin="5"/>
+      <node ref="U2" pin="2"/>
+      <node ref="U1" pin="6"/>
+      <node ref="U4" pin="2"/>
+      <node ref="U2" pin="1"/>
+    </net>
+    <net code="9" name="Net-(R2-Pad2)">
+      <node ref="R2" pin="2"/>
+      <node ref="U2" pin="4"/>
+      <node ref="U2" pin="5"/>
+    </net>
+    <net code="10" name="Net-(U1-Pad8)">
+      <node ref="U1" pin="8"/>
+    </net>
+    <net code="11" name="Net-(U2-Pad6)">
+      <node ref="U2" pin="6"/>
+    </net>
+    <net code="12" name="Net-(R1-Pad1)">
+      <node ref="U1" pin="3"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="13" name="/Sensors (RPi)/SCL">
+      <node ref="U3" pin="1"/>
+      <node ref="U4" pin="8"/>
+      <node ref="J6" pin="3"/>
+    </net>
+    <net code="14" name="/Sensors (RPi)/SDA">
+      <node ref="J6" pin="1"/>
+      <node ref="U4" pin="4"/>
+      <node ref="U3" pin="7"/>
+    </net>
+    <net code="15" name="Net-(U3-Pad8)">
+      <node ref="U3" pin="8"/>
+    </net>
+    <net code="16" name="Net-(R3-Pad1)">
+      <node ref="R3" pin="1"/>
+      <node ref="U3" pin="3"/>
+    </net>
+    <net code="17" name="Net-(R4-Pad2)">
+      <node ref="R4" pin="2"/>
+      <node ref="U4" pin="4"/>
+      <node ref="U4" pin="5"/>
+    </net>
+    <net code="18" name="Net-(U4-Pad6)">
+      <node ref="U4" pin="6"/>
+    </net>
+  </nets>
+</export>

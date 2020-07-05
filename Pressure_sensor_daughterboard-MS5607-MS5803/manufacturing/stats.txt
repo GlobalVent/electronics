@@ -1,0 +1,10 @@
+0 through-hole pads (manual count)
+4 mounting holes (manual count) * 9 pads/hole = 36 pads
+20 non-plated holes from footprints (manual count) counted as "pads"
+SMT pads = KiCAD pads reading in status bar - 36 - 20 = 60
+24 vias (status bar)
+80 holes (add up drill map)
+
+14 total parts
+5 BOM lines
+16 no-lead pads (manual count)

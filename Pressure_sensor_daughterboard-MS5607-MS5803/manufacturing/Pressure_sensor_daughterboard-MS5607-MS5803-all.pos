@@ -1,0 +1,20 @@
+### Module positions - created on 7/5/2020 1:49:16 PM ###
+### Printed by Pcbnew version kicad (5.1.4)-1
+## Unit = mm, Angle = deg.
+## Side : All
+# Ref     Val                  Package                                                   PosX       PosY       Rot  Side
+C1        100nF_50V_X7R        C_0603_1608Metric                                     129.7500   -54.2500    0.0000  top
+C2        100nF_50V_X7R        C_0603_1608Metric                                     126.2500   -87.5000   90.0000  top
+C3        100nF_50V_X7R        C_0603_1608Metric                                     156.2500   -54.2500    0.0000  top
+C4        100nF_50V_X7R        C_0603_1608Metric                                     152.7500   -87.5000   90.0000  top
+J3        Conn_02x03_Odd_Even  Samtec_HLE-103-02-xxx-DV-BE_2x03_P2.54mm_Horizontal   128.0000   -69.5000   90.0000  top
+J6        Conn_02x03_Odd_Even  Samtec_HLE-103-02-xxx-DV-BE_2x03_P2.54mm_Horizontal   154.5000   -69.5000   90.0000  top
+R1        0                    R_1206_3216Metric                                     137.0000   -67.4000  270.0000  top
+R2        0                    R_1206_3216Metric                                     139.7500   -67.4000  270.0000  top
+R3        0                    R_1206_3216Metric                                     163.5000   -67.0000  270.0000  top
+R4        0                    R_1206_3216Metric                                     166.2500   -67.2500  270.0000  top
+U1        MS5803-05BA          TE_MS5803-05BA                                        128.0000   -50.2500  180.0000  top
+U2        MS5607-02BA03        TE_MS5607-02BA03                                      129.0000   -88.0000    0.0000  top
+U3        MS5803-05BA          TE_MS5803-05BA                                        154.5000   -50.2500  180.0000  top
+U4        MS5607-02BA03        TE_MS5607-02BA03                                      155.5000   -88.0000    0.0000  top
+## End

@@ -7,8 +7,8 @@ encoding utf-8
 Sheet 1 3
 Title "Pressure sensor daughterboard: MS5607, MS5803 sensors"
 Date ""
-Rev "1.0"
-Comp "GlobalVent US team"
+Rev "1.2"
+Comp "US GlobalVent team"
 Comment1 "Licensed under CERN-OHL-S v2"
 Comment2 "Don Straney"
 Comment3 ""
