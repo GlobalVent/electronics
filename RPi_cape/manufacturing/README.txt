@@ -14,10 +14,11 @@ All copper layers positive
 *-B_Mask.gbr: Bottom soldermask
 *-F_SilkS.gbr: Top silkscreen
 *-B_SilkS.gbr: Bottom silkscreen
-*-Edge_Cuts.gbr: Outline and internal cutouts
+*-Edge_Cuts.gbr: Board outline
 *-F_Paste.gbr: Top solder paste
 *-PTH.drl: Drill file (plated holes)
 *-NPTH.drl: Drill file (non-plated holes)
+
 *-PTH-drl_map.pdf: Drill map (plated holes)
 *-NPTH-drl_map.pdf: Drill map (non-plated holes)
 fab.pdf: Fabrication drawing (excluding drills)

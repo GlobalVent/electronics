@@ -66,3 +66,18 @@
 	* Added 3D models to TE encoder connector footprints, QFP-100 for CPLD, and 5019 testpoint
 	* Changed DIAG_EN pin connection from valve drivers from +24V (too high) to +3.3V
 	* Added CERN licensing terms
+	
+1.10 to 1.11:
+	* Swapped Max V CPLD for Max 10 FPGA
+	* Removed +1.8V regulator and monitoring (in power-down alarm) because Max 10 FPGA has internal regulator
+	* Changed FPGA's valve-enable pull-downs from 1K to 10K because Max 10 floats the outputs during power-up/programming (instead of Max V's internal pull-ups)
+	* Changed low-pressure sensor from BMP388 to MS5607 for more manufacturable footprint / high availability, and moved all digital pressure sensors to daughterboard for repairability
+	* Changed single op-amps in analog pressure sensor inputs / valve motion detect circuits to TLV6001 for better bias current, correct footprint
+	* Removed excessive DNP components in analog pressure sensor inputs to ease routing with new op-amps
+	* Added double-inverted hysteresis circuit to valve motion detect that won't drive U38's '+' input above the rail and cause latchup
+	* Added optional pull-down resistors to valve-motiion-detect op-amps to allow output voltages to swing to zero
+	* Added optional filter caps to ADC sensor inputs
+	* Added pull-down to O2 sensor input for testing with sensor unplugged
+	* Increased ADC input resistors (in analog sensor inputs) from 1K to 3.3K to avoid "lifting" +3.3V rail voltage in case of fault
+	* Increased hole sizes to 3.7 mm for fitting #6 screws, to match some threaded vibration-damping bumpers from Joost
+	* Fixed F.Fab-layer component reference text in custom footprints

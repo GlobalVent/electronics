@@ -26,9 +26,8 @@ TI LMZ23603TZ/NOPB, 25k
 TI LMZ23603TZX/NOPB, 5k
 TI PTN78060WAD/WAH/HAH, 20k total?
 
-Power, LDOs for CPLD:
+Power, LDOs:
 TI LP5907MFX-3.3/NOPB, 3.3V, Digikey 316k
-TI LP5907MFX-1.8/NOPB, 1.8V, Digikey 213k
 
 Power, input protection TVS:
 * 24V "working voltage" / "standoff voltage"
@@ -148,6 +147,14 @@ Nexperia 74LVC1G08GV,125 (AND), >1M
 Nexperia 74LVC1G32GV,125 (OR), 258k
 TI SN74LVC1G08DBVR (OR), 307k
 
+Clamping Schottky diodes for JTAG:
+* Dual, common-cathode, in SOT-23
+* C <= ~10 pF @ 0V
+Diodes Inc. BAT54C-7-F, 261k Digikey
+Comchip BAT54C-G, 69k Digikey
+Nexperia BAT54C,215, 55k Digikey
+ON Semi BAT54CLT3G, 54k Digikey
+
 General power diode:
 * Vreverse >= 100V
 * Iforward >= 2A continuous
@@ -174,6 +181,25 @@ Panasonic EEH-ZA1H101P, 99k
 Nichicon PCV1V181MCL2GS (100uF->180uF), 19k
 Panasonic EEH-ZA1V271V (100uF->270uF), 20k
 Nichicon UWT1V221MNL1GS (non-poly, 220uF, 8mm), Digikey 496k
+
+Connectors, daughterboard (male):
+* 3x2 rectangular header (male), SMT
+* 0.1" (2.54 mm) pitch
+* Pin size < 0.68 mm square (0.64 mm preferred)
+(adding pick-and-place feature increases price from <$1 to $2+; board alignment pins also uncommon)
+TE 1241050-3, gold plating + pick-and-place clip, 12.5k
+Samtec TSM-103-01-T-SV-P-TR, tin plating + pick-and-place pad, 2.5k (daughterboard has 3.81 mm gap to main PCB)
+Samtec TSM-103-01-L-SV, gold plating, 4k
+Samtec TSM-103-01-T-SV, tin plating, 6k
+Samtec TSM-103-01-L-DV-A-P-TR, gold plating + alignment pin + pick-and-place pad, 900
+
+Connectors, daughterboard (female):
+* 3x2 rectangular header (female), SMT back-entry
+* 0.1" (2.54 mm) pitch
+Samtec HLE-103-02-L-DV-BE-K-TR, 12k (mates with TSM-103-* or HW-03-*-*-*-SM...)
+3M 966206-2000-AR-PR, 7.5k
+TE 969973-3, 6k
+Harwin M20-7870346, 1.6k
 
 Connectors, Raspberry Pi:
 * 20x2 rectangular header (female), through-hole vertical

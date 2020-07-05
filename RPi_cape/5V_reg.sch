@@ -4,10 +4,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 11 15
+Sheet 11 13
 Title "GlobalVent Stand-Alone Controller"
 Date ""
-Rev "1.10"
+Rev "1.11"
 Comp "US GlobalVent Team"
 Comment1 "Licensed under CERN-OHL-S v2"
 Comment2 "Don Straney"
@@ -384,8 +384,8 @@ AR Path="/5EE4C23D" Ref="R?"  Part="1"
 AR Path="/5E8AFE9D/5EE4C23D" Ref="R?"  Part="1" 
 AR Path="/5EE065CD/5EE4C23D" Ref="R171"  Part="1" 
 AR Path="/5EEB3F52/5EE4C23D" Ref="R176"  Part="1" 
-F 0 "R176" V 8350 2800 50  0000 C CNN
-F 1 "0" V 8300 2700 50  0000 C CNN
+F 0 "R176" V 8400 2750 50  0000 C CNN
+F 1 "0" V 8300 2750 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 8130 2750 50  0001 C CNN
 F 3 "~" H 8200 2750 50  0001 C CNN
 F 4 "Panasonic" H 8200 2750 50  0001 C CNN "Manufacturer"

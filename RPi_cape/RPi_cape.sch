@@ -4,10 +4,10 @@ EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 1 15
+Sheet 1 13
 Title "GlobalVent Stand-Alone Controller"
 Date ""
-Rev "1.10"
+Rev "1.11"
 Comp "US GlobalVent Team"
 Comment1 "Licensed under CERN-OHL-S v2"
 Comment2 "Don Straney"
@@ -195,6 +195,7 @@ F 0 "R21" H 8900 2200 50  0000 C CNN
 F 1 "DNP" H 8900 2100 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 8680 2200 50  0001 C CNN
 F 3 "~" H 8750 2200 50  0001 C CNN
+F 4 "DNI" H 8750 2200 50  0001 C CNN "DNI"
 	1    8750 2200
 	1    0    0    -1  
 $EndComp
@@ -336,6 +337,7 @@ F3 "In_CPLD" I L 13850 8050 50
 F4 "Low_Bat" O L 13850 7500 50 
 F5 "~Bat_On" O L 13850 7600 50 
 F6 "~+5VA_On" O L 13850 7700 50 
+F7 "~FPGA_RST" O L 13850 7800 50 
 $EndSheet
 $Comp
 L Connector_Generic:Conn_01x04 J1
@@ -347,6 +349,7 @@ F 2 "Ventilator:Connector_Spring_Phoenix_1985218" H 1450 1050 50  0001 C CNN
 F 3 "~" H 1450 1050 50  0001 C CNN
 F 4 "Phoenix Contact" H 1450 1050 50  0001 C CNN "Manufacturer"
 F 5 "1985218" H 1450 1050 50  0001 C CNN "Part Number"
+F 6 "DNI" H 1450 1050 50  0001 C CNN "DNI"
 	1    1450 1050
 	-1   0    0    -1  
 $EndComp
@@ -360,6 +363,7 @@ F 2 "Ventilator:Connector_Spring_Phoenix_1985195" H 14650 2950 50  0001 C CNN
 F 3 "~" H 14650 2950 50  0001 C CNN
 F 4 "Phoenix Contact" H 14650 2950 50  0001 C CNN "Manufacturer"
 F 5 "1985195" H 14650 2950 50  0001 C CNN "Part Number"
+F 6 "DNI" H 14650 2950 50  0001 C CNN "DNI"
 	1    14650 2950
 	1    0    0    1   
 $EndComp
@@ -373,6 +377,7 @@ F 2 "Ventilator:Connector_Spring_Phoenix_1985195" H 14650 3850 50  0001 C CNN
 F 3 "~" H 14650 3850 50  0001 C CNN
 F 4 "Phoenix Contact" H 14650 3850 50  0001 C CNN "Manufacturer"
 F 5 "1985195" H 14650 3850 50  0001 C CNN "Part Number"
+F 6 "DNI" H 14650 3850 50  0001 C CNN "DNI"
 	1    14650 3850
 	1    0    0    1   
 $EndComp
@@ -386,6 +391,7 @@ F 2 "Ventilator:Connector_Spring_Phoenix_1985195" H 14650 4750 50  0001 C CNN
 F 3 "~" H 14650 4750 50  0001 C CNN
 F 4 "Phoenix Contact" H 14650 4750 50  0001 C CNN "Manufacturer"
 F 5 "1985195" H 14650 4750 50  0001 C CNN "Part Number"
+F 6 "DNI" H 14650 4750 50  0001 C CNN "DNI"
 	1    14650 4750
 	1    0    0    1   
 $EndComp
@@ -399,6 +405,7 @@ F 2 "Ventilator:Connector_Spring_Phoenix_1985195" H 14650 5600 50  0001 C CNN
 F 3 "~" H 14650 5600 50  0001 C CNN
 F 4 "Phoenix Contact" H 14650 5600 50  0001 C CNN "Manufacturer"
 F 5 "1985195" H 14650 5600 50  0001 C CNN "Part Number"
+F 6 "DNI" H 14650 5600 50  0001 C CNN "DNI"
 	1    14650 5600
 	1    0    0    1   
 $EndComp
@@ -410,6 +417,7 @@ F 0 "F1" V 2375 950 50  0000 C CNN
 F 1 "DNP" V 2466 950 50  0000 C CNN
 F 2 "Fuse:Fuse_2920_7451Metric" H 2650 750 50  0001 L CNN
 F 3 "~" H 2600 950 50  0001 C CNN
+F 4 "DNI" H 2600 950 50  0001 C CNN "DNI"
 	1    2600 950 
 	0    1    1    0   
 $EndComp
@@ -436,6 +444,7 @@ F 2 "Ventilator:Connector_Spring_Phoenix_1985195" H 1450 1750 50  0001 C CNN
 F 3 "~" H 1450 1750 50  0001 C CNN
 F 4 "Phoenix Contact" H 1450 1750 50  0001 C CNN "Manufacturer"
 F 5 "1985195" H 1450 1750 50  0001 C CNN "Part Number"
+F 6 "DNI" H 1450 1750 50  0001 C CNN "DNI"
 	1    1450 1750
 	-1   0    0    -1  
 $EndComp
@@ -453,6 +462,7 @@ F 2 "Ventilator:Connector_Spring_Phoenix_1985195" H 1450 2650 50  0001 C CNN
 F 3 "~" H 1450 2650 50  0001 C CNN
 F 4 "Phoenix Contact" H 1450 2650 50  0001 C CNN "Manufacturer"
 F 5 "1985195" H 1450 2650 50  0001 C CNN "Part Number"
+F 6 "DNI" H 1450 2650 50  0001 C CNN "DNI"
 	1    1450 2650
 	-1   0    0    -1  
 $EndComp
@@ -778,6 +788,7 @@ F 2 "Resistor_SMD:R_1206_3216Metric" V 3730 8650 50  0001 C CNN
 F 3 "~" H 3800 8650 50  0001 C CNN
 F 4 "KOA Speer" H 3800 8650 50  0001 C CNN "Manufacturer"
 F 5 "RK73H2BTTD1002F" H 3800 8650 50  0001 C CNN "Part Number"
+F 6 "DNI" H 3800 8650 50  0001 C CNN "DNI"
 	1    3800 8650
 	1    0    0    -1  
 $EndComp
@@ -793,6 +804,7 @@ F 2 "Resistor_SMD:R_1206_3216Metric" V 3730 8950 50  0001 C CNN
 F 3 "~" H 3800 8950 50  0001 C CNN
 F 4 "KOA Speer" H 3800 8950 50  0001 C CNN "Manufacturer"
 F 5 "RK73H2BTTD1002F" H 3800 8950 50  0001 C CNN "Part Number"
+F 6 "DNI" H 3800 8950 50  0001 C CNN "DNI"
 	1    3800 8950
 	1    0    0    -1  
 $EndComp
@@ -954,6 +966,7 @@ F 2 "Ventilator:Connector_Spring_Phoenix_1985205" H 2200 6000 50  0001 C CNN
 F 3 "~" H 2200 6000 50  0001 C CNN
 F 4 "Phoenix Contact" H 2200 6000 50  0001 C CNN "Manufacturer"
 F 5 "1985205" H 2200 6000 50  0001 C CNN "Part Number"
+F 6 "DNI" H 2200 6000 50  0001 C CNN "DNI"
 	1    2200 6000
 	-1   0    0    -1  
 $EndComp
@@ -967,6 +980,7 @@ F 2 "Ventilator:Connector_Spring_Phoenix_1985205" H 2200 6750 50  0001 C CNN
 F 3 "~" H 2200 6750 50  0001 C CNN
 F 4 "Phoenix Contact" H 2200 6750 50  0001 C CNN "Manufacturer"
 F 5 "1985205" H 2200 6750 50  0001 C CNN "Part Number"
+F 6 "DNI" H 2200 6750 50  0001 C CNN "DNI"
 	1    2200 6750
 	-1   0    0    -1  
 $EndComp
@@ -1047,7 +1061,7 @@ Text Notes 650  7800 0    50   ~ 0
 Oxygen sensor input\n(Teledyne C44611-R22MED?)\n7 mV (0%)-13 mV (100% O2) output
 Text Notes 4200 8450 0    79   ~ 16
 Power rail sensing
-Text Notes 3400 4350 0    79   ~ 16
+Text Notes 3500 4150 0    79   ~ 16
 Sensor inputs
 Text Notes 2450 650  0    79   ~ 16
 Power distribution
@@ -1065,6 +1079,7 @@ F 0 "R3" V 1850 850 50  0000 C CNN
 F 1 "DNP" V 1850 400 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 1730 600 50  0001 C CNN
 F 3 "~" H 1800 600 50  0001 C CNN
+F 4 "DNI" H 1800 600 50  0001 C CNN "DNI"
 	1    1800 600 
 	0    -1   -1   0   
 $EndComp
@@ -1093,6 +1108,7 @@ F 2 "Ventilator:Connector_Spring_Phoenix_1985195" H 1550 3750 50  0001 C CNN
 F 3 "~" H 1550 3750 50  0001 C CNN
 F 4 "Phoenix Contact" H 1550 3750 50  0001 C CNN "Manufacturer"
 F 5 "1985195" H 1550 3750 50  0001 C CNN "Part Number"
+F 6 "DNI" H 1550 3750 50  0001 C CNN "DNI"
 	1    1550 3750
 	-1   0    0    -1  
 $EndComp
@@ -1508,6 +1524,7 @@ F 0 "C1" H 1450 9800 50  0000 C CNN
 F 1 "DNP" H 1400 9700 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 1638 9550 50  0001 C CNN
 F 3 "~" H 1600 9700 50  0001 C CNN
+F 4 "DNI" H 1600 9700 50  0001 C CNN "DNI"
 	1    1600 9700
 	-1   0    0    1   
 $EndComp
@@ -1620,6 +1637,7 @@ F 2 "Ventilator:Connector_Spring_Phoenix_1985195" H 2200 7600 50  0001 C CNN
 F 3 "~" H 2200 7600 50  0001 C CNN
 F 4 "Phoenix Contact" H 2200 7600 50  0001 C CNN "Manufacturer"
 F 5 "1985195" H 2200 7600 50  0001 C CNN "Part Number"
+F 6 "DNI" H 2200 7600 50  0001 C CNN "DNI"
 	1    2200 7600
 	-1   0    0    -1  
 $EndComp
@@ -2014,7 +2032,7 @@ RPi_Alarm_Spkr
 Text Notes 9900 3350 0    50   ~ 0
 GPIO9
 Wire Wire Line
-	12900 7600 12900 8050
+	12900 7650 12900 8050
 Wire Wire Line
 	12900 8050 13850 8050
 Text Label 13000 8050 0    50   ~ 0
@@ -2208,7 +2226,7 @@ Wire Wire Line
 Wire Wire Line
 	11750 7250 13550 7250
 Wire Wire Line
-	11750 7600 12900 7600
+	11750 7650 12900 7650
 Wire Wire Line
 	11750 7950 12150 7950
 Wire Wire Line
@@ -2932,6 +2950,7 @@ F 0 "J16" H 9500 10100 50  0000 C CNN
 F 1 "Conn_01x06" H 9418 10076 50  0001 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 9500 9750 50  0001 C CNN
 F 3 "~" H 9500 9750 50  0001 C CNN
+F 4 "DNI" H 9500 9750 50  0001 C CNN "DNI"
 	1    9500 9750
 	-1   0    0    1   
 $EndComp
@@ -3241,8 +3260,8 @@ L Mechanical:MountingHole_Pad H4
 U 1 1 5EA8A09A
 P 14500 8800
 F 0 "H4" H 14600 8849 50  0000 L CNN
-F 1 "#4/M3" H 14600 8758 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 14500 8800 50  0001 C CNN
+F 1 "#6" H 14600 8758 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.7mm_Pad_Via" H 14500 8800 50  0001 C CNN
 F 3 "~" H 14500 8800 50  0001 C CNN
 	1    14500 8800
 	1    0    0    -1  
@@ -3252,8 +3271,8 @@ L Mechanical:MountingHole_Pad H3
 U 1 1 5EA8A69E
 P 14000 8800
 F 0 "H3" H 14100 8849 50  0000 L CNN
-F 1 "#4/M3" H 14100 8758 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 14000 8800 50  0001 C CNN
+F 1 "#6" H 14100 8758 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.7mm_Pad_Via" H 14000 8800 50  0001 C CNN
 F 3 "~" H 14000 8800 50  0001 C CNN
 	1    14000 8800
 	1    0    0    -1  
@@ -3263,8 +3282,8 @@ L Mechanical:MountingHole_Pad H2
 U 1 1 5EA8A8CF
 P 13500 8800
 F 0 "H2" H 13600 8849 50  0000 L CNN
-F 1 "#4/M3" H 13600 8758 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 13500 8800 50  0001 C CNN
+F 1 "#6" H 13600 8758 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.7mm_Pad_Via" H 13500 8800 50  0001 C CNN
 F 3 "~" H 13500 8800 50  0001 C CNN
 	1    13500 8800
 	1    0    0    -1  
@@ -3274,8 +3293,8 @@ L Mechanical:MountingHole_Pad H1
 U 1 1 5EA8AB78
 P 13000 8800
 F 0 "H1" H 13100 8849 50  0000 L CNN
-F 1 "#4/M3" H 13100 8758 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 13000 8800 50  0001 C CNN
+F 1 "#6" H 13100 8758 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.7mm_Pad_Via" H 13000 8800 50  0001 C CNN
 F 3 "~" H 13000 8800 50  0001 C CNN
 	1    13000 8800
 	1    0    0    -1  
@@ -3397,63 +3416,31 @@ Text Label 9350 8200 0    50   ~ 0
 Enc_Sw
 Wire Wire Line
 	9350 8200 9850 8200
-$Sheet
-S 3350 4600 1100 300 
-U 5F518E26
-F0 "Pressure Sensors, Digital (CPLD)" 50
-F1 "pressure_sensors_dig.sch" 50
-F2 "SDA" B R 4450 4700 50 
-F3 "SCL" I R 4450 4800 50 
-F4 "Vcc" I L 3350 4750 50 
-$EndSheet
-$Sheet
-S 3350 5200 1100 300 
-U 5F593E41
-F0 "Pressure Sensors, Digital (Raspberry Pi)" 50
-F1 "pressure_sensors_dig.sch" 50
-F2 "SDA" B R 4450 5300 50 
-F3 "SCL" I R 4450 5400 50 
-F4 "Vcc" I L 3350 5350 50 
-$EndSheet
-Text Label 5000 4700 2    50   ~ 0
-CPLD_SDA
-Text Label 5000 4800 2    50   ~ 0
-CPLD_SCL
-Wire Wire Line
-	5000 4700 4450 4700
-Wire Wire Line
-	4450 4800 5000 4800
-Text Label 4950 5300 2    50   ~ 0
+Text Label 3150 5200 0    50   ~ 0
 RPi_SDA
-Text Label 4950 5400 2    50   ~ 0
+Text Label 3150 5300 0    50   ~ 0
 RPi_SCL
-Wire Wire Line
-	4950 5300 4450 5300
-Wire Wire Line
-	4450 5400 4950 5400
-Text Label 2900 5350 0    50   ~ 0
+Text Label 4800 5300 2    50   ~ 0
 +3.3V_RPi
-Wire Wire Line
-	2900 5350 3350 5350
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5F644D1C
-P 3150 4750
+P 4350 4750
 AR Path="/5E8FBD97/5F644D1C" Ref="#PWR?"  Part="1" 
 AR Path="/5E8E0754/5F644D1C" Ref="#PWR?"  Part="1" 
 AR Path="/5E8DFCAD/5F644D1C" Ref="#PWR?"  Part="1" 
 AR Path="/5E8DEDC0/5F644D1C" Ref="#PWR?"  Part="1" 
 AR Path="/5E8C8865/5F644D1C" Ref="#PWR?"  Part="1" 
 AR Path="/5F644D1C" Ref="#PWR0281"  Part="1" 
-F 0 "#PWR0281" H 3150 4600 50  0001 C CNN
-F 1 "+3.3V" H 3165 4923 50  0000 C CNN
-F 2 "" H 3150 4750 50  0001 C CNN
-F 3 "" H 3150 4750 50  0001 C CNN
-	1    3150 4750
-	1    0    0    -1  
+F 0 "#PWR0281" H 4350 4600 50  0001 C CNN
+F 1 "+3.3V" H 4365 4923 50  0000 C CNN
+F 2 "" H 4350 4750 50  0001 C CNN
+F 3 "" H 4350 4750 50  0001 C CNN
+	1    4350 4750
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	3150 4750 3350 4750
+	4350 4750 4150 4750
 Wire Wire Line
 	9350 2550 9700 2550
 Wire Wire Line
@@ -3487,6 +3474,7 @@ F 0 "R24" H 9500 2250 50  0000 C CNN
 F 1 "DNP" H 9500 2150 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 9280 2250 50  0001 C CNN
 F 3 "~" H 9350 2250 50  0001 C CNN
+F 4 "DNI" H 9350 2250 50  0001 C CNN "DNI"
 	1    9350 2250
 	1    0    0    -1  
 $EndComp
@@ -3505,6 +3493,7 @@ F 0 "R23" H 9120 2346 50  0000 L CNN
 F 1 "DNP" H 9120 2255 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 8980 2300 50  0001 C CNN
 F 3 "~" H 9050 2300 50  0001 C CNN
+F 4 "DNI" H 9050 2300 50  0001 C CNN "DNI"
 	1    9050 2300
 	1    0    0    -1  
 $EndComp
@@ -3564,6 +3553,7 @@ F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 11200 3250 50
 F 3 "~" H 11200 3250 50  0001 C CNN
 F 4 "Sullins" H 11200 3250 50  0001 C CNN "Manufacturer"
 F 5 "PPPC202LFBN-RC" H 11200 3250 50  0001 C CNN "Part Number"
+F 6 "DNI" H 11200 3250 50  0001 C CNN "DNI"
 	1    11200 3250
 	1    0    0    -1  
 $EndComp
@@ -3722,7 +3712,7 @@ F12 "Pressure2_Lim_H_Alarm" I L 9850 7450 50
 F13 "Pressure2_Lim_L_Alarm" I L 9850 7550 50 
 F14 "O2_Lim_H_Alarm" I L 9850 7650 50 
 F15 "O2_Lim_L_Alarm" I L 9850 7750 50 
-F16 "Alarm_Spkr" O R 11750 7600 50 
+F16 "Alarm_Spkr" O R 11750 7650 50 
 F17 "SDA" O L 9850 6900 50 
 F18 "SCL" O L 9850 7000 50 
 F19 "~ADC_INT" I L 9850 7100 50 
@@ -3743,6 +3733,7 @@ F33 "~Valve4_Fault" I R 11750 7100 50
 F34 "~Valve3_Fault" I R 11750 7000 50 
 F35 "~Bat_On" I R 11750 7350 50 
 F36 "~+5VA_On" I R 11750 7450 50 
+F37 "~FPGA_RST" I R 11750 7550 50 
 $EndSheet
 $Comp
 L Device:D_Zener_ALT D23
@@ -3760,6 +3751,7 @@ F 2 "Ventilator:D_SMB" H 3250 1400 50  0001 C CNN
 F 3 "~" H 3250 1400 50  0001 C CNN
 F 4 "Littelfuse" H 3250 1400 50  0001 C CNN "Manufacturer"
 F 5 "SMBJ24A" H 3250 1400 50  0001 C CNN "Part Number"
+F 6 "DNI" H 3250 1400 50  0001 C CNN "DNI"
 	1    3250 1400
 	0    1    1    0   
 $EndComp
@@ -3802,6 +3794,7 @@ F 2 "Ventilator:TE_215079-6" H 9150 9750 50  0001 C CNN
 F 3 "~" H 9150 9750 50  0001 C CNN
 F 4 "TE AMP" H 9150 9750 50  0001 C CNN "Manufacturer"
 F 5 "215079-6" H 9150 9750 50  0001 C CNN "Part Number"
+F 6 "DNI" H 9150 9750 50  0001 C CNN "DNI"
 	1    9150 9750
 	-1   0    0    1   
 $EndComp
@@ -3815,6 +3808,7 @@ F 2 "Ventilator:TE_188275-6" H 8850 9750 50  0001 C CNN
 F 3 "~" H 8850 9750 50  0001 C CNN
 F 4 "TE AMP" H 8850 9750 50  0001 C CNN "Manufacturer"
 F 5 "188275-6" H 8850 9750 50  0001 C CNN "Part Number"
+F 6 "DNI" H 8850 9750 50  0001 C CNN "DNI"
 	1    8850 9750
 	-1   0    0    1   
 $EndComp
@@ -3884,78 +3878,20 @@ Wire Wire Line
 Wire Wire Line
 	1650 1150 2000 1150
 $Comp
-L Mechanical:MountingHole_Pad H5
-U 1 1 5EC142BF
-P 15000 8800
-F 0 "H5" H 15100 8849 50  0000 L CNN
-F 1 "#4/M3" H 15100 8758 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 15000 8800 50  0001 C CNN
-F 3 "~" H 15000 8800 50  0001 C CNN
-	1    15000 8800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H6
-U 1 1 5EC14660
-P 15500 8800
-F 0 "H6" H 15600 8849 50  0000 L CNN
-F 1 "#4/M3" H 15600 8758 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 15500 8800 50  0001 C CNN
-F 3 "~" H 15500 8800 50  0001 C CNN
-	1    15500 8800
-	1    0    0    -1  
-$EndComp
-$Comp
 L Mechanical:MountingHole_Pad H7
 U 1 1 5EC406FC
-P 16000 8800
-F 0 "H7" H 16100 8849 50  0000 L CNN
-F 1 "#4/M3" H 16100 8758 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 16000 8800 50  0001 C CNN
-F 3 "~" H 16000 8800 50  0001 C CNN
-	1    16000 8800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0381
-U 1 1 5EC408F5
-P 15000 8900
-AR Path="/5EC408F5" Ref="#PWR0381"  Part="1" 
-AR Path="/5E8AFE9D/5EC408F5" Ref="#PWR?"  Part="1" 
-AR Path="/5E8FBD97/5EC408F5" Ref="#PWR?"  Part="1" 
-AR Path="/5E8E0754/5EC408F5" Ref="#PWR?"  Part="1" 
-AR Path="/5E8DFCAD/5EC408F5" Ref="#PWR?"  Part="1" 
-AR Path="/5E8DEDC0/5EC408F5" Ref="#PWR?"  Part="1" 
-AR Path="/5E8C8865/5EC408F5" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0381" H 15000 8650 50  0001 C CNN
-F 1 "GND" H 15005 8727 50  0000 C CNN
-F 2 "" H 15000 8900 50  0001 C CNN
-F 3 "" H 15000 8900 50  0001 C CNN
-	1    15000 8900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0382
-U 1 1 5EC40ACB
-P 15500 8900
-AR Path="/5EC40ACB" Ref="#PWR0382"  Part="1" 
-AR Path="/5E8AFE9D/5EC40ACB" Ref="#PWR?"  Part="1" 
-AR Path="/5E8FBD97/5EC40ACB" Ref="#PWR?"  Part="1" 
-AR Path="/5E8E0754/5EC40ACB" Ref="#PWR?"  Part="1" 
-AR Path="/5E8DFCAD/5EC40ACB" Ref="#PWR?"  Part="1" 
-AR Path="/5E8DEDC0/5EC40ACB" Ref="#PWR?"  Part="1" 
-AR Path="/5E8C8865/5EC40ACB" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0382" H 15500 8650 50  0001 C CNN
-F 1 "GND" H 15505 8727 50  0000 C CNN
-F 2 "" H 15500 8900 50  0001 C CNN
-F 3 "" H 15500 8900 50  0001 C CNN
-	1    15500 8900
+P 14950 8800
+F 0 "H7" H 15050 8849 50  0000 L CNN
+F 1 "#6" H 15050 8758 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.7mm_Pad_Via" H 14950 8800 50  0001 C CNN
+F 3 "~" H 14950 8800 50  0001 C CNN
+	1    14950 8800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0383
 U 1 1 5EC40D05
-P 16000 8900
+P 14950 8900
 AR Path="/5EC40D05" Ref="#PWR0383"  Part="1" 
 AR Path="/5E8AFE9D/5EC40D05" Ref="#PWR?"  Part="1" 
 AR Path="/5E8FBD97/5EC40D05" Ref="#PWR?"  Part="1" 
@@ -3963,13 +3899,141 @@ AR Path="/5E8E0754/5EC40D05" Ref="#PWR?"  Part="1"
 AR Path="/5E8DFCAD/5EC40D05" Ref="#PWR?"  Part="1" 
 AR Path="/5E8DEDC0/5EC40D05" Ref="#PWR?"  Part="1" 
 AR Path="/5E8C8865/5EC40D05" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0383" H 16000 8650 50  0001 C CNN
-F 1 "GND" H 16005 8727 50  0000 C CNN
-F 2 "" H 16000 8900 50  0001 C CNN
-F 3 "" H 16000 8900 50  0001 C CNN
-	1    16000 8900
+F 0 "#PWR0383" H 14950 8650 50  0001 C CNN
+F 1 "GND" H 14955 8727 50  0000 C CNN
+F 2 "" H 14950 8900 50  0001 C CNN
+F 3 "" H 14950 8900 50  0001 C CNN
+	1    14950 8900
 	1    0    0    -1  
 $EndComp
 Text Notes 16450 1300 2    50   ~ 0
 Copyright Don Straney 2020.\nThis source describes Open Hardware and is licensed under the CERN-OHL-S v2\n\nYou may redistribute and modify this documentation and make products\nusing it under the terms of the CERN-OHL-S v2 (https:/cern.ch/cern-ohl).\nThis documentation is distributed WITHOUT ANY EXPRESS OR IMPLIED\nWARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY\nAND FITNESS FOR A PARTICULAR PURPOSE. Please see the CERN-OHL-S v2\nfor applicable conditions.
+Wire Wire Line
+	13850 7800 13250 7800
+Wire Wire Line
+	13250 7800 13250 7550
+Wire Wire Line
+	13250 7550 11750 7550
+Text Label 3100 4750 0    50   ~ 0
+CPLD_SCL
+Text Label 3100 4650 0    50   ~ 0
+CPLD_SDA
+$Comp
+L power:GND #PWR0285
+U 1 1 5F107B1D
+P 3650 4850
+F 0 "#PWR0285" H 3650 4600 50  0001 C CNN
+F 1 "GND" H 3655 4677 50  0000 C CNN
+F 2 "" H 3650 4850 50  0001 C CNN
+F 3 "" H 3650 4850 50  0001 C CNN
+	1    3650 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0286
+U 1 1 5F1083FD
+P 4200 4850
+F 0 "#PWR0286" H 4200 4600 50  0001 C CNN
+F 1 "GND" H 4205 4677 50  0000 C CNN
+F 2 "" H 4200 4850 50  0001 C CNN
+F 3 "" H 4200 4850 50  0001 C CNN
+	1    4200 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 4850 4200 4850
+Wire Wire Line
+	4150 4650 4200 4650
+Wire Wire Line
+	4200 4650 4200 4850
+Connection ~ 4200 4850
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J18
+U 1 1 5F17DBC3
+P 3950 5300
+F 0 "J18" H 4000 5525 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 4000 5526 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical_SMD" H 3950 5300 50  0001 C CNN
+F 3 "~" H 3950 5300 50  0001 C CNN
+F 4 "TE" H 3950 5300 50  0001 C CNN "Manufacturer"
+F 5 "1241050-3" H 3950 5300 50  0001 C CNN "Part Number"
+	1    3950 5300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0332
+U 1 1 5F17DBCB
+P 3650 5400
+F 0 "#PWR0332" H 3650 5150 50  0001 C CNN
+F 1 "GND" H 3655 5227 50  0000 C CNN
+F 2 "" H 3650 5400 50  0001 C CNN
+F 3 "" H 3650 5400 50  0001 C CNN
+	1    3650 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0333
+U 1 1 5F17DBD1
+P 4200 5400
+F 0 "#PWR0333" H 4200 5150 50  0001 C CNN
+F 1 "GND" H 4205 5227 50  0000 C CNN
+F 2 "" H 4200 5400 50  0001 C CNN
+F 3 "" H 4200 5400 50  0001 C CNN
+	1    4200 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 5400 4200 5400
+Wire Wire Line
+	4150 5200 4200 5200
+Wire Wire Line
+	4200 5200 4200 5400
+Connection ~ 4200 5400
+Wire Wire Line
+	4150 5300 4800 5300
+Text Notes 3350 4450 0    50   ~ 0
+Connections to daughterboard\nwith digital pressure sensors
+$Comp
+L Ventilator:Pressure_sensor_daughterboard U10
+U 1 1 5F2E0808
+P 5100 4750
+F 0 "U10" H 5428 4692 50  0000 L CNN
+F 1 "Pressure_sensor_daughterboard" H 5150 4950 50  0001 C CNN
+F 2 "Ventilator:Pressure_sensor_daughterboard_1.2" H 5100 4750 50  0001 C CNN
+F 3 "" H 5100 4750 50  0001 C CNN
+	1    5100 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0335
+U 1 1 5F2E11C1
+P 5100 5000
+F 0 "#PWR0335" H 5100 4750 50  0001 C CNN
+F 1 "GND" H 5105 4827 50  0000 C CNN
+F 2 "" H 5100 5000 50  0001 C CNN
+F 3 "" H 5100 5000 50  0001 C CNN
+	1    5100 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J17
+U 1 1 5F08D1C3
+P 3950 4750
+F 0 "J17" H 4000 4975 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 4000 4976 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical_SMD" H 3950 4750 50  0001 C CNN
+F 3 "~" H 3950 4750 50  0001 C CNN
+F 4 "TE" H 3950 4750 50  0001 C CNN "Manufacturer"
+F 5 "1241050-3" H 3950 4750 50  0001 C CNN "Part Number"
+	1    3950 4750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 4650 3650 4650
+Wire Wire Line
+	3100 4750 3650 4750
+Wire Wire Line
+	3650 5200 3150 5200
+Wire Wire Line
+	3150 5300 3650 5300
 $EndSCHEMATC

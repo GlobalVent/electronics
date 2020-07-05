@@ -1,4 +1,4 @@
-16353144431321556
+16327768657762434
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -49623,23 +49623,9 @@ Yellow 5381 Series LED
 2
 2
 Martinos
-AFBR-xx2xZ
-Broadcom AFBR-xx2xZ series fiber optic receivers/transmitters (horizontal)
-optical fiber receiver transmitter rx tx
-0
-6
-6
-Martinos
 BNC_Amphenol_112740-13_Horizontal
 Amphenol 112740-13 edge-mount BNC connector, 75-ohm
 BNC coaxial edge
-0
-5
-2
-Martinos
-BNC_Mystery_Horizontal
-BNC mystery "bent pipe" connector, PCB-mount
-BNC female PCB mount connector
 0
 5
 2
@@ -49650,20 +49636,6 @@ BNC TE Horizontal
 0
 4
 2
-Martinos
-CTS_742x163
-CTS 742*163 series resistor array
-resistor array
-0
-16
-16
-Martinos
-CTS_745C
-CTS 745C series resistor array
-resistor array
-0
-10
-10
 Martinos
 Conn_Spring_Harwin_S1941
 Spring connector, Harwin S1941-xxR (pad size expanded vertically 1mm beyond recommended for extra solder fillets)
@@ -49728,27 +49700,6 @@ SSOP 0.65
 41
 17
 Martinos
-Inductor_Coilcraft_MSS7341_HandSolder
-Coilcraft MSS7341 inductor series, extra 1.5mm added to pads for solderability
-inductor coilcraft smt smd
-0
-2
-2
-Martinos
-Inductor_Coilcraft_XAL60xx_HandSolder
-Coilcraft XAL6030/6060 series inductors, extra 1.5mm of pad outside package area for ease of soldering
-inductor smd smt
-0
-2
-2
-Martinos
-Inductor_Vishay_IHLP2020
-Vishay IHLP2020 series inductors
-inductor vishay smt smd
-0
-2
-2
-Martinos
 LED_Dialight_553-xxxF
 Dialight 553-xxxF series 3mm dual stacked LEDs; use with LED_Dual_CACA footprint
 led dual
@@ -49763,37 +49714,9 @@ inductor
 2
 2
 Martinos
-L_Coilcraft_2929SQ-501
-Coilcraft 2929SQ 500nH air-core SMT spring inductor
-inductor coilcraft coil smt rf
-0
-2
-2
-Martinos
-L_Coilcraft_HP1_HPH1
-Coilcraft Hexa-Path HP1/HPH1-series flexible inductors/transformers
-inductor transformer smt smd
-0
-12
-12
-Martinos
-L_Coilcraft_MaxiSpring
-Coilcraft Maxi Spring air-core SMT inductors
-inductor coil coilcraft maxi spring smt
-0
-2
-2
-Martinos
 L_CommonMode_Murata_5000
 Murata 5000-series common-mode chokes (pin numbering rearranged to match schem. symbol)
 common mode choke
-0
-4
-4
-Martinos
-L_Coupled_Wuerth_WE-MTCI
-Würth Elektronik WE-MTCI multi-turn-ratio coupled inductors
-inductor coupled smt smd
 0
 4
 4
@@ -49812,47 +49735,12 @@ switch pushbutton spst through-hole right-angle
 4
 3
 Martinos
-Switch_Toggle_E-Switch_100SPxxxxxM7xE
-E-Switch 100-series toggle switch, PCB-mount right-angle SPDT with vertical-lever "M7" configuration
-switch spdt toggle right-angle RA
-0
-5
-4
-Martinos
 TestPoint_2Pads_Pitch4mm_Drill1mm0.7mm
 Dual testpoint, 1mm hold for signal and 0.7mm hole for ground, spaced 4 mm apart; sized for Tektronix scope probes with ground spring
 testpoint dual Tektronix
 0
 2
 2
-Martinos
-USB_B_Amphenol_MUSBD111xx_Horizontal
-
-
-0
-6
-5
-Martinos
-Xfmr_Coilcraft_FCT1-xxK2SL
-Coilcraft FCT1-*K2SL forward-mode transformers
-transformer forward smt smd
-0
-8
-8
-Martinos
-Xfmr_Coilcraft_PA654x
-Coilcraft PA6547-AL*, PA6548-AL*, PA6549-AL* isolation transformers
-transformer isolation smt smd
-0
-8
-8
-Martinos
-Xfmr_Wuerth_WE-GDTI
-Würth Elektronik WE-GDTI 760301301/2/3/4/5/6 gate drive transformers
-transformer gate drive smt smd
-0
-8
-8
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet

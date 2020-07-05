@@ -1,9 +1,9 @@
-94 through-hole pads
-4 pads from mounting holes
-SMT pads = KiCAD reading - 98 = 1391
-490 vias
-621 holes
+94 through-hole pads (manual count)
+9 pads from mounting holes (manual count)
+SMT pads = KiCAD pads reading in status bar - 94 - 9 = 1411
+579 vias (status bar)
+755 holes (add up drill map)
 
-436 total parts
-53 BOM lines
-16 no-lead pads
+443 total parts
+54 BOM lines
+0 no-lead pads (manual count)

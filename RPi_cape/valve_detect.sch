@@ -4,10 +4,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 14 15
+Sheet 12 13
 Title "GlobalVent Stand-Alone Controller"
 Date ""
-Rev "1.10"
+Rev "1.11"
 Comp "US GlobalVent Team"
 Comment1 "Licensed under CERN-OHL-S v2"
 Comment2 "Don Straney"
@@ -48,7 +48,7 @@ AR Path="/5E8A4ABF/601ACF0B" Ref="C?"  Part="1"
 AR Path="/601431F1/601ACF0B" Ref="C52"  Part="1" 
 AR Path="/60304D29/601ACF0B" Ref="C53"  Part="1" 
 F 0 "C53" V 4450 3000 50  0000 C CNN
-F 1 "1uF 16V X7R" V 4350 3000 50  0000 C CNN
+F 1 "1uF 16V X7R" V 4350 2900 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 4538 2700 50  0001 C CNN
 F 3 "~" H 4500 2850 50  0001 C CNN
 F 4 "Kemet" H 4500 2850 50  0001 C CNN "Manufacturer"
@@ -110,7 +110,7 @@ F 5 "RK73H2BTTD1000F" H 5450 3300 50  0001 C CNN "Part Number"
 	0    1    1    0   
 $EndComp
 $Comp
-L Amplifier_Operational:LMV321 U?
+L Amplifier_Operational:MCP601-xOT U?
 U 1 1 601ACF35
 P 4350 3300
 AR Path="/601ACF35" Ref="U?"  Part="1" 
@@ -119,16 +119,16 @@ AR Path="/5E8A4ABF/601ACF35" Ref="U?"  Part="1"
 AR Path="/601431F1/601ACF35" Ref="U36"  Part="1" 
 AR Path="/60304D29/601ACF35" Ref="U37"  Part="1" 
 F 0 "U37" H 4400 3550 50  0000 L CNN
-F 1 "LMC7101B" H 4400 3450 50  0000 L CNN
+F 1 "TLV6001" H 4400 3450 50  0000 L CNN
 F 2 "Ventilator:SOT-23-5" H 4350 3300 50  0001 L CNN
 F 3 "" H 4350 3300 50  0001 C CNN
 F 4 "Texas Instruments" H 4350 3300 50  0001 C CNN "Manufacturer"
-F 5 "LMC7101BIM5/NOPB" H 4350 3300 50  0001 C CNN "Part Number"
+F 5 "TLV6001IDBVR" H 4350 3300 50  0001 C CNN "Part Number"
 	1    4350 3300
 	1    0    0    -1  
 $EndComp
-Text Notes 3900 2500 0    50   ~ 0
-0.6 mA max. from +5VA
+Text Notes 3750 2500 0    50   ~ 0
+0.1 mA max. from +5VA
 $Comp
 L Device:C C?
 U 1 1 601ACF1D
@@ -189,23 +189,23 @@ $EndComp
 $Comp
 L Device:D_ALT D?
 U 1 1 6020B575
-P 4950 3300
+P 5000 3300
 AR Path="/5E8AA959/6020B575" Ref="D?"  Part="1" 
 AR Path="/601431F1/6020B575" Ref="D13"  Part="1" 
 AR Path="/60304D29/6020B575" Ref="D13"  Part="1" 
-F 0 "D13" H 4850 3100 50  0000 L CNN
-F 1 "BAS21AH" H 4650 3200 50  0000 L CNN
-F 2 "Ventilator:D_SOD-323" H 4950 3300 50  0001 C CNN
-F 3 "~" H 4950 3300 50  0001 C CNN
-F 4 "ON Semiconductor" H 4950 3300 50  0001 C CNN "Manufacturer"
-F 5 "BAS21AHT1G" H 4950 3300 50  0001 C CNN "Part Number"
-	1    4950 3300
+F 0 "D13" H 4900 3100 50  0000 L CNN
+F 1 "BAS21AH" H 4700 3200 50  0000 L CNN
+F 2 "Ventilator:D_SOD-323" H 5000 3300 50  0001 C CNN
+F 3 "~" H 5000 3300 50  0001 C CNN
+F 4 "ON Semiconductor" H 5000 3300 50  0001 C CNN "Manufacturer"
+F 5 "BAS21AHT1G" H 5000 3300 50  0001 C CNN "Part Number"
+	1    5000 3300
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4650 3300 4800 3300
+	4650 3300 4850 3300
 Wire Wire Line
-	5100 3300 5300 3300
+	5150 3300 5300 3300
 $Comp
 L Device:C C?
 U 1 1 6020F531
@@ -215,8 +215,8 @@ AR Path="/5E8AFE9D/6020F531" Ref="C?"  Part="1"
 AR Path="/5E8A4ABF/6020F531" Ref="C?"  Part="1" 
 AR Path="/601431F1/6020F531" Ref="C53"  Part="1" 
 AR Path="/60304D29/6020F531" Ref="C55"  Part="1" 
-F 0 "C55" H 6000 3600 50  0000 C CNN
-F 1 "100nF 50V X7R" H 6150 3500 50  0000 C CNN
+F 0 "C55" H 5750 3150 50  0000 C CNN
+F 1 "100nF 50V X7R" H 5600 3250 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5788 3300 50  0001 C CNN
 F 3 "~" H 5750 3450 50  0001 C CNN
 F 4 "AVX" H 5750 3450 50  0001 C CNN "Manufacturer"
@@ -283,9 +283,7 @@ F 3 "" H 6000 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6300 3300 6300 3900
-Wire Wire Line
-	4050 3900 6300 3900
+	4050 3900 5150 3900
 Connection ~ 6300 3300
 Wire Wire Line
 	7250 2950 7250 3100
@@ -345,7 +343,7 @@ F 3 "" H 7250 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:LMV321 U?
+L Amplifier_Operational:MCP601-xOT U?
 U 1 1 6021664F
 P 7350 3400
 AR Path="/6021664F" Ref="U?"  Part="1" 
@@ -354,16 +352,16 @@ AR Path="/5E8A4ABF/6021664F" Ref="U?"  Part="1"
 AR Path="/601431F1/6021664F" Ref="U37"  Part="1" 
 AR Path="/60304D29/6021664F" Ref="U38"  Part="1" 
 F 0 "U38" H 7350 3650 50  0000 L CNN
-F 1 "LMC7101B" H 7400 3550 50  0000 L CNN
+F 1 "TLV6001" H 7400 3550 50  0000 L CNN
 F 2 "Ventilator:SOT-23-5" H 7350 3400 50  0001 L CNN
 F 3 "" H 7350 3400 50  0001 C CNN
 F 4 "Texas Instruments" H 7350 3400 50  0001 C CNN "Manufacturer"
-F 5 "LMC7101BIM5/NOPB" H 7350 3400 50  0001 C CNN "Part Number"
+F 5 "TLV6001IDBVR" H 7350 3400 50  0001 C CNN "Part Number"
 	1    7350 3400
 	1    0    0    -1  
 $EndComp
 Text Notes 7050 2600 0    50   ~ 0
-0.6 mA max. from +5VA
+0.1 mA max. from +5VA
 $Comp
 L power:GND #PWR?
 U 1 1 6021683A
@@ -396,11 +394,11 @@ AR Path="/5E8A4ABF/60224EAB" Ref="R?"  Part="1"
 AR Path="/601431F1/60224EAB" Ref="R219"  Part="1" 
 AR Path="/60304D29/60224EAB" Ref="R223"  Part="1" 
 F 0 "R223" V 8993 3400 50  0000 C CNN
-F 1 "1K" V 9084 3400 50  0000 C CNN
+F 1 "0" V 9084 3400 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 9130 3400 50  0001 C CNN
 F 3 "~" H 9200 3400 50  0001 C CNN
-F 4 "KOA Speer" H 9200 3400 50  0001 C CNN "Manufacturer"
-F 5 "RK73H2BTTD1001F" H 9200 3400 50  0001 C CNN "Part Number"
+F 4 "Panasonic" H 9200 3400 50  0001 C CNN "Manufacturer"
+F 5 "ERJ-8GEY0R00V" H 9200 3400 50  0001 C CNN "Part Number"
 	1    9200 3400
 	0    1    1    0   
 $EndComp
@@ -413,12 +411,11 @@ AR Path="/5E8AFE9D/6022A242" Ref="C?"  Part="1"
 AR Path="/5E8A4ABF/6022A242" Ref="C?"  Part="1" 
 AR Path="/601431F1/6022A242" Ref="C56"  Part="1" 
 AR Path="/60304D29/6022A242" Ref="C84"  Part="1" 
-F 0 "C84" H 9750 3450 50  0000 C CNN
-F 1 "10nF 50V NP0" H 9950 3350 50  0000 C CNN
+F 0 "C84" H 9800 3450 50  0000 C CNN
+F 1 "DNP" H 9800 3350 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 9688 3100 50  0001 C CNN
 F 3 "~" H 9650 3250 50  0001 C CNN
-F 4 "Murata" H 9650 3250 50  0001 C CNN "Manufacturer"
-F 5 "GRM1885C1H103JA01D" H 9650 3250 50  0001 C CNN "Part Number"
+F 4 "DNI" H 9650 3250 50  0001 C CNN "DNI"
 	1    9650 3250
 	1    0    0    -1  
 $EndComp
@@ -445,8 +442,8 @@ $Comp
 L Transistor_BJT:MMBT3904 Q1
 U 1 1 6023EF91
 P 8600 3750
-F 0 "Q1" H 8791 3796 50  0000 L CNN
-F 1 "MMBT3904" H 8791 3705 50  0000 L CNN
+F 0 "Q1" H 8400 3550 50  0000 L CNN
+F 1 "MMBT3904" H 8100 3650 50  0000 L CNN
 F 2 "Ventilator:SOT-23" H 8800 3675 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 8600 3750 50  0001 L CNN
 F 4 "Diodes Inc." H 8600 3750 50  0001 C CNN "Manufacturer"
@@ -473,7 +470,7 @@ $EndComp
 Wire Wire Line
 	8700 3550 8700 3400
 Wire Wire Line
-	8700 3400 9050 3400
+	8700 3400 9000 3400
 $Comp
 L Device:R R?
 U 1 1 602400BB
@@ -498,22 +495,20 @@ Wire Wire Line
 	8050 3700 8050 3750
 Wire Wire Line
 	8050 3750 8400 3750
-Text Notes 9050 3550 0    50   ~ 0
-~~10 us minimum pulse width
 $Comp
 L Connector:TestPoint_Flag TP?
 U 1 1 602455CE
-P 8050 3400
+P 8050 2950
 AR Path="/602455CE" Ref="TP?"  Part="1" 
 AR Path="/601431F1/602455CE" Ref="TP40"  Part="1" 
 AR Path="/60304D29/602455CE" Ref="TP40"  Part="1" 
-F 0 "TP40" H 8250 3550 50  0000 R CNN
-F 1 "TestPoint_Flag" H 8006 3403 50  0001 R CNN
-F 2 "Ventilator:TestPoint_Keystone_5019_Minature" H 8250 3400 50  0001 C CNN
-F 3 "~" H 8250 3400 50  0001 C CNN
-F 4 "Keystone" H 8050 3400 50  0001 C CNN "Manufacturer"
-F 5 "5019" H 8050 3400 50  0001 C CNN "Part Number"
-	1    8050 3400
+F 0 "TP40" H 8250 3100 50  0000 R CNN
+F 1 "TestPoint_Flag" H 8006 2953 50  0001 R CNN
+F 2 "Ventilator:TestPoint_Keystone_5019_Minature" H 8250 2950 50  0001 C CNN
+F 3 "~" H 8250 2950 50  0001 C CNN
+F 4 "Keystone" H 8050 2950 50  0001 C CNN "Manufacturer"
+F 5 "5019" H 8050 2950 50  0001 C CNN "Part Number"
+	1    8050 2950
 	1    0    0    -1  
 $EndComp
 Connection ~ 8050 3400
@@ -541,8 +536,6 @@ Text Notes 3850 2300 0    50   ~ 0
 Peak detector on current sense, decay time constant 50 ms\ntime constant = C55 * (R219 || (R220+R221))
 Text Notes 6700 2050 0    50   ~ 0
 Op-amp used as comparator, output goes high\nwhen current falls below peak value;\nuses AC instead of DC hysteresis to avoid disturbing DC level\nof peak detector (100 pF / 1M = ~~1 ms)
-Text Notes 9400 2600 0    50   ~ 0
-Glitch filter
 Connection ~ 9650 3400
 Wire Wire Line
 	9650 3100 9650 3000
@@ -561,11 +554,11 @@ AR Path="/5E8A4ABF/60277704" Ref="R?"  Part="1"
 AR Path="/601431F1/60277704" Ref="R?"  Part="1" 
 AR Path="/60304D29/60277704" Ref="R220"  Part="1" 
 F 0 "R220" V 6950 3350 50  0000 C CNN
-F 1 "1M" V 6850 3350 50  0000 C CNN
+F 1 "0" V 6850 3350 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 6680 3300 50  0001 C CNN
 F 3 "~" H 6750 3300 50  0001 C CNN
-F 4 "KOA Speer" H 6750 3300 50  0001 C CNN "Manufacturer"
-F 5 "RK73H2BTTD1004F" H 6750 3300 50  0001 C CNN "Part Number"
+F 4 "Panasonic" H 6750 3300 50  0001 C CNN "Manufacturer"
+F 5 "ERJ-8GEY0R00V" H 6750 3300 50  0001 C CNN "Part Number"
 	1    6750 3300
 	0    -1   -1   0   
 $EndComp
@@ -579,7 +572,7 @@ Connection ~ 6900 3300
 Wire Wire Line
 	7500 2400 8050 2400
 Wire Wire Line
-	8050 2400 8050 3400
+	8050 2400 8050 2950
 Text Notes 2300 2100 0    50   ~ 0
 Buffer, with slight positive offset\nto comparator to create a\nthreshold for downwards dip
 Wire Wire Line
@@ -640,7 +633,7 @@ F 3 "" H 2650 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:LMV321 U?
+L Amplifier_Operational:MCP601-xOT U?
 U 1 1 6038D970
 P 2750 3200
 AR Path="/6038D970" Ref="U?"  Part="1" 
@@ -649,16 +642,16 @@ AR Path="/5E8A4ABF/6038D970" Ref="U?"  Part="1"
 AR Path="/601431F1/6038D970" Ref="U?"  Part="1" 
 AR Path="/60304D29/6038D970" Ref="U36"  Part="1" 
 F 0 "U36" H 2800 3450 50  0000 L CNN
-F 1 "LMC7101B" H 2800 3350 50  0000 L CNN
+F 1 "TLV6001" H 2800 3350 50  0000 L CNN
 F 2 "Ventilator:SOT-23-5" H 2750 3200 50  0001 L CNN
 F 3 "" H 2750 3200 50  0001 C CNN
 F 4 "Texas Instruments" H 2750 3200 50  0001 C CNN "Manufacturer"
-F 5 "LMC7101BIM5/NOPB" H 2750 3200 50  0001 C CNN "Part Number"
+F 5 "TLV6001IDBVR" H 2750 3200 50  0001 C CNN "Part Number"
 	1    2750 3200
 	1    0    0    -1  
 $EndComp
 Text Notes 2300 2400 0    50   ~ 0
-0.6 mA max. from +5VA
+0.1 mA max. from +5VA
 Wire Wire Line
 	2450 3300 2450 3850
 Wire Wire Line
@@ -765,12 +758,11 @@ AR Path="/5E8AFE9D/5F28A2C9" Ref="C?"  Part="1"
 AR Path="/5E8A4ABF/5F28A2C9" Ref="C?"  Part="1" 
 AR Path="/601431F1/5F28A2C9" Ref="C?"  Part="1" 
 AR Path="/60304D29/5F28A2C9" Ref="C114"  Part="1" 
-F 0 "C114" V 7600 2450 50  0000 C CNN
-F 1 "100pF 50V NP0" V 7500 2400 50  0000 C CNN
+F 0 "C114" V 7600 2400 50  0000 C CNN
+F 1 "DNP" V 7500 2400 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7388 2250 50  0001 C CNN
 F 3 "~" H 7350 2400 50  0001 C CNN
-F 4 "Kemet" H 7350 2400 50  0001 C CNN "Manufacturer"
-F 5 "C0603C101J5GACTU" H 7350 2400 50  0001 C CNN "Part Number"
+F 4 "DNI" H 7350 2400 50  0001 C CNN "DNI"
 	1    7350 2400
 	0    -1   -1   0   
 $EndComp
@@ -789,6 +781,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 3638 4200 50  0001 C CNN
 F 3 "~" H 3600 4350 50  0001 C CNN
 F 4 "" H 3600 4350 50  0001 C CNN "Manufacturer"
 F 5 "" H 3600 4350 50  0001 C CNN "Part Number"
+F 6 "DNI" H 3600 4350 50  0001 C CNN "DNI"
 	1    3600 4350
 	-1   0    0    1   
 $EndComp
@@ -810,4 +803,203 @@ F 3 "" H 3600 4500 50  0001 C CNN
 $EndComp
 Text Notes 3750 4400 0    50   ~ 0
 Optional add'l filtering
+Text Notes 7000 4150 0    50   ~ 0
+Slow slew rate of 0.5 V/µs works\nas short de-glitch filter
+$Comp
+L Device:C C?
+U 1 1 5EFC9DB3
+P 7400 4650
+AR Path="/5EFC9DB3" Ref="C?"  Part="1" 
+AR Path="/5E8AFE9D/5EFC9DB3" Ref="C?"  Part="1" 
+AR Path="/5E8A4ABF/5EFC9DB3" Ref="C?"  Part="1" 
+AR Path="/601431F1/5EFC9DB3" Ref="C?"  Part="1" 
+AR Path="/60304D29/5EFC9DB3" Ref="C77"  Part="1" 
+F 0 "C77" V 7650 4700 50  0000 C CNN
+F 1 "100pF 50V NP0" V 7550 4650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7438 4500 50  0001 C CNN
+F 3 "~" H 7400 4650 50  0001 C CNN
+F 4 "Kemet" H 7400 4650 50  0001 C CNN "Manufacturer"
+F 5 "C0603C101J5GACTU" H 7400 4650 50  0001 C CNN "Part Number"
+	1    7400 4650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EFCB230
+P 7900 4650
+AR Path="/5EFCB230" Ref="R?"  Part="1" 
+AR Path="/5E8AFE9D/5EFCB230" Ref="R?"  Part="1" 
+AR Path="/5E8A4ABF/5EFCB230" Ref="R?"  Part="1" 
+AR Path="/601431F1/5EFCB230" Ref="R?"  Part="1" 
+AR Path="/60304D29/5EFCB230" Ref="R240"  Part="1" 
+F 0 "R240" V 8100 4700 50  0000 C CNN
+F 1 "100K" V 8000 4700 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 7830 4650 50  0001 C CNN
+F 3 "~" H 7900 4650 50  0001 C CNN
+F 4 "KOA Speer" H 7900 4650 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1003F" H 7900 4650 50  0001 C CNN "Part Number"
+	1    7900 4650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7550 4650 7750 4650
+Wire Wire Line
+	8050 4650 9000 4650
+Wire Wire Line
+	9000 4650 9000 3400
+Connection ~ 9000 3400
+Wire Wire Line
+	9000 3400 9050 3400
+Wire Wire Line
+	7250 4650 6900 4650
+Wire Wire Line
+	6900 4650 6900 4200
+Connection ~ 6900 4200
+Connection ~ 8050 2950
+Wire Wire Line
+	8050 2950 8050 3250
+$Comp
+L Device:C C?
+U 1 1 5EFE269F
+P 8400 3400
+AR Path="/5EFE269F" Ref="C?"  Part="1" 
+AR Path="/5E8AFE9D/5EFE269F" Ref="C?"  Part="1" 
+AR Path="/5E8A4ABF/5EFE269F" Ref="C?"  Part="1" 
+AR Path="/601431F1/5EFE269F" Ref="C?"  Part="1" 
+AR Path="/60304D29/5EFE269F" Ref="C81"  Part="1" 
+F 0 "C81" H 8550 3600 50  0000 C CNN
+F 1 "DNP" H 8550 3500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8438 3250 50  0001 C CNN
+F 3 "~" H 8400 3400 50  0001 C CNN
+F 4 "DNI" H 8400 3400 50  0001 C CNN "DNI"
+	1    8400 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 3250 8050 3250
+Connection ~ 8050 3250
+Wire Wire Line
+	8050 3250 8050 3400
+Wire Wire Line
+	8400 3550 8400 3750
+Connection ~ 8400 3750
+$Comp
+L Device:R R?
+U 1 1 5EFECADD
+P 6300 3750
+AR Path="/5EFECADD" Ref="R?"  Part="1" 
+AR Path="/5E8AFE9D/5EFECADD" Ref="R?"  Part="1" 
+AR Path="/5E8A4ABF/5EFECADD" Ref="R?"  Part="1" 
+AR Path="/601431F1/5EFECADD" Ref="R?"  Part="1" 
+AR Path="/60304D29/5EFECADD" Ref="R205"  Part="1" 
+F 0 "R205" H 6450 3750 50  0000 C CNN
+F 1 "0" H 6400 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 6230 3750 50  0001 C CNN
+F 3 "~" H 6300 3750 50  0001 C CNN
+F 4 "Panasonic" H 6300 3750 50  0001 C CNN "Manufacturer"
+F 5 "ERJ-8GEY0R00V" H 6300 3750 50  0001 C CNN "Part Number"
+	1    6300 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3600 6300 3300
+$Comp
+L Device:R R?
+U 1 1 5EFEF7B9
+P 5150 3750
+AR Path="/5EFEF7B9" Ref="R?"  Part="1" 
+AR Path="/5E8AFE9D/5EFEF7B9" Ref="R?"  Part="1" 
+AR Path="/5E8A4ABF/5EFEF7B9" Ref="R?"  Part="1" 
+AR Path="/601431F1/5EFEF7B9" Ref="R?"  Part="1" 
+AR Path="/60304D29/5EFEF7B9" Ref="R202"  Part="1" 
+F 0 "R202" H 5300 3850 50  0000 C CNN
+F 1 "DNP" H 5300 3750 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 5080 3750 50  0001 C CNN
+F 3 "~" H 5150 3750 50  0001 C CNN
+F 4 "DNI" H 5150 3750 50  0001 C CNN "DNI"
+	1    5150 3750
+	1    0    0    -1  
+$EndComp
+Connection ~ 5150 3900
+Wire Wire Line
+	5150 3900 6300 3900
+Wire Wire Line
+	5150 3600 5150 3300
+Connection ~ 5150 3300
+Text Notes 7000 5050 0    50   ~ 0
+100K fbk from 3.3V collector voltage change,\ninto 1K source impedance on '-' input, creates\n~~33 mV hysteresis
+$Comp
+L Device:R R?
+U 1 1 5F0AD101
+P 3050 4800
+AR Path="/5F0AD101" Ref="R?"  Part="1" 
+AR Path="/5E8AFE9D/5F0AD101" Ref="R?"  Part="1" 
+AR Path="/5E8A4ABF/5F0AD101" Ref="R?"  Part="1" 
+AR Path="/601431F1/5F0AD101" Ref="R?"  Part="1" 
+AR Path="/60304D29/5F0AD101" Ref="R35"  Part="1" 
+F 0 "R35" H 3200 4900 50  0000 C CNN
+F 1 "DNP" H 3200 4800 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 2980 4800 50  0001 C CNN
+F 3 "~" H 3050 4800 50  0001 C CNN
+F 4 "DNI" H 3050 4800 50  0001 C CNN "DNI"
+	1    3050 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 4650 3050 4200
+Connection ~ 3050 4200
+$Comp
+L power:GND #PWR?
+U 1 1 5F0AED3C
+P 3050 4950
+AR Path="/5F0AED3C" Ref="#PWR?"  Part="1" 
+AR Path="/5E8AFE9D/5F0AED3C" Ref="#PWR?"  Part="1" 
+AR Path="/5E8A4ABF/5F0AED3C" Ref="#PWR?"  Part="1" 
+AR Path="/601431F1/5F0AED3C" Ref="#PWR?"  Part="1" 
+AR Path="/60304D29/5F0AED3C" Ref="#PWR0123"  Part="1" 
+F 0 "#PWR0123" H 3050 4700 50  0001 C CNN
+F 1 "GND" H 3055 4777 50  0000 C CNN
+F 2 "" H 3050 4950 50  0001 C CNN
+F 3 "" H 3050 4950 50  0001 C CNN
+	1    3050 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F0BF183
+P 5300 2600
+AR Path="/5F0BF183" Ref="R?"  Part="1" 
+AR Path="/5E8AFE9D/5F0BF183" Ref="R?"  Part="1" 
+AR Path="/5E8A4ABF/5F0BF183" Ref="R?"  Part="1" 
+AR Path="/601431F1/5F0BF183" Ref="R?"  Part="1" 
+AR Path="/60304D29/5F0BF183" Ref="R36"  Part="1" 
+F 0 "R36" H 5450 2700 50  0000 C CNN
+F 1 "DNP" H 5450 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 5230 2600 50  0001 C CNN
+F 3 "~" H 5300 2600 50  0001 C CNN
+F 4 "DNI" H 5300 2600 50  0001 C CNN "DNI"
+	1    5300 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F0BF18A
+P 5300 2750
+AR Path="/5F0BF18A" Ref="#PWR?"  Part="1" 
+AR Path="/5E8AFE9D/5F0BF18A" Ref="#PWR?"  Part="1" 
+AR Path="/5E8A4ABF/5F0BF18A" Ref="#PWR?"  Part="1" 
+AR Path="/601431F1/5F0BF18A" Ref="#PWR?"  Part="1" 
+AR Path="/60304D29/5F0BF18A" Ref="#PWR0124"  Part="1" 
+F 0 "#PWR0124" H 5300 2500 50  0001 C CNN
+F 1 "GND" H 5305 2577 50  0000 C CNN
+F 2 "" H 5300 2750 50  0001 C CNN
+F 3 "" H 5300 2750 50  0001 C CNN
+	1    5300 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3300 4850 2450
+Wire Wire Line
+	4850 2450 5300 2450
+Connection ~ 4850 3300
 $EndSCHEMATC

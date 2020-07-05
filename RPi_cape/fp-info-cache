@@ -1,4 +1,4 @@
-16394434729238092
+16402428024620293
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -49805,6 +49805,20 @@ potentiometer trimmer trimpot vertical Bourns
 3
 3
 Martinos
+PowerPAK_SO-8L_Single
+PowerPAK SO-8L Single (https://www.mouser.com/datasheet/2/427/sqja37ep-1371201.pdf)
+PowerPAK SO-8L Single
+0
+6
+5
+Martinos
+R_Shunt_Vishay_WSR5_KelvinConnection
+Power Metal Strip Resistors 0.001 to 0.3, https://www.vishay.com/docs/31059/wsrhigh.pdf
+SMD Shunt Resistor
+0
+4
+2
+Martinos
 Switch_PushbuttonRA_TE_1-1825027-1,2
 TE Connectivity 1-1825027-1 / -2 right-angle SPST-NO pushbutton, through-hole, with 5.7mm plunger
 switch pushbutton spst through-hole right-angle
@@ -73192,12 +73206,26 @@ diode
 2
 2
 Ventilator
+LQFP50P2200X2200X160-145N
+
+
+0
+145
+145
+Ventilator
 Pressure_sensor_barb
 Barbed fitting for pressure sensors, mechanical only
 
 0
 0
 0
+Ventilator
+Pressure_sensor_daughterboard_1.2
+
+
+0
+36
+1
 Ventilator
 QFP40P900X900X120-65N
 
@@ -73247,6 +73275,13 @@ TE_215079-6
 0
 6
 6
+Ventilator
+TE_MS5607-02BA03
+TE MS5607-02BA03 barometric pressure sensor
+pressure sensor barom
+0
+8
+8
 Ventilator
 TE_MS5803-05BA
 TE MS5803-05BA altimeter/dive pressure sensor

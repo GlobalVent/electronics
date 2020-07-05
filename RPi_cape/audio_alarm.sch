@@ -4,10 +4,10 @@ EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 9 15
+Sheet 9 13
 Title "GlobalVent Stand-Alone Controller"
 Date ""
-Rev "1.10"
+Rev "1.11"
 Comp "US GlobalVent Team"
 Comment1 "Licensed under CERN-OHL-S v2"
 Comment2 "Don Straney"
@@ -246,15 +246,16 @@ Connection ~ 1350 9150
 Text Notes 3200 7150 0    79   ~ 16
 Low battery monitor
 $Comp
-L Device:Battery BT1
+L Device:Battery J22
 U 1 1 5F138B29
 P 15500 7200
-F 0 "BT1" H 15608 7246 50  0000 L CNN
-F 1 "4x AA" H 15608 7155 50  0000 L CNN
+F 0 "J22" H 15608 7246 50  0000 L CNN
+F 1 "Conn_01x02" H 15608 7155 50  0001 L CNN
 F 2 "Ventilator:Connector_Spring_Phoenix_1985195" V 15500 7260 50  0001 C CNN
 F 3 "~" V 15500 7260 50  0001 C CNN
 F 4 "Phoenix Contact" H 15500 7200 50  0001 C CNN "Manufacturer"
 F 5 "9185195" H 15500 7200 50  0001 C CNN "Part Number"
+F 6 "DNI" H 15500 7200 50  0001 C CNN "DNI"
 	1    15500 7200
 	1    0    0    -1  
 $EndComp
@@ -483,6 +484,7 @@ F 2 "Ventilator:Connector_Spring_Phoenix_1985195" H 11550 1350 50  0001 C CNN
 F 3 "~" H 11550 1350 50  0001 C CNN
 F 4 "Phoenix Contact" H 11550 1350 50  0001 C CNN "Manufacturer"
 F 5 "1985195" H 11550 1350 50  0001 C CNN "Part Number"
+F 6 "DNI" H 11550 1350 50  0001 C CNN "DNI"
 	1    11550 1350
 	1    0    0    -1  
 $EndComp
@@ -1120,12 +1122,12 @@ Wire Wire Line
 $Comp
 L Ventilator:+24VA #PWR0214
 U 1 1 5F242BEC
-P 2150 2200
-F 0 "#PWR0214" H 2150 2050 50  0001 C CNN
-F 1 "+24VA" H 2165 2373 50  0000 C CNN
-F 2 "" H 2150 2200 50  0001 C CNN
-F 3 "" H 2150 2200 50  0001 C CNN
-	1    2150 2200
+P 2400 2200
+F 0 "#PWR0214" H 2400 2050 50  0001 C CNN
+F 1 "+24VA" H 2415 2373 50  0000 C CNN
+F 2 "" H 2400 2200 50  0001 C CNN
+F 3 "" H 2400 2200 50  0001 C CNN
+	1    2400 2200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1148,18 +1150,19 @@ $EndComp
 $Comp
 L Device:D_Zener_ALT D?
 U 1 1 5F24DB53
-P 2150 2350
+P 2400 2350
 AR Path="/5F24DB53" Ref="D?"  Part="1" 
 AR Path="/5E8AFE9D/5F24DB53" Ref="D?"  Part="1" 
 AR Path="/5E8A4ABF/5F24DB53" Ref="D?"  Part="1" 
 AR Path="/5E8E1F08/5F24DB53" Ref="D38"  Part="1" 
-F 0 "D38" V 2104 2429 50  0000 L CNN
-F 1 "DNP (20V)" H 1900 2250 50  0000 L CNN
-F 2 "Ventilator:D_SOD-123" H 2150 2350 50  0001 C CNN
-F 3 "~" H 2150 2350 50  0001 C CNN
-F 4 "ON Semiconductor" H 2150 2350 50  0001 C CNN "Manufacturer"
-F 5 "MMSZ4707T1G" H 2150 2350 50  0001 C CNN "Part Number"
-	1    2150 2350
+F 0 "D38" V 2354 2429 50  0000 L CNN
+F 1 "DNP (20V)" H 2150 2250 50  0000 L CNN
+F 2 "Ventilator:D_SOD-123" H 2400 2350 50  0001 C CNN
+F 3 "~" H 2400 2350 50  0001 C CNN
+F 4 "ON Semiconductor" H 2400 2350 50  0001 C CNN "Manufacturer"
+F 5 "MMSZ4707T1G" H 2400 2350 50  0001 C CNN "Part Number"
+F 6 "DNI" H 2400 2350 50  0001 C CNN "DNI"
+	1    2400 2350
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1241,151 +1244,78 @@ F 3 "" H 850 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT:MMBT3904 Q6
-U 1 1 5F264E80
-P 1850 3650
-F 0 "Q6" H 2050 3650 50  0000 L CNN
-F 1 "MMBT3904" H 2050 3550 50  0000 L CNN
-F 2 "Ventilator:SOT-23" H 2050 3575 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 1850 3650 50  0001 L CNN
-F 4 "Diodes Inc." H 1850 3650 50  0001 C CNN "Manufacturer"
-F 5 "MMBT3904-7-F" H 1850 3650 50  0001 C CNN "Part Number"
-	1    1850 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F264E86
-P 1650 3500
-AR Path="/5F264E86" Ref="R?"  Part="1" 
-AR Path="/5E8AFE9D/5F264E86" Ref="R?"  Part="1" 
-AR Path="/5E8C8865/5F264E86" Ref="R?"  Part="1" 
-AR Path="/5E8E1F08/5F264E86" Ref="R131"  Part="1" 
-F 0 "R131" H 1500 3450 50  0000 C CNN
-F 1 "10K" H 1500 3350 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 1580 3500 50  0001 C CNN
-F 3 "~" H 1650 3500 50  0001 C CNN
-F 4 "KOA Speer" H 1650 3500 50  0001 C CNN "Manufacturer"
-F 5 "RK73H2BTTD1002F" H 1650 3500 50  0001 C CNN "Part Number"
-	1    1650 3500
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1650 3350 1500 3350
-$Comp
-L power:GND #PWR?
-U 1 1 5F264E8E
-P 1950 3850
-AR Path="/5F264E8E" Ref="#PWR?"  Part="1" 
-AR Path="/5E8E1F08/5F264E8E" Ref="#PWR0213"  Part="1" 
-F 0 "#PWR0213" H 1950 3600 50  0001 C CNN
-F 1 "GND" H 1955 3677 50  0000 C CNN
-F 2 "" H 1950 3850 50  0001 C CNN
-F 3 "" H 1950 3850 50  0001 C CNN
-	1    1950 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F264E94
-P 1500 3500
-AR Path="/5F264E94" Ref="R?"  Part="1" 
-AR Path="/5E8AFE9D/5F264E94" Ref="R?"  Part="1" 
-AR Path="/5E8C8865/5F264E94" Ref="R?"  Part="1" 
-AR Path="/5E8E1F08/5F264E94" Ref="R130"  Part="1" 
-F 0 "R130" H 1650 3450 50  0000 C CNN
-F 1 "1K" H 1650 3550 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 1430 3500 50  0001 C CNN
-F 3 "~" H 1500 3500 50  0001 C CNN
-F 4 "KOA Speer" H 1500 3500 50  0001 C CNN "Manufacturer"
-F 5 "RK73H2BTTD1001F" H 1500 3500 50  0001 C CNN "Part Number"
-	1    1500 3500
-	-1   0    0    1   
-$EndComp
-Connection ~ 1500 3350
-$Comp
-L power:GND #PWR?
-U 1 1 5F264E9B
-P 1500 3650
-AR Path="/5F264E9B" Ref="#PWR?"  Part="1" 
-AR Path="/5E8E1F08/5F264E9B" Ref="#PWR0210"  Part="1" 
-F 0 "#PWR0210" H 1500 3400 50  0001 C CNN
-F 1 "GND" H 1505 3477 50  0000 C CNN
-F 2 "" H 1500 3650 50  0001 C CNN
-F 3 "" H 1500 3650 50  0001 C CNN
-	1    1500 3650
-	1    0    0    -1  
-$EndComp
-$Comp
 L Transistor_BJT:MMBT3904 Q7
 U 1 1 5F268381
-P 2500 2850
-F 0 "Q7" H 2300 2550 50  0000 L CNN
-F 1 "DNP" H 2300 2450 50  0000 L CNN
-F 2 "Ventilator:SOT-23" H 2700 2775 50  0001 L CIN
-F 3 "" H 2500 2850 50  0001 L CNN
-	1    2500 2850
+P 2750 2850
+F 0 "Q7" H 2550 2550 50  0000 L CNN
+F 1 "DNP" H 2550 2450 50  0000 L CNN
+F 2 "Ventilator:SOT-23" H 2950 2775 50  0001 L CIN
+F 3 "" H 2750 2850 50  0001 L CNN
+F 4 "DNI" H 2750 2850 50  0001 C CNN "DNI"
+	1    2750 2850
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 5F268387
-P 2300 2700
+P 2550 2700
 AR Path="/5F268387" Ref="R?"  Part="1" 
 AR Path="/5E8AFE9D/5F268387" Ref="R?"  Part="1" 
 AR Path="/5E8C8865/5F268387" Ref="R?"  Part="1" 
 AR Path="/5E8E1F08/5F268387" Ref="R134"  Part="1" 
-F 0 "R134" H 2150 2650 50  0000 C CNN
-F 1 "DNP" H 2150 2550 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 2230 2700 50  0001 C CNN
-F 3 "~" H 2300 2700 50  0001 C CNN
-	1    2300 2700
+F 0 "R134" H 2400 2650 50  0000 C CNN
+F 1 "DNP" H 2400 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 2480 2700 50  0001 C CNN
+F 3 "~" H 2550 2700 50  0001 C CNN
+F 4 "DNI" H 2550 2700 50  0001 C CNN "DNI"
+	1    2550 2700
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2300 2550 2150 2550
+	2550 2550 2400 2550
 Wire Wire Line
-	2150 2550 2150 2500
+	2400 2550 2400 2500
 $Comp
 L power:GND #PWR?
 U 1 1 5F26838F
-P 2600 3050
+P 2850 3050
 AR Path="/5F26838F" Ref="#PWR?"  Part="1" 
 AR Path="/5E8E1F08/5F26838F" Ref="#PWR0217"  Part="1" 
-F 0 "#PWR0217" H 2600 2800 50  0001 C CNN
-F 1 "GND" H 2605 2877 50  0000 C CNN
-F 2 "" H 2600 3050 50  0001 C CNN
-F 3 "" H 2600 3050 50  0001 C CNN
-	1    2600 3050
+F 0 "#PWR0217" H 2850 2800 50  0001 C CNN
+F 1 "GND" H 2855 2877 50  0000 C CNN
+F 2 "" H 2850 3050 50  0001 C CNN
+F 3 "" H 2850 3050 50  0001 C CNN
+	1    2850 3050
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 5F268395
-P 2150 2700
+P 2400 2700
 AR Path="/5F268395" Ref="R?"  Part="1" 
 AR Path="/5E8AFE9D/5F268395" Ref="R?"  Part="1" 
 AR Path="/5E8C8865/5F268395" Ref="R?"  Part="1" 
 AR Path="/5E8E1F08/5F268395" Ref="R133"  Part="1" 
-F 0 "R133" V 2250 2900 50  0000 C CNN
-F 1 "DNP" V 2250 2650 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 2080 2700 50  0001 C CNN
-F 3 "~" H 2150 2700 50  0001 C CNN
-	1    2150 2700
+F 0 "R133" V 2500 2900 50  0000 C CNN
+F 1 "DNP" V 2500 2650 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 2330 2700 50  0001 C CNN
+F 3 "~" H 2400 2700 50  0001 C CNN
+F 4 "DNI" H 2400 2700 50  0001 C CNN "DNI"
+	1    2400 2700
 	-1   0    0    1   
 $EndComp
-Connection ~ 2150 2550
+Connection ~ 2400 2550
 $Comp
 L power:GND #PWR?
 U 1 1 5F26839C
-P 2150 2850
+P 2400 2850
 AR Path="/5F26839C" Ref="#PWR?"  Part="1" 
 AR Path="/5E8E1F08/5F26839C" Ref="#PWR0215"  Part="1" 
-F 0 "#PWR0215" H 2150 2600 50  0001 C CNN
-F 1 "GND" H 2155 2677 50  0000 C CNN
-F 2 "" H 2150 2850 50  0001 C CNN
-F 3 "" H 2150 2850 50  0001 C CNN
-	1    2150 2850
+F 0 "#PWR0215" H 2400 2600 50  0001 C CNN
+F 1 "GND" H 2405 2677 50  0000 C CNN
+F 2 "" H 2400 2850 50  0001 C CNN
+F 3 "" H 2400 2850 50  0001 C CNN
+	1    2400 2850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1407,60 +1337,31 @@ F 5 "RK73H2BTTD1002F" H 1300 1450 50  0001 C CNN "Part Number"
 $EndComp
 $Comp
 L Device:R R?
-U 1 1 5F26F25A
-P 1950 1450
-AR Path="/5F26F25A" Ref="R?"  Part="1" 
-AR Path="/5E8AFE9D/5F26F25A" Ref="R?"  Part="1" 
-AR Path="/5E8C8865/5F26F25A" Ref="R?"  Part="1" 
-AR Path="/5E8E1F08/5F26F25A" Ref="R132"  Part="1" 
-F 0 "R132" H 1800 1400 50  0000 C CNN
-F 1 "10K" H 1800 1300 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 1880 1450 50  0001 C CNN
-F 3 "~" H 1950 1450 50  0001 C CNN
-F 4 "KOA Speer" H 1950 1450 50  0001 C CNN "Manufacturer"
-F 5 "RK73H2BTTD1002F" H 1950 1450 50  0001 C CNN "Part Number"
-	1    1950 1450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R?
 U 1 1 5F26F7B7
-P 2600 1450
+P 2850 1450
 AR Path="/5F26F7B7" Ref="R?"  Part="1" 
 AR Path="/5E8AFE9D/5F26F7B7" Ref="R?"  Part="1" 
 AR Path="/5E8C8865/5F26F7B7" Ref="R?"  Part="1" 
 AR Path="/5E8E1F08/5F26F7B7" Ref="R135"  Part="1" 
-F 0 "R135" H 2450 1400 50  0000 C CNN
-F 1 "DNP" H 2450 1300 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 2530 1450 50  0001 C CNN
-F 3 "~" H 2600 1450 50  0001 C CNN
-	1    2600 1450
+F 0 "R135" H 2700 1400 50  0000 C CNN
+F 1 "DNP" H 2700 1300 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 2780 1450 50  0001 C CNN
+F 3 "~" H 2850 1450 50  0001 C CNN
+F 4 "DNI" H 2850 1450 50  0001 C CNN "DNI"
+	1    2850 1450
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	1950 1600 1950 1750
 Wire Wire Line
 	1300 1600 1300 1900
 $Comp
 L power:+BATT #PWR0216
 U 1 1 5F27DE84
-P 2600 1300
-F 0 "#PWR0216" H 2600 1150 50  0001 C CNN
-F 1 "+BATT" H 2615 1473 50  0000 C CNN
-F 2 "" H 2600 1300 50  0001 C CNN
-F 3 "" H 2600 1300 50  0001 C CNN
-	1    2600 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+BATT #PWR0212
-U 1 1 5F27E34F
-P 1950 1300
-F 0 "#PWR0212" H 1950 1150 50  0001 C CNN
-F 1 "+BATT" H 1965 1473 50  0000 C CNN
-F 2 "" H 1950 1300 50  0001 C CNN
-F 3 "" H 1950 1300 50  0001 C CNN
-	1    1950 1300
+P 2850 1300
+F 0 "#PWR0216" H 2850 1150 50  0001 C CNN
+F 1 "+BATT" H 2865 1473 50  0000 C CNN
+F 2 "" H 2850 1300 50  0001 C CNN
+F 3 "" H 2850 1300 50  0001 C CNN
+	1    2850 1300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1477,36 +1378,19 @@ $EndComp
 $Comp
 L Device:D_ALT D?
 U 1 1 5F2875C0
-P 3850 1600
+P 3850 1750
 AR Path="/5E8FBD97/5F2875C0" Ref="D?"  Part="1" 
 AR Path="/5E8DEDC0/5F2875C0" Ref="D?"  Part="1" 
 AR Path="/5E8DFCAD/5F2875C0" Ref="D?"  Part="1" 
 AR Path="/5E8E0754/5F2875C0" Ref="D?"  Part="1" 
 AR Path="/5E8E1F08/5F2875C0" Ref="D39"  Part="1" 
-F 0 "D39" H 3950 1550 50  0000 L CNN
-F 1 "DNP (BAS21AH)" H 3200 1550 50  0000 L CNN
-F 2 "Ventilator:D_SOD-323" H 3850 1600 50  0001 C CNN
-F 3 "~" H 3850 1600 50  0001 C CNN
-F 4 "ON Semiconductor" H 3850 1600 50  0001 C CNN "Manufacturer"
-F 5 "BAS21AHT1G" H 3850 1600 50  0001 C CNN "Part Number"
-	1    3850 1600
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:D_ALT D?
-U 1 1 5F289733
-P 3850 1750
-AR Path="/5E8FBD97/5F289733" Ref="D?"  Part="1" 
-AR Path="/5E8DEDC0/5F289733" Ref="D?"  Part="1" 
-AR Path="/5E8DFCAD/5F289733" Ref="D?"  Part="1" 
-AR Path="/5E8E0754/5F289733" Ref="D?"  Part="1" 
-AR Path="/5E8E1F08/5F289733" Ref="D40"  Part="1" 
-F 0 "D40" H 3950 1700 50  0000 L CNN
-F 1 "BAS21AH" H 4200 1700 50  0000 L CNN
+F 0 "D39" H 3950 1700 50  0000 L CNN
+F 1 "DNP (BAS21AH)" H 4150 1700 50  0000 L CNN
 F 2 "Ventilator:D_SOD-323" H 3850 1750 50  0001 C CNN
 F 3 "~" H 3850 1750 50  0001 C CNN
 F 4 "ON Semiconductor" H 3850 1750 50  0001 C CNN "Manufacturer"
 F 5 "BAS21AHT1G" H 3850 1750 50  0001 C CNN "Part Number"
+F 6 "DNI" H 3850 1750 50  0001 C CNN "DNI"
 	1    3850 1750
 	-1   0    0    1   
 $EndComp
@@ -1528,16 +1412,9 @@ F 5 "BAS21AHT1G" H 3850 1900 50  0001 C CNN "Part Number"
 	1    3850 1900
 	-1   0    0    1   
 $EndComp
-Connection ~ 2600 1600
-Connection ~ 1950 1750
 Connection ~ 1300 1900
 Wire Wire Line
-	4000 1600 4150 1600
-Wire Wire Line
-	4150 1600 4150 1750
-Wire Wire Line
 	4000 1750 4150 1750
-Connection ~ 4150 1750
 Wire Wire Line
 	4150 1750 4150 1900
 Wire Wire Line
@@ -1576,23 +1453,19 @@ $EndComp
 Wire Wire Line
 	4300 2100 4850 2100
 Wire Wire Line
-	2600 1600 2600 2650
+	2850 1600 2850 1750
 Wire Wire Line
 	4150 1900 4150 2050
 Connection ~ 4150 2750
 Wire Wire Line
-	1950 1750 1950 3450
-Wire Wire Line
-	1300 1900 1300 2650
+	1300 1900 1300 2600
 Text Notes 5750 1600 0    50   ~ 0
 C4 (~~261 Hz) oscillator
 Text Notes 4450 1800 0    50   ~ 0
 ~~1 Hz oscillator
-Text Notes 500  1950 0    50   ~ 0
+Text Notes 700  3450 0    50   ~ 0
 Threshold ~~2.4-2.9V
-Text Notes 1450 4200 0    50   ~ 0
-Threshold ~~0.9-1.4V
-Text Notes 2100 3400 0    50   ~ 0
+Text Notes 2150 3400 0    50   ~ 0
 Threshold ~~21-22V
 Text Notes 1250 950  0    50   ~ 0
 Sounds power-down alarm if any of 3 main power rails go down
@@ -1670,6 +1543,7 @@ F 2 "Ventilator:Connector_Spring_Phoenix_1985195" H 6050 8700 50  0001 C CNN
 F 3 "~" H 6050 8700 50  0001 C CNN
 F 4 "Phoenix Contact" H 6050 8700 50  0001 C CNN "Manufacturer"
 F 5 "1985195" H 6050 8700 50  0001 C CNN "Part Number"
+F 6 "DNI" H 6050 8700 50  0001 C CNN "DNI"
 	1    6050 8700
 	1    0    0    -1  
 $EndComp
@@ -1715,6 +1589,7 @@ F 0 "R145" H 4700 7950 50  0000 C CNN
 F 1 "DNP" H 4700 7850 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 4480 7900 50  0001 C CNN
 F 3 "~" H 4550 7900 50  0001 C CNN
+F 4 "DNI" H 4550 7900 50  0001 C CNN "DNI"
 	1    4550 7900
 	-1   0    0    1   
 $EndComp
@@ -1911,6 +1786,7 @@ F 0 "R189" V 13500 7000 50  0000 C CNN
 F 1 "DNP" V 13400 7000 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 13230 7000 50  0001 C CNN
 F 3 "~" H 13300 7000 50  0001 C CNN
+F 4 "DNI" H 13300 7000 50  0001 C CNN "DNI"
 	1    13300 7000
 	0    -1   -1   0   
 $EndComp
@@ -2006,7 +1882,7 @@ PNP circuit disables alarm battery output when +5V is present,\neven though batt
 Text Notes 11050 7750 0    50   ~ 0
 Threshold ~~3.5-4.2V
 Text Notes 700  6100 0    50   ~ 0
-* +5VD is not monitored because if the Raspberry Pi stops responding,\nthe CPLD will already be able to detect this through its watchdog\nfunction and sound a more appropriate alarm.\n* +5VA and +24VA monitoring are unpopulated by default, to match\nthe default "power CPLD from backup battery" configuration: if either\n+5V/+5VA or +24V/+24VA disappears, the CPLD will still have power\nand be able to detect this through its ADC supply monitoring, and\nsound a more appropriate alarm.\n    If the CPLD is NOT configured to operate from backup battery power,\n    (R185/R186), then these should be populated.\n* +3.3V and +1.8V monitoring are most important because if either disappears, the\nCPLD will not have power (even if connected to backup battery) to\nsound an alarm on its own. 
+* +5VD is not monitored because if the Raspberry Pi stops responding,\nthe CPLD will already be able to detect this through its watchdog\nfunction and sound a more appropriate alarm.\n* +5VA and +24VA monitoring are unpopulated by default, to match\nthe default "power CPLD from backup battery" configuration: if either\n+5V/+5VA or +24V/+24VA disappears, the CPLD will still have power\nand be able to detect this through its ADC supply monitoring, and\nsound a more appropriate alarm.\n    If the CPLD is NOT configured to operate from backup battery power,\n    (R185/R186), then these should be populated.\n* +3.3V monitoring is most important because if it disappears, the\nCPLD will not have power (even if connected to backup battery) to\nsound an alarm on its own. 
 $Comp
 L power:+3.3V #PWR073
 U 1 1 5ECC541F
@@ -2072,37 +1948,6 @@ Text Notes 13850 7650 0    50   ~ 0
 ~~0.6 mA battery load
 Text Notes 1850 8500 0    50   ~ 0
 ~~0.3 mA battery load
-$Comp
-L Device:D_ALT D?
-U 1 1 5EA3DC58
-P 1500 2950
-AR Path="/5E8FBD97/5EA3DC58" Ref="D?"  Part="1" 
-AR Path="/5E8DEDC0/5EA3DC58" Ref="D?"  Part="1" 
-AR Path="/5E8DFCAD/5EA3DC58" Ref="D?"  Part="1" 
-AR Path="/5E8E0754/5EA3DC58" Ref="D?"  Part="1" 
-AR Path="/5E8E1F08/5EA3DC58" Ref="D14"  Part="1" 
-F 0 "D14" H 1450 2750 50  0000 L CNN
-F 1 "BAS21AH" H 1350 2850 50  0000 L CNN
-F 2 "Ventilator:D_SOD-323" H 1500 2950 50  0001 C CNN
-F 3 "~" H 1500 2950 50  0001 C CNN
-F 4 "ON Semiconductor" H 1500 2950 50  0001 C CNN "Manufacturer"
-F 5 "BAS21AHT1G" H 1500 2950 50  0001 C CNN "Part Number"
-	1    1500 2950
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+1V8 #PWR?
-U 1 1 5EA5859F
-P 1500 2800
-AR Path="/5E8C8865/5EA5859F" Ref="#PWR?"  Part="1" 
-AR Path="/5E8E1F08/5EA5859F" Ref="#PWR065"  Part="1" 
-F 0 "#PWR065" H 1500 2650 50  0001 C CNN
-F 1 "+1V8" H 1515 2973 50  0000 C CNN
-F 2 "" H 1500 2800 50  0001 C CNN
-F 3 "" H 1500 2800 50  0001 C CNN
-	1    1500 2800
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:D_ALT D?
 U 1 1 5EAB2706
@@ -2195,10 +2040,6 @@ F 3 "" H 14800 7700 50  0001 C CNN
 $EndComp
 Text Notes 14750 8350 0    50   ~ 0
 Signal to CPLD, goes low when\nrunning from backup battery\npower
-Wire Wire Line
-	2600 1600 3700 1600
-Wire Wire Line
-	1950 1750 3700 1750
 Wire Wire Line
 	1300 1900 3700 1900
 $Comp
@@ -2311,8 +2152,6 @@ Text Notes 2700 4350 0    50   ~ 0
 Threshold ~~3.5-4.2V
 Text Notes 1900 4950 0    50   ~ 0
 10K resistors provide ~~50uA nominal\nthrough zeners near threshold input voltage;\n1K resistor provides ~~0.5mA through\nBAS21 near threshold input voltage
-Wire Wire Line
-	1500 3100 1500 3350
 $Comp
 L Device:D_ALT D?
 U 1 1 5EAA3D46
@@ -2328,6 +2167,7 @@ F 2 "Ventilator:D_SOD-323" H 3850 2050 50  0001 C CNN
 F 3 "~" H 3850 2050 50  0001 C CNN
 F 4 "ON Semiconductor" H 3850 2050 50  0001 C CNN "Manufacturer"
 F 5 "BAS21AHT1G" H 3850 2050 50  0001 C CNN "Part Number"
+F 6 "DNI" H 3850 2050 50  0001 C CNN "DNI"
 	1    3850 2050
 	-1   0    0    1   
 $EndComp
@@ -2509,4 +2349,101 @@ Wire Wire Line
 	4150 2450 4150 2750
 Text Notes 3650 2450 0    50   ~ 0
 ~~1 ms filter
+Wire Wire Line
+	2850 1750 2850 2650
+$Comp
+L Device:D_ALT D?
+U 1 1 5F487CF2
+P 1450 2600
+AR Path="/5E8FBD97/5F487CF2" Ref="D?"  Part="1" 
+AR Path="/5E8DEDC0/5F487CF2" Ref="D?"  Part="1" 
+AR Path="/5E8DFCAD/5F487CF2" Ref="D?"  Part="1" 
+AR Path="/5E8E0754/5F487CF2" Ref="D?"  Part="1" 
+AR Path="/5E8E1F08/5F487CF2" Ref="D33"  Part="1" 
+F 0 "D33" H 1350 2800 50  0000 L CNN
+F 1 "BAS21AH" H 1300 2700 50  0000 L CNN
+F 2 "Ventilator:D_SOD-323" H 1450 2600 50  0001 C CNN
+F 3 "~" H 1450 2600 50  0001 C CNN
+F 4 "ON Semiconductor" H 1450 2600 50  0001 C CNN "Manufacturer"
+F 5 "BAS21AHT1G" H 1450 2600 50  0001 C CNN "Part Number"
+	1    1450 2600
+	1    0    0    -1  
+$EndComp
+Connection ~ 1300 2600
+Wire Wire Line
+	1300 2600 1300 2650
+Connection ~ 2850 1750
+Wire Wire Line
+	2850 1750 3700 1750
+$Comp
+L Device:R R?
+U 1 1 5F4D7D0F
+P 1750 3650
+AR Path="/5F4D7D0F" Ref="R?"  Part="1" 
+AR Path="/5E8AFE9D/5F4D7D0F" Ref="R?"  Part="1" 
+AR Path="/5E8C8865/5F4D7D0F" Ref="R?"  Part="1" 
+AR Path="/5E8E1F08/5F4D7D0F" Ref="R37"  Part="1" 
+F 0 "R37" H 1600 3650 50  0000 C CNN
+F 1 "100K" H 1600 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 1680 3650 50  0001 C CNN
+F 3 "~" H 1750 3650 50  0001 C CNN
+F 4 "KOA Speer" H 1750 3650 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1003F" H 1750 3650 50  0001 C CNN "Part Number"
+	1    1750 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1750 3800 1750 3950
+$Comp
+L Transistor_BJT:MMBT3904 Q3
+U 1 1 5F4F46C5
+P 1950 3950
+F 0 "Q3" H 1600 3900 50  0000 L CNN
+F 1 "MMBT3904" H 1500 3800 50  0000 L CNN
+F 2 "Ventilator:SOT-23" H 2150 3875 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 1950 3950 50  0001 L CNN
+F 4 "Diodes Inc." H 1950 3950 50  0001 C CNN "Manufacturer"
+F 5 "MMBT3904-7-F" H 1950 3950 50  0001 C CNN "Part Number"
+	1    1950 3950
+	1    0    0    -1  
+$EndComp
+Connection ~ 1750 3950
+$Comp
+L power:GND #PWR?
+U 1 1 5F4F531E
+P 2050 4150
+AR Path="/5F4F531E" Ref="#PWR?"  Part="1" 
+AR Path="/5E8E1F08/5F4F531E" Ref="#PWR066"  Part="1" 
+F 0 "#PWR066" H 2050 3900 50  0001 C CNN
+F 1 "GND" H 2055 3977 50  0000 C CNN
+F 2 "" H 2050 4150 50  0001 C CNN
+F 3 "" H 2050 4150 50  0001 C CNN
+	1    2050 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR065
+U 1 1 5F4FD801
+P 1750 3500
+F 0 "#PWR065" H 1750 3350 50  0001 C CNN
+F 1 "+3.3V" H 1765 3673 50  0000 C CNN
+F 2 "" H 1750 3500 50  0001 C CNN
+F 3 "" H 1750 3500 50  0001 C CNN
+	1    1750 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 3950 1600 2600
+Wire Wire Line
+	1600 3950 1750 3950
+Text HLabel 2100 3650 2    50   Output ~ 0
+~FPGA_RST
+Wire Wire Line
+	2050 3650 2050 3750
+Wire Wire Line
+	2050 3650 2100 3650
+Text Notes 2150 4050 0    50   ~ 0
+Keeps FPGA from\nloading config.\nuntil +3.3V rail\nis high enough
+Text Notes 15650 7300 0    50   ~ 0
+4x AA
 $EndSCHEMATC

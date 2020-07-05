@@ -4,10 +4,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 15
+Sheet 5 13
 Title "GlobalVent Stand-Alone Controller"
 Date ""
-Rev "1.10"
+Rev "1.11"
 Comp "US GlobalVent Team"
 Comment1 "Licensed under CERN-OHL-S v2"
 Comment2 "Don Straney"
@@ -107,8 +107,8 @@ AR Path="/5E8C0FEC" Ref="C?"  Part="1"
 AR Path="/5E8AFE9D/5E8C0FEC" Ref="C?"  Part="1" 
 AR Path="/5E8A4ABF/5E8C0FEC" Ref="C?"  Part="1" 
 AR Path="/5E8AA959/5E8C0FEC" Ref="C45"  Part="1" 
-F 0 "C45" V 4800 4850 50  0000 C CNN
-F 1 "10nF 50V NP0" V 4900 5050 50  0000 C CNN
+F 0 "C45" V 4850 4350 50  0000 C CNN
+F 1 "10nF 50V NP0" V 4950 4150 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4888 4450 50  0001 C CNN
 F 3 "~" H 4850 4600 50  0001 C CNN
 F 4 "Murata" H 4850 4600 50  0001 C CNN "Manufacturer"
@@ -245,6 +245,7 @@ F 0 "R85" H 2730 2804 50  0000 R CNN
 F 1 "DNP" H 2730 2895 50  0000 R CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 2730 2850 50  0001 C CNN
 F 3 "~" H 2800 2850 50  0001 C CNN
+F 4 "DNI" H 2800 2850 50  0001 C CNN "DNI"
 	1    2800 2850
 	-1   0    0    1   
 $EndComp
@@ -441,7 +442,7 @@ $EndComp
 Text HLabel 1750 2600 0    50   Input ~ 0
 In
 Wire Wire Line
-	1750 2600 1850 2600
+	1750 2600 1800 2600
 Text HLabel 5550 2700 2    50   Output ~ 0
 Out1
 Text HLabel 5500 4350 2    50   Output ~ 0
@@ -455,11 +456,11 @@ AR Path="/5E8AFE9D/5E8C10A8" Ref="R?"  Part="1"
 AR Path="/5E8A4ABF/5E8C10A8" Ref="R?"  Part="1" 
 AR Path="/5E8AA959/5E8C10A8" Ref="R93"  Part="1" 
 F 0 "R93" V 5143 2700 50  0000 C CNN
-F 1 "1K" V 5234 2700 50  0000 C CNN
+F 1 "3.3K" V 5234 2700 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 5280 2700 50  0001 C CNN
 F 3 "~" H 5350 2700 50  0001 C CNN
 F 4 "KOA Speer" H 5350 2700 50  0001 C CNN "Manufacturer"
-F 5 "RK73H2BTTD1001F" H 5350 2700 50  0001 C CNN "Part Number"
+F 5 "RK73H2BTTD3301F" H 5350 2700 50  0001 C CNN "Part Number"
 	1    5350 2700
 	0    1    1    0   
 $EndComp
@@ -472,20 +473,20 @@ AR Path="/5E8AFE9D/5E8C10AF" Ref="R?"  Part="1"
 AR Path="/5E8A4ABF/5E8C10AF" Ref="R?"  Part="1" 
 AR Path="/5E8AA959/5E8C10AF" Ref="R92"  Part="1" 
 F 0 "R92" V 4943 4350 50  0000 C CNN
-F 1 "1K" V 5034 4350 50  0000 C CNN
+F 1 "3.3K" V 5034 4350 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 5080 4350 50  0001 C CNN
 F 3 "~" H 5150 4350 50  0001 C CNN
 F 4 "KOA Speer" H 5150 4350 50  0001 C CNN "Manufacturer"
-F 5 "RK73H2BTTD1001F" H 5150 4350 50  0001 C CNN "Part Number"
+F 5 "RK73H2BTTD3301F" H 5150 4350 50  0001 C CNN "Part Number"
 	1    5150 4350
 	0    1    1    0   
 $EndComp
 Connection ~ 5000 4350
 Wire Wire Line
-	5300 4350 5500 4350
+	5300 4350 5450 4350
 Wire Wire Line
 	5500 2700 5550 2700
-Text Notes 5300 3450 0    50   ~ 0
+Text Notes 3850 3550 0    50   ~ 0
 Gain of +101 (7 mV in = 0.707V out, 13 mV in = 1.31V out)\nLPF fc = 1.6 kHz
 $Comp
 L Device:D_ALT D19
@@ -612,6 +613,7 @@ F 0 "R102" V 8393 1450 50  0000 C CNN
 F 1 "DNP" V 8484 1450 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 8530 1450 50  0001 C CNN
 F 3 "~" H 8600 1450 50  0001 C CNN
+F 4 "DNI" H 8600 1450 50  0001 C CNN "DNI"
 	1    8600 1450
 	0    1    1    0   
 $EndComp
@@ -640,6 +642,7 @@ F 0 "R103" V 8393 2500 50  0000 C CNN
 F 1 "DNP" V 8484 2500 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 8530 2500 50  0001 C CNN
 F 3 "~" H 8600 2500 50  0001 C CNN
+F 4 "DNI" H 8600 2500 50  0001 C CNN "DNI"
 	1    8600 2500
 	0    1    1    0   
 $EndComp
@@ -693,10 +696,11 @@ AR Path="/5EDD8202" Ref="R?"  Part="1"
 AR Path="/5E8AFE9D/5EDD8202" Ref="R?"  Part="1" 
 AR Path="/5E8A4ABF/5EDD8202" Ref="R?"  Part="1" 
 AR Path="/5E8AA959/5EDD8202" Ref="R98"  Part="1" 
-F 0 "R98" H 8050 4050 50  0000 C CNN
-F 1 "DNP (TBD)" H 7900 3950 50  0000 C CNN
+F 0 "R98" H 8350 4050 50  0000 C CNN
+F 1 "DNP (TBD)" H 8450 3950 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 8130 4000 50  0001 C CNN
 F 3 "~" H 8200 4000 50  0001 C CNN
+F 4 "DNI" H 8200 4000 50  0001 C CNN "DNI"
 	1    8200 4000
 	-1   0    0    1   
 $EndComp
@@ -712,6 +716,7 @@ F 0 "R99" H 8350 4350 50  0000 C CNN
 F 1 "DNP (TBD)" H 8500 4250 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 8130 4300 50  0001 C CNN
 F 3 "~" H 8200 4300 50  0001 C CNN
+F 4 "DNI" H 8200 4300 50  0001 C CNN "DNI"
 	1    8200 4300
 	-1   0    0    1   
 $EndComp
@@ -792,10 +797,11 @@ AR Path="/5EDD822B" Ref="R?"  Part="1"
 AR Path="/5E8AFE9D/5EDD822B" Ref="R?"  Part="1" 
 AR Path="/5E8A4ABF/5EDD822B" Ref="R?"  Part="1" 
 AR Path="/5E8AA959/5EDD822B" Ref="R100"  Part="1" 
-F 0 "R100" H 8050 5250 50  0000 C CNN
-F 1 "DNP (TBD)" H 7950 5150 50  0000 C CNN
+F 0 "R100" H 8400 5250 50  0000 C CNN
+F 1 "DNP (TBD)" H 8450 5150 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 8130 5200 50  0001 C CNN
 F 3 "~" H 8200 5200 50  0001 C CNN
+F 4 "DNI" H 8200 5200 50  0001 C CNN "DNI"
 	1    8200 5200
 	-1   0    0    1   
 $EndComp
@@ -811,6 +817,7 @@ F 0 "R101" H 8400 5550 50  0000 C CNN
 F 1 "DNP (TBD)" H 8500 5450 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 8130 5500 50  0001 C CNN
 F 3 "~" H 8200 5500 50  0001 C CNN
+F 4 "DNI" H 8200 5500 50  0001 C CNN "DNI"
 	1    8200 5500
 	-1   0    0    1   
 $EndComp
@@ -982,36 +989,6 @@ Wire Wire Line
 	5000 2700 5200 2700
 Text Label 5000 2700 0    50   ~ 0
 Out
-$Comp
-L Connector:TestPoint_Flag TP?
-U 1 1 5F6700EA
-P 2500 7200
-AR Path="/5F6700EA" Ref="TP?"  Part="1" 
-AR Path="/5E8AA959/5F6700EA" Ref="TP20"  Part="1" 
-F 0 "TP20" H 2500 7300 50  0000 R CNN
-F 1 "TestPoint_Flag" H 2456 7203 50  0001 R CNN
-F 2 "Ventilator:TestPoint_Keystone_5019_Minature" H 2700 7200 50  0001 C CNN
-F 3 "~" H 2700 7200 50  0001 C CNN
-F 4 "Keystone" H 2500 7200 50  0001 C CNN "Manufacturer"
-F 5 "5019" H 2500 7200 50  0001 C CNN "Part Number"
-	1    2500 7200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F6700F0
-P 2500 7200
-AR Path="/5F6700F0" Ref="#PWR?"  Part="1" 
-AR Path="/5E8AFE9D/5F6700F0" Ref="#PWR?"  Part="1" 
-AR Path="/5E8A4ABF/5F6700F0" Ref="#PWR?"  Part="1" 
-AR Path="/5E8AA959/5F6700F0" Ref="#PWR0144"  Part="1" 
-F 0 "#PWR0144" H 2500 6950 50  0001 C CNN
-F 1 "GND" H 2505 7027 50  0000 C CNN
-F 2 "" H 2500 7200 50  0001 C CNN
-F 3 "" H 2500 7200 50  0001 C CNN
-	1    2500 7200
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R R?
 U 1 1 5E90A00A
@@ -1211,4 +1188,109 @@ Text Notes 1500 6950 0    50   ~ 0
 1.8 mA max. from +5VA
 Text Notes 4100 6900 0    50   ~ 0
 1 mA max. from +5VA
+$Comp
+L Device:R R?
+U 1 1 5F97CE99
+P 1800 2850
+AR Path="/5F97CE99" Ref="R?"  Part="1" 
+AR Path="/5E8AFE9D/5F97CE99" Ref="R?"  Part="1" 
+AR Path="/5E8A4ABF/5F97CE99" Ref="R?"  Part="1" 
+AR Path="/5E8AA959/5F97CE99" Ref="R130"  Part="1" 
+F 0 "R130" H 1730 2804 50  0000 R CNN
+F 1 "1M" H 1730 2895 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 1730 2850 50  0001 C CNN
+F 3 "~" H 1800 2850 50  0001 C CNN
+F 4 "KOA Speer" H 1800 2850 50  0001 C CNN "Manufacturer"
+F 5 "RK73H2BTTD1004F" H 1800 2850 50  0001 C CNN "Part Number"
+	1    1800 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F97D262
+P 1800 3000
+AR Path="/5F97D262" Ref="#PWR?"  Part="1" 
+AR Path="/5E8AFE9D/5F97D262" Ref="#PWR?"  Part="1" 
+AR Path="/5E8A4ABF/5F97D262" Ref="#PWR?"  Part="1" 
+AR Path="/5E8AA959/5F97D262" Ref="#PWR0250"  Part="1" 
+F 0 "#PWR0250" H 1800 2750 50  0001 C CNN
+F 1 "GND" H 1805 2827 50  0000 C CNN
+F 2 "" H 1800 3000 50  0001 C CNN
+F 3 "" H 1800 3000 50  0001 C CNN
+	1    1800 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 2700 1800 2600
+Connection ~ 1800 2600
+Wire Wire Line
+	1800 2600 1850 2600
+Text Notes 2200 2250 0    50   ~ 0
+800 Hz LPF
+$Comp
+L Device:C C?
+U 1 1 5F3D5CAE
+P 5500 2900
+AR Path="/5F3D5CAE" Ref="C?"  Part="1" 
+AR Path="/5E8AFE9D/5F3D5CAE" Ref="C?"  Part="1" 
+AR Path="/5E8A4ABF/5F3D5CAE" Ref="C?"  Part="1" 
+AR Path="/5E8AA959/5F3D5CAE" Ref="C139"  Part="1" 
+F 0 "C139" H 5700 2800 50  0000 C CNN
+F 1 "DNP" H 5700 2900 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5538 2750 50  0001 C CNN
+F 3 "~" H 5500 2900 50  0001 C CNN
+F 4 "DNI" H 5500 2900 50  0001 C CNN "DNI"
+	1    5500 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F3D5CB4
+P 5500 3050
+AR Path="/5F3D5CB4" Ref="#PWR?"  Part="1" 
+AR Path="/5E8AA959/5F3D5CB4" Ref="#PWR0408"  Part="1" 
+F 0 "#PWR0408" H 5500 2800 50  0001 C CNN
+F 1 "GND" H 5505 2877 50  0000 C CNN
+F 2 "" H 5500 3050 50  0001 C CNN
+F 3 "" H 5500 3050 50  0001 C CNN
+	1    5500 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 2750 5500 2700
+Connection ~ 5500 2700
+$Comp
+L Device:C C?
+U 1 1 5F3E6F63
+P 5450 4600
+AR Path="/5F3E6F63" Ref="C?"  Part="1" 
+AR Path="/5E8AFE9D/5F3E6F63" Ref="C?"  Part="1" 
+AR Path="/5E8A4ABF/5F3E6F63" Ref="C?"  Part="1" 
+AR Path="/5E8AA959/5F3E6F63" Ref="C138"  Part="1" 
+F 0 "C138" H 5650 4500 50  0000 C CNN
+F 1 "DNP" H 5650 4600 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5488 4450 50  0001 C CNN
+F 3 "~" H 5450 4600 50  0001 C CNN
+F 4 "DNI" H 5450 4600 50  0001 C CNN "DNI"
+	1    5450 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F3E6F69
+P 5450 4750
+AR Path="/5F3E6F69" Ref="#PWR?"  Part="1" 
+AR Path="/5E8AA959/5F3E6F69" Ref="#PWR0409"  Part="1" 
+F 0 "#PWR0409" H 5450 4500 50  0001 C CNN
+F 1 "GND" H 5455 4577 50  0000 C CNN
+F 2 "" H 5450 4750 50  0001 C CNN
+F 3 "" H 5450 4750 50  0001 C CNN
+	1    5450 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4450 5450 4350
+Connection ~ 5450 4350
+Wire Wire Line
+	5450 4350 5500 4350
 $EndSCHEMATC
