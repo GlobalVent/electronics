@@ -1,0 +1,6 @@
+1.0 to 1.1:
+	* Changed from 2-sensor layout (needs 2 daughterboards total) to 4-sensor layout (needs 1 daughterboard total) to reduce wasted space from mounting holes
+	
+1.1 to 1.2:
+	* Removed vias from inside MS5607 sensor area (to remove possibility of leaks) and adjusted routing to fit
+	* Fixed "+3.3V" text overlapping with resistor pads

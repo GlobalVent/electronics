@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Pressure_sensors)(type KiCad)(uri ${KIPRJMOD}/Pressure_sensors.pretty)(options "")(descr ""))
+)
