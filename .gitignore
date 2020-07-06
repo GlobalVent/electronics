@@ -1,19 +1,13 @@
 *.log
 *.kicad_pcb-bak
 *.sch-bak
+*.step
+*.stp
+*.wrl
 _autosave-*
-RPi_cape/3d/Keystone 5019.STEP
-RPi_cape/3d/Phoenix 1985195.stp
-RPi_cape/3d/Phoenix 1985205.stp
-RPi_cape/3d/Phoenix 1985218.stp
 RPi_cape/3d/Phoenix disclaimer.pdf
-RPi_cape/3d/TE 188275-6.stp
-RPi_cape/3d/TE 215079-6.stp
 RPi_cape/3d/TE disclaimer.txt
-Pressure_sensor_daughterboard-MS5607-MS5803/Pressure_sensor_daughterboard-MS5607-MS5803.wrl
+RPi_cape/shapes3D
 Pressure_sensor_daughterboard-MS5607-MS5803/shapes3d
-Pressure_sensor_daughterboard-MS5607-MS5803/3d/HLE-103-02-L-DV-BE-K-TR.stp
 Pressure_sensor_daughterboard-MS5607-MS5803/3d/Samtec HLE-103-02-L-DV-BE-K.zip
 Pressure_sensor_daughterboard-MS5607-MS5803/Pressure_sensor_daughterboard-MS5607-MS5803.zip
-RPi_cape/shapes3D
-RPi_cape/RPi_cape.wrl
