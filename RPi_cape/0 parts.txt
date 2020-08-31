@@ -192,6 +192,9 @@ Samtec TSM-103-01-T-SV-P-TR, tin plating + pick-and-place pad, 2.5k (daughterboa
 Samtec TSM-103-01-L-SV, gold plating, 4k
 Samtec TSM-103-01-T-SV, tin plating, 6k
 Samtec TSM-103-01-L-DV-A-P-TR, gold plating + alignment pin + pick-and-place pad, 900
+Molex 0015910060, gold plating, 16k (daughterboard has 3.56 mm gap to main PCB; pin width unknown)
+Molex 0015913060, gold plating, 18k
+Molex 0015916062, gold plating + pick-and-place clip, 11k
 
 Connectors, daughterboard (female):
 * 3x2 rectangular header (female), SMT back-entry

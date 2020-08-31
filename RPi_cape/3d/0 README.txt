@@ -11,3 +11,6 @@ Phoenix Contact (www.phoenixcontact.com)
 
 Keystone (www.keyelco.com)
 5019 (save as "Keystone 5019.STEP")
+
+TI (www.ti.com)
+LMZ14203 (save as "TI LMZ14203.stp") - download from https://vendor.ultralibrarian.com/ti/embedded?vdrPN=LMZ14203TZ-ADJ/NOPB
